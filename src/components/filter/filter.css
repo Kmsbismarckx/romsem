@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Din pro";
+  font-weight: 400;
+  src: url(/src/fonts/dinpro.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 500;
+  src: url(/src/fonts/dinpro_medium.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 700;
+  src: url(/src/fonts/dinpro_bold.otf);
+}
+@media screen and (max-width: 768px) {
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 91.6%;
+    height: 50px;
+    margin: 0 auto 15px;
+    background-color: white;
+    border-radius: 10px;
+  }
+}
+
+/*# sourceMappingURL=filter.css.map */

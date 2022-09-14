@@ -1,0 +1,13 @@
+@import "../../../style/variables.scss";
+
+@media screen and (max-width: 768px) {
+  .goods__list_item_button {
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    background-color: $dark_orane;
+    border-radius: 5px;
+    color: white;
+    padding: 2px 25px 2px 26px;
+  }
+}

@@ -1,0 +1,14 @@
+@import "./variables.scss";
+
+* {
+  font-family: "Din pro", sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 72px;
+  background-color: #E5E5E5;
+}

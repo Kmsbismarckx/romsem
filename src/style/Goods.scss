@@ -1,0 +1,21 @@
+@import "../style/variables.scss";
+
+@media screen and (max-width: 768px) {
+  .goods {
+    padding-top: 66.5px;
+    .goods__header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+      .goods__header_img {
+        margin-right: 20px;
+      }
+      .goods__header_name {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29.76px;
+      }
+    }
+  }
+}

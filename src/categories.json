@@ -1,0 +1,100 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "pizza",
+      "russianName": "Пицца",
+      "isAvailable": false,
+      "isLarge": false
+    },
+    {
+      "id": 2,
+      "name": "sets",
+      "russianName": "Сеты",
+      "isAvailable": false,
+      "isLarge": false
+    },
+    {
+      "id": 3,
+      "name": "WOK",
+      "russianName": "WOK",
+      "isAvailable": false,
+      "isLarge": false
+    },
+    {
+      "id": 4,
+      "name": "rolls",
+      "russianName": "Роллы",
+      "isAvailable": false,
+      "isLarge": false
+    },
+    {
+      "id": 5,
+      "name": "sushi",
+      "russianName": "Суши",
+      "isAvailable": false,
+      "isLarge": false
+    },
+    {
+      "id": 6,
+      "name": "soup",
+      "russianName": "Супы",
+      "isAvailable": true,
+      "isLarge": false
+    },
+    {
+      "id": 7,
+      "name": "salad",
+      "russianName": "Салаты",
+      "isAvailable": true,
+      "isLarge": false
+    },
+    {
+      "id": 8,
+      "name": "drinks",
+      "russianName": "Напитки",
+      "isAvailable": false,
+      "isLarge": false
+    },
+    {
+      "id": 9,
+      "name": "combo",
+      "russianName": "Комбо",
+      "isAvailable": false,
+      "isLarge": true,
+      "isBottomLeft": true
+    },
+    {
+      "id": 10,
+      "name": "acne",
+      "russianName": "С Угрем",
+      "isAvailable": false,
+      "isLarge": false,
+      "isBottomLeft": true
+    },
+    {
+      "id": 11,
+      "name": "corndog",
+      "russianName": "Корн Дог",
+      "isAvailable": false,
+      "isLarge": false,
+      "isBottomLeft": true
+    },
+    {
+      "id": 12,
+      "name": "chicken",
+      "russianName": "Чикен",
+      "isAvailable": false,
+      "isLarge": true,
+      "isBottomLeft": true
+    },
+    {
+      "id": 13,
+      "name": "stock",
+      "russianName": "Акции",
+      "isAvailable": false,
+      "isLarge": true,
+      "isBottomLeft": true
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/about/arrow_down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/about/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/about/telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/about/whatsapp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/arrow_down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/filter_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/goods__logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/kamikaze_set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/philadelphia_love_set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/philadelphia_salmon_set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/salomon_set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/set_4_philadelphias.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/set_5_philadelphias.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/set_6_philadelphias.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/top_set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/goods/yakuza_set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/header/clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/header/header_logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/header/query.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/WOK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/acne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/chicken.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/combo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/corndog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/drinks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/pizza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/rolls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/salad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/sets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/soup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/stock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/main/sushi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/menu/basket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/menu/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/menu/reviews.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/categories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/button.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Select/select.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/about/About.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/about/about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/about/about.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/about/about.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/category/Category.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/filter/Filter.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/filter/filter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/filter/filter.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/filter/filter.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/goodItem/GoodItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/goodItem/goodItem.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/goodItem/goodItem.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/goodItem/goodItem.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/main.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/Menu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/menu.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/queryModal/QueryModal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_black.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_blackitalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_bolditalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_condensedblack.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_condensedblackitalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_condensedbold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_condensedbolditalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_condenseditalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_condensedlight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_condensedlightitalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_condensedmedium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_condensedmediumitalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_condensedregular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_lightitalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_medium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/dinpro_mediumitalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/goods.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Goods.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/foodReduser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/goodsReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/App.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/App.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/Goods.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/Goods.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/Goods.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/variables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/variables.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EktvitN0TisoMoSaSOGVyVntdD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/eldor/Desktop/Портфолио/romsem/public/media/goods",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\eldor\\Desktop\\Портфолио\\romsem\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\goods" />
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\hooks" />
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\menu" />
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\about" />
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\header" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\style" />
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\components\header" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="" />
+      <created>1663151644118</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663151644118</updated>
+      <workItem from="1663151646681" duration="11830000" />
+      <workItem from="1663163711886" duration="26277000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
