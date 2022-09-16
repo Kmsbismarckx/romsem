@@ -3,7 +3,7 @@
 @media screen and (max-width: 768px) {
   .goods__list_item {
     display: flex;
-    width: 91.6%;
+    width: $mobile_width;
     background-color: white;
     border-radius: 10px;
     margin: 0 auto 10px;

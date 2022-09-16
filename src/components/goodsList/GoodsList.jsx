@@ -1,12 +1,18 @@
 import React from "react";
 import "./GoodsList.css";
-import GoodItem from "../goodItem/GoodItem";
+import GoodsItem from "../goodItem/GoodsItem";
 
-const GoodsList = ({ goods, className }) => {
+const GoodsList = ({ goods, className, goodsId }) => {
   return (
     <div className={className}>
       {goods.map((good) => (
-        <GoodItem key={good.id} className={`${className}_item`} good={good} />
+        <GoodsItem
+          key={good.id}
+          className={`${className}_item`}
+          good={good}
+          goodsId={goodsId}
+          params={`/home/${goodsId}/${good.id}`}
+        />
       ))}
     </div>
   );

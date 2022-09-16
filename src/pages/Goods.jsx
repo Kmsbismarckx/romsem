@@ -12,6 +12,7 @@ const Goods = () => {
   const { id } = useParams();
   const categories = useSelector((state) => state.foodReducer.categories);
   const { urlPrefix } = useContext(urlContext);
+  /*Здесь можно реализовать подтягивание данных с сервера*/
   const goods = useSelector((state) => state.goodsReducer.goods);
   const { filter, setFilter } = useContext(urlContext);
   const sortedAndSearchedGoods = useFilter(goods, filter.sort, filter.query);
@@ -29,7 +30,11 @@ const Goods = () => {
         </p>
       </div>
       <Filter className="filter" filter={filter} setFilter={setFilter} />
-      <GoodsList className="goods__list" goods={sortedAndSearchedGoods} />
+      <GoodsList
+        className="goods__list"
+        goods={sortedAndSearchedGoods}
+        goodsId={id}
+      />
       <About className="about" />
     </div>
   );

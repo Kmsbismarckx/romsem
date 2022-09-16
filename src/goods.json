@@ -6,7 +6,12 @@
       "russianName": "Саломон сет",
       "weight": 1050,
       "pieces": 30,
-      "price": 1500
+      "price": 1500,
+      "composition": [
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+      ]
     },
     {
       "id": 2,
@@ -14,7 +19,12 @@
       "russianName": "Филадельфия LOVE сет",
       "weight": 1000,
       "pieces": 40,
-      "price": 1479
+      "price": 1479,
+      "composition": [
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+      ]
     },
     {
       "id": 3,
@@ -22,7 +32,12 @@
       "russianName": "Сет '5 Филадельфий'",
       "weight": 1120,
       "pieces": 40,
-      "price": 1499
+      "price": 1499,
+      "composition": [
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+      ]
     },
     {
       "id": 4,
@@ -30,7 +45,12 @@
       "russianName": "Филадельфия и лосось сет",
       "weight": 1260,
       "pieces": 36,
-      "price": 1599
+      "price": 1599,
+      "composition": [
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+      ]
     },
     {
       "id": 5,
@@ -38,7 +58,12 @@
       "russianName": "Саломон сет",
       "weight": 1050,
       "pieces": 30,
-      "price": 1500
+      "price": 1500,
+      "composition": [
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+      ]
     },
     {
       "id": 6,
@@ -46,7 +71,12 @@
       "russianName": "Сет '6 Филадельфий'",
       "weight": 1320,
       "pieces": 46,
-      "price": 1559
+      "price": 1559,
+      "composition": [
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+      ]
     },
     {
       "id": 7,
@@ -54,7 +84,12 @@
       "russianName": "Топовый сет",
       "weight": "1200",
       "pieces": 45,
-      "price": 1490
+      "price": 1490,
+      "composition": [
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+      ]
     },
     {
       "id": 8,
@@ -62,7 +97,12 @@
       "russianName": "Камикадзе сет",
       "weight": 1020,
       "pieces": 40,
-      "price": 1469
+      "price": 1469,
+      "composition": [
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+      ]
     },
     {
       "id": 9,
@@ -70,7 +110,12 @@
       "russianName": "Сет '4 Филадельфии'",
       "weight": 1200,
       "pieces": 52,
-      "price": 1559
+      "price": 1559,
+      "composition": [
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+      ]
     },
     {
       "id": 10,
@@ -78,7 +123,12 @@
       "russianName": "Филадельфия LOVE сет",
       "weight": 1100,
       "pieces": 32,
-      "price": 1559
+      "price": 1559,
+      "composition": [
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+      ]
     },
     {
       "id": 11,
@@ -86,7 +136,12 @@
       "russianName": "Якудза сет",
       "weight": 1270,
       "pieces": 40,
-      "price": 1499
+      "price": 1499,
+      "composition": [
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+      ]
     }
   ]
 }

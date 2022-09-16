@@ -13,5 +13,10 @@
   font-weight: 700;
   src: url(/src/fonts/dinpro_bold.otf);
 }
+@font-face {
+  font-family: "Din pro";
+  font-weight: 300;
+  src: url(/src/fonts/dinpro_light.otf);
+}
 
 /*# sourceMappingURL=GoodsList.css.map */

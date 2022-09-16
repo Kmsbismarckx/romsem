@@ -3,19 +3,19 @@ import Button from "../UI/Button/Button";
 import { urlContext } from "../../context";
 import "./goodItem.css";
 import plural from "plural-ru";
+import { Link } from "react-router-dom";
 
-const GoodItem = ({ className, good }) => {
+const GoodsItem = ({ className, good, goodsId, params }) => {
   const { urlPrefix } = useContext(urlContext);
   const pieces = good["pieces"] ? good["pieces"] : " ";
 
   return (
     <div className={className}>
-      <div className={`${className}_img`}>
-        <img
-          src={urlPrefix + `/media/goods/${good.name}.png`}
-          alt={good.name}
-        />
-      </div>
+      <img
+        className={`${className}_img`}
+        src={urlPrefix + `/media/goods/${good.name}.png`}
+        alt={good.name}
+      />
       <div className={`${className}_description`}>
         <div>
           <p className={`${className}_name`}>{good["russianName"]}</p>
@@ -28,11 +28,13 @@ const GoodItem = ({ className, good }) => {
         </div>
         <div className={`${className}_footer`}>
           <p className={`${className}_price`}>{good["price"]} COM</p>
-          <Button className={className}>Хочу!</Button>
+          <Link to={params}>
+            <Button className={className}>Хочу!</Button>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default GoodItem;
+export default GoodsItem;
