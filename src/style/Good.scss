@@ -20,6 +20,10 @@
         font-weight: 400;
         line-height: 22.32px;
         color: black;
+        .button__link {
+          text-decoration: none;
+          color: black;
+        }
       }
       .good__button:first-of-type {
         text-align: right;
@@ -55,13 +59,14 @@
     }
     .good__item {
       width: $mobile_width;
-      margin: 15px auto 0;
       border-radius: 15px;
       background-color: white;
       padding: 20px 10px 24px 10px;
       font-size: 24px;
       font-weight: 500;
       line-height: 29.78px;
+      margin: 15px auto 30px;
+
       .good__item_main {
         text-align: center;
         width: 100%;
@@ -107,21 +112,38 @@
             height: 127px;
           }
           .good__item_composition_item {
-            width: 91px;
+            min-width: 91px;
             height: 127px;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 17.37px;
             margin-right: 10px;
             .good__item_composition_item_name {
               margin-bottom: 11px;
             }
-            .good__item_composition_item_price {
-              font-size: 18px;
-              font-weight: 700;
-              line-height: 22.54px;
-            }
           }
+        }
+      }
+    }
+    .good__addition {
+      width: $mobile_width;
+      margin: 0 auto 30px;
+
+      .good__addition_name {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22.34px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .good__addition_items {
+        .window {
+          width: 229px;
+          height: 121px;
+        }
+        .good__addition_item {
+          min-width: 107px;
+          height: 121px;
+        }
+        .good__addition_item:not(.good__addition_item:first-of-type) {
+          margin-left: 15px;
         }
       }
     }

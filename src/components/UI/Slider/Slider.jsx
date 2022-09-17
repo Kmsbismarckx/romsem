@@ -2,26 +2,35 @@ import React, { Children, cloneElement, useEffect, useState } from "react";
 import "./Slider.css";
 import ArrowButton from "../ArrowButton/ArrowButton";
 
-const Slider = ({ children, pageWidth, pageHeight }) => {
+const Slider = ({ children, pageWidth, pageHeight, pageMargin }) => {
   const PAGE_WIDTH = pageWidth;
   const PAGE_HEIGHT = pageHeight;
+  const PAGE_MARGIN = pageMargin;
 
   const [pages, setPages] = useState([]);
   const [offset, setOffset] = useState(0);
+  const [pagesLength, setPagesLength] = useState(0);
+
+  useEffect(() => {
+    if (pages.length % 2 === 0) {
+      setPagesLength(pages.length - 1);
+    } else {
+      setPagesLength(pages.length - 2);
+    }
+  }, [pages]);
 
   const handleLeftArrowClick = () => {
     setOffset((currentOffset) => {
-      const newOffset = currentOffset + PAGE_WIDTH;
-      console.log(newOffset);
+      const newOffset = currentOffset + PAGE_WIDTH + PAGE_MARGIN;
       return Math.min(newOffset, 0);
     });
   };
 
   const handleRightArrowClick = () => {
     setOffset((currentOffset) => {
-      const newOffset = currentOffset - PAGE_WIDTH;
-      const maxOffset = -(PAGE_WIDTH * (pages.length - 2));
-      console.log(maxOffset);
+      const newOffset = currentOffset - PAGE_WIDTH - PAGE_MARGIN;
+      const maxOffset = -(PAGE_WIDTH * pagesLength + PAGE_MARGIN);
+      console.log(newOffset, maxOffset);
       if (newOffset < maxOffset) {
         return 0;
       }
@@ -32,7 +41,7 @@ const Slider = ({ children, pageWidth, pageHeight }) => {
 
   useEffect(() => {
     setPages(
-      Children.map(children, (child, index) => {
+      Children.map(children, (child) => {
         return cloneElement(child, {
           style: {
             height: `${PAGE_HEIGHT}px`,
