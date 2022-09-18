@@ -118,6 +118,12 @@
             .good__item_composition_item_name {
               margin-bottom: 11px;
             }
+            .good__item_composition_item_footer {
+              justify-content: center;
+              .good__item_composition_item_price {
+                text-align: center;
+              }
+            }
           }
         }
       }
@@ -141,6 +147,9 @@
         .good__addition_item {
           min-width: 107px;
           height: 121px;
+          .good__addition_item_img {
+            margin-bottom: 10px;
+          }
         }
         .good__addition_item:not(.good__addition_item:first-of-type) {
           margin-left: 15px;

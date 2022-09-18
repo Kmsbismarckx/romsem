@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Goods from "./pages/Goods";
 import Good from "./pages/Good";
+import Basket from "./pages/Basket";
 
 function App() {
   const urlPrefix = process.env.PUBLIC_URL;
@@ -28,6 +29,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/home/:id" element={<Goods />} />
             <Route path="/home/:goodsId/:goodId" element={<Good />} />
+            <Route path="/basket" element={<Basket />} />
           </Routes>
           <Menu />
         </urlContext.Provider>

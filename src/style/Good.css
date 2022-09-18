@@ -135,6 +135,12 @@
   .good .good__item .good__item_composition .good__item_composition_items .good__item_composition_item .good__item_composition_item_name {
     margin-bottom: 11px;
   }
+  .good .good__item .good__item_composition .good__item_composition_items .good__item_composition_item .good__item_composition_item_footer {
+    justify-content: center;
+  }
+  .good .good__item .good__item_composition .good__item_composition_items .good__item_composition_item .good__item_composition_item_footer .good__item_composition_item_price {
+    text-align: center;
+  }
   .good .good__addition {
     width: 91.6%;
     margin: 0 auto 30px;
@@ -153,6 +159,9 @@
   .good .good__addition .good__addition_items .good__addition_item {
     min-width: 107px;
     height: 121px;
+  }
+  .good .good__addition .good__addition_items .good__addition_item .good__addition_item_img {
+    margin-bottom: 10px;
   }
   .good .good__addition .good__addition_items .good__addition_item:not(.good__addition_item:first-of-type) {
     margin-left: 15px;

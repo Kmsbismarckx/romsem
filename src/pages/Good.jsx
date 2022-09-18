@@ -25,6 +25,12 @@ const Good = () => {
     isDisabled: false,
     pointerEvent: "",
   });
+
+  const [goodInfo, setGoodInfo] = useState({
+    name: currentGood.name,
+    russianName: currentGood.russianName,
+    price: currentGood.price,
+  });
   usePages({
     currentPage,
     itemLength: goods.length,
@@ -83,6 +89,11 @@ const Good = () => {
           good={currentGood}
           goodsId={goodsId}
           params={""}
+          onClick={() => {
+            let basket = JSON.parse(localStorage.getItem("basket")) || [];
+            basket.push(goodInfo);
+            localStorage.setItem("basket", JSON.stringify(basket));
+          }}
         />
         <div className="good__item_composition">
           <p className="good__item_composition_name">Состав сета</p>

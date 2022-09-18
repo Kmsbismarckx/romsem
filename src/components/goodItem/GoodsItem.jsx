@@ -5,7 +5,7 @@ import "./goodItem.css";
 import plural from "plural-ru";
 import { Link } from "react-router-dom";
 
-const GoodsItem = ({ className, good, goodsId, params }) => {
+const GoodsItem = ({ className, good, params, onClick }) => {
   const { urlPrefix } = useContext(urlContext);
   const pieces = good["pieces"] ? good["pieces"] : " ";
 
@@ -29,7 +29,9 @@ const GoodsItem = ({ className, good, goodsId, params }) => {
         <div className={`${className}_footer`}>
           <p className={`${className}_price`}>{good["price"]} COM</p>
           <Link to={params}>
-            <Button className={className}>Хочу!</Button>
+            <Button className={className} onClick={onClick}>
+              Хочу!
+            </Button>
           </Link>
         </div>
       </div>

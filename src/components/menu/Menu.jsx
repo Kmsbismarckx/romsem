@@ -9,7 +9,7 @@ const Menu = () => {
         <img className="menu__item_img" src="/media/menu/menu.svg" alt="" />
         <p className="menu__item_description">Меню</p>
       </Link>
-      <Link className="menu__item" to="/">
+      <Link className="menu__item" to="/basket">
         <img className="menu__item_img" src="/media/menu/basket.svg" alt="" />
         <p className="menu__item_description">Корзина</p>
       </Link>
