@@ -1,0 +1,82 @@
+@import '../../style/variables.scss';
+
+.basket__item {
+  width: 100%;
+
+  display: flex;
+
+  background-color: white;
+
+  margin-bottom: 10px;
+  padding: 13px 0;
+  border-radius: 5px;
+
+  &_img {
+    width: 90px;
+    height: 62px;
+
+    margin-right: 14px;
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    &_name {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+
+      margin-bottom: 14px;
+    }
+    &_description {
+      display: flex;
+      justify-content: space-between;
+      &_item {
+        display: flex;
+        justify-content: space-between;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+
+        width: 89.24px;
+        &_increment,
+        &_decrement {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        &_decrement {
+          width: 16px;
+			img {
+				pointer-events: none;
+			}
+        }
+        &_increment {
+          border-radius: 50%;
+          background-color: $dark_orange;
+
+          width: 25.45px;
+          height: 25.45px;
+        }
+        &_increment::after {
+          content: url('/public/media/basket/basket_increment.svg');
+          width: 17px;
+          height: 17px;
+          transform: translateY(-1px);
+        }
+        &_quantity {
+          display: flex;
+          align-items: center;
+        }
+      }
+      &_item_price {
+        width: auto;
+        margin-right: 33px;
+      }
+    }
+  }
+}

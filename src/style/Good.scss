@@ -1,9 +1,9 @@
-@import "../style/variables.scss";
+@import '../style/variables.scss';
 
 @media screen and (max-width: 768px) {
   .good {
     padding-top: 66.5px;
-    .good__buttons {
+    &__buttons {
       display: flex;
       justify-content: space-between;
       width: $mobile_width;
@@ -21,6 +21,8 @@
         line-height: 22.32px;
         color: black;
         .button__link {
+          width: 100%;
+          z-index: 2;
           text-decoration: none;
           color: black;
         }
@@ -31,13 +33,13 @@
         justify-content: right;
       }
       .good__button:first-of-type::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 1px;
         left: 0;
         width: 20px;
         height: 20px;
-        background: url("/public/media/good/arrow_button.svg") no-repeat;
+        background: url('/public/media/good/arrow_button.svg') no-repeat;
         background-size: 20px 20px;
       }
       .good__button:last-of-type {
@@ -46,13 +48,13 @@
         justify-content: left;
       }
       .good__button:last-of-type::after {
-        content: "";
+        content: '';
         position: absolute;
         top: 1px;
         right: 0;
         width: 20px;
         height: 20px;
-        background: url("/public/media/good/arrow_button.svg") no-repeat;
+        background: url('/public/media/good/arrow_button.svg') no-repeat;
         background-size: 20px 20px;
         transform: rotate(180deg);
       }

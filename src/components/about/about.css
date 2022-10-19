@@ -18,70 +18,68 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
-@media screen and (max-width: 768px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    width: 330px;
-  }
-  .about .about__info {
-    display: flex;
-    flex-direction: column;
-    color: gray;
-    margin-bottom: 20px;
-  }
-  .about .about__info .about__info_name {
-    line-height: 30px;
-    margin-bottom: 10px;
-  }
-  .about .about__info .about__info_description {
-    line-height: 18px;
-  }
-  .about .about__info .about__info_button {
-    position: relative;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #ff9846;
-    align-self: center;
-  }
-  .about .about__info .about__info_button::after {
-    content: "1";
-    position: absolute;
-    top: 50%;
-    right: -27px;
-    font-size: 0;
-    width: 17px;
-    height: 9px;
-    background-image: url("/public/media/about/arrow_down.svg");
-  }
-  .about .about__contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #a4acad;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22.3px;
-  }
-  .about .about__contacts .about__contacts_name {
-    margin-bottom: 10px;
-  }
-  .about .about__contacts .about__contacts_imgs {
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: space-around;
-  }
-  .about .about__contacts .about__contacts_imgs .about__contacts_img {
-    width: 50px;
-    height: 50px;
-  }
-  .about .about__contacts .about__contacts_phones {
-    margin-bottom: 30px;
-  }
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 330px;
+}
+.about__info {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  margin-bottom: 20px;
+}
+.about__info_name {
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.about__info_description {
+  line-height: 18px;
+}
+.about__info_button {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ff9846;
+  align-self: center;
+}
+.about__info_button::after {
+  content: "1";
+  position: absolute;
+  top: 50%;
+  right: -27px;
+  font-size: 0;
+  width: 17px;
+  height: 9px;
+  background-image: url("/public/media/about/arrow_down.svg");
+}
+.about__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a4acad;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.3px;
+}
+.about__contacts_name {
+  margin-bottom: 10px;
+}
+.about__contacts_imgs {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+.about__contacts_imgs .about__contacts_img {
+  width: 50px;
+  height: 50px;
+}
+.about__contacts_phones {
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=about.css.map */

@@ -8,10 +8,10 @@
       "pieces": 30,
       "price": 1500,
       "composition": [
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 4, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ]
     },
     {
@@ -22,9 +22,9 @@
       "pieces": 40,
       "price": 1479,
       "composition": [
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ]
     },
     {
@@ -35,9 +35,9 @@
       "pieces": 40,
       "price": 1499,
       "composition": [
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ]
     },
     {
@@ -48,9 +48,9 @@
       "pieces": 36,
       "price": 1599,
       "composition": [
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ]
     },
     {
@@ -61,9 +61,9 @@
       "pieces": 30,
       "price": 1500,
       "composition": [
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ]
     },
     {
@@ -74,9 +74,9 @@
       "pieces": 46,
       "price": 1559,
       "composition": [
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ]
     },
     {
@@ -87,9 +87,9 @@
       "pieces": 45,
       "price": 1490,
       "composition": [
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ]
     },
     {
@@ -100,9 +100,9 @@
       "pieces": 40,
       "price": 1469,
       "composition": [
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ]
     },
     {
@@ -113,9 +113,9 @@
       "pieces": 52,
       "price": 1559,
       "composition": [
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ]
     },
     {
@@ -126,9 +126,9 @@
       "pieces": 32,
       "price": 1559,
       "composition": [
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ]
     },
     {
@@ -139,9 +139,9 @@
       "pieces": 40,
       "price": 1499,
       "composition": [
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ]
     }
   ]

@@ -18,16 +18,14 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
-@media screen and (max-width: 768px) {
-  .button {
-    font-size: 18px;
-    font-weight: 500;
-    border: none;
-    background-color: #f46d40;
-    border-radius: 5px;
-    color: white;
-    padding: 2px 25px 2px 26px;
-  }
+.button {
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color: #f46d40;
+  border-radius: 5px;
+  color: white;
+  padding: 2px 25px 2px 26px;
 }
 
 /*# sourceMappingURL=button.css.map */

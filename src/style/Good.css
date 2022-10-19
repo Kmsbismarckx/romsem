@@ -22,13 +22,13 @@
   .good {
     padding-top: 66.5px;
   }
-  .good .good__buttons {
+  .good__buttons {
     display: flex;
     justify-content: space-between;
     width: 91.6%;
     margin: 0 auto;
   }
-  .good .good__buttons .good__button {
+  .good__buttons .good__button {
     position: relative;
     display: flex;
     align-items: center;
@@ -41,16 +41,18 @@
     line-height: 22.32px;
     color: black;
   }
-  .good .good__buttons .good__button .button__link {
+  .good__buttons .good__button .button__link {
+    width: 100%;
+    z-index: 2;
     text-decoration: none;
     color: black;
   }
-  .good .good__buttons .good__button:first-of-type {
+  .good__buttons .good__button:first-of-type {
     text-align: right;
     width: 81px;
     justify-content: right;
   }
-  .good .good__buttons .good__button:first-of-type::before {
+  .good__buttons .good__button:first-of-type::before {
     content: "";
     position: absolute;
     top: 1px;
@@ -60,12 +62,12 @@
     background: url("/public/media/good/arrow_button.svg") no-repeat;
     background-size: 20px 20px;
   }
-  .good .good__buttons .good__button:last-of-type {
+  .good__buttons .good__button:last-of-type {
     text-align: left;
     width: 91px;
     justify-content: left;
   }
-  .good .good__buttons .good__button:last-of-type::after {
+  .good__buttons .good__button:last-of-type::after {
     content: "";
     position: absolute;
     top: 1px;

@@ -1,67 +1,65 @@
-@import "../../style/variables.scss";
+@import '../../style/variables.scss';
 
-@media screen and (max-width: 768px) {
-  .about {
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 330px;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    margin-bottom: 20px;
+    &_name {
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+    &_description {
+      line-height: 18px;
+    }
+    &_button {
+      position: relative;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $orange;
+      align-self: center;
+    }
+    &_button::after {
+      content: '1';
+      position: absolute;
+      top: 50%;
+      right: -27px;
+      font-size: 0;
+      width: 17px;
+      height: 9px;
+      background-image: url('/public/media/about/arrow_down.svg');
+    }
+  }
+  &__contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    width: 330px;
-    .about__info {
+    color: $gray;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.3px;
+    &_name {
+      margin-bottom: 10px;
+    }
+    &_imgs {
       display: flex;
-      flex-direction: column;
-      color: gray;
-      margin-bottom: 20px;
-      .about__info_name {
-        line-height: 30px;
-        margin-bottom: 10px;
-      }
-      .about__info_description {
-        line-height: 18px;
-      }
-      .about__info_button {
-        position: relative;
-        font-size: 24px;
-        line-height: 24px;
-        font-weight: 400;
-        color: $orange;
-        align-self: center;
-      }
-      .about__info_button::after {
-        content: "1";
-        position: absolute;
-        top: 50%;
-        right: -27px;
-        font-size: 0;
-        width: 17px;
-        height: 9px;
-        background-image: url("/public/media/about/arrow_down.svg");
+      margin-bottom: 30px;
+      justify-content: space-around;
+      .about__contacts_img {
+        width: 50px;
+        height: 50px;
       }
     }
-    .about__contacts {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: $gray;
-      text-align: center;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 22.3px;
-      .about__contacts_name {
-        margin-bottom: 10px;
-      }
-      .about__contacts_imgs {
-        display: flex;
-        margin-bottom: 30px;
-        justify-content: space-around;
-        .about__contacts_img {
-          width: 50px;
-          height: 50px;
-        }
-      }
-      .about__contacts_phones {
-        margin-bottom: 30px;
-      }
+    &_phones {
+      margin-bottom: 30px;
     }
   }
 }

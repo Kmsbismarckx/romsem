@@ -1,6 +1,5 @@
 @import "../../style/variables.scss";
 
-@media screen and (max-width: 768px) {
   .goods__list_item {
     display: flex;
     width: $mobile_width;
@@ -8,10 +7,10 @@
     border-radius: 10px;
     margin: 0 auto 10px;
     padding: 18px 10px 18px 18px;
-    .goods__list_item_img {
+    &_img {
       margin-right: 15px;
     }
-    .goods__list_item_description {
+    &_description {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
@@ -40,4 +39,4 @@
       }
     }
   }
-}
+

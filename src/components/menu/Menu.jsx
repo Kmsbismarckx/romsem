@@ -1,8 +1,8 @@
-import React from "react";
-import "./menu.css";
-import { Link } from "react-router-dom";
+import React from 'react';
+import './menu.css';
+import { Link } from 'react-router-dom';
 
-const Menu = () => {
+function Menu() {
   return (
     <div className="menu">
       <Link className="menu__item" to="/">
@@ -14,15 +14,11 @@ const Menu = () => {
         <p className="menu__item_description">Корзина</p>
       </Link>
       <Link className="menu__item" to="/">
-        <img
-          className="menu__item_img"
-          src="/media/menu/reviews.svg"
-          alt="Отзывы"
-        />
+        <img className="menu__item_img" src="/media/menu/reviews.svg" alt="Отзывы" />
         <p className="menu__item_description">Отзывы</p>
       </Link>
     </div>
   );
-};
+}
 
 export default Menu;

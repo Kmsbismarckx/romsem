@@ -1,8 +1,8 @@
-import React, { Children, cloneElement, useEffect, useState } from "react";
-import "./Slider.css";
-import ArrowButton from "../ArrowButton/ArrowButton";
+import React, { Children, cloneElement, useEffect, useState } from 'react';
+import './Slider.css';
+import ArrowButton from '../ArrowButton/ArrowButton';
 
-const Slider = ({ children, pageWidth, pageHeight, pageMargin }) => {
+function Slider({ children, pageWidth, pageHeight, pageMargin }) {
   const PAGE_WIDTH = pageWidth;
   const PAGE_HEIGHT = pageHeight;
   const PAGE_MARGIN = pageMargin;
@@ -30,7 +30,7 @@ const Slider = ({ children, pageWidth, pageHeight, pageMargin }) => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset - PAGE_WIDTH - PAGE_MARGIN;
       const maxOffset = -(PAGE_WIDTH * pagesLength + PAGE_MARGIN);
-      console.log(newOffset, maxOffset);
+
       if (newOffset < maxOffset) {
         return 0;
       }
@@ -41,25 +41,22 @@ const Slider = ({ children, pageWidth, pageHeight, pageMargin }) => {
 
   useEffect(() => {
     setPages(
-      Children.map(children, (child) => {
-        return cloneElement(child, {
+      Children.map(children, (child) =>
+        cloneElement(child, {
           style: {
             height: `${PAGE_HEIGHT}px`,
             minWidth: `${PAGE_WIDTH}px`,
             maxWidth: `${PAGE_WIDTH}px`,
           },
-        });
-      })
+        })
+      )
     );
   }, []);
 
   return (
-    <div className={"main__container"}>
-      <div className={"window"}>
-        <div
-          className={"all__pages_container"}
-          style={{ transform: `translateX(${offset}px)` }}
-        >
+    <div className="main__container">
+      <div className="window">
+        <div className="all__pages_container" style={{ transform: `translateX(${offset}px)` }}>
           {pages}
         </div>
         <ArrowButton className="arrow" onClick={handleLeftArrowClick}>
@@ -71,6 +68,6 @@ const Slider = ({ children, pageWidth, pageHeight, pageMargin }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Slider;

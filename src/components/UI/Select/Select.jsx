@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import "./select.css";
+import React, { useState } from 'react';
+import './select.css';
 
-const Select = ({ className, value, options, onChange }) => {
-  const [classRotate, setClassRotate] = useState("");
+function Select({ className, value, options, onChange }) {
+  const [classRotate, setClassRotate] = useState('');
 
   return (
     <div className={`select ${classRotate}`}>
@@ -12,8 +12,8 @@ const Select = ({ className, value, options, onChange }) => {
         onChange={(event) => {
           onChange(event.target.value);
         }}
-        onFocus={() => setClassRotate("select_rotate")}
-        onBlur={() => setClassRotate("")}
+        onFocus={() => setClassRotate('select_rotate')}
+        onBlur={() => setClassRotate('')}
       >
         {options.map((option) => (
           <option key={option.value} value={option.value}>
@@ -23,6 +23,6 @@ const Select = ({ className, value, options, onChange }) => {
       </select>
     </div>
   );
-};
+}
 
 export default Select;

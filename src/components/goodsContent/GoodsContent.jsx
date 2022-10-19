@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-const GoodsContent = () => {
-  return <div></div>;
-};
+function GoodsContent() {
+  return <div />;
+}
 
 export default GoodsContent;

@@ -2,21 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="add slider, add redirection  for &quot;good&quot; page">
-      <change afterPath="$PROJECT_DIR$/src/components/basketItem/BasketItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Basket.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/Basket.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/Basket.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/Basket.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/basket/basket_decrement.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/basket/basket_increment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/basketItem/basketItem.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/basketItem/basketItem.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/basketItem/basketItem.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/goodItemOnclick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/categoryReduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/ArrowButton/ArrowButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/ArrowButton/ArrowButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/button.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/button.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/Select.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Slider/Slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Slider/Slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Slider/Slider.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Slider/Slider.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Slider/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Slider/Slider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Slider/Slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Slider/Slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/About.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/basketItem/BasketItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/basketItem/BasketItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category/Category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category/Category.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/filter/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/filter/filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/filter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/filter/filter.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/filter.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/filter/filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/filter.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/goodItem/GoodsItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/GoodsItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goodItem/goodItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/goodItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goodItem/goodItem.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/goodItem.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goodItem/goodItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/goodItem.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goodsContent/GoodsContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodsContent/GoodsContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goodsList/GoodsList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goodsList/GoodsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goodsList/GoodsList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/queryModal/QueryModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/QueryModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/queryModal/queryModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/queryModal/queryModal.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/queryModal/queryModal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/smallProduct/SmallProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smallProduct/SmallProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goods.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/goods.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/usePages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/usePages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Basket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Basket.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Good.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Good.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Goods.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/foodReduser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/goodsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/goodsReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Basket.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Basket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Basket.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Basket.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Basket.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Basket.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,27 +114,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/eldor/Desktop/Портфолио/romsem/public/media/good",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\eldor\\Desktop\\Портфолио\\romsem\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eldor/Desktop/Портфолио/azur-lane&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\eldor\\Desktop\\Портфолио\\romsem\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\basket" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\good" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\UI" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\components\UI" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\goods" />
-      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\hooks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media" />
@@ -84,6 +162,20 @@
       <workItem from="1663325053822" duration="17766000" />
       <workItem from="1663411743108" duration="160000" />
       <workItem from="1663411942022" duration="20923000" />
+      <workItem from="1664960990996" duration="53000" />
+      <workItem from="1664961088259" duration="129000" />
+      <workItem from="1664964603045" duration="1663000" />
+      <workItem from="1665053661230" duration="1791000" />
+      <workItem from="1665072794737" duration="3871000" />
+      <workItem from="1665170354938" duration="1936000" />
+      <workItem from="1665763143553" duration="1311000" />
+      <workItem from="1665815617276" duration="30458000" />
+      <workItem from="1665912840749" duration="7259000" />
+      <workItem from="1665949531013" duration="20000" />
+      <workItem from="1665954761764" duration="18000" />
+      <workItem from="1666001381568" duration="15950000" />
+      <workItem from="1666090926907" duration="11433000" />
+      <workItem from="1666172389991" duration="17975000" />
     </task>
     <task id="LOCAL-00001" summary="finish main page and good page">
       <created>1663193306010</created>

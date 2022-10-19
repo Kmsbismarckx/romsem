@@ -1,8 +1,9 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { combineReducers } from "@reduxjs/toolkit";
-import { foodReducer } from "./reducers/foodReduser";
-import { goodsReducer } from "./reducers/goodsReducer";
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import goodsReducer from './reducers/goodsReducer';
+import categoryReducer from './reducers/categoryReduser';
 
-const rootReducer = combineReducers({ foodReducer, goodsReducer });
+const rootReducer = combineReducers({ categoryReducer, goodsReducer });
 
-export const store = configureStore({ reducer: rootReducer });
+const store = configureStore({ reducer: rootReducer });
+
+export default store;

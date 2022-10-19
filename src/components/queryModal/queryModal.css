@@ -18,30 +18,29 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
-@media screen and (max-width: 768px) {
-  .queryModal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: none;
-    z-index: 2;
-  }
-  .queryModal .queryModal__content {
-    width: 100%;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .queryModal__active {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding-top: 56.5px;
-  }
+.queryModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+}
+.queryModal__content {
+  width: 100%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.queryModal__active {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 56.5px;
 }
 
 /*# sourceMappingURL=queryModal.css.map */

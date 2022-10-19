@@ -1,3 +1,5 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
-export const urlContext = createContext(null);
+const urlContext = createContext(null);
+
+export default urlContext;

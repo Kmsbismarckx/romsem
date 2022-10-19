@@ -1,15 +1,25 @@
-import goodsData from "../../goods.json";
-const goods = goodsData["goods"];
+import goodsData from '../../goods.json';
+
+const goodsValue = goodsData.goods;
+const goodsId = goodsValue.map((item) => item.id);
+const goods = {};
+
+goodsValue.forEach((good) => {
+  goods[good.id] = good;
+});
 
 const defaultValue = {
-  goods: goods,
+  goods,
+  goodsId,
 };
 
-export const goodsReducer = (state = defaultValue, action) => {
+const goodsReducer = (state = defaultValue, action) => {
   switch (action.type) {
-    case "SET_CATEGORY":
+    case 'SET_GOOD':
       return { ...state, goods: action.payload };
     default:
       return state;
   }
 };
+
+export default goodsReducer;

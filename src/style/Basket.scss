@@ -1,5 +1,50 @@
-@import "../style/variables.scss";
+@import '../style/variables.scss';
 
-@media screen and (max-width: 768px) {
+.basket {
+  padding: 67px 15px 10px;
+  &__name {
+    text-align: center;
 
+    margin-bottom: 7px;
+  }
+  &__total {
+    background-color: white;
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+
+    &_name {
+      text-align: center;
+      color: $orange;
+    }
+    &_list {
+      display: flex;
+      justify-content: space-between;
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        &_name,
+        &_value {
+          text-align: center;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+
+          padding: 10px 0;
+          border-bottom: 0.5px solid rgba(164, 172, 173, 1);
+        }
+        &_value {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  &__button {
+    width: 100%;
+    padding: 13px 0;
+  }
 }

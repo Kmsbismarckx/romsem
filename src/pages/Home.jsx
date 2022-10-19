@@ -1,14 +1,14 @@
-import React from "react";
-import Main from "../components/main/Main";
-import About from "../components/about/About";
+import React from 'react';
+import Main from '../components/main/Main';
+import About from '../components/about/About';
 
-const Home = () => {
+function Home() {
   return (
     <div>
-      <Main className="main" />
-      <About className="about" />
+      <Main />
+      <About />
     </div>
   );
-};
+}
 
 export default Home;

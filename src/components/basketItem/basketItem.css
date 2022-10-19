@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Din pro";
+  font-weight: 400;
+  src: url(/src/fonts/dinpro.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 500;
+  src: url(/src/fonts/dinpro_medium.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 700;
+  src: url(/src/fonts/dinpro_bold.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 300;
+  src: url(/src/fonts/dinpro_light.otf);
+}
+.basket__item {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 13px 0;
+  border-radius: 5px;
+}
+.basket__item_img {
+  width: 90px;
+  height: 62px;
+  margin-right: 14px;
+}
+.basket__item_content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+.basket__item_content_name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 14px;
+}
+.basket__item_content_description {
+  display: flex;
+  justify-content: space-between;
+}
+.basket__item_content_description_item {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  width: 89.24px;
+}
+.basket__item_content_description_item_increment, .basket__item_content_description_item_decrement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.basket__item_content_description_item_decrement {
+  width: 16px;
+}
+.basket__item_content_description_item_decrement img {
+  pointer-events: none;
+}
+.basket__item_content_description_item_increment {
+  border-radius: 50%;
+  background-color: #f46d40;
+  width: 25.45px;
+  height: 25.45px;
+}
+.basket__item_content_description_item_increment::after {
+  content: url("/public/media/basket/basket_increment.svg");
+  width: 17px;
+  height: 17px;
+  transform: translateY(-1px);
+}
+.basket__item_content_description_item_quantity {
+  display: flex;
+  align-items: center;
+}
+.basket__item_content_description_item_price {
+  width: auto;
+  margin-right: 33px;
+}
+
+/*# sourceMappingURL=basketItem.css.map */

@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-const ArrowButton = ({ children, className, onClick }) => {
+function ArrowButton({ children, className, onClick }) {
   return (
-    <button className={className} onClick={onClick}>
+    <button type="button" className={className} onClick={onClick}>
       {children}
     </button>
   );
-};
+}
 
 export default ArrowButton;

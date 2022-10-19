@@ -18,31 +18,29 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
-@media screen and (max-width: 768px) {
-  .small__product {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .small__product .small__product_img {
-    width: 66px;
-    height: 66px;
-  }
-  .small__product .small__product_name {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17.37px;
-  }
-  .small__product .small__product_footer {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .small__product .small__product_footer .small__product_price {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22.54px;
-  }
+.small__product {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.small__product_img {
+  width: 66px;
+  height: 66px;
+}
+.small__product_name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.37px;
+}
+.small__product_footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.small__product_footer .small__product_price {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.54px;
 }
 
 /*# sourceMappingURL=smallProduct.css.map */

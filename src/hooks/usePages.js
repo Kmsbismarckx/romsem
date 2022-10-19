@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
-export const usePages = ({
+const usePages = ({
   currentPage,
   itemLength,
   rightButton,
@@ -13,25 +13,27 @@ export const usePages = ({
       setRightButton({
         ...rightButton,
         isDisabled: true,
-        pointerEvent: "none",
+        pointerEvent: 'none',
       });
     } else if (currentPage === 1) {
       setLeftButton({
         ...leftButton,
         isDisabled: true,
-        pointerEvent: "none",
+        pointerEvent: 'none',
       });
     } else {
       setRightButton({
         ...rightButton,
         isDisabled: false,
-        pointerEvent: "",
+        pointerEvent: '',
       });
       setLeftButton({
         ...leftButton,
         isDisabled: false,
-        pointerEvent: "",
+        pointerEvent: '',
       });
     }
   }, [currentPage]);
 };
+
+export default usePages;
