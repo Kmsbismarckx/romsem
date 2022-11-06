@@ -18,33 +18,33 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
-.basket {
+.cart {
   padding: 67px 15px 10px;
 }
-.basket__name {
+.cart__name {
   text-align: center;
   margin-bottom: 7px;
 }
-.basket__total {
+.cart__total {
   background-color: white;
   margin-bottom: 10px;
   padding-bottom: 12px;
   border-radius: 5px;
 }
-.basket__total_name {
+.cart__total_name {
   text-align: center;
   color: #ff9846;
 }
-.basket__total_list {
+.cart__total_list {
   display: flex;
   justify-content: space-between;
 }
-.basket__total_list__item {
+.cart__total_list__item {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
-.basket__total_list__item_name, .basket__total_list__item_value {
+.cart__total_list__item_name, .cart__total_list__item_value {
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -53,12 +53,12 @@
   padding: 10px 0;
   border-bottom: 0.5px solid rgb(164, 172, 173);
 }
-.basket__total_list__item_value {
+.cart__total_list__item_value {
   font-weight: 500;
 }
-.basket__button {
+.cart__button {
   width: 100%;
   padding: 13px 0;
 }
 
-/*# sourceMappingURL=Basket.css.map */
+/*# sourceMappingURL=Cart.css.map */

@@ -1,26 +1,25 @@
 import { useMemo } from 'react';
 
-const useSortedCategories = (categories, sort) =>
-  useMemo(() => {
-    const categoriesCopy = categories;
-    if (sort) {
-      if (sort === 'weight' || sort === 'price' || sort === 'quantity') {
-        return categoriesCopy.sort((a, b) => a[sort] - b[sort]);
-      }
-      categoriesCopy.sort((a, b) => a[sort].localeCompare(b[sort]));
-    }
-    return categoriesCopy;
-  }, [sort, categories]);
+const useSortedItems = (items, sort) => {
+  const itemsCopy = [...items];
 
-const useFilter = (categories, sort, query) => {
-  const sortedCategories = useSortedCategories(categories, sort);
+  if (sort === 'weight' || sort === 'price' || sort === 'pieces') {
+    itemsCopy.sort((a, b) => a[sort] - b[sort]);
+  }
+  if (sort === 'name') {
+    itemsCopy.sort((a, b) => a.russianName.localeCompare(b.russianName));
+  }
+
+  return itemsCopy;
+};
+
+const useFilter = (items, sort, query) => {
+  const sortedItems = useSortedItems(items, sort);
 
   return useMemo(
     () =>
-      sortedCategories.filter((category) =>
-        category.russianName.toLowerCase().includes(query.toLowerCase())
-      ),
-    [query, sortedCategories]
+      sortedItems.filter((item) => item.russianName.toLowerCase().includes(query.toLowerCase())),
+    [sort, query]
   );
 };
 

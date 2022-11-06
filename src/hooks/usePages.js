@@ -1,39 +1,42 @@
 import { useEffect } from 'react';
 
-const usePages = ({
-  currentPage,
-  itemLength,
-  rightButton,
-  setRightButton,
-  leftButton,
-  setLeftButton,
-}) => {
+const usePages = ({ goodId, itemLength, nextGood, setNextGood, previousGood, setPreviousGood }) => {
   useEffect(() => {
-    if (currentPage === itemLength) {
-      setRightButton({
-        ...rightButton,
-        isDisabled: true,
+    if (goodId === itemLength) {
+      setNextGood({
+        ...nextGood,
+        visibility: 'hidden',
         pointerEvent: 'none',
       });
-    } else if (currentPage === 1) {
-      setLeftButton({
-        ...leftButton,
-        isDisabled: true,
-        pointerEvent: 'none',
-      });
-    } else {
-      setRightButton({
-        ...rightButton,
-        isDisabled: false,
+      setPreviousGood({
+        ...previousGood,
+        visibility: 'visible',
         pointerEvent: '',
       });
-      setLeftButton({
-        ...leftButton,
-        isDisabled: false,
+    } else if (goodId === 1) {
+      setPreviousGood({
+        ...previousGood,
+        visibility: 'hidden',
+        pointerEvent: 'none',
+      });
+      setNextGood({
+        ...nextGood,
+        visibility: 'visible',
+        pointerEvent: '',
+      });
+    } else {
+      setPreviousGood({
+        ...previousGood,
+        visibility: 'visible',
+        pointerEvent: '',
+      });
+      setNextGood({
+        ...nextGood,
+        visibility: 'visible',
         pointerEvent: '',
       });
     }
-  }, [currentPage]);
+  }, [goodId]);
 };
 
 export default usePages;

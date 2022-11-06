@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { selectCategoryById } from '../../store/reducers/categoriesSlice';
 
-function Category({ category }) {
+function Category({ id }) {
+  const category = useSelector((state) => selectCategoryById(state, id));
+
   let imgWidth;
   let imgHeight;
   let largeClass;

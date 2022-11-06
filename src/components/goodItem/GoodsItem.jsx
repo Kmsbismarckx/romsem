@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect, useMemo } from 'react';
 import plural from 'plural-ru';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import Button from '../UI/Button/Button';
 import './goodItem.css';
+import { selectGoodById } from '../../store/reducers/goodsSlice';
+import { increaseQuantity, selectCartItemById, setCartItem } from '../../store/reducers/cartSlice';
 
-function GoodsItem({ className, good, params, onClick }) {
+function GoodsItem({ className, id, linkParams }) {
+  const good = useSelector((state) => selectGoodById(state, id));
+
+  const dispatch = useDispatch();
   const pieces = good.pieces ? good.pieces : ' ';
+
+  const setCartItemHandler = linkParams ? null : () => dispatch(setCartItem({ id }));
 
   return (
     <div className={className}>
@@ -21,8 +29,9 @@ function GoodsItem({ className, good, params, onClick }) {
         </div>
         <div className={`${className}_footer`}>
           <p className={`${className}_price`}>{good.price} COM</p>
-          <Link to={params}>
-            <Button className={className} onClick={onClick}>
+
+          <Link to={linkParams}>
+            <Button className={className} onClick={setCartItemHandler}>
               Хочу!
             </Button>
           </Link>

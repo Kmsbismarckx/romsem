@@ -4,13 +4,12 @@ import Category from '../category/Category';
 import './main.css';
 import useFilter from '../../hooks/useFilter';
 import urlContext from '../../context';
+import { selectAllCategories } from '../../store/reducers/categoriesSlice';
 
 function Main() {
   const { filter } = useContext(urlContext);
-  const categories = useSelector((state) => state.categoryReducer.categories);
-
-  const categoriesList = Object.keys(categories).map((category) => categories[category]);
-  const sortedAndSearchedCategories = useFilter(categoriesList, filter.sort, filter.query);
+  const categories = useSelector(selectAllCategories);
+  const sortedAndSearchedCategories = useFilter(categories, filter.sort, filter.query);
 
   if (!sortedAndSearchedCategories.length) {
     return (
@@ -22,7 +21,7 @@ function Main() {
   return (
     <ul className="main">
       {sortedAndSearchedCategories.map((category) => (
-        <Category key={category.id} category={category} />
+        <Category key={category.id} id={category.id} />
       ))}
     </ul>
   );

@@ -1,6 +1,6 @@
 @import '../../style/variables.scss';
 
-.basket__item {
+.cart__item {
   width: 100%;
 
   display: flex;
@@ -63,7 +63,7 @@
           height: 25.45px;
         }
         &_increment::after {
-          content: url('/public/media/basket/basket_increment.svg');
+          content: url('/public/media/cart/cart_increment.svg');
           width: 17px;
           height: 17px;
           transform: translateY(-1px);

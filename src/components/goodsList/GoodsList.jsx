@@ -9,9 +9,8 @@ function GoodsList({ sortedAndSearchedGoods, className, id }) {
         <GoodsItem
           key={good.id}
           className={`${className}_item`}
-          good={good}
-          id={id}
-          params={`/home/${id}/${good.id}`}
+          id={good.id}
+          linkParams={`/home/${id}/${good.id}`}
         />
       ))}
     </div>

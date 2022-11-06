@@ -9,80 +9,77 @@ import SmallProduct from '../components/smallProduct/SmallProduct';
 import Slider from '../components/UI/Slider/Slider';
 import About from '../components/about/About';
 import usePages from '../hooks/usePages';
-import goodItemOnClick from '../helpers/goodItemOnclick';
+import { selectAllGoods, selectGoodById } from '../store/reducers/goodsSlice';
 
 function Good() {
   const { categoryId, goodId } = useParams();
-  const goods = useSelector((state) => state.goodsReducer.goods);
-  const currentGood = goods[goodId];
-  const [currentPage, setCurrentPage] = useState(+goodId);
-  const [leftButton, setLeftButton] = useState({
-    isDisabled: false,
+
+  const good = useSelector((state) => selectGoodById(state, Number(goodId)));
+  const goodsLength = useSelector(selectAllGoods).length;
+  const { composition } = good;
+
+  const [currentGoodId, setCurrentGoodId] = useState(Number(goodId));
+  const [previousGood, setPreviousGood] = useState({
+    visibility: 'visible',
     pointerEvent: '',
   });
-  const [rightButton, setRightButton] = useState({
-    isDisabled: false,
+  const [nextGood, setNextGood] = useState({
+    visibility: 'hidden',
     pointerEvent: '',
   });
 
+  const AboutMemo = React.memo(About);
+
   usePages({
-    currentPage,
-    itemLength: Object.keys(goods).length,
-    rightButton,
-    setRightButton,
-    leftButton,
-    setLeftButton,
+    goodId: Number(goodId),
+    itemLength: goodsLength,
+    nextGood,
+    setNextGood,
+    previousGood,
+    setPreviousGood,
   });
 
   return (
     <div className="good">
       <div className="good__buttons">
-        <Button
-          className="good_"
-          disabled={leftButton.isDisabled}
-          onClick={() => {
-            setCurrentPage(currentPage - 1);
-          }}
-        >
+        <Button className="good_" style={{ visibility: previousGood.visibility }}>
           <Link
             className="button__link"
             style={{
-              pointerEvents: leftButton.pointerEvent,
+              pointerEvents: previousGood.pointerEvent,
             }}
-            to={`/home/${categoryId}/${currentPage - 1}`}
+            onClick={() => {
+              if (currentGoodId > 1) {
+                setCurrentGoodId(currentGoodId - 1);
+              }
+            }}
+            to={`/home/${categoryId}/${currentGoodId - 1}`}
           >
             Назад
           </Link>
         </Button>
-        <Button
-          className="good_"
-          disabled={rightButton.isDisabled}
-          onClick={() => {
-            setCurrentPage(currentPage + 1);
-          }}
-        >
+        <Button className="good_" style={{ visibility: nextGood.visibility }}>
           <Link
             className="button__link"
             style={{
-              pointerEvents: rightButton.pointerEvent,
+              pointerEvents: nextGood.pointerEvent,
             }}
-            to={`/home/${categoryId}/${currentPage + 1}`}
+            onClick={() => {
+              if (currentGoodId <= goodsLength) setCurrentGoodId(currentGoodId + 1);
+            }}
+            to={`/home/${categoryId}/${currentGoodId + 1}`}
           >
             Вперед
           </Link>
         </Button>
       </div>
       <div className="good__item">
-        <GoodsItem
-          className="good__item_main"
-          good={currentGood}
-          onClick={() => goodItemOnClick(currentGood)}
-        />
+        <GoodsItem className="good__item_main" id={Number(goodId)} />
         <div className="good__item_composition">
           <p className="good__item_composition_name">Состав сета</p>
           <div className="good__item_composition_items">
             <Slider pageHeight={127} pageWidth={90.02} pageMargin={10}>
-              {currentGood.composition.map((item) => (
+              {composition.map((item) => (
                 <SmallProduct
                   key={item.id}
                   className="good__item_composition_item"
@@ -99,7 +96,7 @@ function Good() {
         <p className="good__addition_name">Рекомендуем к этому товару</p>
         <div className="good__addition_items">
           <Slider pageHeight={121} pageWidth={107} pageMargin={15}>
-            {currentGood.composition.map((item) => (
+            {composition.map((item) => (
               <SmallProduct
                 key={item.id}
                 className="good__addition_item"
@@ -117,7 +114,7 @@ function Good() {
           </Slider>
         </div>
       </div>
-      <About className="about" />
+      <AboutMemo />
     </div>
   );
 }

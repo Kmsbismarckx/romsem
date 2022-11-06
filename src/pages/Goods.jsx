@@ -7,26 +7,23 @@ import Filter from '../components/filter/Filter';
 import GoodsList from '../components/goodsList/GoodsList';
 import About from '../components/about/About';
 import useFilter from '../hooks/useFilter';
+import { selectCategoryById } from '../store/reducers/categoriesSlice';
+import { selectAllGoods } from '../store/reducers/goodsSlice';
 
 function Goods() {
   const { id } = useParams();
-  const categories = useSelector((state) => state.categoryReducer.categories);
-  const goods = useSelector((state) => state.goodsReducer.goods);
-  const goodsId = useSelector((state) => state.goodsReducer.goodsId);
-  const goodsArray = [];
 
-  goodsId.forEach((item) => {
-    goodsArray.push(goods[item]);
-  });
+  const category = useSelector((state) => selectCategoryById(state, id));
+  const goods = useSelector(selectAllGoods);
 
   const { filter, setFilter } = useContext(urlContext);
-  const sortedAndSearchedGoods = useFilter(goodsArray, filter.sort, filter.query);
+  const sortedAndSearchedGoods = useFilter(goods, filter.sort, filter.query);
 
   return (
     <div className="goods">
       <div className="goods__header">
         <img className="goods__header_img" src="/public/media/goods/goods__logo.svg" alt="" />
-        <p className="goods__header_name">{categories[id].russianName}</p>
+        <p className="goods__header_name">{category.russianName}</p>
       </div>
       <Filter className="filter" filter={filter} setFilter={setFilter} />
       <GoodsList className="goods__list" sortedAndSearchedGoods={sortedAndSearchedGoods} id={id} />

@@ -1,20 +1,20 @@
 const goodItemOnClick = (currentItem) => {
-  const basket = JSON.parse(localStorage.getItem('basket')) || {};
+  const basket = JSON.parse(localStorage.getItem('cart')) || {};
   if (Object.keys(basket).includes(currentItem.id.toString())) {
     basket[currentItem.id].value += 1;
   } else {
     basket[currentItem.id] = { value: 1 };
   }
-  // const basket = JSON.parse(localStorage.getItem('basket')) || {};
+  // const cart = JSON.parse(localStorage.getItem('cart')) || {};
   //
-  // if (Object.keys(basket).includes(currentItem.id.toString())) {
-  //   basket[currentItem.id].quantity += 1;
+  // if (Object.keys(cart).includes(currentItem.id.toString())) {
+  //   cart[currentItem.id].quantity += 1;
   // } else {
-  //   basket[currentItem.id] = currentItem;
-  //   basket[currentItem.id].quantity = 1;
+  //   cart[currentItem.id] = currentItem;
+  //   cart[currentItem.id].quantity = 1;
   // }
   //
-  localStorage.setItem('basket', JSON.stringify(basket));
+  localStorage.setItem('cart', JSON.stringify(basket));
 };
 
 export default goodItemOnClick;
