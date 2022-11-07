@@ -1,45 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="trying to use redux">
-      <change afterPath="$PROJECT_DIR$/src/components/cartItem/cartItem.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/cartSlice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/categoriesSlice.js" afterDir="false" />
+    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="total price? r u serious?">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/basket/basket_decrement.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/cart/cart_decrement.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/basket/basket_increment.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/cart/cart_increment.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/button.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/button.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basketItem/BasketItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basketItem/basketItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/cartItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basketItem/basketItem.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/basketItem/basketItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/cartItem.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category/Category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category/Category.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/filter/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/goodItem/GoodsItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/GoodsItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/goodsList/GoodsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/goods.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/goods.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/goodItemOnclick.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/goodItemOnclick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/usePages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/usePages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Basket.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Good.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Good.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Goods.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/categoryReduser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/goodsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/goodsSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Basket.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Basket.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Cart.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Basket.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Cart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/cartSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/cartSlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.scss" afterDir="false" />
@@ -131,6 +99,7 @@
       <workItem from="1666258515185" duration="13978000" />
       <workItem from="1666431759969" duration="22000" />
       <workItem from="1667717313615" duration="32524000" />
+      <workItem from="1667803444555" duration="12507000" />
     </task>
     <task id="LOCAL-00001" summary="finish main page and good page">
       <created>1663193306010</created>
@@ -183,6 +152,7 @@
     <MESSAGE value="workin` mobile product page" />
     <MESSAGE value="add slider, add redirection  for &quot;good&quot; page" />
     <MESSAGE value="trying to use redux" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to use redux" />
+    <MESSAGE value="total price? r u serious?" />
+    <option name="LAST_COMMIT_MESSAGE" value="total price? r u serious?" />
   </component>
 </project>

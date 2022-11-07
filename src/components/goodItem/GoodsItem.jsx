@@ -1,19 +1,23 @@
-import React, { useEffect, useMemo } from 'react';
+import React from 'react';
+import { createSelector } from '@reduxjs/toolkit';
 import plural from 'plural-ru';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '../UI/Button/Button';
 import './goodItem.css';
 import { selectGoodById } from '../../store/reducers/goodsSlice';
-import { increaseQuantity, selectCartItemById, setCartItem } from '../../store/reducers/cartSlice';
+import { setCartItem } from '../../store/reducers/cartSlice';
 
 function GoodsItem({ className, id, linkParams }) {
   const good = useSelector((state) => selectGoodById(state, id));
+  const goodPrice = good.price;
+  const selector = createSelector([(state) => state.goods]);
 
+  console.log(selector);
   const dispatch = useDispatch();
   const pieces = good.pieces ? good.pieces : ' ';
 
-  const setCartItemHandler = linkParams ? null : () => dispatch(setCartItem({ id }));
+  const setCartItemHandler = linkParams ? null : () => dispatch(setCartItem({ goodPrice, id }));
 
   return (
     <div className={className}>

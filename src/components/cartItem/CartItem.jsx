@@ -1,10 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import './cartItem.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { selectGoodById } from '../../store/reducers/goodsSlice';
+import {
+  decreaseQuantity,
+  increaseQuantity,
+  selectCartItemQuantity,
+} from '../../store/reducers/cartSlice';
 
 function CartItem({ id }) {
+  const dispatch = useDispatch();
+
   const cartItem = useSelector((state) => selectGoodById(state, id));
+  const quantity = useSelector((state) => selectCartItemQuantity(state, id));
+
+  const goodPrice = cartItem.price;
+  const itemTotalPrice = goodPrice * quantity;
+
+  const decreaseQuantityHandler = () => dispatch(decreaseQuantity({ id, goodPrice }));
+  const increaseQuantityHandler = () => dispatch(increaseQuantity({ id, goodPrice }));
+
   return (
     <div className="cart__item">
       <img
@@ -16,14 +31,20 @@ function CartItem({ id }) {
         <p className="cart__item_content_name">{cartItem.russianName}</p>
         <div className="cart__item_content_description">
           <div className="cart__item_content_description_item">
-            <div className="cart__item_content_description_item_decrement" onClick={() => {}}>
+            <div
+              className="cart__item_content_description_item_decrement"
+              onClick={decreaseQuantityHandler}
+            >
               <img src="/media/cart/cart_decrement.svg" alt="" />
             </div>
-            <div className="cart__item_content_description_item_quantity">XXX</div>
-            <div className="cart__item_content_description_item_increment" onClick={() => {}} />
+            <div className="cart__item_content_description_item_quantity">{quantity}</div>
+            <div
+              className="cart__item_content_description_item_increment"
+              onClick={increaseQuantityHandler}
+            />
           </div>
           <p className="cart__item_content_description_item cart__item_content_description_item_price">
-            XXX СОМ
+            {itemTotalPrice} СОМ
           </p>
         </div>
       </div>

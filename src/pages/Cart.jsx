@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import plural from 'plural-ru';
 import '../style/Cart.css';
 import { useSelector } from 'react-redux';
 import CartItem from '../components/cartItem/CartItem';
 import Button from '../components/UI/Button/Button';
-import { selectAllCartItems, selectCartItemIds } from '../store/reducers/cartSlice';
+import { selectCartItemIds, totalCartPrice } from '../store/reducers/cartSlice';
 
 function Cart() {
   const cartIds = useSelector(selectCartItemIds);
+  const totalPrice = useSelector(totalCartPrice);
 
   if (cartIds.length === 0) {
     return (
@@ -36,7 +37,7 @@ function Cart() {
             <div className="cart__total_list__item_name">Доставка</div>
           </div>
           <div className="cart__total_list__item">
-            <div className="cart__total_list__item_value">XXX COM</div>
+            <div className="cart__total_list__item_value">{totalPrice} COM</div>
             <div className="cart__total_list__item_value">0 COM</div>
             <div className="cart__total_list__item_value">Бесплатно</div>
           </div>

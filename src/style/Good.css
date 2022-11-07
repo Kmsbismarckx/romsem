@@ -18,159 +18,157 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
-@media screen and (max-width: 768px) {
-  .good {
-    padding-top: 66.5px;
-  }
-  .good__buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 91.6%;
-    margin: 0 auto;
-  }
-  .good__buttons .good__button {
-    position: relative;
-    height: 22px;
-    border: none;
-    padding: 0;
-    background-color: transparent;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22.32px;
-    color: black;
-  }
-  .good__buttons .good__button .button__link {
-    width: inherit;
-    text-decoration: none;
-    color: black;
-  }
-  .good__buttons .good__button:first-of-type {
-    text-align: right;
-    justify-self: start;
-  }
-  .good__buttons .good__button:first-of-type .button__link {
-    padding-left: 30px;
-  }
-  .good__buttons .good__button:first-of-type::before {
-    content: "";
-    position: absolute;
-    top: 1px;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background: url("/public/media/good/arrow_button.svg") no-repeat;
-    background-size: 20px 20px;
-    pointer-events: none;
-  }
-  .good__buttons .good__button:last-of-type {
-    text-align: left;
-    justify-self: end;
-  }
-  .good__buttons .good__button:last-of-type .button__link {
-    padding-right: 30px;
-  }
-  .good__buttons .good__button:last-of-type::after {
-    content: "";
-    position: absolute;
-    top: 1px;
-    right: 0;
-    width: 20px;
-    height: 20px;
-    background: url("/public/media/good/arrow_button.svg") no-repeat;
-    background-size: 20px 20px;
-    transform: rotate(180deg);
-    pointer-events: none;
-  }
-  .good .good__item {
-    width: 91.6%;
-    border-radius: 15px;
-    background-color: white;
-    padding: 20px 10px 24px 10px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29.78px;
-    margin: 15px auto 30px;
-  }
-  .good .good__item .good__item_main {
-    text-align: center;
-    width: 100%;
-  }
-  .good .good__item .good__item_main .good__item_main_img {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .good .good__item .good__item_main .good__item_main_name {
-    margin-bottom: 10px;
-  }
-  .good .good__item .good__item_main .good__item_main_header {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 22.3px;
-    margin-bottom: 15px;
-    color: #ff9846;
-  }
-  .good .good__item .good__item_main .good__item_main_footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  .good .good__item .good__item_main .good__item_main_footer .good__item_main_price {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30.05px;
-  }
-  .good .good__item .good__item_main .good__item_main_footer .good__item_main_button {
-    width: 188px;
-    height: 40px;
-  }
-  .good .good__item .good__item_composition .good__item_composition_name {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .good .good__item .good__item_composition .good__item_composition_items .window {
-    width: 192px;
-    height: 127px;
-  }
-  .good .good__item .good__item_composition .good__item_composition_items .good__item_composition_item {
-    min-width: 91px;
-    height: 127px;
-    margin-right: 10px;
-  }
-  .good .good__item .good__item_composition .good__item_composition_items .good__item_composition_item .good__item_composition_item_name {
-    margin-bottom: 11px;
-  }
-  .good .good__item .good__item_composition .good__item_composition_items .good__item_composition_item .good__item_composition_item_footer {
-    justify-content: center;
-  }
-  .good .good__item .good__item_composition .good__item_composition_items .good__item_composition_item .good__item_composition_item_footer .good__item_composition_item_price {
-    text-align: center;
-  }
-  .good .good__addition {
-    width: 91.6%;
-    margin: 0 auto 30px;
-  }
-  .good .good__addition .good__addition_name {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22.34px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .good .good__addition .good__addition_items .window {
-    width: 229px;
-    height: 121px;
-  }
-  .good .good__addition .good__addition_items .good__addition_item {
-    min-width: 107px;
-    height: 121px;
-  }
-  .good .good__addition .good__addition_items .good__addition_item .good__addition_item_img {
-    margin-bottom: 10px;
-  }
-  .good .good__addition .good__addition_items .good__addition_item:not(.good__addition_item:first-of-type) {
-    margin-left: 15px;
-  }
+.good {
+  padding-top: 66.5px;
+}
+.good__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 91.6%;
+  margin: 0 auto;
+}
+.good__buttons .good__button {
+  position: relative;
+  height: 22px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.32px;
+  color: black;
+}
+.good__buttons .good__button .button__link {
+  width: inherit;
+  text-decoration: none;
+  color: black;
+}
+.good__buttons .good__button:first-of-type {
+  text-align: right;
+  justify-self: start;
+}
+.good__buttons .good__button:first-of-type .button__link {
+  padding-left: 30px;
+}
+.good__buttons .good__button:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url("/public/media/good/arrow_button.svg") no-repeat;
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+.good__buttons .good__button:last-of-type {
+  text-align: left;
+  justify-self: end;
+}
+.good__buttons .good__button:last-of-type .button__link {
+  padding-right: 30px;
+}
+.good__buttons .good__button:last-of-type::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: url("/public/media/good/arrow_button.svg") no-repeat;
+  background-size: 20px 20px;
+  transform: rotate(180deg);
+  pointer-events: none;
+}
+.good .good__item {
+  width: 91.6%;
+  border-radius: 15px;
+  background-color: white;
+  padding: 20px 10px 24px 10px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.78px;
+  margin: 15px auto 30px;
+}
+.good .good__item .good__item_main {
+  text-align: center;
+  width: 100%;
+}
+.good .good__item .good__item_main .good__item_main_img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.good .good__item .good__item_main .good__item_main_name {
+  margin-bottom: 10px;
+}
+.good .good__item .good__item_main .good__item_main_header {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22.3px;
+  margin-bottom: 15px;
+  color: #ff9846;
+}
+.good .good__item .good__item_main .good__item_main_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.good .good__item .good__item_main .good__item_main_footer .good__item_main_price {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.05px;
+}
+.good .good__item .good__item_main .good__item_main_footer .good__item_main_button {
+  width: 188px;
+  height: 40px;
+}
+.good .good__item .good__item_composition .good__item_composition_name {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.good .good__item .good__item_composition .good__item_composition_items .window {
+  width: 192px;
+  height: 127px;
+}
+.good .good__item .good__item_composition .good__item_composition_items .good__item_composition_item {
+  min-width: 91px;
+  height: 127px;
+  margin-right: 10px;
+}
+.good .good__item .good__item_composition .good__item_composition_items .good__item_composition_item .good__item_composition_item_name {
+  margin-bottom: 11px;
+}
+.good .good__item .good__item_composition .good__item_composition_items .good__item_composition_item .good__item_composition_item_footer {
+  justify-content: center;
+}
+.good .good__item .good__item_composition .good__item_composition_items .good__item_composition_item .good__item_composition_item_footer .good__item_composition_item_price {
+  text-align: center;
+}
+.good .good__addition {
+  width: 91.6%;
+  margin: 0 auto 30px;
+}
+.good .good__addition .good__addition_name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.34px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.good .good__addition .good__addition_items .window {
+  width: 229px;
+  height: 121px;
+}
+.good .good__addition .good__addition_items .good__addition_item {
+  min-width: 107px;
+  height: 121px;
+}
+.good .good__addition .good__addition_items .good__addition_item .good__addition_item_img {
+  margin-bottom: 10px;
+}
+.good .good__addition .good__addition_items .good__addition_item:not(.good__addition_item:first-of-type) {
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=Good.css.map */
