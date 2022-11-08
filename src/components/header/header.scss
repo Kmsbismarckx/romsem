@@ -1,27 +1,27 @@
-@import "../../style/variables.scss";
+@import '../../style/variables.scss';
 
-  .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    font-size: 12px;
-    font-weight: 500;
-    height: 56.5px;
-    text-align: center;
-    border-bottom: 0.5px solid $gray;
-    z-index: 3;
-    background-color: white;
-    &__item_phone_name {
-      line-height: 14.89px;
-    }
-    &__item_phone_number {
-      line-height: 12px;
-      color: $orange;
-    }
-    &__item_schedule_info {
-      line-height: 14.89px;
-      color: $gray;
-    }
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  height: $mobile_header_height;
+  text-align: center;
+  border-bottom: 0.5px solid $gray;
+  z-index: 3;
+  background-color: white;
+  &__item_phone_name {
+    line-height: 14.89px;
   }
+  &__item_phone_number {
+    line-height: 12px;
+    color: $orange;
+  }
+  &__item_schedule_info {
+    line-height: 14.89px;
+    color: $gray;
+  }
+}

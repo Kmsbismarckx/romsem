@@ -1,0 +1,154 @@
+@import '../../style/variables.scss';
+
+.cart-empty {
+  padding-top: calc($mobile_header_height + 20.5px);
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &__item {
+    padding: 0 35px;
+  }
+
+  &__annotation {
+    padding-top: 10px;
+    border-radius: 5px;
+
+    &_name {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: center;
+
+      margin-bottom: 10px;
+    }
+
+    &_item {
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    &_item:first-of-type {
+      font-size: 18px;
+      line-height: 22px;
+      color: $gray;
+
+      margin-bottom: 26px;
+    }
+
+    &_item:last-of-type {
+      font-size: 14px;
+      line-height: 17px;
+      color: #f2f2f2;
+
+      background-color: $orange;
+      border-bottom-left-radius: inherit;
+      border-bottom-right-radius: inherit;
+
+      padding: 12px 32px 11px;
+    }
+  }
+
+  &__location {
+    margin: 20px 0 0;
+
+    &_map {
+      position: relative;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 38px;
+
+      &_img {
+        width: inherit;
+        object-fit: cover;
+      }
+
+      &_pin {
+        content: '';
+        width: 60px;
+        height: 60px;
+
+        position: absolute;
+        bottom: -30px;
+        left: calc(50% - 30px);
+
+        background: url('/public/media/cart/cart_location_pin.png') no-repeat center orange;
+        border-radius: 50%;
+      }
+    }
+
+    &_description {
+      text-align: center;
+      &_name {
+        margin-bottom: 10px;
+      }
+
+      &_item {
+        color: $gray;
+        margin-bottom: 27px;
+      }
+    }
+  }
+
+  &__check_shipping {
+    border-radius: 5px;
+    &_name {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+
+      color: $gray;
+    }
+    &_input {
+      width: 100%;
+      padding: 5px 10px;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+
+      border: none;
+    }
+    &_clock {
+      margin-right: 9px;
+    }
+    &_API {
+      margin-top: 10px;
+      width: 100%;
+      height: 100%;
+      &_img {
+        width: inherit;
+        height: inherit;
+      }
+    }
+
+    &_item:first-of-type {
+      background-color: white;
+      border-radius: 5px 5px 0 0;
+    }
+    &_item:nth-of-type(2) {
+      display: flex;
+      justify-content: center;
+      background-color: $orange;
+
+      padding: 3px 0;
+      border-radius: 0 0 5px 5px;
+
+      color: white;
+    }
+  }
+
+  &__button {
+    width: 100%;
+
+    padding: 13px 0;
+  }
+}

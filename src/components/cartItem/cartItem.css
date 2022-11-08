@@ -56,29 +56,6 @@
   line-height: 23px;
   width: 89.24px;
 }
-.cart__item_content_description_item_increment, .cart__item_content_description_item_decrement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cart__item_content_description_item_decrement {
-  width: 16px;
-}
-.cart__item_content_description_item_decrement img {
-  pointer-events: none;
-}
-.cart__item_content_description_item_increment {
-  border-radius: 50%;
-  background-color: #f46d40;
-  width: 25.45px;
-  height: 25.45px;
-}
-.cart__item_content_description_item_increment::after {
-  content: url("/public/media/cart/cart_increment.svg");
-  width: 17px;
-  height: 17px;
-  transform: translateY(-1px);
-}
 .cart__item_content_description_item_quantity {
   display: flex;
   align-items: center;

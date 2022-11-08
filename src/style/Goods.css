@@ -18,24 +18,22 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
-@media screen and (max-width: 768px) {
-  .goods {
-    padding-top: 66.5px;
-  }
-  .goods .goods__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  .goods .goods__header .goods__header_img {
-    margin-right: 20px;
-  }
-  .goods .goods__header .goods__header_name {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 29.76px;
-  }
+.goods {
+  padding-top: 66.5px;
+}
+.goods .goods__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.goods .goods__header .goods__header_img {
+  margin-right: 20px;
+}
+.goods .goods__header .goods__header_name {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.76px;
 }
 
 /*# sourceMappingURL=Goods.css.map */

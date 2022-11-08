@@ -7,8 +7,8 @@ import Menu from './components/menu/Menu';
 import Home from './pages/Home';
 import Goods from './pages/Goods';
 import Good from './pages/Good';
-import Basket from './pages/Cart';
 import Cart from './pages/Cart';
+import Order from './pages/Order';
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -38,6 +38,7 @@ function App() {
             <Route path="/home/:id" element={<Goods />} />
             <Route path="/home/:categoryId/:goodId" element={<Good />} />
             <Route path="/basket" element={<Cart />} />
+            <Route path="/order" element={<Order />} />
           </Routes>
           <Menu />
         </urlContext.Provider>

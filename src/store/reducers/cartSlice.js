@@ -1,16 +1,16 @@
-import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
+import { createEntityAdapter, createSelector, createSlice } from '@reduxjs/toolkit';
 
-const cart = JSON.parse(localStorage.getItem('cart')) || {};
+const cart = JSON.parse(localStorage.getItem('cart'));
 
 const cartAdapter = createEntityAdapter();
-const initialState = cartAdapter.getInitialState({ totalPrice: 0 });
+const initialState = cart || cartAdapter.getInitialState();
 
 const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
     setCartItem(state, action) {
-      const { id, goodPrice } = action.payload;
+      const { id } = action.payload;
       const existingBasketItem = state.entities[id];
 
       if (existingBasketItem) {
@@ -18,38 +18,37 @@ const cartSlice = createSlice({
       } else {
         cartAdapter.addOne(state, { id, quantity: 1 });
       }
-      state.totalPrice += goodPrice;
+      localStorage.setItem('cart', JSON.stringify(state));
     },
     deleteCartItem: cartAdapter.removeOne,
     increaseQuantity(state, action) {
-      const { id, goodPrice } = action.payload;
+      const { id } = action.payload;
 
       const existingBasketItem = state.entities[id];
 
       if (existingBasketItem.quantity) {
         cartAdapter.upsertOne(state, { id, quantity: existingBasketItem.quantity + 1 });
-        state.totalPrice += goodPrice;
       }
+      localStorage.setItem('cart', JSON.stringify(state));
     },
     decreaseQuantity(state, action) {
-      const { id, goodPrice } = action.payload;
+      const { id } = action.payload;
 
       const existingBasketItem = state.entities[id];
 
       if (existingBasketItem.quantity > 1) {
         cartAdapter.upsertOne(state, { id, quantity: existingBasketItem.quantity - 1 });
-        state.totalPrice -= goodPrice;
       } else {
         cartAdapter.removeOne(state, id);
-        state.totalPrice = 0;
       }
+      localStorage.setItem('cart', JSON.stringify(state));
     },
   },
 });
 
 export default cartSlice.reducer;
 
-export const { setCartItem, deleteCartItem, increaseQuantity, decreaseQuantity } =
+export const { setCartItem, deleteCartItem, increaseQuantity, decreaseQuantity, totalPrice } =
   cartSlice.actions;
 
 export const {
@@ -59,9 +58,16 @@ export const {
 } = cartAdapter.getSelectors((state) => state.cart);
 
 export const selectCartItemQuantity = (state, id) => state.cart.entities[id].quantity;
-export const totalCartPrice = (state) => state.cart.totalPrice;
-
-// export const selectCartItemQuantities = createSelector(
-//   [selectCartItemIds, selectAllCartItems],
-//   (ids, items) => ids.map((item, index) => items[index].quantity)
-// );
+export const selectTotalPrice = createSelector(
+  [(state) => state.cart.ids, (state) => state.cart.entities, (state) => state.goods.entities],
+  (cartIds, cartEntities, goods) => {
+    const goodsPriceInCart = cartIds.map((id) => {
+      const goodInCart = Object.values(goods).find((good) => good.id === id);
+      if (goodInCart) {
+        return goodInCart.price * cartEntities[id].quantity;
+      }
+      return 0;
+    });
+    return goodsPriceInCart.reduce((prev, curr) => prev + curr, 0);
+  }
+);

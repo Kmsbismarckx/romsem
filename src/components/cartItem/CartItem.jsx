@@ -7,6 +7,8 @@ import {
   increaseQuantity,
   selectCartItemQuantity,
 } from '../../store/reducers/cartSlice';
+import Decrement from '../UI/Decrement/Decrement';
+import Increment from '../UI/Increment/Increment';
 
 function CartItem({ id }) {
   const dispatch = useDispatch();
@@ -31,17 +33,9 @@ function CartItem({ id }) {
         <p className="cart__item_content_name">{cartItem.russianName}</p>
         <div className="cart__item_content_description">
           <div className="cart__item_content_description_item">
-            <div
-              className="cart__item_content_description_item_decrement"
-              onClick={decreaseQuantityHandler}
-            >
-              <img src="/media/cart/cart_decrement.svg" alt="" />
-            </div>
+            <Decrement onClick={decreaseQuantityHandler} />
             <div className="cart__item_content_description_item_quantity">{quantity}</div>
-            <div
-              className="cart__item_content_description_item_increment"
-              onClick={increaseQuantityHandler}
-            />
+            <Increment onClick={increaseQuantityHandler} />
           </div>
           <p className="cart__item_content_description_item cart__item_content_description_item_price">
             {itemTotalPrice} СОМ

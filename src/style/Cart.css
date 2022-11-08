@@ -35,27 +35,6 @@
   text-align: center;
   color: #ff9846;
 }
-.cart__total_list {
-  display: flex;
-  justify-content: space-between;
-}
-.cart__total_list__item {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-.cart__total_list__item_name, .cart__total_list__item_value {
-  text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 10px 0;
-  border-bottom: 0.5px solid rgb(164, 172, 173);
-}
-.cart__total_list__item_value {
-  font-weight: 500;
-}
 .cart__button {
   width: 100%;
   padding: 13px 0;

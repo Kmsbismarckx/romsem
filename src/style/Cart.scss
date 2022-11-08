@@ -17,31 +17,6 @@
       text-align: center;
       color: $orange;
     }
-    &_list {
-      display: flex;
-      justify-content: space-between;
-
-      &__item {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-
-        &_name,
-        &_value {
-          text-align: center;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 22px;
-
-          padding: 10px 0;
-          border-bottom: 0.5px solid rgba(164, 172, 173, 1);
-        }
-        &_value {
-          font-weight: 500;
-        }
-      }
-    }
   }
   &__button {
     width: 100%;

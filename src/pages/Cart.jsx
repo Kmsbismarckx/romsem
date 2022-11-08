@@ -4,19 +4,16 @@ import '../style/Cart.css';
 import { useSelector } from 'react-redux';
 import CartItem from '../components/cartItem/CartItem';
 import Button from '../components/UI/Button/Button';
-import { selectCartItemIds, totalCartPrice } from '../store/reducers/cartSlice';
+import { selectCartItemIds, selectTotalPrice } from '../store/reducers/cartSlice';
+import EmptyCart from '../components/emptyCart/EmptyCart';
+import TotalList from '../components/totalList/TotalList';
 
 function Cart() {
   const cartIds = useSelector(selectCartItemIds);
-  const totalPrice = useSelector(totalCartPrice);
+  const totalPrice = useSelector(selectTotalPrice);
 
   if (cartIds.length === 0) {
-    return (
-      <div className="cart">
-        <h1>Ваша корзина пуста.</h1>
-        <p>Добавьте же скорее чего нибудь!</p>
-      </div>
-    );
+    return <EmptyCart />;
   }
   return (
     <div className="cart">
@@ -28,20 +25,7 @@ function Cart() {
       </div>
       <div className="cart__total">
         <h2 className="cart__total_name">Итого</h2>
-        <div className="cart__total_list">
-          <div className="cart__total_list__item">
-            <div className="cart__total_list__item_name">
-              {plural(cartIds.length, '%d товар', '%d товара', '%d товаров')}
-            </div>
-            <div className="cart__total_list__item_name">Скидка</div>
-            <div className="cart__total_list__item_name">Доставка</div>
-          </div>
-          <div className="cart__total_list__item">
-            <div className="cart__total_list__item_value">{totalPrice} COM</div>
-            <div className="cart__total_list__item_value">0 COM</div>
-            <div className="cart__total_list__item_value">Бесплатно</div>
-          </div>
-        </div>
+        <TotalList ids={cartIds} totalPrice={totalPrice} />
       </div>
       <Button className="cart_">Оформить заказ</Button>
     </div>

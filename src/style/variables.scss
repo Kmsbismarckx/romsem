@@ -1,28 +1,30 @@
 @font-face {
-  font-family: "Din pro";
+  font-family: 'Din pro';
   font-weight: 400;
   src: url(/src/fonts/dinpro.otf);
 }
 
 @font-face {
-  font-family: "Din pro";
+  font-family: 'Din pro';
   font-weight: 500;
   src: url(/src/fonts/dinpro_medium.otf);
 }
 
 @font-face {
-  font-family: "Din pro";
+  font-family: 'Din pro';
   font-weight: 700;
   src: url(/src/fonts/dinpro_bold.otf);
 }
 
 @font-face {
-  font-family: "Din pro";
+  font-family: 'Din pro';
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
 
 $mobile_width: 91.6%;
+$mobile_header_height: 56.5px;
+$mobile_footer_height: 72px;
 
 $orange: #ff9846;
 $red: #eb5757;

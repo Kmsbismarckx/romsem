@@ -38,6 +38,7 @@
   padding-left: 48px;
   border-radius: 10px;
   border-color: transparent;
+  transition: all 500ms ease;
 }
 .select .filter__text option {
   background-color: white;

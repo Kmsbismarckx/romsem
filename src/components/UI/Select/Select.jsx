@@ -3,6 +3,13 @@ import './select.css';
 
 function Select({ className, value, options, onChange }) {
   const [classRotate, setClassRotate] = useState('');
+  const rotateHandler = () => {
+    if (classRotate) {
+      setClassRotate('');
+    } else {
+      setClassRotate('select_rotate');
+    }
+  };
 
   return (
     <div className={`select ${classRotate}`}>
@@ -12,7 +19,7 @@ function Select({ className, value, options, onChange }) {
         onChange={(event) => {
           onChange(event.target.value);
         }}
-        onFocus={() => setClassRotate('select_rotate')}
+        onClick={rotateHandler}
         onBlur={() => setClassRotate('')}
       >
         {options.map((option) => (

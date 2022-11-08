@@ -42,32 +42,7 @@
         line-height: 23px;
 
         width: 89.24px;
-        &_increment,
-        &_decrement {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
 
-        &_decrement {
-          width: 16px;
-			img {
-				pointer-events: none;
-			}
-        }
-        &_increment {
-          border-radius: 50%;
-          background-color: $dark_orange;
-
-          width: 25.45px;
-          height: 25.45px;
-        }
-        &_increment::after {
-          content: url('/public/media/cart/cart_increment.svg');
-          width: 17px;
-          height: 17px;
-          transform: translateY(-1px);
-        }
         &_quantity {
           display: flex;
           align-items: center;

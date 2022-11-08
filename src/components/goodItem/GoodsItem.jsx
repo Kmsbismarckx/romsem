@@ -1,5 +1,4 @@
 import React from 'react';
-import { createSelector } from '@reduxjs/toolkit';
 import plural from 'plural-ru';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -11,9 +10,7 @@ import { setCartItem } from '../../store/reducers/cartSlice';
 function GoodsItem({ className, id, linkParams }) {
   const good = useSelector((state) => selectGoodById(state, id));
   const goodPrice = good.price;
-  const selector = createSelector([(state) => state.goods]);
 
-  console.log(selector);
   const dispatch = useDispatch();
   const pieces = good.pieces ? good.pieces : ' ';
 

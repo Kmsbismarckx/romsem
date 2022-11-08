@@ -1,0 +1,19 @@
+@import '../../../style/variables.scss';
+
+.increment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $dark_orange;
+
+  width: 25.45px;
+  height: 25.45px;
+}
+
+.increment::after {
+  content: url('/public/media/cart/cart_increment.svg');
+  width: 17px;
+  height: 17px;
+  transform: translateY(-1px);
+}

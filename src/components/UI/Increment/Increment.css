@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Din pro";
+  font-weight: 400;
+  src: url(/src/fonts/dinpro.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 500;
+  src: url(/src/fonts/dinpro_medium.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 700;
+  src: url(/src/fonts/dinpro_bold.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 300;
+  src: url(/src/fonts/dinpro_light.otf);
+}
+.increment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f46d40;
+  width: 25.45px;
+  height: 25.45px;
+}
+
+.increment::after {
+  content: url("/public/media/cart/cart_increment.svg");
+  width: 17px;
+  height: 17px;
+  transform: translateY(-1px);
+}
+
+/*# sourceMappingURL=Increment.css.map */

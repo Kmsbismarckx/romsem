@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Din pro";
+  font-weight: 400;
+  src: url(/src/fonts/dinpro.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 500;
+  src: url(/src/fonts/dinpro_medium.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 700;
+  src: url(/src/fonts/dinpro_bold.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 300;
+  src: url(/src/fonts/dinpro_light.otf);
+}
+.total_list {
+  display: flex;
+  justify-content: space-between;
+}
+.total_list__item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.total_list__item_name, .total_list__item_value {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 10px 0;
+  border-bottom: 0.5px solid rgb(164, 172, 173);
+}
+.total_list__item_value {
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=totalList.css.map */
