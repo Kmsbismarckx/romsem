@@ -1,7 +1,7 @@
 import React from 'react';
-import plural from 'plural-ru';
 import '../style/Cart.css';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import CartItem from '../components/cartItem/CartItem';
 import Button from '../components/UI/Button/Button';
 import { selectCartItemIds, selectTotalPrice } from '../store/reducers/cartSlice';
@@ -27,7 +27,9 @@ function Cart() {
         <h2 className="cart__total_name">Итого</h2>
         <TotalList ids={cartIds} totalPrice={totalPrice} />
       </div>
-      <Button className="cart_">Оформить заказ</Button>
+      <Link to="/order">
+        <Button className="cart_">Оформить заказ</Button>
+      </Link>
     </div>
   );
 }

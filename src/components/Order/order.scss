@@ -1,0 +1,177 @@
+@import '../../../src/style/variables.scss';
+
+.order {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  &__form__item {
+    height: 40px;
+  }
+  .order__form_border-radius {
+    border-radius: 5px;
+  }
+  .order__form_width {
+    width: 100%;
+  }
+  &__input {
+    padding-left: 8px;
+
+    border: none;
+  }
+  &__input:focus {
+    outline-color: $orange;
+  }
+  &__input:invalid {
+    color: red;
+    outline-color: red;
+  }
+
+  &__input::placeholder {
+    color: $gray;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__form {
+    display: grid;
+    gap: 10px;
+
+    .form__shipping-time,
+    .form__user-data,
+    .form__address_house_item {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+    }
+
+    .form__address-info,
+    .form_email-comment {
+      display: grid;
+      gap: 10px;
+    }
+  }
+
+  &__total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: $orange;
+    border-bottom: 1px solid $gray;
+    margin-bottom: 30px;
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      flex-grow: 2;
+      width: 50%;
+      padding: 10px 0;
+    }
+  }
+
+  .form__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .form__toggle {
+    .form__toggle__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form__toggle__item:first-child {
+      border-top-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+    }
+    .form__toggle__item:last-child {
+      border-top-right-radius: inherit;
+      border-bottom-right-radius: inherit;
+    }
+    .form__toggle__item_active {
+      background: $orange;
+      color: white;
+    }
+    .form__toggle__item__img {
+    }
+  }
+
+  .form__change {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__checkbox-area {
+      display: flex;
+      flex-grow: 1;
+      input {
+        appearance: none;
+        position: relative;
+      }
+      input::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+
+        border-radius: 50%;
+        border: 1px solid $orange;
+        background: white;
+      }
+      input:checked::after {
+        background: url('/public/media/UI/check-mark.svg') no-repeat center $orange;
+      }
+      label {
+        margin-left: 33px;
+      }
+    }
+    .form__change_input {
+      margin-left: 10px;
+      width: 36%;
+    }
+  }
+  .form__additives-list {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &__item {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .form__promo-code {
+    margin-bottom: 20px;
+  }
+
+  .form__button {
+    width: 100%;
+    padding: 13px 0;
+  }
+
+  .order__svg_active {
+    fill: white;
+  }
+
+  .form__type-of-shipping,
+  .form__type-of-payment,
+  .form__shipping-time {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    background: white;
+  }
+}
