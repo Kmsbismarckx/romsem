@@ -7,6 +7,7 @@ import Button from '../components/UI/Button/Button';
 import { selectCartItemIds, selectTotalPrice } from '../store/reducers/cartSlice';
 import EmptyCart from '../components/emptyCart/EmptyCart';
 import TotalList from '../components/totalList/TotalList';
+import Menu from '../components/menu/Menu';
 
 function Cart() {
   const cartIds = useSelector(selectCartItemIds);
@@ -30,6 +31,7 @@ function Cart() {
       <Link to="/order">
         <Button className="cart_">Оформить заказ</Button>
       </Link>
+      <Menu />
     </div>
   );
 }

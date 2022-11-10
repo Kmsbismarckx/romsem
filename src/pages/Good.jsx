@@ -7,9 +7,10 @@ import Button from '../components/UI/Button/Button';
 import GoodsItem from '../components/goodItem/GoodsItem';
 import SmallProduct from '../components/smallProduct/SmallProduct';
 import Slider from '../components/UI/Slider/Slider';
-import About from '../components/about/About';
+import About from '../components/About/About';
 import usePages from '../hooks/usePages';
 import { selectAllGoods, selectGoodById } from '../store/reducers/goodsSlice';
+import Menu from '../components/menu/Menu';
 
 function Good() {
   const { categoryId, goodId } = useParams();
@@ -115,6 +116,7 @@ function Good() {
         </div>
       </div>
       <AboutMemo />
+      <Menu />
     </div>
   );
 }

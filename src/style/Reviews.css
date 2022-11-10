@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Din pro";
+  font-weight: 400;
+  src: url(/src/fonts/dinpro.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 500;
+  src: url(/src/fonts/dinpro_medium.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 700;
+  src: url(/src/fonts/dinpro_bold.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 300;
+  src: url(/src/fonts/dinpro_light.otf);
+}
+.reviews {
+  padding-top: 67px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.reviews__title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.reviews__list {
+  display: grid;
+  row-gap: 10px;
+  margin-bottom: 20px;
+}
+.reviews__list__item {
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.reviews__list__item__title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.reviews__list__item__title .reviews__list__item__name {
+  margin-right: 20px;
+}
+.reviews__list__item__title .reviews__list__item__date {
+  font-weight: 500;
+  color: #a4acad;
+}
+.reviews__button {
+  width: 100%;
+  background: #111111;
+  padding: 7px 0;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=Reviews.css.map */

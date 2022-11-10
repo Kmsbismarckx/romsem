@@ -1,0 +1,45 @@
+@import '../style/variables.scss';
+
+.reviews {
+  padding-top: calc($mobile_header_height + 10.5px);
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  &__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__list {
+    display: grid;
+    row-gap: 10px;
+    margin-bottom: 20px;
+    &__item {
+      background: white;
+      border-radius: 5px;
+      padding: 10px;
+      &__title {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        .reviews__list__item__name {
+          margin-right: 20px;
+        }
+        .reviews__list__item__date {
+          font-weight: 500;
+          color: $gray;
+        }
+      }
+    }
+  }
+  &__button {
+    width: 100%;
+    background: #111111;
+    padding: 7px 0;
+    margin-bottom: 20px;
+  }
+}

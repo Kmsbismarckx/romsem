@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Input(props) {
+function Input(props, className) {
   // eslint-disable-next-line react/jsx-props-no-spreading
-  return <input className="input__text" {...props} />;
+  return <input className={`input ${className}`} {...props} />;
 }
 
 export default Input;

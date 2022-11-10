@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="Add order Page, finish cart logic">
-      <change afterPath="$PROJECT_DIR$/public/media/UI/card.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/UI/check-mark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/UI/wallet.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Order/additivesItem/AdditivesItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Order/order.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Order/order.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Order/order.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/quantity/Quantity.jsx" afterDir="false" />
+    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="finish order page, add new styles, connect component with cartSlice">
+      <change afterPath="$PROJECT_DIR$/public/media/UI/cross-orange.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/UI/cross-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About/aboutContacts/aboutContacts.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Reviews/reviewsListItem/ReviewsListItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Reviews/reviewsModal/ReviewsModal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Reviews/reviewsModal/reviewsModal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Reviews/reviewsModal/reviewsModal.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Reviews/reviewsModal/reviewsModal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/usersSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/Reviews.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/Reviews.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/Reviews.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/totalList/TotalList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/totalList/TotalList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/totalList/totalList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/totalList/totalList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/totalList/totalList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/totalList/totalList.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Order/order.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Order/order.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Order/order.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Good.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Good.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Goods.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Order.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Reviews.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Order.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Order.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Order.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Order.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Order.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,25 +61,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "NewWatcherDialog.advanced.open": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/eldor/Desktop/Портфолио/romsem/public/media/UI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\eldor\\Desktop\\Портфолио\\romsem\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "watcher.settings",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;NewWatcherDialog.advanced.open&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eldor/Desktop/Портфолио/romsem/public/media/UI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\eldor\\Desktop\\Портфолио\\romsem\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\UI" />
@@ -71,10 +89,10 @@
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\components\UI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\style" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\components\Order" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\components\UI\Slider" />
-      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\style" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\components\header" />
     </key>
   </component>
@@ -114,7 +132,9 @@
       <workItem from="1667820059171" duration="125000" />
       <workItem from="1667820201974" duration="4243000" />
       <workItem from="1667895068290" duration="22338000" />
-      <workItem from="1667978733501" duration="29171000" />
+      <workItem from="1667978733501" duration="29280000" />
+      <workItem from="1668021081240" duration="1640000" />
+      <workItem from="1668065248241" duration="25199000" />
     </task>
     <task id="LOCAL-00001" summary="finish main page and good page">
       <created>1663193306010</created>
@@ -158,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667937062973</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="finish order page, add new styles, connect component with cartSlice">
+      <created>1668014420971</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668014420971</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +210,7 @@
     <MESSAGE value="trying to use redux" />
     <MESSAGE value="total price? r u serious?" />
     <MESSAGE value="Add order Page, finish cart logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add order Page, finish cart logic" />
+    <MESSAGE value="finish order page, add new styles, connect component with cartSlice" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish order page, add new styles, connect component with cartSlice" />
   </component>
 </project>

@@ -13,7 +13,7 @@ function Menu() {
         <img className="menu__item_img" src="/media/menu/basket.svg" alt="" />
         <p className="menu__item_description">Корзина</p>
       </Link>
-      <Link className="menu__item" to="/">
+      <Link className="menu__item" to="/reviews">
         <img className="menu__item_img" src="/media/menu/reviews.svg" alt="Отзывы" />
         <p className="menu__item_description">Отзывы</p>
       </Link>

@@ -5,10 +5,11 @@ import '../style/Goods.css';
 import urlContext from '../context';
 import Filter from '../components/filter/Filter';
 import GoodsList from '../components/goodsList/GoodsList';
-import About from '../components/about/About';
+import About from '../components/About/About';
 import useFilter from '../hooks/useFilter';
 import { selectCategoryById } from '../store/reducers/categoriesSlice';
 import { selectAllGoods } from '../store/reducers/goodsSlice';
+import Menu from '../components/menu/Menu';
 
 function Goods() {
   const { id } = useParams();
@@ -28,6 +29,7 @@ function Goods() {
       <Filter className="filter" filter={filter} setFilter={setFilter} />
       <GoodsList className="goods__list" sortedAndSearchedGoods={sortedAndSearchedGoods} id={id} />
       <About className="about" />
+      <Menu />
     </div>
   );
 }

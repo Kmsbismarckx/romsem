@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Din pro";
+  font-weight: 400;
+  src: url(/src/fonts/dinpro.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 500;
+  src: url(/src/fonts/dinpro_medium.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 700;
+  src: url(/src/fonts/dinpro_bold.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 300;
+  src: url(/src/fonts/dinpro_light.otf);
+}
+.reviews__modal {
+  display: none;
+  z-index: 2;
+}
+.reviews__modal__content {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reviews__modal__content__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.reviews__modal__content__input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background: #e5e5e5;
+  padding-left: 8px;
+}
+.reviews__modal__content__input:focus {
+  outline-color: #ff9846;
+}
+.reviews__modal__content__input::placeholder {
+  color: #ff9846;
+}
+.reviews__modal__content__comment {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #e5e5e5;
+}
+.reviews__modal__content__comment:focus {
+  outline-color: #ff9846;
+}
+.reviews__modal__content__comment::placeholder {
+  color: #ff9846;
+}
+.reviews__modal__content__title {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.reviews__modal__content__title_container {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.reviews__modal_close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ff9846;
+  border-radius: 50%;
+  background: url("/public/media/UI/cross-orange.svg") no-repeat center white;
+  background-size: 9.5px 9.5px;
+}
+.reviews__modal_close-button:hover {
+  background: url("/public/media/UI/cross-white.svg") no-repeat center #ff7c13;
+  background-size: 9.5px 9.5px;
+  border-color: transparent;
+}
+
+.reviews__modal_active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=reviewsModal.css.map */
