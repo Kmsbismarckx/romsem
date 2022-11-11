@@ -44,7 +44,7 @@ const usersSlice = createSlice({
       reducer(state, action) {
         usersAdapter.addOne(state, action.payload);
       },
-      prepare(name, lastName, comment) {
+      prepare({ name, lastName, comment }) {
         return {
           payload: { id: nanoid(), date: new Date().toLocaleDateString(), name, lastName, comment },
         };
@@ -54,6 +54,8 @@ const usersSlice = createSlice({
 });
 
 export default usersSlice.reducer;
+
+export const { addUser } = usersSlice.actions;
 
 export const {
   selectAll: selectAllUsers,

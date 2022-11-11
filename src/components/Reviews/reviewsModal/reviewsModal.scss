@@ -3,6 +3,7 @@
 .reviews__modal {
   display: none;
   z-index: 2;
+  margin-bottom: 20px;
   &__content {
     position: relative;
     width: 100%;
@@ -39,6 +40,7 @@
       border-radius: 5px;
       padding: 10px;
       background-color: #e5e5e5;
+      height: 100%;
     }
     &__comment:focus {
       outline-color: $orange;

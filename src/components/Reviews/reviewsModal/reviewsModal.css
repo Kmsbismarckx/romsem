@@ -21,6 +21,7 @@
 .reviews__modal {
   display: none;
   z-index: 2;
+  margin-bottom: 20px;
 }
 .reviews__modal__content {
   position: relative;
@@ -58,6 +59,7 @@
   border-radius: 5px;
   padding: 10px;
   background-color: #e5e5e5;
+  height: 100%;
 }
 .reviews__modal__content__comment:focus {
   outline-color: #ff9846;
