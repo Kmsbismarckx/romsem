@@ -23,7 +23,7 @@ function Goods() {
   return (
     <div className="goods">
       <div className="goods__header">
-        <img className="goods__header_img" src="/media/goods/goods__logo.svg" alt="" />
+        <img className="goods__header__img" src="/media/goods/goods__logo.svg" alt="" />
         <p className="goods__header_name">{category.russianName}</p>
       </div>
       <Filter className="filter" filter={filter} setFilter={setFilter} />

@@ -11,7 +11,7 @@
   padding: 13px 0;
   border-radius: 5px;
 
-  &_img {
+  &__img {
     width: 90px;
     height: 62px;
 
@@ -29,7 +29,7 @@
 
       margin-bottom: 14px;
     }
-    &_description {
+    &__description {
       display: flex;
       justify-content: space-between;
       &_item {

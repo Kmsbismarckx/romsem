@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './emptyCart.css';
 import { Link } from 'react-router-dom';
 import Button from '../UI/Button/Button';
 import Input from '../UI/Input/Input';
+import appContext from '../../context';
 
 function EmptyCart() {
   const [address, setAddress] = useState(false);
   const locationPinHandler = () => setAddress(true);
+  const { isDesktop } = useContext(appContext);
 
   return (
     <div className="cart-empty">
@@ -41,15 +43,15 @@ function EmptyCart() {
           <div className="cart-empty__location">
             <div className="cart-empty__location_map">
               <img
-                className="cart-empty__location_map_img"
+                className="cart-empty__location_map__img"
                 src="/media/cart/cart-empty_location.png"
                 alt="Location"
               />
               <div className="cart-empty__location_map_pin" onClick={locationPinHandler} />
             </div>
-            <div className="cart-empty__location_description">
-              <h2 className="cart-empty__location_description_name">Укажите адрес</h2>
-              <p className="cart-empty__location_description_item">И узнайте время доставки</p>
+            <div className="cart-empty__location__description">
+              <h2 className="cart-empty__location__description_name">Укажите адрес</h2>
+              <p className="cart-empty__location__description_item">И узнайте время доставки</p>
             </div>
           </div>
         )}
@@ -58,17 +60,19 @@ function EmptyCart() {
         <div>
           <div className="cart-empty__check_shipping_API">
             <img
-              className="cart-empty__check_shipping_API_img"
+              className="cart-empty__check_shipping_API__img"
               src="/media/cart/cart-empty_locationAPI.png"
               alt=""
             />
           </div>
-          <Link to="/">
-            <Button className="cart-empty_">Смотреть меню</Button>
-          </Link>
+          {!isDesktop && (
+            <Link to="/">
+              <Button className="cart-empty_">Смотреть меню</Button>
+            </Link>
+          )}
         </div>
       ) : (
-        <Button className="cart-empty_">Оформить заказ</Button>
+        <div>{!isDesktop && <Button className="cart-empty_">Оформить заказ</Button>}</div>
       )}
     </div>
   );

@@ -18,6 +18,11 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
+@font-face {
+  font-family: "Nexa";
+  font-weight: 300;
+  src: url(/src/fonts/Nexa-Trial-Light.otf);
+}
 .queryModal {
   position: fixed;
   top: 0;

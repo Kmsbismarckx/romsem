@@ -49,7 +49,7 @@ function Category({ id }) {
       </p>
       <Link to={`/home/${category.id}`}>
         <img
-          className="main__item_img"
+          className="main__item__img"
           src={`/media/main/${category.name}.png`}
           alt={category.russianName}
         />

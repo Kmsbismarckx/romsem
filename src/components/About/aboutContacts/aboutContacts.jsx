@@ -6,10 +6,10 @@ function AboutContacts() {
       <p className="about__contacts_name">
         Выберите удобный <br /> мессенджер для общения
       </p>
-      <div className="about__contacts_imgs">
-        <img className="about__contacts_img" src="/media/about/whatsapp.svg" alt="Whatsapp" />
-        <img className="about__contacts_img" src="/media/about/telegram.svg" alt="Telegram" />
-        <img className="about__contacts_img" src="/media/about/instagram.svg" alt="Instagram" />
+      <div className="about__contacts__imgs">
+        <img className="about__contacts__img" src="/media/about/whatsapp.svg" alt="Whatsapp" />
+        <img className="about__contacts__img" src="/media/about/telegram.svg" alt="Telegram" />
+        <img className="about__contacts__img" src="/media/about/instagram.svg" alt="Instagram" />
       </div>
       <div className="about__contacts_phones">
         <p>

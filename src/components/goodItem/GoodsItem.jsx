@@ -18,8 +18,8 @@ function GoodsItem({ className, id, linkParams }) {
 
   return (
     <div className={className}>
-      <img className={`${className}_img`} src={`/media/goods/${good.name}.png`} alt={good.name} />
-      <div className={`${className}_description`}>
+      <img className={`${className}__img`} src={`/media/goods/${good.name}.png`} alt={good.name} />
+      <div className={`${className}__description`}>
         <div>
           <p className={`${className}_name`}>{good.russianName}</p>
           <div className={`${className}_header`}>

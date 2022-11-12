@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Din pro";
+  font-weight: 400;
+  src: url(/src/fonts/dinpro.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 500;
+  src: url(/src/fonts/dinpro_medium.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 700;
+  src: url(/src/fonts/dinpro_bold.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 300;
+  src: url(/src/fonts/dinpro_light.otf);
+}
+@font-face {
+  font-family: "Nexa";
+  font-weight: 300;
+  src: url(/src/fonts/Nexa-Trial-Light.otf);
+}
+@media screen and (min-width: 1919px) {
+  body {
+    padding-bottom: 0;
+  }
+  .home {
+    display: flex;
+  }
+  .home .side-menu__container {
+    width: 320px;
+  }
+  .home .side-menu__container .side-menu {
+    width: 180px;
+  }
+  .main {
+    flex-grow: 2;
+  }
+  .cart__container {
+    width: 430px;
+    background-color: white;
+  }
+  .cart__container .cart,
+.cart__container .cart-empty {
+    width: 290px;
+    margin-top: 55px;
+    margin-left: 40px;
+    padding: 0;
+  }
+  .cart__container .cart__annotation,
+.cart__container .cart-empty__annotation {
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  .cart__container .cart__item,
+.cart__container .cart-empty__item {
+    background-color: #f2f2f2;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */

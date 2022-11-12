@@ -1,4 +1,4 @@
-import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
+import { createEntityAdapter, createSelector, createSlice } from '@reduxjs/toolkit';
 import categoriesData from '../../categories.json';
 
 const categoriesValue = categoriesData.categories;
@@ -24,3 +24,10 @@ export const {
   selectById: selectCategoryById,
   selectIds: selectCategoryIds,
 } = categoriesAdapter.getSelectors((state) => state.categories);
+
+export const selectSideMenuCategories = createSelector([selectAllCategories], (categories) =>
+  categories.filter(
+    (category) =>
+      category.name !== 'acne' && category.name !== 'chicken' && category.name !== 'combo'
+  )
+);

@@ -18,6 +18,11 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
+@font-face {
+  font-family: "Nexa";
+  font-weight: 300;
+  src: url(/src/fonts/Nexa-Trial-Light.otf);
+}
 .cart__item {
   width: 100%;
   display: flex;
@@ -26,7 +31,7 @@
   padding: 13px 0;
   border-radius: 5px;
 }
-.cart__item_img {
+.cart__item__img {
   width: 90px;
   height: 62px;
   margin-right: 14px;
@@ -43,11 +48,11 @@
   line-height: 22px;
   margin-bottom: 14px;
 }
-.cart__item_content_description {
+.cart__item_content__description {
   display: flex;
   justify-content: space-between;
 }
-.cart__item_content_description_item {
+.cart__item_content__description_item {
   display: flex;
   justify-content: space-between;
   font-style: normal;
@@ -56,11 +61,11 @@
   line-height: 23px;
   width: 89.24px;
 }
-.cart__item_content_description_item_quantity {
+.cart__item_content__description_item_quantity {
   display: flex;
   align-items: center;
 }
-.cart__item_content_description_item_price {
+.cart__item_content__description_item_price {
   width: auto;
   margin-right: 33px;
 }

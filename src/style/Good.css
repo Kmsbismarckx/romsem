@@ -18,6 +18,11 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
+@font-face {
+  font-family: "Nexa";
+  font-weight: 300;
+  src: url(/src/fonts/Nexa-Trial-Light.otf);
+}
 .good {
   padding-top: 66.5px;
 }
@@ -94,7 +99,7 @@
   text-align: center;
   width: 100%;
 }
-.good .good__item .good__item_main .good__item_main_img {
+.good .good__item .good__item_main .good__item_main__img {
   width: 100%;
   margin-bottom: 10px;
 }
@@ -164,7 +169,7 @@
   min-width: 107px;
   height: 121px;
 }
-.good .good__addition .good__addition_items .good__addition_item .good__addition_item_img {
+.good .good__addition .good__addition_items .good__addition_item .good__addition_item__img {
   margin-bottom: 10px;
 }
 .good .good__addition .good__addition_items .good__addition_item:not(.good__addition_item:first-of-type) {

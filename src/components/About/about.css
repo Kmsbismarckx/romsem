@@ -1,22 +1,27 @@
 @font-face {
-  font-family: 'Din pro';
+  font-family: "Din pro";
   font-weight: 400;
   src: url(/src/fonts/dinpro.otf);
 }
 @font-face {
-  font-family: 'Din pro';
+  font-family: "Din pro";
   font-weight: 500;
   src: url(/src/fonts/dinpro_medium.otf);
 }
 @font-face {
-  font-family: 'Din pro';
+  font-family: "Din pro";
   font-weight: 700;
   src: url(/src/fonts/dinpro_bold.otf);
 }
 @font-face {
-  font-family: 'Din pro';
+  font-family: "Din pro";
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
+}
+@font-face {
+  font-family: "Nexa";
+  font-weight: 300;
+  src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
 .about {
   display: flex;
@@ -25,20 +30,20 @@
   margin: 0 auto;
   width: 330px;
 }
-.about__info {
+.about___info {
   display: flex;
   flex-direction: column;
   color: gray;
   margin-bottom: 20px;
 }
-.about__info_name {
+.about___info_name {
   line-height: 30px;
   margin-bottom: 10px;
 }
-.about__info_description {
+.about___info__description {
   line-height: 18px;
 }
-.about__info_button {
+.about___info_button {
   position: relative;
   font-size: 24px;
   line-height: 24px;
@@ -46,15 +51,15 @@
   color: #ff9846;
   align-self: center;
 }
-.about__info_button::after {
-  content: '1';
+.about___info_button::after {
+  content: "1";
   position: absolute;
   top: 50%;
   right: -27px;
   font-size: 0;
   width: 17px;
   height: 9px;
-  background-image: url('/public/media/about/arrow_down.svg');
+  background-image: url("/public/media/about/arrow_down.svg");
 }
 .about__contacts {
   display: flex;
@@ -69,12 +74,12 @@
 .about__contacts_name {
   margin-bottom: 10px;
 }
-.about__contacts_imgs {
+.about__contacts__imgs {
   display: flex;
   margin-bottom: 30px;
   justify-content: space-around;
 }
-.about__contacts_imgs .about__contacts_img {
+.about__contacts__imgs .about__contacts__img {
   width: 50px;
   height: 50px;
 }

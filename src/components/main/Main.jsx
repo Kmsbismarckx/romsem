@@ -3,13 +3,22 @@ import { useSelector } from 'react-redux';
 import Category from '../category/Category';
 import './main.css';
 import useFilter from '../../hooks/useFilter';
-import urlContext from '../../context';
 import { selectAllCategories } from '../../store/reducers/categoriesSlice';
+import appContext from '../../context';
+import Header from '../Header/Header';
 
 function Main() {
-  const { filter } = useContext(urlContext);
+  const { filter, isDesktop } = useContext(appContext);
   const categories = useSelector(selectAllCategories);
   const sortedAndSearchedCategories = useFilter(categories, filter.sort, filter.query);
+
+  if (isDesktop) {
+    return (
+      <div className="main">
+        <Header />
+      </div>
+    );
+  }
 
   if (!sortedAndSearchedCategories.length) {
     return (

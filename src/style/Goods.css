@@ -18,6 +18,11 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
+@font-face {
+  font-family: "Nexa";
+  font-weight: 300;
+  src: url(/src/fonts/Nexa-Trial-Light.otf);
+}
 .goods {
   padding-top: 66.5px;
 }
@@ -27,7 +32,7 @@
   align-items: center;
   margin-bottom: 15px;
 }
-.goods .goods__header .goods__header_img {
+.goods .goods__header .goods__header__img {
   margin-right: 20px;
 }
 .goods .goods__header .goods__header_name {

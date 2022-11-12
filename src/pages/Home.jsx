@@ -1,14 +1,26 @@
-import React from 'react';
-import { useMediaQuery } from 'react-responsive';
+import React, { useContext } from 'react';
 import Main from '../components/main/Main';
 import About from '../components/About/About';
 import Menu from '../components/menu/Menu';
+import SideMenu from '../components/sideMenu/SideMenu';
+import appContext from '../context';
+import '../style/Home.css';
+import Cart from './Cart';
 
 function Home() {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1224px)',
-  });
-  /* TODO Сделать под пк */
+  const { isDesktop } = useContext(appContext);
+  console.log(isDesktop);
+  if (isDesktop) {
+    return (
+      <div className="home">
+        <SideMenu />
+        <Main />
+        <div className="cart__container">
+          <Cart />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div>

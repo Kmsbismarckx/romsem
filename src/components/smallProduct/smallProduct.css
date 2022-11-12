@@ -18,12 +18,17 @@
   font-weight: 300;
   src: url(/src/fonts/dinpro_light.otf);
 }
+@font-face {
+  font-family: "Nexa";
+  font-weight: 300;
+  src: url(/src/fonts/Nexa-Trial-Light.otf);
+}
 .small__product {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.small__product_img {
+.small__product__img {
   width: 66px;
   height: 66px;
 }
