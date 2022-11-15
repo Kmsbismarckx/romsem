@@ -30,20 +30,20 @@
   margin: 0 auto;
   width: 330px;
 }
-.about___info {
+.about__info {
   display: flex;
   flex-direction: column;
   color: gray;
   margin-bottom: 20px;
 }
-.about___info_name {
+.about__info__name {
   line-height: 30px;
   margin-bottom: 10px;
 }
-.about___info__description {
+.about__info__description {
   line-height: 18px;
 }
-.about___info_button {
+.about__info__button {
   position: relative;
   font-size: 24px;
   line-height: 24px;
@@ -51,7 +51,7 @@
   color: #ff9846;
   align-self: center;
 }
-.about___info_button::after {
+.about__info__button::after {
   content: "1";
   position: absolute;
   top: 50%;
@@ -71,7 +71,7 @@
   font-weight: 400;
   line-height: 22.3px;
 }
-.about__contacts_name {
+.about__contacts__name {
   margin-bottom: 10px;
 }
 .about__contacts__imgs {
@@ -83,8 +83,40 @@
   width: 50px;
   height: 50px;
 }
+.about__contacts__img {
+  filter: opacity(0.55);
+  cursor: pointer;
+}
+.about__contacts__img:hover {
+  filter: opacity(1);
+}
 .about__contacts_phones {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1919px) {
+  .about {
+    font-style: normal;
+    color: #a4acad;
+  }
+  .about .about__info__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .about .about__info__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+  }
+  .about .about__info__description:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .about .about__info__description__list li {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

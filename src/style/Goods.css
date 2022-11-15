@@ -35,10 +35,65 @@
 .goods .goods__header .goods__header__img {
   margin-right: 20px;
 }
-.goods .goods__header .goods__header_name {
+.goods .goods__header .goods__header__name {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 29.76px;
+}
+
+@media screen and (min-width: 1919px) {
+  .goods {
+    padding-top: 0;
+  }
+  .goods .goods__header__container {
+    width: 950px;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .goods .goods__header__container .goods__header {
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .goods .goods__header__container .filter {
+    width: 198px;
+    margin: 0;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .goods .goods__header__container .filter .select:before {
+    content: none;
+  }
+  .goods .goods__header__container .filter .filter__text {
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 14px;
+  }
+  .goods .goods__header__container .filter .filter__text option {
+    width: inherit;
+    border-radius: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .goods .goods__list {
+    display: grid;
+    grid-template-columns: repeat(3, 288px);
+    grid-template-rows: 400px;
+    column-gap: 42px;
+    row-gap: 31px;
+    width: 950px;
+    align-self: center;
+    margin-bottom: 174px;
+  }
 }
 
 /*# sourceMappingURL=Goods.css.map */

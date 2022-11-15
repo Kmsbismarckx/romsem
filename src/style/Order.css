@@ -187,4 +187,49 @@
   padding: 10px 0;
 }
 
+@media screen and (min-width: 1919px) {
+  .order {
+    padding: 0;
+  }
+  .order .pc__main {
+    width: 1490px;
+  }
+  .order .pc__main .order__form__container {
+    display: grid;
+    grid-template-columns: 360px 354px;
+    justify-content: space-between;
+    width: 760px;
+    margin: 0 auto;
+  }
+  .order .pc__main .order__form__container__item .form__user-data {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 20px;
+    height: 40px;
+  }
+  .order .pc__main .order__form__container__item .form__address-info {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+  }
+  .order .pc__main .order__form__container__item .form__address-info .form__address_street {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .order .pc__main .order__form__container__item .form__address_house_item {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(2, auto);
+  }
+  .order .pc__main .order__form__container__item .form__address_house_item:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: 14px;
+  }
+  .order .pc__main .order__form__container__item .form__address_house_item:last-of-type {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+}
+
 /*# sourceMappingURL=Order.css.map */

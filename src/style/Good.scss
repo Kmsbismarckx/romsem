@@ -80,53 +80,55 @@
         width: 100%;
         margin-bottom: 10px;
       }
-      .good__item_main_name {
+      .good__item_main__name {
         margin-bottom: 10px;
+        text-align: left;
       }
-      .good__item_main_header {
+      .good__item_main_pieces {
         font-size: 18px;
         font-weight: 300;
         line-height: 22.3px;
         margin-bottom: 15px;
         color: $orange;
+        text-align: left;
       }
 
-      .good__item_main_footer {
+      .good__item_main__footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 30px;
-        .good__item_main_price {
+        .good__item_main__price {
           font-size: 24px;
           font-weight: 700;
           line-height: 30.05px;
         }
-        .good__item_main_button {
+        .good__item_main__button {
           width: 188px;
           height: 40px;
         }
       }
     }
     .good__item_composition {
-      .good__item_composition_name {
+      .good__item_composition__name {
         text-align: center;
         margin-bottom: 20px;
       }
-      .good__item_composition_items {
+      .good__item_composition__items {
         .window {
           width: 192px;
           height: 127px;
         }
-        .good__item_composition_item {
+        .good__item_composition__item {
           min-width: 91px;
           height: 127px;
           margin-right: 10px;
-          .good__item_composition_item_name {
+          .good__item_composition__item_name {
             margin-bottom: 11px;
           }
-          .good__item_composition_item_footer {
+          .good__item_composition__item__footer {
             justify-content: center;
-            .good__item_composition_item_price {
+            .good__item_composition__item__price {
               text-align: center;
             }
           }

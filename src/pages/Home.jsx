@@ -9,10 +9,10 @@ import Cart from './Cart';
 
 function Home() {
   const { isDesktop } = useContext(appContext);
-  console.log(isDesktop);
+
   if (isDesktop) {
     return (
-      <div className="home">
+      <div className="home pc__container">
         <SideMenu />
         <Main />
         <div className="cart__container">

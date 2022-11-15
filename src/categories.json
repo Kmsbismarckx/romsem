@@ -5,7 +5,8 @@
       "name": "pizza",
       "russianName": "Пицца",
       "isAvailable": false,
-      "isLarge": false
+      "isLarge": false,
+      "isPopular": true
     },
     {
       "id": 2,
@@ -70,7 +71,8 @@
       "russianName": "С Угрем",
       "isAvailable": false,
       "isLarge": false,
-      "isBottomLeft": true
+      "isBottomLeft": true,
+      "isPopular": true
     },
     {
       "id": 11,
@@ -78,7 +80,8 @@
       "russianName": "Корн Дог",
       "isAvailable": false,
       "isLarge": false,
-      "isBottomLeft": true
+      "isBottomLeft": true,
+      "isPopular": true
     },
     {
       "id": 12,
@@ -86,7 +89,8 @@
       "russianName": "Чикен",
       "isAvailable": false,
       "isLarge": true,
-      "isBottomLeft": true
+      "isBottomLeft": true,
+      "isPopular": true
     },
     {
       "id": 13,
@@ -94,7 +98,8 @@
       "russianName": "Акции",
       "isAvailable": false,
       "isLarge": true,
-      "isBottomLeft": true
+      "isBottomLeft": true,
+      "isPopular": true
     }
   ]
 }

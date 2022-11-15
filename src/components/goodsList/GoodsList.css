@@ -23,5 +23,8 @@
   font-weight: 300;
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
+.goods__list {
+  margin-bottom: 20.57px;
+}
 
 /*# sourceMappingURL=GoodsList.css.map */

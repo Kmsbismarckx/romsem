@@ -1,5 +1,6 @@
 import { createEntityAdapter, createSelector, createSlice } from '@reduxjs/toolkit';
 import categoriesData from '../../categories.json';
+import { selectAllGoods } from './goodsSlice';
 
 const categoriesValue = categoriesData.categories;
 
@@ -30,4 +31,8 @@ export const selectSideMenuCategories = createSelector([selectAllCategories], (c
     (category) =>
       category.name !== 'acne' && category.name !== 'chicken' && category.name !== 'combo'
   )
+);
+
+export const selectPopularCategoriesIds = createSelector([selectAllCategories], (categories) =>
+  categories.filter((category) => category.isPopular).map((popularCategory) => popularCategory.id)
 );

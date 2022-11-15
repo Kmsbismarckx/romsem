@@ -53,5 +53,8 @@
         width: 30px;
       }
     }
+    &__item:hover {
+      color: $orange;
+    }
   }
 }

@@ -13,13 +13,43 @@
     padding-bottom: 12px;
     border-radius: 5px;
 
-    &_name {
+    &__name {
       text-align: center;
       color: $orange;
     }
   }
   &__button {
     width: 100%;
-    padding: 13px 0;
+    padding: 13px 0 !important;
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .cart {
+    &__name {
+      text-align: center;
+      background-color: $light_gray;
+      padding: 10px 0;
+      margin-bottom: 12px;
+    }
+    &__list {
+      margin-bottom: 225px;
+    }
+    &__button {
+      width: 180px;
+      font-weight: 400;
+    }
+    .cart__total__pc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__price {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
   }
 }

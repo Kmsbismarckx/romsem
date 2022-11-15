@@ -22,7 +22,7 @@ function SideMenu() {
         <hr className="side-menu__hr" />
         <div className="side-menu__list">
           {categories.map((category) => (
-            <Link key={category.id} to="/">
+            <Link key={category.id} to={`/home/${category.id}`}>
               <div
                 className={`side-menu__list__item side-menu__${category.isAvailable ? 'soon' : ''}`}
               >

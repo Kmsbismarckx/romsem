@@ -13,7 +13,8 @@
         { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 4, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ]
+      ],
+      "isNew": true
     },
     {
       "id": 2,
@@ -27,7 +28,8 @@
         { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ]
+      ],
+      "isPopular": true
     },
     {
       "id": 3,
@@ -41,7 +43,8 @@
         { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ]
+      ],
+      "isPopular": true
     },
     {
       "id": 4,
@@ -55,7 +58,8 @@
         { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ]
+      ],
+      "isPopular": true
     },
     {
       "id": 5,
@@ -69,7 +73,8 @@
         { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ]
+      ],
+      "isPopular": true
     },
     {
       "id": 6,
@@ -83,7 +88,8 @@
         { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ]
+      ],
+      "isPopular": true
     },
     {
       "id": 7,
@@ -97,7 +103,8 @@
         { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ]
+      ],
+      "isPopular": true
     },
     {
       "id": 8,
@@ -111,7 +118,8 @@
         { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ]
+      ],
+      "isNew": true
     },
     {
       "id": 9,
@@ -125,7 +133,8 @@
         { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ]
+      ],
+      "isPopular": true
     },
     {
       "id": 10,
@@ -139,7 +148,8 @@
         { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ]
+      ],
+      "isNew": true
     },
     {
       "id": 11,
@@ -153,7 +163,8 @@
         { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
         { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ]
+      ],
+      "isNew": true
     }
   ]
 }

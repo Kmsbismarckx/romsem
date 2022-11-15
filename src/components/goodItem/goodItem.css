@@ -23,7 +23,7 @@
   font-weight: 300;
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
-.goods__list_item {
+.goods__list__item {
   display: flex;
   width: 91.6%;
   background-color: white;
@@ -31,36 +31,127 @@
   margin: 0 auto 10px;
   padding: 18px 10px 18px 18px;
 }
-.goods__list_item__img {
+.goods__list__item__img {
   margin-right: 15px;
 }
-.goods__list_item__description {
+.goods__list__item__description {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   flex-grow: 2;
 }
-.goods__list_item__description .goods__list_item_name {
+.goods__list__item__description .goods__list__item__name {
   width: 187px;
   font-size: 14px;
   font-weight: 500;
   line-height: 17.37px;
 }
-.goods__list_item__description .goods__list_item_header {
+.goods__list__item__description .goods__list__item__header {
   display: flex;
   font-size: 14px;
   font-weight: 400;
   line-height: 17.36px;
   color: #a4acad;
 }
-.goods__list_item__description .goods__list_item_footer {
+.goods__list__item__description .goods__list__item__footer {
   display: flex;
   justify-content: space-between;
 }
-.goods__list_item__description .goods__list_item_footer .goods__list_item_price {
+.goods__list__item__description .goods__list__item__footer .goods__list__item__price {
   font-size: 18px;
   font-weight: 700;
   line-height: 22.54px;
+}
+
+@media screen and (min-width: 1919px) {
+  .goods__item,
+.goods__list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background: white;
+    font-style: normal;
+  }
+  .goods__item__img,
+.goods__list__item__img {
+    width: 100%;
+    height: 203px;
+    padding: 0 19px;
+  }
+  .goods__item__name,
+.goods__list__item__name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding: 0 19px;
+  }
+  .goods__item__header,
+.goods__list__item__header {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    color: #a4acad;
+    margin-bottom: 20px;
+    padding: 0 19px;
+  }
+  .goods__item__hr,
+.goods__list__item__hr {
+    border: none;
+    height: 0.5px;
+    background-color: #a4acad;
+    margin-bottom: 11px;
+  }
+  .goods__item__footer,
+.goods__list__item__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 17px;
+    margin-bottom: 10px;
+  }
+  .goods__item__footer .goods__item__price,
+.goods__list__item__footer .goods__item__price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-right: 12px;
+  }
+  .goods__item__button,
+.goods__list__item__button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #f2f2f2;
+    padding: 5px 42px;
+  }
+  .goods__list__item {
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    height: 400px;
+    width: 100%;
+  }
+  .goods__list__item__description {
+    justify-content: end;
+  }
+  .goods__list__item__description .goods__list__item__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .goods__list__item__description .goods__list__item__footer {
+    padding-right: 7px;
+  }
+  .goods__list__item__img {
+    width: 100%;
+    height: 203px;
+    padding: 0 19px;
+  }
 }
 
 /*# sourceMappingURL=goodItem.css.map */

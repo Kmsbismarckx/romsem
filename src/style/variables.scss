@@ -23,16 +23,17 @@
 }
 
 @font-face {
-	font-family: 'Nexa';
-	font-weight: 300;
-	src: url(/src/fonts/Nexa-Trial-Light.otf);
+  font-family: 'Nexa';
+  font-weight: 300;
+  src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
 
 $mobile_width: 91.6%;
 $mobile_header_height: 56.5px;
-$mobile_footer_height: 72px;
+$mobile__footer_height: 72px;
 
 $orange: #ff9846;
 $red: #eb5757;
+$light_gray: #f2f2f2;
 $gray: #a4acad;
 $dark_orange: #f46d40;

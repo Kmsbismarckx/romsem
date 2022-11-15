@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectCategoryById } from '../../store/reducers/categoriesSlice';
+import appContext from '../../context';
 
 function Category({ id }) {
   const category = useSelector((state) => selectCategoryById(state, id));
+  const { isDesktop } = useContext(appContext);
 
   let imgWidth;
   let imgHeight;
@@ -25,6 +27,23 @@ function Category({ id }) {
     isVisible = 'flex';
   }
 
+  if (isDesktop) {
+    return (
+      <li className="main__item">
+        <p className="main__item__name">{category.russianName}</p>
+
+        <p className="main__item_stock">СКОРО</p>
+        <Link to={`/home/${category.id}`}>
+          <img
+            className="main__item__img"
+            src={`/media/main/${category.name}.png`}
+            alt={category.russianName}
+          />
+        </Link>
+      </li>
+    );
+  }
+
   return (
     <li style={{ width: imgWidth, height: imgHeight }} className={`main__item ${largeClass}`}>
       {category.isBottomLeft ? (
@@ -35,12 +54,12 @@ function Category({ id }) {
             fontSize: '24px',
             lineHeight: '29.78px',
           }}
-          className="main__item_name"
+          className="main__item__name"
         >
           {category.russianName}
         </p>
       ) : (
-        <p style={{ top: '10px', left: '11px' }} className="main__item_name">
+        <p style={{ top: '10px', left: '11px' }} className="main__item__name">
           {category.russianName}
         </p>
       )}

@@ -17,3 +17,10 @@
   height: 17px;
   transform: translateY(-1px);
 }
+
+@media screen and (min-width: 1919px) {
+  .increment {
+    width: 25.45px;
+    height: 25.45px;
+  }
+}

@@ -6,19 +6,19 @@
   align-items: center;
   margin: 0 auto;
   width: 330px;
-  &___info {
+  &__info {
     display: flex;
     flex-direction: column;
     color: gray;
     margin-bottom: 20px;
-    &_name {
+    &__name {
       line-height: 30px;
       margin-bottom: 10px;
     }
     &__description {
       line-height: 18px;
     }
-    &_button {
+    &__button {
       position: relative;
       font-size: 24px;
       line-height: 24px;
@@ -26,7 +26,7 @@
       color: $orange;
       align-self: center;
     }
-    &_button::after {
+    &__button::after {
       content: '1';
       position: absolute;
       top: 50%;
@@ -46,7 +46,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 22.3px;
-    &_name {
+    &__name {
       margin-bottom: 10px;
     }
     &__imgs {
@@ -58,8 +58,43 @@
         height: 50px;
       }
     }
+    &__img {
+      filter: opacity(0.55);
+      cursor: pointer;
+    }
+    &__img:hover {
+      filter: opacity(1);
+    }
     &_phones {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .about {
+    font-style: normal;
+    color: $gray;
+    .about__info__name {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+
+      margin-bottom: 10px;
+    }
+    .about__info__description {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+    }
+    .about__info__description:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    .about__info__description__list {
+      li {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
     }
   }
 }

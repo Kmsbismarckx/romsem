@@ -42,6 +42,7 @@ function Header() {
               onClick={() => setModal(true)}
             />
           </div>
+          <QueryModal visible={modal} setVisible={setModal} filter={filter} setFilter={setFilter} />
         </div>
       </div>
     );

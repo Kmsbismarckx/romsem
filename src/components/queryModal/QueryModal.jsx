@@ -1,5 +1,6 @@
 import React from 'react';
 import './queryModal.css';
+import { redirect } from 'react-router-dom';
 import Input from '../UI/Input/Input';
 
 function QueryModal({ visible, setVisible, filter, setFilter }) {

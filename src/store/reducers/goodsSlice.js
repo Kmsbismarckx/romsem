@@ -1,4 +1,4 @@
-import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
+import { createEntityAdapter, createSelector, createSlice } from '@reduxjs/toolkit';
 import goodsData from '../../goods.json';
 
 const goodsValue = goodsData.goods;
@@ -24,3 +24,11 @@ export const {
   selectById: selectGoodById,
   selectIds: selectGoodIds,
 } = goodsAdapter.getSelectors((state) => state.goods);
+
+export const selectNewGoods = createSelector([selectAllGoods], (goods) =>
+  goods.filter((good) => good.isNew)
+);
+
+export const selectPopularGoods = createSelector([selectAllGoods], (goods) =>
+  goods.filter((good) => good.isPopular)
+);

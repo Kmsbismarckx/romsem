@@ -34,6 +34,7 @@
 body {
   padding-bottom: 82px;
   background-color: #e5e5e5;
+  height: 100%;
 }
 
 h2 {
@@ -46,6 +47,124 @@ h2 {
 a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (min-width: 1919px) {
+  body {
+    padding-bottom: 0;
+  }
+  .pc__container {
+    display: flex;
+  }
+  .pc__container .side-menu__container {
+    width: 320px;
+    flex-grow: 2;
+  }
+  .pc__container .side-menu__container .side-menu {
+    width: 180px;
+  }
+  .pc__container .pc__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+    width: 1170px;
+  }
+  .pc__container .pc__main .about {
+    width: 950px;
+    margin-bottom: 30px;
+  }
+  .cart__container {
+    width: auto;
+    background-color: white;
+    flex-grow: 2;
+    padding-top: 59px;
+  }
+  .cart__container .cart,
+.cart__container .cart-empty {
+    width: 290px;
+    margin-left: 40px;
+    padding: 0;
+  }
+  .cart__container .cart__annotation,
+.cart__container .cart-empty__annotation {
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  .cart__container .cart__item,
+.cart__container .cart-empty__item {
+    background-color: #f2f2f2;
+    padding: 0;
+  }
+  .main__footer {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 950px;
+    border-top: 0.5px solid #a4acad;
+    padding-top: 22px;
+  }
+  .main__footer__item {
+    width: 290px;
+    flex-grow: 2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    padding-top: 11px;
+    padding-bottom: 30px;
+  }
+  .main__footer__item .about__contacts {
+    align-items: start;
+  }
+  .main__footer__item .about__contacts__name {
+    text-align: start;
+  }
+  .main__footer__item .about__contacts__img {
+    filter: opacity(0.55);
+    cursor: pointer;
+  }
+  .main__footer__item .about__contacts__img:hover {
+    filter: opacity(1);
+  }
+  .main__footer__item .about__contacts__img:not(:last-child) {
+    margin-right: 31px;
+  }
+  .main__footer__item__name {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .main__footer__item__phone__input {
+    border: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+  }
+  .main__footer__item__phone__input:focus {
+    outline-color: #ff9846;
+  }
+  .main__footer__item:not(:last-of-type) {
+    border-right: 0.5px solid #a4acad;
+  }
+  .main__footer__item:not(:first-of-type) {
+    padding-left: 40px;
+    width: 330px;
+  }
+  .main__footer__item:last-child p {
+    margin-bottom: 5px;
+    color: #a4acad;
+  }
+  .main__footer__item:last-child p u {
+    text-decoration: none;
+    border-bottom: 0.5px solid #a4acad;
+  }
+  .main__footer__link {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

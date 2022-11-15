@@ -8,16 +8,16 @@
     width: 66px;
     height: 66px;
   }
-  &_name {
+  &__name {
     font-size: 14px;
     font-weight: 500;
     line-height: 17.37px;
   }
-  &_footer {
+  &__footer {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    .small__product_price {
+    .small__product__price {
       font-size: 18px;
       font-weight: 700;
       line-height: 22.54px;

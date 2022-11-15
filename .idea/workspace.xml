@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="Add new ability to post new review">
-      <change afterPath="$PROJECT_DIR$/public/media/categories/WOK.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/categories/corndog.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/categories/drinks.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/categories/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/categories/pizza.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/categories/rolls.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/categories/salad.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/categories/sets.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/categories/soup.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/categories/stock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/categories/sushi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/headerPhone/HeaderPhone.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/headerSchedule/HeaderSchedule.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/navigation/Navigation.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sideMenu/SideMenu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sideMenu/slideMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sideMenu/slideMenu.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sideMenu/slideMenu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Nexa-Trial-ExtraLight.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Nexa-Trial-Light.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/Home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/Home.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/Home.scss" afterDir="false" />
+    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="start pc adaptation">
+      <change afterPath="$PROJECT_DIR$/public/media/cart/cart_increment_small.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Order/addressInfo/AddressInfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Order/addressInfo/AddressInfo.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Order/addressInfo/AddressInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Order/addressInfo/AddressInfo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Order/payment/Payment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Order/payment/Payment.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Order/payment/Payment.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Order/payment/Payment.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Order/userData/UserData.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/mainFooter/MainFooter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/UI/arrow_button.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/UI/arrow_button.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/UI/check-mark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/UI/check-mark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/cart/cart_increment.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/cart/cart_increment.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/good/add_button.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/good/add_button.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/good/arrow_button.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/good/arrow_button.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/categories.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/about.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/aboutContacts/aboutContacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/aboutContacts/aboutContacts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reviews/reviewsModal/reviewsModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/reviewsModal/reviewsModal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/headerPhone/HeaderPhone.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/headerPhone/HeaderPhone.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/headerSchedule/HeaderSchedule.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/headerSchedule/HeaderSchedule.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Reviews/reviewsModal/reviewsModal.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/reviewsModal/reviewsModal.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Button/button.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/button.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Decrement/Decrement.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Increment/Increment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Increment/Increment.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Increment/Increment.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Increment/Increment.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Increment/Increment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Increment/Increment.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Slider/Slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Slider/Slider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Slider/Slider.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Slider/Slider.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cartItem/cartItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/cartItem.css" afterDir="false" />
@@ -53,7 +53,6 @@
       <change beforePath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/filter/filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/filter.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/filter/filter.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/filter.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/goodItem/GoodsItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/GoodsItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/goodItem/goodItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/goodItem.css" afterDir="false" />
@@ -61,46 +60,54 @@
       <change beforePath="$PROJECT_DIR$/src/components/goodItem/goodItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/goodItem.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/goodsList/GoodsList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/goodsList/GoodsList.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goodsList/GoodsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goodsList/GoodsList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodsList/GoodsList.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/menu/menu.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/menu/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/quantity/Quantity.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/quantity/Quantity.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/queryModal/QueryModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/QueryModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/queryModal/queryModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/queryModal/queryModal.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/queryModal/queryModal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/SideMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/SideMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/slideMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/slideMenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/slideMenu.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/slideMenu.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/slideMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/slideMenu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/smallProduct/SmallProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smallProduct/SmallProduct.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/totalList/totalList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/totalList/totalList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/totalList/totalList.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/totalList/totalList.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goods.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/goods.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Good.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Good.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Goods.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Order.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/categoriesSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/categoriesSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/goodsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/goodsSlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Cart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Cart.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Cart.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Cart.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Goods.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Goods.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Home.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Home.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Order.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Order.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Order.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Order.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Reviews.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Reviews.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Order.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Order.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Reviews.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Reviews.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/variables.scss" afterDir="false" />
     </list>
@@ -133,7 +140,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/eldor/Desktop/Портфолио/romsem/public/media/categories",
+    "last_opened_file_path": "C:/Users/eldor/Desktop/Портфолио/romsem/public/media/cart",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -147,9 +154,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\cart" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\categories" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\UI" />
-      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\cart" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\basket" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\good" />
     </key>
@@ -202,7 +209,10 @@
       <workItem from="1668065248241" duration="25199000" />
       <workItem from="1668113047093" duration="541000" />
       <workItem from="1668147934227" duration="6019000" />
-      <workItem from="1668235382152" duration="17800000" />
+      <workItem from="1668235382152" duration="19324000" />
+      <workItem from="1668321516925" duration="15737000" />
+      <workItem from="1668407412867" duration="22619000" />
+      <workItem from="1668495003316" duration="21016000" />
     </task>
     <task id="LOCAL-00001" summary="finish main page and good page">
       <created>1663193306010</created>
@@ -274,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668194408179</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="start pc adaptation">
+      <created>1668269916011</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668269916011</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +319,7 @@
     <MESSAGE value="finish order page, add new styles, connect component with cartSlice" />
     <MESSAGE value="add review component, add usersSlice" />
     <MESSAGE value="Add new ability to post new review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new ability to post new review" />
+    <MESSAGE value="start pc adaptation" />
+    <option name="LAST_COMMIT_MESSAGE" value="start pc adaptation" />
   </component>
 </project>

@@ -7,8 +7,6 @@ import {
   increaseQuantity,
   selectCartItemQuantity,
 } from '../../store/reducers/cartSlice';
-import Decrement from '../UI/Decrement/Decrement';
-import Increment from '../UI/Increment/Increment';
 import Quantity from '../quantity/Quantity';
 
 function CartItem({ id }) {
@@ -31,14 +29,14 @@ function CartItem({ id }) {
         alt={cartItem.name}
       />
       <div className="cart__item_content">
-        <p className="cart__item_content_name">{cartItem.russianName}</p>
+        <p className="cart__item_content__name">{cartItem.russianName}</p>
         <div className="cart__item_content__description">
           <Quantity
             decreaseQuantityHandler={decreaseQuantityHandler}
             increaseQuantityHandler={increaseQuantityHandler}
             quantity={quantity}
           />
-          <p className="cart__item_content__description_item cart__item_content__description_item_price">
+          <p className="cart__item_content__description__item cart__item_content__description__item__price">
             {itemTotalPrice} СОМ
           </p>
         </div>

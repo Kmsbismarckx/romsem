@@ -8,7 +8,7 @@ function GoodsList({ sortedAndSearchedGoods, className, id }) {
       {sortedAndSearchedGoods.map((good) => (
         <GoodsItem
           key={good.id}
-          className={`${className}_item`}
+          className={`${className}__item`}
           id={good.id}
           linkParams={`/home/${id}/${good.id}`}
         />

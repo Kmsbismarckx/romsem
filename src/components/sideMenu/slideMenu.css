@@ -77,5 +77,8 @@
   align-items: center;
   width: 30px;
 }
+.side-menu__list__item:hover {
+  color: #ff9846;
+}
 
 /*# sourceMappingURL=slideMenu.css.map */

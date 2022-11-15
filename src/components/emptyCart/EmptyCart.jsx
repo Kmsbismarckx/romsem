@@ -14,22 +14,22 @@ function EmptyCart() {
     <div className="cart-empty">
       <div className="cart-empty__item">
         <div className="cart-empty__annotation">
-          <h1 className="cart-empty__annotation_name">Ваша корзина пуста.</h1>
+          <h1 className="cart-empty__annotation__name">Ваша корзина пуста.</h1>
           <p className="cart-empty__annotation_item">Добавьте же скорее чего нибудь!</p>
           <p className="cart-empty__annotation_item">Бесплатная доставка от 800 СОМ</p>
         </div>
         {address ? (
-          <div className="cart-empty__check_shipping">
-            <div className="cart-empty__check_shipping_item">
-              <p className="cart-empty__check_shipping_name">Введите адрес и нажмите enter</p>
+          <div className="cart-empty__check__shipping">
+            <div className="cart-empty__check__shipping_item">
+              <p className="cart-empty__check__shipping__name">Введите адрес и нажмите enter</p>
               <Input
-                className="cart-empty__check_shipping_input"
+                className="cart-empty__check__shipping_input"
                 placeholder="ул. Максима Горького, дом 20"
               />
             </div>
-            <div className="cart-empty__check_shipping_item">
+            <div className="cart-empty__check__shipping_item">
               <img
-                className="cart-empty__check_shipping_clock"
+                className="cart-empty__check__shipping_clock"
                 src="/media/cart/cart-clock.svg"
                 alt="Время доставки"
               />
@@ -50,7 +50,7 @@ function EmptyCart() {
               <div className="cart-empty__location_map_pin" onClick={locationPinHandler} />
             </div>
             <div className="cart-empty__location__description">
-              <h2 className="cart-empty__location__description_name">Укажите адрес</h2>
+              <h2 className="cart-empty__location__description__name">Укажите адрес</h2>
               <p className="cart-empty__location__description_item">И узнайте время доставки</p>
             </div>
           </div>
@@ -58,9 +58,9 @@ function EmptyCart() {
       </div>
       {address ? (
         <div>
-          <div className="cart-empty__check_shipping_API">
+          <div className="cart-empty__check__shipping_API">
             <img
-              className="cart-empty__check_shipping_API__img"
+              className="cart-empty__check__shipping_API__img"
               src="/media/cart/cart-empty_locationAPI.png"
               alt=""
             />

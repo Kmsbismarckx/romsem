@@ -15,7 +15,7 @@
   border-bottom: 0.5px solid $gray;
   z-index: 3;
   background-color: white;
-  &__item_phone_name {
+  &__item_phone__name {
     line-height: 14.89px;
   }
   &__item_phone_number {
@@ -32,12 +32,13 @@
   .header {
     position: initial;
     height: 94.5px;
-    background-color: #f2f2f2;
+    background-color: $light_gray;
     justify-content: start;
 
     font-style: normal;
     font-weight: 500;
 
+    margin-bottom: 30px;
     .header__info {
       display: flex;
       flex-direction: column;
@@ -50,7 +51,7 @@
 
       .header__item_phone {
         margin-bottom: 5px;
-        .header__item_phone_name {
+        .header__item_phone__name {
           font-size: 18px;
           line-height: 22px;
         }
@@ -120,14 +121,20 @@
             font-size: 18px;
             line-height: 22px;
           }
+          &__description:hover {
+            color: $orange;
+          }
         }
+
         .menu__item:not(:last-of-type) {
           margin-right: 10px;
         }
       }
+
       .header__item__query {
         display: flex;
         align-items: center;
+        cursor: pointer;
       }
     }
   }

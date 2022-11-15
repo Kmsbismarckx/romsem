@@ -37,7 +37,7 @@
   z-index: 3;
   background-color: white;
 }
-.header__item_phone_name {
+.header__item_phone__name {
   line-height: 14.89px;
 }
 .header__item_phone_number {
@@ -57,6 +57,7 @@
     justify-content: start;
     font-style: normal;
     font-weight: 500;
+    margin-bottom: 30px;
   }
   .header .header__info {
     display: flex;
@@ -69,7 +70,7 @@
   .header .header__info .header__item_phone {
     margin-bottom: 5px;
   }
-  .header .header__info .header__item_phone .header__item_phone_name {
+  .header .header__info .header__item_phone .header__item_phone__name {
     font-size: 18px;
     line-height: 22px;
   }
@@ -132,12 +133,16 @@
     font-size: 18px;
     line-height: 22px;
   }
+  .header .header__main__links .menu__item__description:hover {
+    color: #ff9846;
+  }
   .header .header__main__links .menu__item:not(:last-of-type) {
     margin-right: 10px;
   }
   .header .header__main .header__item__query {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 }
 

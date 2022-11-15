@@ -11,6 +11,7 @@
 body {
   padding-bottom: 82px;
   background-color: #e5e5e5;
+  height: 100%;
 }
 
 h2 {
@@ -23,4 +24,128 @@ h2 {
 a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (min-width: 1919px) {
+  body {
+    padding-bottom: 0;
+  }
+  .pc__container {
+    display: flex;
+    .side-menu__container {
+      width: 320px;
+      .side-menu {
+        width: 180px;
+      }
+      flex-grow: 2;
+    }
+    .pc__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding: 0;
+      width: 1170px;
+      .about {
+        width: 950px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .cart__container {
+    width: auto;
+    background-color: white;
+    flex-grow: 2;
+    padding-top: 59px;
+    .cart,
+    .cart-empty {
+      width: 290px;
+      margin-left: 40px;
+      padding: 0;
+      &__annotation {
+        padding: 0;
+        background-color: $light_gray;
+      }
+      &__item {
+        background-color: $light_gray;
+        padding: 0;
+      }
+    }
+  }
+  .main__footer {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 950px;
+
+    border-top: 0.5px solid $gray;
+    padding-top: 22px;
+    &__item {
+      width: 290px;
+      flex-grow: 2;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+
+      padding-top: 11px;
+      padding-bottom: 30px;
+      .about__contacts {
+        align-items: start;
+        &__name {
+          text-align: start;
+        }
+        &__img {
+          filter: opacity(0.55);
+          cursor: pointer;
+        }
+        &__img:hover {
+          filter: opacity(1);
+        }
+        &__img:not(:last-child) {
+          margin-right: 31px;
+        }
+      }
+      &__name {
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      &__phone__input {
+        border: none;
+        background-color: transparent;
+
+        margin-bottom: 20px;
+        padding: 2px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+      }
+      &__phone__input:focus {
+        outline-color: $orange;
+      }
+    }
+    &__item:not(:last-of-type) {
+      border-right: 0.5px solid $gray;
+    }
+    &__item:not(:first-of-type) {
+      padding-left: 40px;
+      width: 330px;
+    }
+    &__item:last-child {
+      p {
+        margin-bottom: 5px;
+        color: $gray;
+        u {
+          text-decoration: none;
+          border-bottom: 0.5px solid $gray;
+        }
+      }
+    }
+    &__link {
+      margin-bottom: 20px;
+    }
+  }
 }

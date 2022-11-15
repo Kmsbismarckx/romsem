@@ -77,13 +77,13 @@ function Good() {
       <div className="good__item">
         <GoodsItem className="good__item_main" id={Number(goodId)} />
         <div className="good__item_composition">
-          <p className="good__item_composition_name">Состав сета</p>
-          <div className="good__item_composition_items">
+          <p className="good__item_composition__name">Состав сета</p>
+          <div className="good__item_composition__items">
             <Slider pageHeight={127} pageWidth={90.02} pageMargin={10}>
               {composition.map((item) => (
                 <SmallProduct
                   key={item.id}
-                  className="good__item_composition_item"
+                  className="good__item_composition__item"
                   name={item.russianName}
                   price={item.price}
                   imgURL="/media/good/philadelphia_circle.png"
@@ -94,19 +94,19 @@ function Good() {
         </div>
       </div>
       <div className="good__addition">
-        <p className="good__addition_name">Рекомендуем к этому товару</p>
-        <div className="good__addition_items">
+        <p className="good__addition__name">Рекомендуем к этому товару</p>
+        <div className="good__addition__items">
           <Slider pageHeight={121} pageWidth={107} pageMargin={15}>
             {composition.map((item) => (
               <SmallProduct
                 key={item.id}
-                className="good__addition_item"
+                className="good__addition__item"
                 name={item.russianName}
                 price={item.price}
                 imgURL="/media/good/philadelphia_circle.png"
               >
                 <img
-                  className="good__addition_item_button"
+                  className="good__addition__item__button"
                   src="/media/good/add_button.svg"
                   alt="Добавить"
                 />
