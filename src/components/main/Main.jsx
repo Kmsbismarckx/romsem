@@ -70,7 +70,7 @@ function Main() {
                 <div
                   className="swiper__item"
                   style={{
-                    background: `white url("/media/goods/${good.name}.png")  no-repeat center `,
+                    background: `white url("https://via.placeholder.com/800x470")  no-repeat left `,
                     backgroundSize: 'contain',
                   }}
                 >

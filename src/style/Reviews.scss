@@ -43,3 +43,33 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (min-width: 1919px) {
+  .reviews {
+    padding: 0;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+    &__main {
+      width: 1170px;
+      display: flex;
+
+      flex-direction: column;
+      align-items: center;
+    }
+    &__content {
+      width: 1110px;
+      padding-top: 60px;
+    }
+    &__button {
+      width: 180px;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}

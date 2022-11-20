@@ -162,15 +162,81 @@
 @media screen and (min-width: 1919px) {
   .order {
     padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    .order__header {
+      position: relative;
+      display: flex;
+      height: 94.5px;
+      background-color: $light_gray;
+      border-bottom: 0.5px solid $gray;
+      z-index: 3;
+      margin-bottom: 55px;
+      .order__header__button_back {
+        position: relative;
+        padding-left: 30px;
+        margin-top: 38px;
+        margin-left: 100px;
+      }
+      .order__header__button_back::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: url('/public/media/good/arrow_button.svg') no-repeat;
+        background-size: 20px 20px;
+        pointer-events: none;
+      }
+      .order__header__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 363px;
+
+        font-style: normal;
+        font-weight: 500;
+        .header__item_phone__name {
+          text-align: center;
+          font-size: 18px;
+          line-height: 22px;
+        }
+        .header__item_phone_number {
+          font-size: 18px;
+          line-height: 100%;
+        }
+        .header__item__schedule {
+          display: flex;
+          font-size: 14px;
+          line-height: 17px;
+          &__img {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
     .pc__main {
       width: 1490px;
+      padding-bottom: 30px;
+      .form__title {
+        width: 760px;
+        align-self: center;
+        margin-bottom: 30px;
+        text-align: left;
+      }
       .order__form__container {
         display: grid;
         grid-template-columns: 360px 354px;
         justify-content: space-between;
+        align-items: start;
         width: 760px;
         margin: 0 auto;
         &__item {
+          display: grid;
+          gap: 20px;
           .form__user-data {
             display: grid;
             grid-template-columns: repeat(2, auto);
@@ -199,6 +265,35 @@
           .form__address_house_item:last-of-type {
             grid-column-start: 3;
             grid-column-end: 5;
+          }
+          .form__type-of-payment__container {
+            gap: 20px;
+          }
+        }
+        .order__form__container__button {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          padding: 11px 0;
+        }
+        .order__form__container__item:last-child {
+          display: block;
+          grid-column-start: 1;
+          grid-column-end: 3;
+
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          margin-top: 12px;
+          .order__form__container__item__offer {
+            display: inline;
+            border-bottom: 0.5px solid black;
+          }
+          .order__form__container__item__offer:hover {
+            display: inline;
+            color: $orange;
+            border-bottom: 0.5px solid $orange;
           }
         }
       }

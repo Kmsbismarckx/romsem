@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectSideMenuCategories } from '../../store/reducers/categoriesSlice';
-import './slideMenu.css';
+import './sideMenu.css';
 import appContext from '../../context';
 
 function SideMenu() {

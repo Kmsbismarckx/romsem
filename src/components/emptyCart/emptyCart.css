@@ -28,11 +28,8 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-.cart-empty__item {
-  padding: 0 35px;
-}
 .cart-empty__annotation {
-  padding-top: 10px;
+  padding: 10px 35px 0 35px;
   border-radius: 5px;
 }
 .cart-empty__annotation__name {
@@ -101,6 +98,7 @@
 }
 .cart-empty__check__shipping {
   border-radius: 5px;
+  padding: 0 35px;
 }
 .cart-empty__check__shipping__name {
   font-style: normal;
@@ -150,7 +148,7 @@
 }
 .cart-empty__button {
   width: 100%;
-  padding: 13px 0;
+  padding: 13px;
 }
 
 /*# sourceMappingURL=emptyCart.css.map */

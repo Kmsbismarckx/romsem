@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import '../style/Order.css';
 import { useSelector } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
 import Input from '../components/UI/Input/Input';
 import TotalList from '../components/totalList/TotalList';
 import { selectCartItemIds, selectTotalPrice } from '../store/reducers/cartSlice';
@@ -8,12 +9,14 @@ import Button from '../components/UI/Button/Button';
 import AdditivesItem from '../components/Order/additivesItem/AdditivesItem';
 import appContext from '../context';
 import Cart from './Cart';
-import Header from '../components/Header/Header';
 import UserData from '../components/Order/userData/UserData';
 import AddressInfo from '../components/Order/addressInfo/AddressInfo';
 import Payment from '../components/Order/payment/Payment';
+import HeaderPhone from '../components/Header/headerPhone/HeaderPhone';
+import HeaderSchedule from '../components/Header/headerSchedule/HeaderSchedule';
 
 function Order() {
+  const navigate = useNavigate();
   const cartIds = useSelector(selectCartItemIds);
   const totalPrice = useSelector(selectTotalPrice);
   const { isDesktop } = useContext(appContext);
@@ -49,7 +52,15 @@ function Order() {
     return (
       <div className="order pc__container">
         <div className="pc__main">
-          <Header />
+          <div className="order__header">
+            <div className="order__header__button_back" onClick={() => navigate(-1)}>
+              Продолжить выбор
+            </div>
+            <div className="order__header__content">
+              <HeaderPhone />
+              <HeaderSchedule />
+            </div>
+          </div>
           <h2 className="form__title">Ваши данные</h2>
           <div className="order__form__container">
             <div className="order__form__container__item">
@@ -61,6 +72,33 @@ function Order() {
                 paymentType={paymentType}
                 paymentTypeHandler={paymentTypeHandler}
               />
+              <Input
+                className="order__form__item order__form_border-radius order__form_width order__input form__comment"
+                placeholder="Комменатрий к заказу"
+                pattern="^[А-Яа-яЁёA-Za-z\s]+$"
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    ...formData.unnecessaryFields,
+                    comment: e.target.value,
+                  })
+                }
+              />
+              <div className="form__additives-list">
+                <AdditivesItem />
+                <AdditivesItem />
+              </div>
+              <Input
+                className="order__form__item order__input form__promo-code order__form_border-radius order__form_width"
+                placeholder="Введите промокод"
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    ...formData.unnecessaryFields,
+                    promoCode: e.target.value,
+                  })
+                }
+              />
             </div>
             <div className="order__form__container__item">
               <AddressInfo
@@ -70,8 +108,44 @@ function Order() {
                 shippingTypeHandler={shippingTypeHandler}
                 shippingType={shippingType}
               />
+              <div className="form__shipping-time form__toggle order__form_border-radius order__form_width ">
+                <div
+                  className={`order__form__item form__toggle__item form__toggle__item${activeClassHandler(
+                    shippingTime,
+                    'now'
+                  )} form__shipping-time-now`}
+                  onClick={() => shippingTimeHandler('now')}
+                >
+                  На сейчас
+                </div>
+                <div
+                  className={`order__form__item form__toggle__item form__toggle__item${activeClassHandler(
+                    shippingTime,
+                    'later'
+                  )} form__shipping-time-later`}
+                  onClick={() => shippingTimeHandler('later')}
+                >
+                  На время
+                </div>
+              </div>
+              <Input
+                className="order__form__item order__form_border-radius order__form_width order__input form__email"
+                placeholder="E-mail"
+                type="e-mail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                onChange={(e) =>
+                  setFormData({ ...formData, ...formData.unnecessaryFields, eMail: e.target.value })
+                }
+              />
             </div>
-            <div className="order__form" />
+            <Button className="order__form__container_">Оформить заказ</Button>
+            <p className="order__form__container__item">
+              Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на обработку
+              персональных данных в соответствии с{' '}
+              <a className="order__form__container__item__offer" href="/">
+                Публичной оффертой
+              </a>
+            </p>
           </div>
         </div>
 
@@ -103,15 +177,6 @@ function Order() {
         />
         <div className="form_email-comment">
           <Input
-            className="order__form__item order__form_border-radius order__form_width order__input form__email"
-            placeholder="E-mail"
-            type="e-mail"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            onChange={(e) =>
-              setFormData({ ...formData, ...formData.unnecessaryFields, eMail: e.target.value })
-            }
-          />
-          <Input
             className="order__form__item order__form_border-radius order__form_width order__input form__comment"
             placeholder="Комменатрий к заказу"
             pattern="^[А-Яа-яЁёA-Za-z\s]+$"
@@ -120,7 +185,7 @@ function Order() {
             }
           />
         </div>
-        <div className="form___shipping-time form__toggle order__form_border-radius order__form_width ">
+        <div className="form__shipping-time form__toggle order__form_border-radius order__form_width ">
           <div
             className={`order__form__item form__toggle__item form__toggle__item${activeClassHandler(
               shippingTime,

@@ -66,4 +66,32 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1919px) {
+  .reviews {
+    padding: 0;
+  }
+  .reviews__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+  .reviews__main {
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reviews__content {
+    width: 1110px;
+    padding-top: 60px;
+  }
+  .reviews__button {
+    width: 180px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
 /*# sourceMappingURL=Reviews.css.map */

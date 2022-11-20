@@ -19,7 +19,11 @@ function GoodsItem({ className, id, linkParams }) {
 
   return (
     <div className={className}>
-      <img className={`${className}__img`} src={`/media/goods/${good.name}.png`} alt={good.name} />
+      <img
+        className={`${className}__img`}
+        src="http://via.placeholder.com/250x203.svg"
+        alt={good.name}
+      />
       <div className={`${className}__description`}>
         <div>
           <p className={`${className}__name`}>{good.russianName}</p>
@@ -32,17 +36,17 @@ function GoodsItem({ className, id, linkParams }) {
         {isDesktop && <hr className="goods__item__hr" />}
         <div className={`${className}__footer`}>
           <p className={`${className}__price`}>{good.price} COM</p>
-          {isDesktop ? (
+          {/* {isDesktop ? ( */}
+          {/*   <Button className={`${className}_`} onClick={setCartItemHandler}> */}
+          {/*     Хочу! */}
+          {/*   </Button> */}
+          {/* ) : ( */}
+          <Link to={linkParams}>
             <Button className={`${className}_`} onClick={setCartItemHandler}>
               Хочу!
             </Button>
-          ) : (
-            <Link to={linkParams}>
-              <Button className={`${className}_`} onClick={setCartItemHandler}>
-                Хочу!
-              </Button>
-            </Link>
-          )}
+          </Link>
+          {/* )} */}
         </div>
       </div>
     </div>

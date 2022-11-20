@@ -72,7 +72,7 @@ function EmptyCart() {
           )}
         </div>
       ) : (
-        <div>{!isDesktop && <Button className="cart-empty_">Оформить заказ</Button>}</div>
+        !isDesktop && <Button className="cart-empty_">Оформить заказ</Button>
       )}
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './header.css';
 import QueryModal from '../queryModal/QueryModal';
 import HeaderPhone from './headerPhone/HeaderPhone';

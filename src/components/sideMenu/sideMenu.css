@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Din pro";
   font-weight: 400;
@@ -27,6 +28,7 @@
   display: flex;
   justify-content: end;
   background-color: white;
+  padding-top: 26px;
   padding-right: 40px;
   align-items: start;
 }
@@ -34,7 +36,6 @@
 .side-menu {
   display: flex;
   flex-direction: column;
-  margin-top: 26px;
 }
 .side-menu__logo__container {
   display: flex;
@@ -69,6 +70,7 @@
   display: flex;
   align-items: center;
   grid-template-columns: repeat(2, auto);
+  position: relative;
   column-gap: 20px;
 }
 .side-menu__list__item__logo {
@@ -77,8 +79,22 @@
   align-items: center;
   width: 30px;
 }
+.side-menu__list .side-menu__soon:after {
+  content: "СКОРО";
+  position: absolute;
+  left: 106px;
+  top: -8px;
+  background-color: #eb5757;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  color: white;
+  padding: 1px 7px;
+}
 .side-menu__list__item:hover {
   color: #ff9846;
 }
 
-/*# sourceMappingURL=slideMenu.css.map */
+/*# sourceMappingURL=sideMenu.css.map */

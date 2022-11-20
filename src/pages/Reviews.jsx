@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '../components/UI/Button/Button';
 import { addUser, selectUserIds } from '../store/reducers/usersSlice';
@@ -7,8 +7,13 @@ import '../style/Reviews.css';
 import AboutContacts from '../components/About/aboutContacts/aboutContacts';
 import Menu from '../components/menu/Menu';
 import ReviewsModal from '../components/Reviews/reviewsModal/ReviewsModal';
+import appContext from '../context';
+import SideMenu from '../components/sideMenu/SideMenu';
+import Cart from './Cart';
+import Header from '../components/Header/Header';
 
 function Reviews() {
+  const { isDesktop } = useContext(appContext);
   const dispatch = useDispatch();
   const reviewsIds = useSelector(selectUserIds);
 
@@ -24,6 +29,42 @@ function Reviews() {
       setVisible(true);
     }
   };
+
+  if (isDesktop) {
+    return (
+      <div className="reviews pc__container">
+        <SideMenu />
+        <div className="reviews__main">
+          <Header />
+          <div className="reviews__content">
+            <div className="reviews__header">
+              <h2 className="reviews__title">Отзывы</h2>
+              <Button className="reviews_" onClick={addNewReviewHandler}>
+                + Добавить отзыв
+              </Button>
+            </div>
+
+            <div className="reviews__list">
+              {reviewsIds.map((id) => (
+                <ReviewsListItem key={id} id={id} />
+              ))}
+            </div>
+            {visible && (
+              <ReviewsModal
+                visible={visible}
+                setVisible={setVisible}
+                newReview={newReview}
+                setNewReview={setNewReview}
+              />
+            )}
+          </div>
+        </div>
+        <div className="cart__container">
+          <Cart />
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="reviews">
       <h2 className="reviews__title">Отзывы</h2>

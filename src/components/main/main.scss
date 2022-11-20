@@ -48,7 +48,7 @@
     flex-direction: column;
     justify-content: start;
     padding: 0;
-    width: 1170px;
+    width: $pc__main_width;
     &__item {
       width: 100%;
     }
@@ -63,7 +63,6 @@
         width: 950px;
         height: inherit;
         margin-bottom: 11px;
-
       }
       .goods__items__swiper {
         width: 950px;
@@ -155,7 +154,7 @@
             }
           }
           &__button {
-            width: 280px;
+            width: 250px;
             font-size: 32px;
             padding: 7px 0;
             margin-right: 50px;
@@ -239,6 +238,5 @@
         }
       }
     }
-
   }
 }

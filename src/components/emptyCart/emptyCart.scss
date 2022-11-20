@@ -7,11 +7,11 @@
   padding-right: 10px;
 
   &__item {
-    padding: 0 35px;
+    //padding: 0 35px;
   }
 
   &__annotation {
-    padding-top: 10px;
+    padding: 10px 35px 0 35px;
     border-radius: 5px;
 
     &__name {
@@ -98,6 +98,7 @@
 
   &__check__shipping {
     border-radius: 5px;
+    padding: 0 35px;
     &__name {
       font-style: normal;
       font-weight: 400;
@@ -155,6 +156,6 @@
   &__button {
     width: 100%;
 
-    padding: 13px 0;
+    padding: 13px;
   }
 }

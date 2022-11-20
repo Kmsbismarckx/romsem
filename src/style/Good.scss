@@ -63,7 +63,7 @@
       pointer-events: none;
     }
   }
-  .good__item {
+  &__item {
     width: $mobile_width;
     border-radius: 15px;
     background-color: white;
@@ -73,18 +73,18 @@
     line-height: 29.78px;
     margin: 15px auto 30px;
 
-    .good__item_main {
+    &_main {
       text-align: center;
       width: 100%;
-      .good__item_main__img {
+      &__img {
         width: 100%;
         margin-bottom: 10px;
       }
-      .good__item_main__name {
+      &__name {
         margin-bottom: 10px;
         text-align: left;
       }
-      .good__item_main_pieces {
+      &_pieces {
         font-size: 18px;
         font-weight: 300;
         line-height: 22.3px;
@@ -93,7 +93,7 @@
         text-align: left;
       }
 
-      .good__item_main__footer {
+      &__footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -109,12 +109,12 @@
         }
       }
     }
-    .good__item_composition {
-      .good__item_composition__name {
+    &_composition {
+      &__name {
         text-align: center;
         margin-bottom: 20px;
       }
-      .good__item_composition__items {
+      &__items {
         .window {
           width: 192px;
           height: 127px;
@@ -136,32 +136,145 @@
       }
     }
   }
-  .good__addition {
+  &__addition-item {
+    min-width: 107px;
+    height: 121px;
+    &-img {
+      margin-bottom: 10px;
+    }
+  }
+  &__addition-item:not(.good__addition-item:first-of-type) {
+    margin-left: 15px;
+  }
+  &__addition-item-name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.34px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__addition-item-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__addition-item-price {
+    margin-right: 10px;
+  }
+  &__addition {
     width: $mobile_width;
     margin: 0 auto 30px;
+  }
+}
 
-    .good__addition_name {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 22.34px;
-      text-align: center;
+@media screen and (min-width: 1919px) {
+  .good {
+    padding: 0;
+    &__main {
+      width: $pc__main_width;
+      background-color: $light_gray;
+      .header {
+        margin-bottom: 53px;
+      }
+    }
+    &__buttons {
+      margin-bottom: 53px;
+    }
+    &__item {
+      display: flex;
+
+      padding: 0;
+      width: 100%;
+      height: 435px;
+      border-radius: 0;
+
+      &-img {
+        height: inherit;
+      }
+      &-content {
+        padding: 20px 40px 0 40px;
+      }
+      &-name {
+        font-weight: 500;
+        line-height: 60px;
+      }
+      &-weight {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: $orange;
+
+        margin-bottom: 40px;
+      }
+      &-pieces-container {
+        display: flex;
+        margin-bottom: 25px;
+      }
+      &-pieces {
+        margin-right: 30px;
+      }
+      &-composition-container {
+        font-style: normal;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &-composition {
+        margin-bottom: 5px;
+      }
+      &-description {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+
+        margin-bottom: 31px;
+      }
+      &-button {
+        width: 188px;
+        padding: 5px 0;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+    &__swiper-wrapper {
+      position: relative;
+      overflow: hidden;
       margin-bottom: 30px;
     }
-    .good__addition_items {
-      .window {
-        width: 229px;
-        height: 121px;
+    &__swiper {
+      position: initial;
+      width: 860px;
+    }
+    &__swiper-slide {
+      width: 200px;
+    }
+    &__addition-item {
+      width: 100%;
+      height: 100%;
+      &-img {
+        width: 200px;
+        border-radius: 50%;
       }
-      .good__addition_item {
-        min-width: 107px;
-        height: 121px;
-        .good__addition_item__img {
-          margin-bottom: 10px;
-        }
+      &-name {
+        margin-bottom: 10px;
       }
-      .good__addition_item:not(.good__addition_item:first-of-type) {
-        margin-left: 15px;
+      &-price {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
       }
+    }
+    .main__footer {
+      width: 950px;
+      margin: 0 auto;
     }
   }
 }

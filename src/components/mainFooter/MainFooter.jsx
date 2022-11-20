@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Input from '../UI/Input/Input';
 import AboutContacts from '../About/aboutContacts/aboutContacts';
 
 function MainFooter() {
+  // const [phoneValue, setPhoneValue] = useState('');
+
   return (
     <div className="main__footer">
       <div className="main__footer__item">
@@ -15,8 +17,11 @@ function MainFooter() {
         <p className="main__footer__item__name">Введите номер</p>
         <Input
           className="main__footer__item__phone__input"
+          // value={phoneValue}
           type="tel"
-          placeholder="+996(__)___ __ __"
+          pattern="\+7[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="+7996-___-____"
+          // onChange={(e) => setPhoneValue(e.target.value.replace('/([0-9]{3})/'))}
         />
         <AboutContacts />
       </div>

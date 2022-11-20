@@ -33,6 +33,8 @@
 }
 .goods__list__item__img {
   margin-right: 15px;
+  width: 100px;
+  height: 84px;
 }
 .goods__list__item__description {
   display: flex;
@@ -151,6 +153,7 @@
     width: 100%;
     height: 203px;
     padding: 0 19px;
+    margin-right: 0;
   }
 }
 
