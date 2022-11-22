@@ -4,9 +4,9 @@ import AboutContacts from './aboutContacts/aboutContacts';
 import appContext from '../../context';
 
 function About() {
-  const { isDesktop } = useContext(appContext);
+  const { isDesktop, isTablet } = useContext(appContext);
 
-  if (isDesktop) {
+  if (isTablet || isDesktop) {
     return (
       <div className="about">
         <div className="about__info">

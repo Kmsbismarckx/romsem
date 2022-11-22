@@ -151,4 +151,10 @@
   padding: 13px;
 }
 
+@media screen and (min-width: 1920px) {
+  .cart-empty__check__shipping {
+    padding: 0;
+  }
+}
+
 /*# sourceMappingURL=emptyCart.css.map */

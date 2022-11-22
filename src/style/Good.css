@@ -152,11 +152,9 @@
 .good__item_composition__items .good__item_composition__item .good__item_composition__item__footer .good__item_composition__item__price {
   text-align: center;
 }
-.good__addition-item {
-  min-width: 107px;
-  height: 121px;
-}
 .good__addition-item-img {
+  width: 100%;
+  height: 100%;
   margin-bottom: 10px;
 }
 .good__addition-item:not(.good__addition-item:first-of-type) {
@@ -182,32 +180,35 @@
   margin: 0 auto 30px;
 }
 
-@media screen and (min-width: 1919px) {
+@media screen and (min-width: 1024px) {
   .good {
-    padding: 0;
+    width: 950px;
+    margin: 0 auto;
+    padding-top: 86.5px;
+  }
+  .good__buttons {
+    width: 100%;
   }
   .good__main {
-    width: 1170px;
-    background-color: #f2f2f2;
+    width: 950px;
   }
   .good__main .header {
     margin-bottom: 53px;
   }
-  .good__buttons {
-    margin-bottom: 53px;
-  }
   .good__item {
     display: flex;
+    flex-direction: column;
     padding: 0;
     width: 100%;
-    height: 435px;
     border-radius: 0;
   }
   .good__item-img {
-    height: inherit;
+    height: 435px;
   }
   .good__item-content {
-    padding: 20px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
   }
   .good__item-name {
     font-weight: 500;
@@ -251,20 +252,12 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
-  }
-  .good__swiper-wrapper {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 30px;
-  }
-  .good__swiper {
-    position: initial;
-    width: 860px;
-  }
-  .good__swiper-slide {
-    width: 200px;
+    align-self: end;
   }
   .good__addition-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
   }
@@ -280,6 +273,42 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+  }
+  .good__swiper-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1919px) {
+  .good {
+    width: unset;
+    padding: 0;
+  }
+  .good__main {
+    width: 1170px;
+    background: #f2f2f2;
+  }
+  .good__item {
+    flex-direction: row;
+    height: 435px;
+  }
+  .good__item-content {
+    padding-bottom: 0;
+  }
+  .good__item-button {
+    align-self: start;
+  }
+  .good__buttons {
+    width: auto;
+    margin: 0 40px 53px 40px;
+  }
+  .good__swiper {
+    position: initial;
+    width: 860px;
+  }
+  .good__swiper-slide {
+    width: 200px;
   }
   .good .main__footer {
     width: 950px;

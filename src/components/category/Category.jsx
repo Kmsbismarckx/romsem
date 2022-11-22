@@ -6,7 +6,7 @@ import appContext from '../../context';
 
 function Category({ id }) {
   const category = useSelector((state) => selectCategoryById(state, id));
-  const { isDesktop } = useContext(appContext);
+  const { isDesktop, isTablet } = useContext(appContext);
 
   let imgWidth;
   let imgHeight;
@@ -27,18 +27,26 @@ function Category({ id }) {
     isVisible = 'flex';
   }
 
-  if (isDesktop) {
+  if (isTablet || isDesktop) {
     return (
       <li className="main__item">
         <p className="main__item__name">{category.russianName}</p>
 
         <p className="main__item_stock">СКОРО</p>
         <Link to={`/home/${category.id}`}>
-          <img
-            className="main__item__img"
-            src={`/media/main/${category.name}.png`}
-            alt={category.russianName}
-          />
+          {isTablet ? (
+            <img
+              className="main__item-img"
+              src="https://via.placeholder.com/950x397"
+              alt={category.russianName}
+            />
+          ) : (
+            <img
+              className="main__item-img"
+              src={`/media/main/${category.name}.png`}
+              alt={category.russianName}
+            />
+          )}
         </Link>
       </li>
     );

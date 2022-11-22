@@ -11,6 +11,7 @@ const cartSlice = createSlice({
   reducers: {
     setCartItem(state, action) {
       const { id } = action.payload;
+      console.log(id);
       const existingBasketItem = state.entities[id];
 
       if (existingBasketItem) {

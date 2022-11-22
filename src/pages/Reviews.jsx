@@ -32,7 +32,7 @@ function Reviews() {
 
   if (isDesktop) {
     return (
-      <div className="reviews pc__container">
+      <div className="reviews pc__container tablet__container">
         <SideMenu />
         <div className="reviews__main">
           <Header />
@@ -43,12 +43,6 @@ function Reviews() {
                 + Добавить отзыв
               </Button>
             </div>
-
-            <div className="reviews__list">
-              {reviewsIds.map((id) => (
-                <ReviewsListItem key={id} id={id} />
-              ))}
-            </div>
             {visible && (
               <ReviewsModal
                 visible={visible}
@@ -57,6 +51,11 @@ function Reviews() {
                 setNewReview={setNewReview}
               />
             )}
+            <div className="reviews__list">
+              {reviewsIds.map((id) => (
+                <ReviewsListItem key={id} id={id} />
+              ))}
+            </div>
           </div>
         </div>
         <div className="cart__container">

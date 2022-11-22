@@ -18,9 +18,9 @@
   }
 }
 
-@media screen and (min-width: 1919px) {
+@media screen and (min-width: 1024px) {
   .goods {
-    padding-top: 0;
+    padding-top: 86.5px;
     .goods__header__container {
       width: 950px;
       align-self: center;
@@ -86,5 +86,11 @@
 
       margin-bottom: 174px;
     }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .goods {
+    padding-top: 0;
   }
 }

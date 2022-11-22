@@ -50,7 +50,7 @@ function Order() {
 
   if (isDesktop) {
     return (
-      <div className="order pc__container">
+      <div className="order pc__container tablet__container">
         <div className="pc__main">
           <div className="order__header">
             <div className="order__header__button_back" onClick={() => navigate(-1)}>

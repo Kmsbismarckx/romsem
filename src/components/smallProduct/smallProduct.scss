@@ -1,8 +1,9 @@
 @import '../../style/variables.scss';
 
-.small__product {
+.small-product {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   &__img {
     width: 66px;
@@ -16,7 +17,7 @@
   &__footer {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     .small__product__price {
       font-size: 18px;
       font-weight: 700;

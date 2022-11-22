@@ -10,7 +10,7 @@
   &__img {
     margin-right: 15px;
     width: 100px;
-	  height: 84px;
+    height: 84px;
   }
   &__description {
     display: flex;
@@ -42,7 +42,19 @@
   }
 }
 
-@media screen and (min-width: 1919px) {
+.good__item-swiper-wrapper {
+  width: 100%;
+  position: relative;
+}
+.good__item-swiper {
+  margin: 0 40px;
+  position: initial;
+  .swiper-wrapper {
+    width: 91px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .goods__item,
   .goods__list__item {
     display: flex;

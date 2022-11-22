@@ -8,16 +8,18 @@ import '../style/Home.css';
 import Cart from './Cart';
 
 function Home() {
-  const { isDesktop } = useContext(appContext);
+  const { isDesktop, isTablet } = useContext(appContext);
 
-  if (isDesktop) {
+  if (isTablet) {
     return (
-      <div className="home pc__container">
-        <SideMenu />
+      <div className="home pc__container tablet__container">
+        {isDesktop && <SideMenu />}
         <Main />
-        <div className="cart__container">
-          <Cart />
-        </div>
+        {isDesktop && (
+          <div className="cart__container">
+            <Cart />
+          </div>
+        )}
       </div>
     );
   }

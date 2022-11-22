@@ -10,6 +10,7 @@ import Good from './pages/Good';
 import Cart from './pages/Cart';
 import Order from './pages/Order';
 import Reviews from './pages/Reviews';
+import Menu from './components/menu/Menu';
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -21,6 +22,9 @@ function App() {
   const isDesktop = useMediaQuery({
     query: '(min-width: 1920px)',
   });
+  const isTablet = useMediaQuery({
+    query: '(min-width: 1024px)',
+  });
 
   const contextData = useMemo(
     () => ({
@@ -29,8 +33,9 @@ function App() {
       filter,
       setFilter,
       isDesktop,
+      isTablet,
     }),
-    [modal, setModal, filter, setFilter, isDesktop]
+    [modal, setModal, filter, setFilter, isDesktop, isTablet]
   );
 
   return (
@@ -47,6 +52,7 @@ function App() {
             <Route path="/order" element={<Order />} />
             <Route path="/reviews" element={<Reviews />} />
           </Routes>
+          {!isDesktop && <Menu />}
         </urlContext.Provider>
       </Router>
     </div>

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './header.css';
 import QueryModal from '../queryModal/QueryModal';
 import HeaderPhone from './headerPhone/HeaderPhone';
@@ -7,7 +7,7 @@ import HeaderSchedule from './headerSchedule/HeaderSchedule';
 import appContext from '../../context';
 
 function Header() {
-  const { modal, setModal, filter, setFilter, isDesktop } = useContext(appContext);
+  const { modal, setModal, filter, setFilter, isDesktop, isTablet } = useContext(appContext);
 
   if (isDesktop) {
     return (

@@ -1,6 +1,7 @@
 import React from 'react';
+import './smallProduct.css';
 
-function SmallProduct({ children, name, price, imgURL, className }) {
+function SmallProduct({ children, name, price, className }) {
   return (
     <div className={`${className} small-product`}>
       <img

@@ -24,20 +24,19 @@ import MainFooter from '../components/mainFooter/MainFooter';
 
 function Good() {
   const dispatch = useDispatch();
-  const { isDesktop } = useContext(appContext);
+  const { isDesktop, isTablet } = useContext(appContext);
   const { categoryId, goodId } = useParams();
 
   const good = useSelector((state) => selectGoodById(state, Number(goodId)));
   const { composition } = good;
 
   const AboutMemo = React.memo(About);
-
-  if (isDesktop) {
+  if (isTablet || isDesktop) {
     return (
-      <div className="good pc__container">
-        <SideMenu />
+      <div className="good pc__container tablet__container">
+        {isDesktop && <SideMenu />}
         <div className="good__main">
-          <Header />
+          {isDesktop && <Header />}
           <GoodButtons categoryId={categoryId} goodId={goodId} />
           <div className="good__item">
             <img className="good__item-img" src="https://via.placeholder.com/620x435" alt="" />
@@ -60,7 +59,7 @@ function Good() {
               </div>
               <Button
                 className="good__item-button "
-                onClick={() => dispatch(setCartItem({ goodId }))}
+                onClick={() => dispatch(setCartItem({ id: Number(goodId) }))}
               >
                 Хочу
               </Button>
@@ -78,7 +77,7 @@ function Good() {
               navigation
             >
               {composition.map((item) => (
-                <SwiperSlide className="good__swiper-slide">
+                <SwiperSlide className="good__swiper-slide" key={item.id}>
                   <SmallProduct
                     key={item.id}
                     className="good__addition-item"
@@ -98,9 +97,11 @@ function Good() {
           </div>
           <MainFooter />
         </div>
-        <div className="cart__container">
-          <Cart />
-        </div>
+        {isDesktop && (
+          <div className="cart__container">
+            <Cart />
+          </div>
+        )}
       </div>
     );
   }
@@ -112,42 +113,41 @@ function Good() {
         <GoodsItem className="good__item_main" id={Number(goodId)} />
         <div className="good__item_composition">
           <p className="good__item_composition__name">Состав сета</p>
-          <div className="good__item_composition__items">
-            <Slider pageHeight={127} pageWidth={90.02} pageMargin={10}>
+          <div className="good__item-swiper-wrapper">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              effect
+              speed={800}
+              slidesPerView={2}
+              spaceBetween={10}
+              grabCursor
+              navigation
+              className="good__item-swiper"
+            >
               {composition.map((item) => (
-                <SmallProduct
-                  key={item.id}
-                  className="good__item_composition__item"
-                  name={item.russianName}
-                  price={item.price}
-                  imgURL="/media/good/philadelphia_circle.png"
-                />
+                <SwiperSlide>
+                  <SmallProduct
+                    key={item.id}
+                    className="good__addition-item"
+                    name={item.russianName}
+                    price={item.price}
+                    imgURL="/media/good/philadelphia_circle.png"
+                  >
+                    <img
+                      className="good__addition-item-button"
+                      src="/media/good/add_button.svg"
+                      alt="Добавить"
+                    />
+                  </SmallProduct>
+                </SwiperSlide>
               ))}
-            </Slider>
+            </Swiper>
           </div>
         </div>
       </div>
       <div className="good__addition">
         <p className="good__addition__name">Рекомендуем к этому товару</p>
-        <div className="good__addition__items">
-          <Slider pageHeight={121} pageWidth={107} pageMargin={15}>
-            {composition.map((item) => (
-              <SmallProduct
-                key={item.id}
-                className="good__addition__item"
-                name={item.russianName}
-                price={item.price}
-                imgURL="/media/good/philadelphia_circle.png"
-              >
-                <img
-                  className="good__addition__item__button"
-                  src="/media/good/add_button.svg"
-                  alt="Добавить"
-                />
-              </SmallProduct>
-            ))}
-          </Slider>
-        </div>
+        <div className="good__addition__items" />
       </div>
       <AboutMemo />
       <Menu />

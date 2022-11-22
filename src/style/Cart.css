@@ -45,7 +45,20 @@
   padding: 13px 0 !important;
 }
 
+@media screen and (min-width: 1024px) {
+  .cart {
+    width: 950px;
+    margin: 0 auto;
+  }
+  .cart-empty {
+    width: 950px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 1919px) {
+  .cart {
+    margin: 0;
+  }
   .cart__name {
     text-align: center;
     background-color: #f2f2f2;

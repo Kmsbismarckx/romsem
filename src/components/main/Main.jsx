@@ -32,7 +32,7 @@ import { setCartItem } from '../../store/reducers/cartSlice';
 function Main() {
   const dispatch = useDispatch();
 
-  const { filter, isDesktop } = useContext(appContext);
+  const { filter, isDesktop, isTablet } = useContext(appContext);
   const categories = useSelector(selectAllCategories);
   const categoriesIds = useSelector(selectCategoryIds);
   const popularCategoriesIds = useSelector(selectPopularCategoriesIds);
@@ -47,11 +47,29 @@ function Main() {
   const [slideGoods, setSlideGoods] = useState(1);
   const [goodsItems, setGoodsItems] = useState('new');
 
-  if (isDesktop) {
+  if (isTablet || isDesktop) {
     return (
       <div className="main pc__main">
-        <Header />
+        {isDesktop && <Header />}
         <div className="main__content">
+          {!isDesktop && (
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              effect
+              speed={800}
+              slidesPerView={1}
+              grabCursor
+              loop
+              className="categories__swiper"
+            >
+              {goods.map((good) => (
+                <SwiperSlide key={good.id}>
+                  <Category id={good.id} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          )}
+
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             effect
@@ -162,7 +180,7 @@ function Main() {
                 ))}
           </Swiper>
         </div>
-        <About />
+        {isDesktop && <About />}
         <MainFooter />
       </div>
     );
@@ -175,6 +193,7 @@ function Main() {
       </ul>
     );
   }
+
   return (
     <ul className="main">
       {sortedAndSearchedCategories.map((category) => (

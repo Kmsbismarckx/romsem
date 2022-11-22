@@ -71,10 +71,12 @@
   }
 }
 
-@media screen and (min-width: 1919px) {
+@media screen and (min-width: 1024px) {
   .about {
     font-style: normal;
     color: $gray;
+    width: 950px;
+    margin-bottom: 30px;
     .about__info__name {
       font-weight: 700;
       font-size: 24px;

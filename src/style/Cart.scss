@@ -24,8 +24,20 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .cart {
+    width: 950px;
+    margin: 0 auto;
+  }
+  .cart-empty {
+    width: 950px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1919px) {
   .cart {
+    margin: 0;
     &__name {
       text-align: center;
       background-color: $light_gray;
