@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Din pro";
+  font-weight: 400;
+  src: url(/src/fonts/dinpro.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 500;
+  src: url(/src/fonts/dinpro_medium.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 700;
+  src: url(/src/fonts/dinpro_bold.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 300;
+  src: url(/src/fonts/dinpro_light.otf);
+}
+@font-face {
+  font-family: "Nexa";
+  font-weight: 300;
+  src: url(/src/fonts/Nexa-Trial-Light.otf);
+}
+.main__footer {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  width: 950px;
+  border-top: 0.5px solid #a4acad;
+  padding-top: 22px;
+}
+.main__footer-item {
+  width: 290px;
+  flex-grow: 2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  padding-top: 11px;
+  padding-bottom: 30px;
+}
+.main__footer-item:not(:last-of-type) {
+  border-right: 0.5px solid #a4acad;
+}
+.main__footer-item:not(:first-of-type) {
+  padding-left: 40px;
+  width: 330px;
+}
+.main__footer-name {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.main__footer-input {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 2px 2px 2px 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+.main__footer-input:focus {
+  outline-color: #ff9846;
+}
+.main__footer-input:invalid {
+  outline-color: red;
+  color: red;
+}
+.main__footer-link {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=mainFooter.css.map */

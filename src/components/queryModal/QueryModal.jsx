@@ -1,13 +1,12 @@
 import React from 'react';
 import './queryModal.css';
-import { redirect } from 'react-router-dom';
 import Input from '../UI/Input/Input';
 
 function QueryModal({ visible, setVisible, filter, setFilter }) {
-  const rootClasses = ['queryModal'];
+  const rootClasses = ['query-modal'];
 
   if (visible) {
-    rootClasses.push('queryModal__active');
+    rootClasses.push('query-modal_active');
   }
   return (
     <div
@@ -16,14 +15,15 @@ function QueryModal({ visible, setVisible, filter, setFilter }) {
         setVisible(false);
       }}
     >
-      <div className="queryModal__content" onClick={(event) => event.stopPropagation()}>
+      <div className="query-modal__content" onClick={(event) => event.stopPropagation()}>
         <Input
-          className="queryModal__content_search"
+          className="query-modal__search"
           value={filter.query}
           onChange={(e) => setFilter({ ...filter, query: e.target.value })}
           onKeyDown={(e) => {
             if (e.keyCode === 13 || e.keyCode === 27) {
               setVisible(false);
+              setFilter({ ...filter, query: '' });
             }
           }}
           placeholder="Поиск..."

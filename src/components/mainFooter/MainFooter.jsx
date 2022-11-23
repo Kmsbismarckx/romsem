@@ -1,22 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './mainFooter.css';
 import Input from '../UI/Input/Input';
 import AboutContacts from '../About/aboutContacts/aboutContacts';
+import ContactsInfo from '../About/contactsInfo/ContactsInfo';
 
 function MainFooter() {
   // const [phoneValue, setPhoneValue] = useState('');
 
   return (
     <div className="main__footer">
-      <div className="main__footer__item">
-        <p className="main__footer__link">О компании</p>
-        <p className="main__footer__link">Доставка и оплата</p>
-        <p className="main__footer__link">Лента материалов</p>
-        <p className="main__footer__link">Политика возврата</p>
+      <div className="main__footer-item">
+        <p className="main__footer-link">О компании</p>
+        <p className="main__footer-link">Доставка и оплата</p>
+        <p className="main__footer-link">Лента материалов</p>
+        <p className="main__footer-link">Политика возврата</p>
       </div>
-      <div className="main__footer__item">
-        <p className="main__footer__item__name">Введите номер</p>
+      <div className="main__footer-item">
+        <p className="main__footer-name">Введите номер</p>
         <Input
-          className="main__footer__item__phone__input"
+          className="main__footer-input"
           // value={phoneValue}
           type="tel"
           pattern="\+7[0-9]{3}-[0-9]{3}-[0-9]{4}"
@@ -25,15 +27,7 @@ function MainFooter() {
         />
         <AboutContacts />
       </div>
-      <div className="main__footer__item">
-        <p>
-          Тел: <u>+996 705 188 955</u>
-        </p>
-        <p>
-          Тел: <u>+996 555 188 955</u>
-        </p>
-        <p>Адрес:Бакаева 126</p>
-      </div>
+      <ContactsInfo className="main__footer-item" />
     </div>
   );
 }

@@ -8,7 +8,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import GoodsItem from '../components/goodItem/GoodsItem';
 import SmallProduct from '../components/smallProduct/SmallProduct';
-import Slider from '../components/UI/Slider/Slider';
 import About from '../components/About/About';
 import { selectGoodById } from '../store/reducers/goodsSlice';
 import Menu from '../components/menu/Menu';
@@ -110,9 +109,9 @@ function Good() {
     <div className="good">
       <GoodButtons categoryId={categoryId} goodId={goodId} />
       <div className="good__item">
-        <GoodsItem className="good__item_main" id={Number(goodId)} />
-        <div className="good__item_composition">
-          <p className="good__item_composition__name">Состав сета</p>
+        <GoodsItem id={Number(goodId)} />
+        <div className="good__item-composition">
+          <p className="good__item-name">Состав сета</p>
           <div className="good__item-swiper-wrapper">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
@@ -122,23 +121,17 @@ function Good() {
               spaceBetween={10}
               grabCursor
               navigation
-              className="good__item-swiper"
+              className="composition-swiper"
             >
               {composition.map((item) => (
                 <SwiperSlide>
                   <SmallProduct
                     key={item.id}
-                    className="good__addition-item"
+                    className=""
                     name={item.russianName}
                     price={item.price}
                     imgURL="/media/good/philadelphia_circle.png"
-                  >
-                    <img
-                      className="good__addition-item-button"
-                      src="/media/good/add_button.svg"
-                      alt="Добавить"
-                    />
-                  </SmallProduct>
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -146,8 +139,37 @@ function Good() {
         </div>
       </div>
       <div className="good__addition">
-        <p className="good__addition__name">Рекомендуем к этому товару</p>
-        <div className="good__addition__items" />
+        <p className="good__addition-name">Рекомендуем к этому товару</p>
+        <div className="good__addition-items">
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            effect
+            speed={800}
+            slidesPerView={2}
+            spaceBetween={10}
+            grabCursor
+            navigation
+            className="good__item-swiper"
+          >
+            {composition.map((item) => (
+              <SwiperSlide>
+                <SmallProduct
+                  key={item.id}
+                  className="good__addition-item"
+                  name={item.russianName}
+                  price={item.price}
+                  imgURL="/media/good/philadelphia_circle.png"
+                >
+                  <img
+                    className="good__addition-button"
+                    src="/media/good/add_button.svg"
+                    alt="Добавить"
+                  />
+                </SmallProduct>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
       <AboutMemo />
       <Menu />

@@ -1,0 +1,64 @@
+@import '../../style/variables';
+
+.category {
+  position: relative;
+  width: 162px;
+  height: 157px;
+  &__name {
+    position: absolute;
+    top: 10px;
+    left: 11px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.34px;
+    color: white;
+    &_bottom {
+      bottom: 7.67px;
+      top: unset;
+      left: 7px;
+
+      font-size: 24px;
+      line-height: 29.78px;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+  &__stock {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 14px;
+    right: 19px;
+    width: 50px;
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13.64px;
+    color: white;
+    text-align: center;
+
+    background-color: $red;
+    border-radius: 10px;
+  }
+  &_large {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    width: 330px;
+    height: 146.67px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .category {
+    width: 100%;
+    height: 100%;
+    &__name {
+    }
+  }
+}

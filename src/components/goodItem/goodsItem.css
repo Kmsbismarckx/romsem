@@ -23,7 +23,7 @@
   font-weight: 300;
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
-.goods__list__item {
+.goods__item {
   display: flex;
   width: 91.6%;
   background-color: white;
@@ -31,35 +31,35 @@
   margin: 0 auto 10px;
   padding: 18px 10px 18px 18px;
 }
-.goods__list__item__img {
+.goods__item-img {
   margin-right: 15px;
   width: 100px;
   height: 84px;
 }
-.goods__list__item__description {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-grow: 2;
-}
-.goods__list__item__description .goods__list__item__name {
+.goods__item-name {
   width: 187px;
   font-size: 14px;
   font-weight: 500;
   line-height: 17.37px;
 }
-.goods__list__item__description .goods__list__item__header {
+.goods__item-header {
   display: flex;
   font-size: 14px;
   font-weight: 400;
   line-height: 17.36px;
   color: #a4acad;
 }
-.goods__list__item__description .goods__list__item__footer {
+.goods__item-description {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 2;
+}
+.goods__item-footer {
   display: flex;
   justify-content: space-between;
 }
-.goods__list__item__description .goods__list__item__footer .goods__list__item__price {
+.goods__item-price {
   font-size: 18px;
   font-weight: 700;
   line-height: 22.54px;
@@ -79,31 +79,31 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .goods__item,
-.goods__list__item {
+  .goods__item {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
     background: white;
     font-style: normal;
   }
-  .goods__item__img,
-.goods__list__item__img {
+  .goods__item-img {
     width: 100%;
     height: 203px;
-    padding: 0 19px;
+    padding: 0 18px 0 17px;
+    margin-right: 0;
   }
-  .goods__item__name,
-.goods__list__item__name {
+  .goods__item-name {
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 30px;
-    padding: 0 19px;
+    padding: 0 18px 0 17px;
   }
-  .goods__item__header,
-.goods__list__item__header {
+  .goods__item-header {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
@@ -112,30 +112,30 @@
     margin-bottom: 20px;
     padding: 0 19px;
   }
-  .goods__item__hr,
-.goods__list__item__hr {
+  .goods__item-hr {
     border: none;
     height: 0.5px;
     background-color: #a4acad;
     margin-bottom: 11px;
   }
-  .goods__item__footer,
-.goods__list__item__footer {
+  .goods__item-footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 17px;
+    padding-right: 7.94px;
+    padding-left: 17.06px;
     margin-bottom: 10px;
   }
-  .goods__item__footer .goods__item__price,
-.goods__list__item__footer .goods__item__price {
+  .goods__item-description {
+    justify-content: end;
+  }
+  .goods__item-price {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     margin-right: 12px;
   }
-  .goods__item__button,
-.goods__list__item__button {
+  .goods__item__button {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -143,31 +143,6 @@
     color: #f2f2f2;
     padding: 5px 42px;
   }
-  .goods__list__item {
-    padding: 0;
-    border-radius: 0;
-    margin: 0;
-    height: 400px;
-    width: 100%;
-  }
-  .goods__list__item__description {
-    justify-content: end;
-  }
-  .goods__list__item__description .goods__list__item__name {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-  }
-  .goods__list__item__description .goods__list__item__footer {
-    padding-right: 7px;
-  }
-  .goods__list__item__img {
-    width: 100%;
-    height: 203px;
-    padding: 0 19px;
-    margin-right: 0;
-  }
 }
 
-/*# sourceMappingURL=goodItem.css.map */
+/*# sourceMappingURL=goodsItem.css.map */

@@ -61,38 +61,6 @@
   height: 9px;
   background-image: url("/public/media/about/arrow_down.svg");
 }
-.about__contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #a4acad;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.3px;
-}
-.about__contacts__name {
-  margin-bottom: 10px;
-}
-.about__contacts__imgs {
-  display: flex;
-  margin-bottom: 30px;
-  justify-content: space-around;
-}
-.about__contacts__imgs .about__contacts__img {
-  width: 50px;
-  height: 50px;
-}
-.about__contacts__img {
-  filter: opacity(0.55);
-  cursor: pointer;
-}
-.about__contacts__img:hover {
-  filter: opacity(1);
-}
-.about__contacts_phones {
-  margin-bottom: 30px;
-}
 
 @media screen and (min-width: 1024px) {
   .about {

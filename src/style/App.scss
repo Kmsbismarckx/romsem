@@ -26,6 +26,22 @@ a {
   color: black;
 }
 
+//SWIPER
+
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 2 !important;
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  &__name {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
 @media screen and (min-width: 1024px) {
   body {
     padding-bottom: 0;
@@ -38,86 +54,6 @@ a {
     display: flex;
     justify-content: center;
     padding-top: 86.5px;
-  }
-  .main__footer {
-    display: flex;
-    align-self: center;
-    justify-content: space-between;
-    width: 950px;
-
-    border-top: 0.5px solid $gray;
-    padding-top: 22px;
-    &__item {
-      width: 290px;
-      flex-grow: 2;
-
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 100%;
-
-      padding-top: 11px;
-      padding-bottom: 30px;
-      .about__contacts {
-        align-items: start;
-        &__name {
-          text-align: start;
-        }
-        &__img {
-          filter: opacity(0.55);
-          cursor: pointer;
-        }
-        &__img:hover {
-          filter: opacity(1);
-        }
-        &__img:not(:last-child) {
-          margin-right: 31px;
-        }
-      }
-      &__name {
-        font-weight: 500;
-        margin-bottom: 10px;
-      }
-
-      &__phone__input {
-        border: none;
-        background-color: transparent;
-
-        margin-bottom: 20px;
-        padding: 2px 2px 2px 6px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 100%;
-      }
-      &__phone__input:focus {
-        outline-color: $orange;
-      }
-      &__phone__input:invalid {
-        outline-color: red;
-        color: red;
-      }
-    }
-    &__item:not(:last-of-type) {
-      border-right: 0.5px solid $gray;
-    }
-    &__item:not(:first-of-type) {
-      padding-left: 40px;
-      width: 330px;
-    }
-    &__item:last-child {
-      p {
-        margin-bottom: 5px;
-        color: $gray;
-        u {
-          text-decoration: none;
-          border-bottom: 0.5px solid $gray;
-        }
-      }
-    }
-    &__link {
-      margin-bottom: 20px;
-    }
   }
 }
 

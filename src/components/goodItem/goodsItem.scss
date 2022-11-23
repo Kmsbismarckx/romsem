@@ -1,0 +1,134 @@
+@import '../../style/variables.scss';
+
+.goods__item {
+  display: flex;
+  width: $mobile_width;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 auto 10px;
+  padding: 18px 10px 18px 18px;
+  &-img {
+    margin-right: 15px;
+    width: 100px;
+    height: 84px;
+  }
+  &-name {
+    width: 187px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.37px;
+  }
+  &-header {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.36px;
+    color: $gray;
+  }
+  &-description {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 2;
+  }
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-price {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.54px;
+  }
+}
+
+.good__item-swiper-wrapper {
+  width: 100%;
+  position: relative;
+}
+.good__item-swiper {
+  margin: 0 40px;
+  position: initial;
+  .swiper-wrapper {
+    width: 91px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .goods__item {
+    display: flex;
+    justify-content: space-between;
+
+    height: 400px;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    border-radius: 0;
+    background: white;
+
+    font-style: normal;
+
+    &-img {
+      width: 100%;
+      height: 203px;
+      padding: 0 18px 0 17px;
+      margin-right: 0;
+    }
+    &-name {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+
+      margin-bottom: 30px;
+      padding: 0 18px 0 17px;
+    }
+    &-header {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      display: flex;
+      color: $gray;
+
+      margin-bottom: 20px;
+      padding: 0 19px;
+    }
+    &-hr {
+      border: none;
+      height: 0.5px;
+      background-color: $gray;
+
+      margin-bottom: 11px;
+    }
+    &-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      padding-right: 7.94px;
+      padding-left: 17.06px;
+      margin-bottom: 10px;
+    }
+    &-description {
+      justify-content: end;
+    }
+    &-price {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+
+      margin-right: 12px;
+    }
+    &__button {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+
+      color: #f2f2f2;
+
+      padding: 5px 42px;
+    }
+  }
+}

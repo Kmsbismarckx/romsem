@@ -5,9 +5,9 @@ function HeaderSchedule() {
   const { isDesktop } = useContext(appContext);
 
   return (
-    <div className="header__item header__item__schedule">
-      <img className="header__item__schedule__img" src="/media/header/clock.svg" alt="clock" />
-      <div className="header__item__schedule__info">
+    <div className="header__schedule">
+      <img className="header__schedule-img" src="/media/header/clock.svg" alt="clock" />
+      <div className="header__schedule-info">
         работаем
         {!isDesktop && <br />}c 10:00 до 00:00
       </div>

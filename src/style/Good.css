@@ -24,7 +24,7 @@
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
 .good {
-  padding-top: 66.5px;
+  padding-top: 73px;
 }
 .good__buttons {
   display: flex;
@@ -95,19 +95,27 @@
   line-height: 29.78px;
   margin: 15px auto 30px;
 }
-.good__item_main {
+.good__item .goods__item {
   text-align: center;
+  flex-direction: column;
   width: 100%;
 }
-.good__item_main__img {
+.good__item .goods__item-img {
   width: 100%;
+  min-height: 176px;
+  height: 100%;
   margin-bottom: 10px;
+  margin-right: 0;
 }
-.good__item_main__name {
+.good__item .goods__item-name {
   margin-bottom: 10px;
   text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
 }
-.good__item_main_pieces {
+.good__item .goods__item-pieces {
   font-size: 18px;
   font-weight: 300;
   line-height: 22.3px;
@@ -115,57 +123,43 @@
   color: #ff9846;
   text-align: left;
 }
-.good__item_main__footer {
+.good__item .goods__item-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
-.good__item_main__footer .good__item_main__price {
+.good__item .goods__item-price {
   font-size: 24px;
   font-weight: 700;
   line-height: 30.05px;
 }
-.good__item_main__footer .good__item_main__button {
+.good__item .goods__item__button {
   width: 188px;
   height: 40px;
 }
-.good__item_composition__name {
+.good__item-name {
   text-align: center;
   margin-bottom: 20px;
 }
-.good__item_composition__items .window {
-  width: 192px;
-  height: 127px;
+.good__addition {
+  width: 91.6%;
+  margin: 0 auto 30px;
 }
-.good__item_composition__items .good__item_composition__item {
-  min-width: 91px;
-  height: 127px;
-  margin-right: 10px;
-}
-.good__item_composition__items .good__item_composition__item .good__item_composition__item_name {
-  margin-bottom: 11px;
-}
-.good__item_composition__items .good__item_composition__item .good__item_composition__item__footer {
-  justify-content: center;
-}
-.good__item_composition__items .good__item_composition__item .good__item_composition__item__footer .good__item_composition__item__price {
-  text-align: center;
-}
-.good__addition-item-img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10px;
-}
-.good__addition-item:not(.good__addition-item:first-of-type) {
-  margin-left: 15px;
-}
-.good__addition-item-name {
+.good__addition-name {
   font-size: 18px;
   font-weight: 500;
   line-height: 22.34px;
   text-align: center;
   margin-bottom: 30px;
+}
+.good__addition-items {
+  position: relative;
+}
+.good__addition-item-img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
 }
 .good__addition-item-footer {
   display: flex;
@@ -174,10 +168,6 @@
 }
 .good__addition-item-price {
   margin-right: 10px;
-}
-.good__addition {
-  width: 91.6%;
-  margin: 0 auto 30px;
 }
 
 @media screen and (min-width: 1024px) {

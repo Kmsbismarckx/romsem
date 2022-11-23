@@ -15,14 +15,14 @@
   border-bottom: 0.5px solid $gray;
   z-index: 3;
   background-color: white;
-  &__item_phone__name {
+  &__phone-name {
     line-height: 14.89px;
   }
-  &__item_phone_number {
+  &__phone-number {
     line-height: 12px;
     color: $orange;
   }
-  &__item__schedule__info {
+  &__schedule-info {
     line-height: 14.89px;
     color: $gray;
   }
@@ -39,7 +39,16 @@
     font-weight: 500;
 
     margin-bottom: 30px;
-    .header__info {
+    &__main {
+      display: flex;
+      flex-grow: 2;
+
+      padding-left: 15px;
+      padding-right: 40px;
+
+      font-style: normal;
+    }
+    &__info {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -48,94 +57,84 @@
 
       width: 225px;
       height: 100%;
-
-      .header__item_phone {
-        margin-bottom: 5px;
-        .header__item_phone__name {
-          font-size: 18px;
-          line-height: 22px;
-        }
-        .header__item_phone_number {
-          font-size: 18px;
-          line-height: 100%;
-        }
+    }
+    &__phone-list {
+      margin-bottom: 5px;
+    }
+    &__phone-name {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__phone-number {
+      font-size: 18px;
+      line-height: 100%;
+    }
+    &__schedule {
+      display: flex;
+      justify-content: center;
+      &-img {
+        margin-right: 5px;
       }
-      .header__item__schedule {
-        display: flex;
-        justify-content: center;
-        &__img {
-          margin-right: 5px;
-        }
-        &__info {
-          font-size: 14px;
-          line-height: 17px;
-        }
+      &-info {
+        font-size: 14px;
+        line-height: 17px;
       }
     }
-    .header__main {
+
+    &__query {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &__location {
+      text-align: start;
+      &-name {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: $gray;
+
+        margin-bottom: 4px;
+      }
+      &-choose {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+
+        background: transparent;
+        border: none;
+
+        appearance: none;
+      }
+      &-choose:focus {
+        outline-color: $orange;
+        background-color: white;
+      }
+    }
+    &__links {
       display: flex;
       flex-grow: 2;
 
-      padding-left: 15px;
-      padding-right: 40px;
-
-      font-style: normal;
-
-      &__location {
-        text-align: start;
-        &__name {
-          font-weight: 300;
-          font-size: 14px;
-          line-height: 17px;
-
-          color: $gray;
-
-          margin-bottom: 4px;
-        }
-        &__choose {
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 22px;
-
-          background: transparent;
-          border: none;
-
-          appearance: none;
-        }
-        &__choose:focus {
-          outline-color: $orange;
-          background-color: white;
-        }
+      justify-content: end;
+      align-items: center;
+      margin-right: 70px;
+    }
+    &__link {
+      margin: 0;
+      width: fit-content;
+      &-description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
       }
-      &__links {
-        display: flex;
-        flex-grow: 2;
-
-        justify-content: end;
-        margin-right: 70px;
-        .menu__item {
-          margin: 0;
-          width: fit-content;
-          &__description {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 22px;
-          }
-          &__description:hover {
-            color: $orange;
-          }
-        }
-
-        .menu__item:not(:last-of-type) {
-          margin-right: 10px;
-        }
+      &-description:hover {
+        color: $orange;
       }
-
-      .header__item__query {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-      }
+    }
+    &__link:not(:last-of-type) {
+      margin-right: 10px;
     }
   }
 }

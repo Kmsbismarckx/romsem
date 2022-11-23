@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import './category.css';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectCategoryById } from '../../store/reducers/categoriesSlice';
@@ -8,18 +9,13 @@ function Category({ id }) {
   const category = useSelector((state) => selectCategoryById(state, id));
   const { isDesktop, isTablet } = useContext(appContext);
 
-  let imgWidth;
-  let imgHeight;
   let largeClass;
   let isVisible = '';
+  let isBottomLeft = '';
 
   if (category.isLarge) {
-    imgWidth = '330px';
-    imgHeight = '146.67px';
-    largeClass = 'main__item_large';
+    largeClass = 'category_large';
   } else {
-    imgWidth = '162px';
-    imgHeight = '157px';
     largeClass = '';
   }
 
@@ -27,56 +23,38 @@ function Category({ id }) {
     isVisible = 'flex';
   }
 
+  if (category.isBottomLeft) {
+    isBottomLeft = 'category__name_bottom';
+  }
+
   if (isTablet || isDesktop) {
     return (
-      <li className="main__item">
-        <p className="main__item__name">{category.russianName}</p>
+      <li className="category">
+        <p className="category__name">{category.russianName}</p>
 
-        <p className="main__item_stock">СКОРО</p>
+        <p className="category__stock">СКОРО</p>
         <Link to={`/home/${category.id}`}>
-          {isTablet ? (
-            <img
-              className="main__item-img"
-              src="https://via.placeholder.com/950x397"
-              alt={category.russianName}
-            />
-          ) : (
-            <img
-              className="main__item-img"
-              src={`/media/main/${category.name}.png`}
-              alt={category.russianName}
-            />
-          )}
+          <img
+            className="category__img"
+            src={
+              isTablet ? `https://via.placeholder.com/950x397` : `/media/main/${category.name}.png`
+            }
+            alt={category.russianName}
+          />
         </Link>
       </li>
     );
   }
 
   return (
-    <li style={{ width: imgWidth, height: imgHeight }} className={`main__item ${largeClass}`}>
-      {category.isBottomLeft ? (
-        <p
-          style={{
-            bottom: '7.67px',
-            left: '7px',
-            fontSize: '24px',
-            lineHeight: '29.78px',
-          }}
-          className="main__item__name"
-        >
-          {category.russianName}
-        </p>
-      ) : (
-        <p style={{ top: '10px', left: '11px' }} className="main__item__name">
-          {category.russianName}
-        </p>
-      )}
-      <p style={{ display: isVisible }} className="main__item_stock">
+    <li className={`category ${largeClass}`}>
+      <p className={`category__name ${isBottomLeft || ''}`}>{category.russianName}</p>
+      <p style={{ display: isVisible }} className="category__stock">
         СКОРО
       </p>
       <Link to={`/home/${category.id}`}>
         <img
-          className="main__item__img"
+          className="category__img"
           src={`/media/main/${category.name}.png`}
           alt={category.russianName}
         />

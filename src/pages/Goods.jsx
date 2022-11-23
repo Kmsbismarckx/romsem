@@ -38,11 +38,7 @@ function Goods() {
             <Filter className="filter" filter={filter} setFilter={setFilter} />
           </div>
 
-          <GoodsList
-            className="goods__list"
-            sortedAndSearchedGoods={sortedAndSearchedGoods}
-            id={id}
-          />
+          <GoodsList sortedAndSearchedGoods={sortedAndSearchedGoods} id={id} />
           <About className="about" />
           <MainFooter />
         </div>

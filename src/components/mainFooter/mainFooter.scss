@@ -1,0 +1,55 @@
+@import '../../style/variables';
+
+.main__footer {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  width: 950px;
+
+  border-top: 0.5px solid $gray;
+  padding-top: 22px;
+  &-item {
+    width: 290px;
+    flex-grow: 2;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+
+    padding-top: 11px;
+    padding-bottom: 30px;
+  }
+  &-item:not(:last-of-type) {
+    border-right: 0.5px solid $gray;
+  }
+  &-item:not(:first-of-type) {
+    padding-left: 40px;
+    width: 330px;
+  }
+  &-name {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  &-input {
+    border: none;
+    background-color: transparent;
+
+    margin-bottom: 20px;
+    padding: 2px 2px 2px 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+  }
+  &-input:focus {
+    outline-color: $orange;
+  }
+  &-input:invalid {
+    outline-color: red;
+    color: red;
+  }
+  &-link {
+    margin-bottom: 20px;
+  }
+}

@@ -86,28 +86,25 @@ function Main() {
             {goods.map((good) => (
               <SwiperSlide key={good.id}>
                 <div
-                  className="swiper__item"
+                  className="goods__swiper-item"
                   style={{
-                    background: `white url("https://via.placeholder.com/800x470")  no-repeat left `,
-                    backgroundSize: 'contain',
+                    background: `url("https://via.placeholder.com/800x470")`,
                   }}
                 >
-                  <div className="swiper__item__content">
-                    <div className="swiper__item__content__title">
-                      <h1 className="swiper__item__content__title__name">
-                        &quot;{good.russianName}&quot;
-                      </h1>
-                      <p className="swiper__item__content__title__pieces">
+                  <div className="goods__swiper-item-content">
+                    <div className="goods__swiper-item-title">
+                      <h1 className="goods__swiper-item-name">&quot;{good.russianName}&quot;</h1>
+                      <p className="goods__swiper-item-pieces">
                         {good.weight} грамм{' '}
                         {plural(good.pieces, '%d кусочек', '%d кусочка', '%d кусочков')}
                       </p>
                     </div>
-                    <div className="swiper__item__content__price">
-                      <p className="swiper__item__content__initial-price">{good.price} COM</p>
-                      <p className="swiper__item__content__sale-price">Скидка COM</p>
+                    <div className="goods__swiper-item-price">
+                      <p className="goods__swiper-item-initial-price">{good.price} COM</p>
+                      <p className="goods__swiper-item-sale-price">Скидка COM</p>
                     </div>
                     <Button
-                      className="swiper__item__content_"
+                      className="goods__swiper-item__content_"
                       onClick={() => dispatch(setCartItem({ id: good.id }))}
                     >
                       Хочу
@@ -122,21 +119,21 @@ function Main() {
           {goodsIds.map((id, index) => {
             let classSelected = '';
             if (index === slideGoods) {
-              classSelected = 'swiper__indicator__selected';
+              classSelected = 'swiper__indicator_selected';
             } else {
               classSelected = '';
             }
             return <div key={id} className={`swiper__indicator ${classSelected}`} />;
           })}
         </div>
-        <div className="main__popular__categories">
+        <div className="main__popular-categories">
           {popularCategoriesIds.map((id) => (
             <Category key={id} id={id} />
           ))}
         </div>
-        <div className="main__goods__select">
+        <div className="main__goods-select">
           <p
-            className={`main__goods__select__item main__goods__select__item${
+            className={`goods-select__item goods-select__item${
               goodsItems === 'popular' ? '_selected' : ''
             }`}
             onClick={() => {
@@ -146,7 +143,7 @@ function Main() {
             <span>Новинки</span>
           </p>
           <p
-            className={`main__goods__select__item main__goods__select__item${
+            className={`goods-select__item goods-select__item${
               goodsItems === 'new' ? '_selected' : ''
             }`}
             onClick={() => {
@@ -156,7 +153,7 @@ function Main() {
             <span>Популярное</span>
           </p>
         </div>
-        <div className="goods__items__content">
+        <div className="goods-items__content">
           <Swiper
             modules={[Navigation, Pagination]}
             effect
@@ -165,7 +162,7 @@ function Main() {
             grabCursor
             navigation
             spaceBetween={31}
-            className="goods__items__swiper"
+            className="goods-items__swiper"
           >
             {goodsItems === 'new'
               ? newGoods.map((good) => (
@@ -188,8 +185,8 @@ function Main() {
 
   if (!sortedAndSearchedCategories.length) {
     return (
-      <ul style={{ display: 'flex', justifyContent: 'center' }} className="main">
-        <h1 style={{ textAlign: 'center' }}>Ничего не найдено</h1>
+      <ul className="main not-found">
+        <h1 className="not-found__name">Ничего не найдено</h1>
       </ul>
     );
   }

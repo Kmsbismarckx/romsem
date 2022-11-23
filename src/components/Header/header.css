@@ -37,14 +37,14 @@
   z-index: 3;
   background-color: white;
 }
-.header__item_phone__name {
+.header__phone-name {
   line-height: 14.89px;
 }
-.header__item_phone_number {
+.header__phone-number {
   line-height: 12px;
   color: #ff9846;
 }
-.header__item__schedule__info {
+.header__schedule-info {
   line-height: 14.89px;
   color: #a4acad;
 }
@@ -59,7 +59,14 @@
     font-weight: 500;
     margin-bottom: 30px;
   }
-  .header .header__info {
+  .header__main {
+    display: flex;
+    flex-grow: 2;
+    padding-left: 15px;
+    padding-right: 40px;
+    font-style: normal;
+  }
+  .header__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,46 +74,44 @@
     width: 225px;
     height: 100%;
   }
-  .header .header__info .header__item_phone {
+  .header__phone-list {
     margin-bottom: 5px;
   }
-  .header .header__info .header__item_phone .header__item_phone__name {
+  .header__phone-name {
     font-size: 18px;
     line-height: 22px;
   }
-  .header .header__info .header__item_phone .header__item_phone_number {
+  .header__phone-number {
     font-size: 18px;
     line-height: 100%;
   }
-  .header .header__info .header__item__schedule {
+  .header__schedule {
     display: flex;
     justify-content: center;
   }
-  .header .header__info .header__item__schedule__img {
+  .header__schedule-img {
     margin-right: 5px;
   }
-  .header .header__info .header__item__schedule__info {
+  .header__schedule-info {
     font-size: 14px;
     line-height: 17px;
   }
-  .header .header__main {
+  .header__query {
     display: flex;
-    flex-grow: 2;
-    padding-left: 15px;
-    padding-right: 40px;
-    font-style: normal;
+    align-items: center;
+    cursor: pointer;
   }
-  .header .header__main__location {
+  .header__location {
     text-align: start;
   }
-  .header .header__main__location__name {
+  .header__location-name {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: #a4acad;
     margin-bottom: 4px;
   }
-  .header .header__main__location__choose {
+  .header__location-choose {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
@@ -114,35 +119,31 @@
     border: none;
     appearance: none;
   }
-  .header .header__main__location__choose:focus {
+  .header__location-choose:focus {
     outline-color: #ff9846;
     background-color: white;
   }
-  .header .header__main__links {
+  .header__links {
     display: flex;
     flex-grow: 2;
     justify-content: end;
+    align-items: center;
     margin-right: 70px;
   }
-  .header .header__main__links .menu__item {
+  .header__link {
     margin: 0;
     width: fit-content;
   }
-  .header .header__main__links .menu__item__description {
+  .header__link-description {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
   }
-  .header .header__main__links .menu__item__description:hover {
+  .header__link-description:hover {
     color: #ff9846;
   }
-  .header .header__main__links .menu__item:not(:last-of-type) {
+  .header__link:not(:last-of-type) {
     margin-right: 10px;
-  }
-  .header .header__main .header__item__query {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
   }
 }
 

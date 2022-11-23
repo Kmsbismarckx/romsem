@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Din pro";
+  font-weight: 400;
+  src: url(/src/fonts/dinpro.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 500;
+  src: url(/src/fonts/dinpro_medium.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 700;
+  src: url(/src/fonts/dinpro_bold.otf);
+}
+@font-face {
+  font-family: "Din pro";
+  font-weight: 300;
+  src: url(/src/fonts/dinpro_light.otf);
+}
+@font-face {
+  font-family: "Nexa";
+  font-weight: 300;
+  src: url(/src/fonts/Nexa-Trial-Light.otf);
+}
+.about__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a4acad;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.3px;
+}
+.about__contacts .contacts__name {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.about__contacts .contacts__imgs {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+.about__contacts .contacts__img {
+  width: 50px;
+  height: 50px;
+  filter: opacity(0.55);
+  cursor: pointer;
+}
+.about__contacts .contacts__img:hover {
+  filter: opacity(1);
+}
+.about__contacts .contacts__img:not(:last-child) {
+  margin-right: 31px;
+}
+
+@media screen and (min-width: 1024px) {
+  .about__contacts {
+    align-items: start;
+  }
+  .about__contacts .contacts__name {
+    text-align: start;
+  }
+}
+
+/*# sourceMappingURL=aboutContacts.css.map */

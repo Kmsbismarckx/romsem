@@ -3,12 +3,12 @@ import plural from 'plural-ru';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '../UI/Button/Button';
-import './goodItem.css';
+import './goodsItem.css';
 import { selectGoodById } from '../../store/reducers/goodsSlice';
 import { setCartItem } from '../../store/reducers/cartSlice';
 import appContext from '../../context';
 
-function GoodsItem({ className, id, linkParams }) {
+function GoodsItem({ id, linkParams }) {
   const good = useSelector((state) => selectGoodById(state, id));
   const { isDesktop } = useContext(appContext);
 
@@ -18,31 +18,31 @@ function GoodsItem({ className, id, linkParams }) {
   const setCartItemHandler = linkParams ? null : () => dispatch(setCartItem({ id }));
 
   return (
-    <div className={className}>
+    <div className="goods__item">
       <img
-        className={`${className}__img`}
+        className="goods__item-img"
         src="http://via.placeholder.com/250x203.svg"
         alt={good.name}
       />
-      <div className={`${className}__description`}>
+      <div className="goods__item-description">
         <div>
-          <p className={`${className}__name`}>{good.russianName}</p>
-          <div className={`${className}__header`}>
-            <p className={`${className}_weight ${className}_pieces`}>
+          <p className="goods__item-name">{good.russianName}</p>
+          <div className="goods__item-header">
+            <p className="goods__item-weight goods__item-pieces">
               {good.weight} грамм, {plural(pieces, '%d кусочек', '%d кусочка', '%d кусочков')}
             </p>
           </div>
         </div>
-        {isDesktop && <hr className="goods__item__hr" />}
-        <div className={`${className}__footer`}>
-          <p className={`${className}__price`}>{good.price} COM</p>
+        {isDesktop && <hr className="goods__item-hr" />}
+        <div className="goods__item-footer">
+          <p className="goods__item-price">{good.price} COM</p>
           {/* {isDesktop ? ( */}
           {/*   <Button className={`${className}_`} onClick={setCartItemHandler}> */}
           {/*     Хочу! */}
           {/*   </Button> */}
           {/* ) : ( */}
           <Link to={linkParams}>
-            <Button className={`${className}_`} onClick={setCartItemHandler}>
+            <Button className="goods__item_" onClick={setCartItemHandler}>
               Хочу!
             </Button>
           </Link>
