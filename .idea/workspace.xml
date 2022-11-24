@@ -3,32 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/goodItem/goodsItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/goodsItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/goodItem/goodsItem.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/goodsItem.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/goodItem/goodsItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/goodsItem.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/SideMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/SideMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smallProduct/smallProduct.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Good.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Good.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Cart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Good.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Good.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Good.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Reviews.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Reviews.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Reviews.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Reviews.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Reviews.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +116,7 @@
       <workItem from="1669022247699" duration="1831000" />
       <workItem from="1669118277597" duration="16630000" />
       <workItem from="1669191070983" duration="16494000" />
-      <workItem from="1669277538404" duration="5370000" />
+      <workItem from="1669277538404" duration="5767000" />
     </task>
     <task id="LOCAL-00001" summary="finish main page and good page">
       <created>1663193306010</created>
@@ -245,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669232967455</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="refactoring">
+      <created>1669286584307</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669286584307</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

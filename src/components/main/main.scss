@@ -25,9 +25,14 @@
       align-items: center;
       margin-bottom: 10px;
     }
-    .categories__swiper {
+    .categories__swiper,
+    .goods__swiper,
+    .goods-items__swiper {
       width: 950px;
       height: 397px;
+      position: unset;
+    }
+    .categories__swiper {
       margin-bottom: 30px;
 
       .category__name {
@@ -46,19 +51,6 @@
       height: auto;
 
       margin-bottom: 50px;
-    }
-
-    .goods__swiper,
-    .goods-items__swiper {
-      width: 950px;
-      height: 397px;
-      position: unset;
-    }
-    .goods-items__swiper {
-      width: 950px;
-      .swiper-wrapper {
-        width: 100%;
-      }
     }
 
     .swiper__indicators {

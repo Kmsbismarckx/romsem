@@ -47,9 +47,14 @@
     align-items: center;
     margin-bottom: 10px;
   }
-  .main .categories__swiper {
+  .main .categories__swiper,
+.main .goods__swiper,
+.main .goods-items__swiper {
     width: 950px;
     height: 397px;
+    position: unset;
+  }
+  .main .categories__swiper {
     margin-bottom: 30px;
   }
   .main .categories__swiper .category__name {
@@ -64,18 +69,6 @@
     width: 100%;
     height: auto;
     margin-bottom: 50px;
-  }
-  .main .goods__swiper,
-.main .goods-items__swiper {
-    width: 950px;
-    height: 397px;
-    position: unset;
-  }
-  .main .goods-items__swiper {
-    width: 950px;
-  }
-  .main .goods-items__swiper .swiper-wrapper {
-    width: 100%;
   }
   .main .swiper__indicators {
     display: flex;
