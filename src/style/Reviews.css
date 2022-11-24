@@ -66,6 +66,14 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1024px) {
+  .reviews .about__contacts {
+    align-items: center;
+  }
+  .reviews .about__contacts .contacts__name {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1919px) {
   .reviews {
     padding: 0;

@@ -118,11 +118,12 @@
         height: 40px;
       }
     }
-    &-composition {
-    }
     &-name {
       text-align: center;
       margin-bottom: 20px;
+    }
+    .small-product__price {
+      margin-right: 0;
     }
   }
   &__addition {
@@ -156,6 +157,7 @@
     margin-right: 10px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .good {
     width: 950px;
@@ -258,6 +260,8 @@
       }
     }
     &__swiper-wrapper {
+      display: flex;
+      justify-content: center;
       position: relative;
       overflow: hidden;
       margin-bottom: 30px;

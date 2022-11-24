@@ -13,7 +13,7 @@
     padding-bottom: 12px;
     border-radius: 5px;
 
-    &__name {
+    &-name {
       text-align: center;
       color: $orange;
     }
@@ -51,7 +51,7 @@
       width: 180px;
       font-weight: 400;
     }
-    .cart__total__pc {
+    .total-pc {
       display: flex;
       justify-content: space-between;
       align-items: center;

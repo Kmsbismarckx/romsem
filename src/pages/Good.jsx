@@ -73,7 +73,7 @@ function Good() {
               slidesPerView={3}
               spaceBetween={130}
               grabCursor
-              navigation
+              navigation={composition.length > 3}
             >
               {composition.map((item) => (
                 <SwiperSlide className="good__swiper-slide" key={item.id}>

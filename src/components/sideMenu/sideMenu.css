@@ -37,13 +37,13 @@
   display: flex;
   flex-direction: column;
 }
-.side-menu__logo__container {
+.side-menu__logo-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
 }
-.side-menu__logo__name {
+.side-menu__name {
   font-family: "Nexa", sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -66,19 +66,6 @@
   font-size: 24px;
   line-height: 30px;
 }
-.side-menu__list__item {
-  display: flex;
-  align-items: center;
-  grid-template-columns: repeat(2, auto);
-  position: relative;
-  column-gap: 20px;
-}
-.side-menu__list__item__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-}
 .side-menu__list .side-menu__soon:after {
   content: "СКОРО";
   position: absolute;
@@ -93,7 +80,20 @@
   color: white;
   padding: 1px 7px;
 }
-.side-menu__list__item:hover {
+.side-menu__item {
+  display: flex;
+  align-items: center;
+  grid-template-columns: repeat(2, auto);
+  position: relative;
+  column-gap: 20px;
+}
+.side-menu__item-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+}
+.side-menu__item:hover {
   color: #ff9846;
 }
 

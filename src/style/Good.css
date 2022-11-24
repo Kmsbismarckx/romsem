@@ -142,6 +142,9 @@
   text-align: center;
   margin-bottom: 20px;
 }
+.good__item .small-product__price {
+  margin-right: 0;
+}
 .good__addition {
   width: 91.6%;
   margin: 0 auto 30px;
@@ -265,6 +268,8 @@
     line-height: 30px;
   }
   .good__swiper-wrapper {
+    display: flex;
+    justify-content: center;
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;

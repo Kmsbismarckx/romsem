@@ -36,7 +36,7 @@
   padding-bottom: 12px;
   border-radius: 5px;
 }
-.cart__total__name {
+.cart__total-name {
   text-align: center;
   color: #ff9846;
 }
@@ -72,12 +72,12 @@
     width: 180px;
     font-weight: 400;
   }
-  .cart .cart__total__pc {
+  .cart .total-pc {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .cart .cart__total__pc__price {
+  .cart .total-pc__price {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;

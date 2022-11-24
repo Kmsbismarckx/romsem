@@ -36,9 +36,16 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
+    gap: 0;
     padding: 0;
     margin: 0 auto;
     min-width: 1024px;
+  }
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
   }
   .main .categories__swiper {
     width: 950px;
@@ -49,18 +56,20 @@
     font-size: 48px;
     line-height: 56px;
   }
-  .main__content,
-.main .goods-items__content {
+  .main .goods-items__content {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
     width: 100%;
     height: auto;
-    align-self: center;
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
   .main .goods__swiper,
 .main .goods-items__swiper {
     width: 950px;
     height: 397px;
-    margin-bottom: 11px;
+    position: unset;
   }
   .main .goods-items__swiper {
     width: 950px;
@@ -78,9 +87,12 @@
     border-radius: 50%;
     background-color: #a4acad;
     margin-right: 10px;
+    align-self: center;
   }
   .main .swiper__indicators .swiper__indicator_selected {
     background-color: #ff9846;
+    width: 10px;
+    height: 10px;
   }
   .main .swiper__indicators .swiper__indicator:last-of-type {
     margin-right: 0;
@@ -149,19 +161,6 @@
     font-size: 32px;
     padding: 7px 0;
     margin-right: 50px;
-  }
-  .main .swiper-button-next,
-.main .swiper-button-prev {
-    width: 60px;
-    height: 60px;
-    background-color: black;
-    border-radius: 50%;
-  }
-  .main .swiper-button-next:after,
-.main .swiper-button-prev:after {
-    font-size: 27px;
-    color: white;
-    font-weight: 400;
   }
   .main .main__popular-categories {
     display: grid;

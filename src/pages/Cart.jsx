@@ -28,14 +28,14 @@ function Cart() {
       </div>
       {!isDesktop && (
         <div className="cart__total">
-          <h2 className="cart__total__name">Итого</h2>
+          <h2 className="cart__total-name">Итого</h2>
           <TotalList ids={cartIds} totalPrice={totalPrice} />
         </div>
       )}
 
       {isDesktop ? (
-        <div className="cart__total__pc">
-          <p className="cart__total__pc__price">{totalPrice} COM</p>
+        <div className="total-pc">
+          <p className="total-pc__price">{totalPrice} COM</p>
           <Link to="/order">
             <Button className="cart_">Оформить заказ</Button>
           </Link>

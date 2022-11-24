@@ -104,7 +104,7 @@ function Main() {
                       <p className="goods__swiper-item-sale-price">Скидка COM</p>
                     </div>
                     <Button
-                      className="goods__swiper-item__content_"
+                      className="goods__swiper-item-content_"
                       onClick={() => dispatch(setCartItem({ id: good.id }))}
                     >
                       Хочу
@@ -177,7 +177,7 @@ function Main() {
                 ))}
           </Swiper>
         </div>
-        {isDesktop && <About />}
+        {isTablet && <About />}
         <MainFooter />
       </div>
     );

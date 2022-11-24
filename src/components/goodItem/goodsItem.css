@@ -65,22 +65,10 @@
   line-height: 22.54px;
 }
 
-.good__item-swiper-wrapper {
-  width: 100%;
-  position: relative;
-}
-
-.good__item-swiper {
-  margin: 0 40px;
-  position: initial;
-}
-.good__item-swiper .swiper-wrapper {
-  width: 91px;
-}
-
 @media screen and (min-width: 1024px) {
   .goods__item {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     height: 400px;
     width: 100%;
