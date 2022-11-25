@@ -1,7 +1,7 @@
 @import '../style/variables.scss';
 
 .goods {
-  padding-top: 66.5px;
+  padding: $container_mobile_padding;
   .goods__header {
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .goods {
     padding-top: 86.5px;
     .goods__header__container {

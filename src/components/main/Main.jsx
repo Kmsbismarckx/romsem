@@ -88,7 +88,7 @@ function Main() {
                 <div
                   className="goods__swiper-item"
                   style={{
-                    background: `url("https://via.placeholder.com/800x470")`,
+                    backgroundImage: `url("https://via.placeholder.com/800x470")`,
                   }}
                 >
                   <div className="goods__swiper-item-content">
@@ -134,20 +134,20 @@ function Main() {
         <div className="main__goods-select">
           <p
             className={`goods-select__item goods-select__item${
-              goodsItems === 'popular' ? '_selected' : ''
+              goodsItems === 'new' ? '_selected' : ''
             }`}
             onClick={() => {
-              setGoodsItems('popular');
+              setGoodsItems('new');
             }}
           >
             <span>Новинки</span>
           </p>
           <p
             className={`goods-select__item goods-select__item${
-              goodsItems === 'new' ? '_selected' : ''
+              goodsItems === 'popular' ? '_selected' : ''
             }`}
             onClick={() => {
-              setGoodsItems('new');
+              setGoodsItems('popular');
             }}
           >
             <span>Популярное</span>
@@ -178,7 +178,6 @@ function Main() {
           </Swiper>
         </div>
         {isTablet && <About />}
-        <MainFooter />
       </div>
     );
   }

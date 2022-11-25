@@ -1,15 +1,19 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './about.css';
 import AboutContacts from './aboutContacts/aboutContacts';
 import appContext from '../../context';
 
 function About() {
-  const { isDesktop, isTablet } = useContext(appContext);
+  const { isDesktop } = useContext(appContext);
+  const [isOpened, setIsOpened] = useState(false);
+  const aboutButtonHandler = () => {
+    setIsOpened(!isOpened);
+  };
 
-  if (isTablet || isDesktop) {
+  if (isDesktop) {
     return (
       <div className="about">
-        <div className="about__info">
+        <div className={`about__info ${isOpened ? 'about__info_opened' : ''}`}>
           <h2 className="about__info__name">Заказать суши в Бишкеке</h2>
           <p className="about__info__description">
             Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом,
@@ -29,7 +33,12 @@ function About() {
             могут купить суши с соусом спайси. Популярные начинки — копченая курица, снежный краб,
             креветки, гребешки, тунец, лосось и окунь.
           </p>
-          <div className="about__info__button">Подробнее</div>
+        </div>
+        <div
+          className={`about__info__button ${isOpened ? 'about__info__button_opened' : ''}`}
+          onClick={aboutButtonHandler}
+        >
+          Подробнее
         </div>
       </div>
     );
@@ -37,7 +46,7 @@ function About() {
 
   return (
     <div className="about">
-      <div className="about__info">
+      <div className={`about__info ${isOpened ? 'about__info_opened' : ''}`}>
         <h2 className="about__info__name">Заказать суши в Бишкеке</h2>
         <p className="about__info__description">
           Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом,
@@ -45,7 +54,30 @@ function About() {
           собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете
           заказать суши в Харькове с доставкой на дом или в офис.
         </p>
-        <div className="about__info__button">Подробнее</div>
+        <p className="about__info__description">
+          Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом,
+          приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также
+          собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете
+          заказать суши в Харькове с доставкой на дом или в офис.
+        </p>
+        <p className="about__info__description">
+          Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом,
+          приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также
+          собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете
+          заказать суши в Харькове с доставкой на дом или в офис.
+        </p>
+        <p className="about__info__description">
+          Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом,
+          приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также
+          собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете
+          заказать суши в Харькове с доставкой на дом или в офис.
+        </p>
+      </div>
+      <div
+        className={`about__info__button ${isOpened ? 'about__info__button_opened' : ''}`}
+        onClick={aboutButtonHandler}
+      >
+        Подробнее
       </div>
       <AboutContacts />
     </div>

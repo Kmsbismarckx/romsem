@@ -24,7 +24,8 @@
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
 .cart {
-  padding: 67px 15px 10px;
+  width: 100%;
+  padding: 83px 15px 0 15px;
 }
 .cart__name {
   text-align: center;
@@ -45,7 +46,7 @@
   padding: 13px 0 !important;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .cart {
     width: 950px;
     margin: 0 auto;
@@ -55,7 +56,7 @@
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 1919px) {
+@media screen and (min-width: 1920px) {
   .cart {
     margin: 0;
   }

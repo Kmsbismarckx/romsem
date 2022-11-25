@@ -25,28 +25,20 @@ function GoodsItem({ id, linkParams }) {
         alt={good.name}
       />
       <div className="goods__item-description">
-        <div>
+        <div className="goods__item-header">
           <p className="goods__item-name">{good.russianName}</p>
-          <div className="goods__item-header">
-            <p className="goods__item-weight goods__item-pieces">
-              {good.weight} грамм, {plural(pieces, '%d кусочек', '%d кусочка', '%d кусочков')}
-            </p>
-          </div>
+          <p className="goods__item-weight goods__item-pieces">
+            {good.weight} грамм, {plural(pieces, '%d кусочек', '%d кусочка', '%d кусочков')}
+          </p>
         </div>
         {isDesktop && <hr className="goods__item-hr" />}
         <div className="goods__item-footer">
           <p className="goods__item-price">{good.price} COM</p>
-          {/* {isDesktop ? ( */}
-          {/*   <Button className={`${className}_`} onClick={setCartItemHandler}> */}
-          {/*     Хочу! */}
-          {/*   </Button> */}
-          {/* ) : ( */}
           <Link to={linkParams}>
             <Button className="goods__item_" onClick={setCartItemHandler}>
               Хочу!
             </Button>
           </Link>
-          {/* )} */}
         </div>
       </div>
     </div>

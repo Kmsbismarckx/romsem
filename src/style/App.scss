@@ -9,8 +9,6 @@
 }
 
 body {
-  padding-bottom: 82px;
-  background-color: #e5e5e5;
   height: 100%;
 }
 
@@ -27,23 +25,41 @@ a {
 }
 
 //SWIPER
-
-.swiper-button-next,
-.swiper-button-prev {
-  z-index: 2 !important;
+.App {
+  background-color: #f2f2f2;
+  padding-bottom: 82px;
 }
-.swiper-button-next,
-.swiper-button-prev {
-  width: 38px !important;
-  height: 38px !important;
-  background-color: black;
-  border-radius: 50%;
+.swiper {
+  .swiper-wrapper {
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    z-index: 2 !important;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 38px;
+    height: 38px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 19px;
+    color: white;
+    font-weight: 400;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
 }
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 27px !important;
-  color: white;
-  font-weight: 400;
+.swiper.composition-swiper {
+  margin-left: 59px;
+  margin-right: 59px;
+  position: initial;
 }
 
 .not-found {
@@ -55,7 +71,16 @@ a {
     grid-column-end: 3;
   }
 }
-@media screen and (min-width: 1024px) {
+
+@media screen and (max-width: 359px) {
+  .swiper.composition-swiper {
+    margin-left: 45px;
+    margin-right: 45px;
+    position: initial;
+  }
+}
+
+@media screen and (min-width: 768px) {
   body {
     padding-bottom: 0;
   }
@@ -74,49 +99,37 @@ a {
   width: 100%;
   position: relative;
 }
-.swiper {
-  margin: 0;
+.swiper.good__item-swiper {
+  margin-right: 48px;
+  margin-left: 48px;
+  position: initial;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px !important;
-  height: 60px !important;
-  background-color: black;
-  border-radius: 50%;
-}
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 19px !important;
-  color: white;
-  font-weight: 400;
-}
-.swiper-button-prev {
-  left: 0 !important;
-}
-.swiper-button-next {
-  right: 0 !important;
-}
-
-.composition-swiper {
-  margin: 0 59px;
-  position: initial !important;
-}
-.good__item-swiper {
-  margin: 0 40px;
-  position: initial !important;
-  .swiper-wrapper {
-    width: 91px;
-  }
-}
-
-@media screen and (min-width: 1919px) {
+@media screen and (min-width: 1920px) {
   .App {
     padding-bottom: 0;
   }
+  .swiper {
+    margin: 0;
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background-color: black;
+      border-radius: 50%;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 27px !important;
+      color: white;
+      font-weight: 400;
+    }
+  }
+
   .pc__container {
     .side-menu__container {
       width: 320px;

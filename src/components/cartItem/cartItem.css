@@ -71,7 +71,7 @@
   margin-right: 33px;
 }
 
-@media screen and (min-width: 1919px) {
+@media screen and (min-width: 1920px) {
   .cart__item {
     padding-right: 5px !important;
   }

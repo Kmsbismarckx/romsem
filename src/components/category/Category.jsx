@@ -33,7 +33,7 @@ function Category({ id }) {
         <p className="category__name">{category.russianName}</p>
 
         <p className="category__stock">СКОРО</p>
-        <Link to={`/home/${category.id}`}>
+        <Link className="category__link" to={`/home/${category.id}`}>
           <img
             className="category__img"
             src={
@@ -52,7 +52,7 @@ function Category({ id }) {
       <p style={{ display: isVisible }} className="category__stock">
         СКОРО
       </p>
-      <Link to={`/home/${category.id}`}>
+      <Link className="category__link" to={`/home/${category.id}`}>
         <img
           className="category__img"
           src={`/media/main/${category.name}.png`}

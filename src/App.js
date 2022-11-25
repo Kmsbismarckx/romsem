@@ -23,7 +23,7 @@ function App() {
     query: '(min-width: 1920px)',
   });
   const isTablet = useMediaQuery({
-    query: '(min-width: 1024px)',
+    query: '(min-width: 768px)',
   });
 
   const contextData = useMemo(

@@ -25,7 +25,7 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className="home">
       <Main />
       <About />
       <Menu />

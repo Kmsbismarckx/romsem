@@ -43,7 +43,7 @@
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .reviews {
     .about__contacts {
       align-items: center;
@@ -54,7 +54,7 @@
   }
 }
 
-@media screen and (min-width: 1919px) {
+@media screen and (min-width: 1920px) {
   .reviews {
     padding: 0;
     &__header {

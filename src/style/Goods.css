@@ -24,7 +24,7 @@
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
 .goods {
-  padding-top: 66.5px;
+  padding: 83px 15px 0 15px;
 }
 .goods .goods__header {
   display: flex;
@@ -41,7 +41,7 @@
   line-height: 29.76px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .goods {
     padding-top: 86.5px;
   }

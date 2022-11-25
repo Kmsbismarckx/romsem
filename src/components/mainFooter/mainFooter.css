@@ -73,4 +73,10 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .main__footer-item:nth-of-type(2) {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=mainFooter.css.map */

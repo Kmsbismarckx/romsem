@@ -28,7 +28,7 @@
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
 
-$mobile_width: 91.6%;
+$container_mobile_padding: calc(62.5px + 20.5px) 15px 0 15px;
 $mobile_header_height: 56.5px;
 $mobile__footer_height: 72px;
 $pc__main_width: 1170px;
