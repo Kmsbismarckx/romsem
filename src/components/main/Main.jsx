@@ -158,10 +158,9 @@ function Main() {
             modules={[Navigation, Pagination]}
             effect
             speed={800}
-            slidesPerView={3}
+            slidesPerView={2}
             grabCursor
             navigation
-            spaceBetween={31}
             className="goods-items__swiper"
           >
             {goodsItems === 'new'

@@ -24,21 +24,19 @@ function CartItem({ id }) {
   return (
     <div className="cart__item">
       <img
-        className="cart__item__img"
+        className="cart__item-img"
         src={`/media/goods/${cartItem.name}.png`}
         alt={cartItem.name}
       />
-      <div className="cart__item_content">
-        <p className="cart__item_content__name">{cartItem.russianName}</p>
-        <div className="cart__item_content__description">
+      <div className="cart__item-content">
+        <p className="cart__item-name">{cartItem.russianName}</p>
+        <div className="cart__item-description">
           <Quantity
             decreaseQuantityHandler={decreaseQuantityHandler}
             increaseQuantityHandler={increaseQuantityHandler}
             quantity={quantity}
           />
-          <p className="cart__item_content__description__item cart__item_content__description__item__price">
-            {itemTotalPrice} СОМ
-          </p>
+          <p className="cart__item-price">{itemTotalPrice} СОМ</p>
         </div>
       </div>
     </div>

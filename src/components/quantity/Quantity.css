@@ -23,23 +23,25 @@
   font-weight: 300;
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
-.home {
+.quantity__container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 360px;
-  margin: 0 auto;
-  padding: 67px 15px 0 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  width: 90px;
+}
+.quantity__containerquantity {
+  display: flex;
+  align-items: center;
 }
 
-@media screen and (min-width: 768px) {
-  .home {
-    max-width: 798px;
-  }
-  .home .goods__item {
-    width: 289px;
+@media screen and (max-width: 359px) {
+  .quantity__container {
+    width: 70px;
   }
 }
 
-/*# sourceMappingURL=Home.css.map */
+/*# sourceMappingURL=Quantity.css.map */

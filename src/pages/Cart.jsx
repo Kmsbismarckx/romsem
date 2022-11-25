@@ -18,6 +18,7 @@ function Cart() {
   if (cartIds.length === 0) {
     return <EmptyCart />;
   }
+
   return (
     <div className="cart">
       <h2 className="cart__name">Корзина</h2>

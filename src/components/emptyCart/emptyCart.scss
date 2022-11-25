@@ -1,20 +1,19 @@
 @import '../../style/variables.scss';
 
-.cart-empty {
-  padding-top: calc($mobile_header_height + 20.5px);
-
-  padding-left: 10px;
-  padding-right: 10px;
-
-  &__item {
-    //padding: 0 35px;
+.empty-cart {
+  padding: calc(56.5px + 20.5px) 15px 0 15px;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+  &__content {
+    padding: 0 20px;
   }
 
   &__annotation {
-    padding: 10px 35px 0 35px;
+    padding-top: 12px;
     border-radius: 5px;
 
-    &__name {
+    .annotation__name {
       font-size: 24px;
       font-weight: 500;
       line-height: 30px;
@@ -23,13 +22,13 @@
       margin-bottom: 10px;
     }
 
-    &_item {
+    .annotation__item {
       font-style: normal;
       font-weight: 400;
       text-align: center;
     }
 
-    &_item:first-of-type {
+    .annotation__item:first-of-type {
       font-size: 18px;
       line-height: 22px;
       color: $gray;
@@ -37,7 +36,7 @@
       margin-bottom: 26px;
     }
 
-    &_item:last-of-type {
+    .annotation__item:last-of-type {
       font-size: 14px;
       line-height: 17px;
       color: $light_gray;
@@ -53,7 +52,7 @@
   &__location {
     margin: 20px 0 0;
 
-    &_map {
+    .location__map {
       position: relative;
       width: 100%;
       height: auto;
@@ -62,44 +61,41 @@
       align-items: center;
 
       margin-bottom: 38px;
-
-      &__img {
-        width: inherit;
-        object-fit: cover;
-      }
-
-      &_pin {
-        content: '';
-        width: 60px;
-        height: 60px;
-
-        position: absolute;
-        bottom: -30px;
-        left: calc(50% - 30px);
-
-        background: url('/public/media/cart/cart_location_pin.png') no-repeat center orange;
-        border-radius: 50%;
-        cursor: pointer;
-      }
+    }
+    .location__img {
+      width: inherit;
+      object-fit: cover;
     }
 
-    &__description {
-      text-align: center;
-      &__name {
-        margin-bottom: 10px;
-      }
+    .location__pin {
+      content: '';
+      width: 60px;
+      height: 60px;
 
-      &_item {
-        color: $gray;
-        margin-bottom: 27px;
-      }
+      position: absolute;
+      bottom: -30px;
+      left: calc(50% - 30px);
+
+      background: url('/public/media/cart/cart_location_pin.png') no-repeat center orange;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .location__description {
+      text-align: center;
+    }
+    .location__name {
+      margin-bottom: 10px;
+    }
+
+    .location__info {
+      color: $gray;
+      margin-bottom: 27px;
     }
   }
 
-  &__check__shipping {
+  &__check-shipping {
     border-radius: 5px;
-    padding: 0 35px;
-    &__name {
+    .check-shipping__name {
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
@@ -108,7 +104,7 @@
 
       color: $gray;
     }
-    &_input {
+    .check-shipping__input {
       width: 100%;
       padding: 5px 10px;
 
@@ -119,29 +115,19 @@
 
       border: none;
     }
-    &_input:focus {
+    .check-shipping__input:focus {
       background-color: $light_gray;
       outline-color: $orange;
     }
-    &_clock {
+    .check-shipping__clock {
       margin-right: 9px;
     }
-    &_API {
-      margin-top: 10px;
-      width: 100%;
-      height: 100%;
-      margin-bottom: 20px;
-      &__img {
-        width: inherit;
-        height: inherit;
-      }
-    }
 
-    &_item:first-of-type {
+    .check-shipping__item:first-of-type {
       background-color: white;
       border-radius: 5px 5px 0 0;
     }
-    &_item:nth-of-type(2) {
+    .check-shipping__item:nth-of-type(2) {
       display: flex;
       justify-content: center;
       background-color: $orange;
@@ -152,16 +138,34 @@
       color: white;
     }
   }
+  &__shipping-API {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  &__shipping-API::after {
+    content: url('/public/media/UI/pin.svg');
+    position: absolute;
+    width: 64px;
+    height: 94px;
+    top: 69px;
+    left: 116px;
+  }
+  .shipping-API__img {
+    width: inherit;
+    height: inherit;
+  }
 
   &__button {
     width: 100%;
-
     padding: 13px;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .cart-empty__check__shipping {
+  .empty-cart__shipping {
     padding: 0;
   }
 }

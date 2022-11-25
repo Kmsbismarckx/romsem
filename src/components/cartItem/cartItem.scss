@@ -8,73 +8,62 @@
   background-color: white;
 
   margin-bottom: 10px;
-  padding: 13px 0;
+  padding: 13px 33px 13px 0;
   border-radius: 5px;
 
-  &__img {
+  &-img {
     width: 90px;
-    height: 62px;
+    height: 100%;
 
     margin-right: 14px;
   }
-  &_content {
+  &-content {
     display: flex;
     flex-direction: column;
     flex-grow: 2;
-    &__name {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 22px;
+  }
+  &-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 
-      margin-bottom: 14px;
-    }
-    &__description {
-      display: flex;
-      justify-content: space-between;
-      &__item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    margin-bottom: 14px;
+  }
+  &-description {
+    display: flex;
+    justify-content: space-between;
+  }
 
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 23px;
+  &-price {
+    width: auto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
 
-        width: 89.24px;
-
-        &_quantity {
-          display: flex;
-          align-items: center;
-        }
-      }
-      &__item__price {
-        width: auto;
-        margin-right: 33px;
-      }
-    }
+@media screen and (max-width: 359px) {
+  .cart__item {
+    padding-right: 13px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .cart__item {
-    padding-right: 5px !important;
-    &__img {
+    padding-right: 5px;
+    &-img {
       width: 70px;
       height: 47px;
     }
-    &_content {
-      &__name {
-        margin-bottom: 0;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden !important;
-        width: 201px;
-      }
+    &-content {
     }
-    .cart__item_content__description__item__price {
-      margin-right: 10px !important;
+    &-name {
+      margin-bottom: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 201px;
     }
   }
 }

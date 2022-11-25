@@ -24,83 +24,61 @@
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
 .goods {
-  padding: 83px 15px 0 15px;
+  padding: 72px 15px 0;
+  margin: 0 auto;
 }
-.goods .goods__header {
+.goods__header {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
 }
-.goods .goods__header .goods__header__img {
+.goods__img {
   margin-right: 20px;
 }
-.goods .goods__header .goods__header__name {
+.goods__name {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 29.76px;
 }
 
 @media screen and (min-width: 768px) {
   .goods {
-    padding-top: 86.5px;
+    padding: 67px 15px 0 15px;
+    max-width: 798px;
   }
-  .goods .goods__header__container {
-    width: 950px;
+  .goods__header-container {
+    width: 100%;
     align-self: center;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
   }
-  .goods .goods__header__container .goods__header {
+  .goods__header {
     margin-bottom: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
   }
-  .goods .goods__header__container .goods__header .goods__header__img {
+  .goods__img {
     width: 40px;
     height: 43px;
   }
-  .goods .goods__header__container .goods__header .goods__header__name {
+  .goods__name {
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
   }
-  .goods .goods__header__container .filter {
-    width: 198px;
-    margin: 0;
-    border-radius: 15px 15px 0px 0px;
-  }
-  .goods .goods__header__container .filter .select:before {
-    content: none;
-  }
-  .goods .goods__header__container .filter .filter__text {
-    width: 100%;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    padding-left: 14px;
-  }
-  .goods .goods__header__container .filter .filter__text option {
-    width: inherit;
-    border-radius: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 20px;
-  }
-  .goods .goods__list {
+  .goods__list {
     display: grid;
-    grid-template-columns: repeat(3, 288px);
+    grid-template-columns: repeat(2, 288px);
     grid-template-rows: 400px;
     column-gap: 42px;
     row-gap: 31px;
-    width: 950px;
+    justify-content: center;
+    width: 100%;
     align-self: center;
     margin-bottom: 174px;
   }

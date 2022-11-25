@@ -14,6 +14,7 @@ import SideMenu from '../components/sideMenu/SideMenu';
 import Cart from './Cart';
 import Header from '../components/Header/Header';
 import MainFooter from '../components/mainFooter/MainFooter';
+import Select from '../components/UI/Select/Select';
 
 function Goods() {
   const { id } = useParams();
@@ -26,22 +27,32 @@ function Goods() {
 
   if (isTablet || isDesktop) {
     return (
-      <div className="goods pc__container tablet__container">
+      <div className="goods">
         {isDesktop && <SideMenu />}
-        <div className="pc__main">
-          {isDesktop && <Header />}
-          <div className="goods__header__container">
-            <div className="goods__header">
-              <img className="goods__header__img" src="/media/goods/goods__logo.svg" alt="" />
-              <p className="goods__header__name">{category.russianName}</p>
-            </div>
-            <Filter className="filter" filter={filter} setFilter={setFilter} />
+        {isDesktop && <Header />}
+        <div className="goods__header-container">
+          <div className="goods__header">
+            <img className="goods__img" src="/media/goods/goods__logo.svg" alt="" />
+            <p className="goods__name">{category.russianName}</p>
           </div>
-
-          <GoodsList sortedAndSearchedGoods={sortedAndSearchedGoods} id={id} />
-          <About className="about" />
-          <MainFooter />
+          <Select
+            onChange={(selectedSort) => {
+              setFilter({ ...filter, sort: selectedSort });
+            }}
+            options={[
+              { value: 'default', name: 'По умолчанию' },
+              { value: 'name', name: 'По названию' },
+              { value: 'weight', name: 'По весу' },
+              { value: 'pieces', name: 'По количеству' },
+              { value: 'price', name: 'По цене' },
+            ]}
+            value={filter.sort}
+          />
         </div>
+
+        <GoodsList sortedAndSearchedGoods={sortedAndSearchedGoods} id={id} />
+        <About className="about" />
+        <MainFooter />
         {isDesktop && (
           <div className="cart__container">
             <Cart />
@@ -54,10 +65,22 @@ function Goods() {
   return (
     <div className="goods">
       <div className="goods__header">
-        <img className="goods__header__img" src="/media/goods/goods__logo.svg" alt="" />
-        <p className="goods__header__name">{category.russianName}</p>
+        <img className="goods__img" src="/media/goods/goods__logo.svg" alt="" />
+        <p className="goods__name">{category.russianName}</p>
       </div>
-      <Filter className="filter" filter={filter} setFilter={setFilter} />
+      <Select
+        onChange={(selectedSort) => {
+          setFilter({ ...filter, sort: selectedSort });
+        }}
+        options={[
+          { value: 'default', name: 'По умолчанию' },
+          { value: 'name', name: 'По названию' },
+          { value: 'weight', name: 'По весу' },
+          { value: 'pieces', name: 'По количеству' },
+          { value: 'price', name: 'По цене' },
+        ]}
+        value={filter.sort}
+      />
       <GoodsList className="goods__list" sortedAndSearchedGoods={sortedAndSearchedGoods} id={id} />
       <About className="about" />
       <Menu />

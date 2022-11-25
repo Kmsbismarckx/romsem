@@ -14,7 +14,7 @@ function Select({ className, value, options, onChange }) {
   return (
     <div className={`select ${classRotate}`}>
       <select
-        className={`${className}__text`}
+        className="select__text"
         value={value}
         onChange={(event) => {
           onChange(event.target.value);

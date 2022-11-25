@@ -56,6 +56,7 @@
 
 @media screen and (min-width: 768px) {
   .main__footer {
+    width: 100%;
     &-item:nth-of-type(2) {
       display: none;
     }

@@ -10,8 +10,11 @@
   padding: $container_mobile_padding;
 }
 
-//@media screen and (min-width: 768px) {
-//  .home {
-//    max-width: 768px;
-//  }
-//}
+@media screen and (min-width: 768px) {
+  .home {
+    max-width: 798px;
+    .goods__item {
+      width: 289px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../style/variables.scss';
+
+.quantity__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+
+  width: 90px;
+
+  &quantity {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .quantity__container {
+    width: 70px;
+  }
+}

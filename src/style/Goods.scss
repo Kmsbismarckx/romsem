@@ -1,87 +1,62 @@
 @import '../style/variables.scss';
 
 .goods {
-  padding: $container_mobile_padding;
-  .goods__header {
+  padding: calc(56.5px + 15.5px) 15px 0;
+  margin: 0 auto;
+  &__header {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
-    .goods__header__img {
-      margin-right: 20px;
-    }
-    .goods__header__name {
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 29.76px;
-    }
+  }
+  &__img {
+    margin-right: 20px;
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.76px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .goods {
-    padding-top: 86.5px;
-    .goods__header__container {
-      width: 950px;
+    padding: $container_mobile_padding;
+    max-width: 798px;
+    &__header-container {
+      width: 100%;
       align-self: center;
       display: flex;
       justify-content: space-between;
       margin-bottom: 25px;
-      .goods__header {
-        margin-bottom: 0;
-
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 45px;
-        .goods__header__img {
-          width: 40px;
-          height: 43px;
-        }
-        .goods__header__name {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 36px;
-          line-height: 45px;
-        }
-      }
-      .filter {
-        width: 198px;
-        margin: 0;
-        border-radius: 15px 15px 0px 0px;
-        .select:before {
-          content: none;
-        }
-        .filter__text {
-          width: 100%;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 22px;
-
-          padding-left: 14px;
-          option {
-            width: inherit;
-            border-radius: 0;
-
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 22px;
-
-            margin-bottom: 20px;
-          }
-        }
-      }
     }
-    .goods__list {
+    &__header {
+      margin-bottom: 0;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 45px;
+    }
+    &__img {
+      width: 40px;
+      height: 43px;
+    }
+    &__name {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 45px;
+    }
+    &__list {
       display: grid;
-      grid-template-columns: repeat(3, 288px);
+      grid-template-columns: repeat(2, 288px);
       grid-template-rows: 400px;
       column-gap: 42px;
       row-gap: 31px;
+      justify-content: center;
 
-      width: 950px;
+      width: 100%;
       align-self: center;
 
       margin-bottom: 174px;

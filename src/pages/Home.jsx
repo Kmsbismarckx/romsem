@@ -12,7 +12,7 @@ function Home() {
 
   if (isTablet) {
     return (
-      <div className="home pc__container tablet__container">
+      <div className="home">
         {isDesktop && <SideMenu />}
         <Main />
         {isDesktop && (

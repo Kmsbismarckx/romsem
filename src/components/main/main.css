@@ -55,6 +55,13 @@
     height: 397px;
     position: unset;
   }
+  .main .goods-items__swiper .swiper-wrapper {
+    justify-content: space-between;
+  }
+  .main .goods-items__swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
   .main .categories__swiper {
     margin-bottom: 30px;
   }
@@ -162,7 +169,7 @@
     gap: 30px;
     justify-content: space-between;
     align-self: center;
-    width: 768px;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 52px;
   }

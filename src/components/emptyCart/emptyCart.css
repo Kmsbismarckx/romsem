@@ -23,34 +23,38 @@
   font-weight: 300;
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
-.cart-empty {
-  padding-top: 77px;
-  padding-left: 10px;
-  padding-right: 10px;
+.empty-cart {
+  padding: 77px 15px 0 15px;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
 }
-.cart-empty__annotation {
-  padding: 10px 35px 0 35px;
+.empty-cart__content {
+  padding: 0 20px;
+}
+.empty-cart__annotation {
+  padding-top: 12px;
   border-radius: 5px;
 }
-.cart-empty__annotation__name {
+.empty-cart__annotation .annotation__name {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
   text-align: center;
   margin-bottom: 10px;
 }
-.cart-empty__annotation_item {
+.empty-cart__annotation .annotation__item {
   font-style: normal;
   font-weight: 400;
   text-align: center;
 }
-.cart-empty__annotation_item:first-of-type {
+.empty-cart__annotation .annotation__item:first-of-type {
   font-size: 18px;
   line-height: 22px;
   color: #a4acad;
   margin-bottom: 26px;
 }
-.cart-empty__annotation_item:last-of-type {
+.empty-cart__annotation .annotation__item:last-of-type {
   font-size: 14px;
   line-height: 17px;
   color: #f2f2f2;
@@ -59,10 +63,10 @@
   border-bottom-right-radius: inherit;
   padding: 12px 32px 11px;
 }
-.cart-empty__location {
+.empty-cart__location {
   margin: 20px 0 0;
 }
-.cart-empty__location_map {
+.empty-cart__location .location__map {
   position: relative;
   width: 100%;
   height: auto;
@@ -71,11 +75,11 @@
   align-items: center;
   margin-bottom: 38px;
 }
-.cart-empty__location_map__img {
+.empty-cart__location .location__img {
   width: inherit;
   object-fit: cover;
 }
-.cart-empty__location_map_pin {
+.empty-cart__location .location__pin {
   content: "";
   width: 60px;
   height: 60px;
@@ -86,21 +90,20 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.cart-empty__location__description {
+.empty-cart__location .location__description {
   text-align: center;
 }
-.cart-empty__location__description__name {
+.empty-cart__location .location__name {
   margin-bottom: 10px;
 }
-.cart-empty__location__description_item {
+.empty-cart__location .location__info {
   color: #a4acad;
   margin-bottom: 27px;
 }
-.cart-empty__check__shipping {
+.empty-cart__check-shipping {
   border-radius: 5px;
-  padding: 0 35px;
 }
-.cart-empty__check__shipping__name {
+.empty-cart__check-shipping .check-shipping__name {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -108,7 +111,7 @@
   text-align: center;
   color: #a4acad;
 }
-.cart-empty__check__shipping_input {
+.empty-cart__check-shipping .check-shipping__input {
   width: 100%;
   padding: 5px 10px;
   font-style: normal;
@@ -117,28 +120,18 @@
   line-height: 17px;
   border: none;
 }
-.cart-empty__check__shipping_input:focus {
+.empty-cart__check-shipping .check-shipping__input:focus {
   background-color: #f2f2f2;
   outline-color: #ff9846;
 }
-.cart-empty__check__shipping_clock {
+.empty-cart__check-shipping .check-shipping__clock {
   margin-right: 9px;
 }
-.cart-empty__check__shipping_API {
-  margin-top: 10px;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 20px;
-}
-.cart-empty__check__shipping_API__img {
-  width: inherit;
-  height: inherit;
-}
-.cart-empty__check__shipping_item:first-of-type {
+.empty-cart__check-shipping .check-shipping__item:first-of-type {
   background-color: white;
   border-radius: 5px 5px 0 0;
 }
-.cart-empty__check__shipping_item:nth-of-type(2) {
+.empty-cart__check-shipping .check-shipping__item:nth-of-type(2) {
   display: flex;
   justify-content: center;
   background-color: #ff9846;
@@ -146,13 +139,32 @@
   border-radius: 0 0 5px 5px;
   color: white;
 }
-.cart-empty__button {
+.empty-cart__shipping-API {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.empty-cart__shipping-API::after {
+  content: url("/public/media/UI/pin.svg");
+  position: absolute;
+  width: 64px;
+  height: 94px;
+  top: 69px;
+  left: 116px;
+}
+.empty-cart .shipping-API__img {
+  width: inherit;
+  height: inherit;
+}
+.empty-cart__button {
   width: 100%;
   padding: 13px;
 }
 
 @media screen and (min-width: 1920px) {
-  .cart-empty__check__shipping {
+  .empty-cart__shipping {
     padding: 0;
   }
 }

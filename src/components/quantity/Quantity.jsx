@@ -1,12 +1,13 @@
 import React from 'react';
 import Decrement from '../UI/Decrement/Decrement';
 import Increment from '../UI/Increment/Increment';
+import './Quantity.css';
 
 function Quantity({ decreaseQuantityHandler, increaseQuantityHandler, quantity }) {
   return (
-    <div className="cart__item_content__description__item">
+    <div className="quantity__container">
       <Decrement onClick={decreaseQuantityHandler || null} />
-      <div className="cart__item_content__description__item_quantity">{quantity || 0}</div>
+      <div className="quantity">{quantity || 0}</div>
       <Increment onClick={increaseQuantityHandler || null} />
     </div>
   );
