@@ -45,7 +45,11 @@
 @media screen and (min-width: 768px) {
   .goods {
     padding: 67px 15px 0 15px;
-    max-width: 798px;
+    max-width: 648px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
   }
   .goods__header-container {
     width: 100%;
@@ -56,20 +60,10 @@
   }
   .goods__header {
     margin-bottom: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 45px;
   }
   .goods__img {
     width: 40px;
     height: 43px;
-  }
-  .goods__name {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 45px;
   }
   .goods__list {
     display: grid;

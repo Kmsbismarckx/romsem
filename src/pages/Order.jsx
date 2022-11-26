@@ -36,7 +36,7 @@ function Order() {
   });
   const [makeOrderValidation, setMakeOrderValidation] = useState(false);
 
-  const activeClassHandler = (type, value) => (type === value ? '_active' : '');
+  const activeClassHandler = (type, value) => (type === value ? 'form__toggle-item_active' : '');
 
   const shippingTypeHandler = (newShippingType) => {
     setShippingType(newShippingType);
@@ -50,103 +50,101 @@ function Order() {
 
   if (isDesktop) {
     return (
-      <div className="order pc__container tablet__container">
-        <div className="pc__main">
-          <div className="order__header">
-            <div className="order__header__button_back" onClick={() => navigate(-1)}>
-              Продолжить выбор
-            </div>
-            <div className="order__header__content">
-              <HeaderPhone />
-              <HeaderSchedule />
-            </div>
+      <div className="order">
+        <div className="order__header">
+          <div className="order__header-button_back" onClick={() => navigate(-1)}>
+            Продолжить выбор
           </div>
-          <h2 className="form__title">Ваши данные</h2>
-          <div className="order__form__container">
-            <div className="order__form__container__item">
-              <UserData formData={formData} setFormData={setFormData} />
-              <Payment
-                formData={formData}
-                setFormData={setFormData}
-                activeClassHandler={activeClassHandler}
-                paymentType={paymentType}
-                paymentTypeHandler={paymentTypeHandler}
-              />
-              <Input
-                className="order__form__item order__form_border-radius order__form_width order__input form__comment"
-                placeholder="Комменатрий к заказу"
-                pattern="^[А-Яа-яЁёA-Za-z\s]+$"
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    ...formData.unnecessaryFields,
-                    comment: e.target.value,
-                  })
-                }
-              />
-              <div className="form__additives-list">
-                <AdditivesItem />
-                <AdditivesItem />
-              </div>
-              <Input
-                className="order__form__item order__input form__promo-code order__form_border-radius order__form_width"
-                placeholder="Введите промокод"
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    ...formData.unnecessaryFields,
-                    promoCode: e.target.value,
-                  })
-                }
-              />
-            </div>
-            <div className="order__form__container__item">
-              <AddressInfo
-                formData={formData}
-                setFormData={setFormData}
-                activeClassHandler={activeClassHandler}
-                shippingTypeHandler={shippingTypeHandler}
-                shippingType={shippingType}
-              />
-              <div className="form__shipping-time form__toggle order__form_border-radius order__form_width ">
-                <div
-                  className={`order__form__item form__toggle__item form__toggle__item${activeClassHandler(
-                    shippingTime,
-                    'now'
-                  )} form__shipping-time-now`}
-                  onClick={() => shippingTimeHandler('now')}
-                >
-                  На сейчас
-                </div>
-                <div
-                  className={`order__form__item form__toggle__item form__toggle__item${activeClassHandler(
-                    shippingTime,
-                    'later'
-                  )} form__shipping-time-later`}
-                  onClick={() => shippingTimeHandler('later')}
-                >
-                  На время
-                </div>
-              </div>
-              <Input
-                className="order__form__item order__form_border-radius order__form_width order__input form__email"
-                placeholder="E-mail"
-                type="e-mail"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                onChange={(e) =>
-                  setFormData({ ...formData, ...formData.unnecessaryFields, eMail: e.target.value })
-                }
-              />
-            </div>
-            <Button className="order__form__container_">Оформить заказ</Button>
-            <p className="order__form__container__item">
-              Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на обработку
-              персональных данных в соответствии с{' '}
-              <a className="order__form__container__item__offer" href="/">
-                Публичной оффертой
-              </a>
-            </p>
+          <div className="order__header-content">
+            <HeaderPhone />
+            <HeaderSchedule />
           </div>
+        </div>
+        <h2 className="form__title">Ваши данные</h2>
+        <div className="form__container">
+          <div className="form__item">
+            <UserData formData={formData} setFormData={setFormData} />
+            <Payment
+              formData={formData}
+              setFormData={setFormData}
+              activeClassHandler={activeClassHandler}
+              paymentType={paymentType}
+              paymentTypeHandler={paymentTypeHandler}
+            />
+            <Input
+              className="order__form__item order__form_border-radius order__form_width form__input form__comment"
+              placeholder="Комменатрий к заказу"
+              pattern="^[А-Яа-яЁёA-Za-z\s]+$"
+              onChange={(e) =>
+                setFormData({
+                  ...formData,
+                  ...formData.unnecessaryFields,
+                  comment: e.target.value,
+                })
+              }
+            />
+            <div className="form__additives-list">
+              <AdditivesItem />
+              <AdditivesItem />
+            </div>
+            <Input
+              className="order__form__item form__input form__promo-code order__form_border-radius order__form_width"
+              placeholder="Введите промокод"
+              onChange={(e) =>
+                setFormData({
+                  ...formData,
+                  ...formData.unnecessaryFields,
+                  promoCode: e.target.value,
+                })
+              }
+            />
+          </div>
+          <div className="order__form__container__item">
+            <AddressInfo
+              formData={formData}
+              setFormData={setFormData}
+              activeClassHandler={activeClassHandler}
+              shippingTypeHandler={shippingTypeHandler}
+              shippingType={shippingType}
+            />
+            <div className="form__shipping-time form__toggle order__form_border-radius order__form_width ">
+              <div
+                className={`order__form__item form__toggle__item form__toggle__item${activeClassHandler(
+                  shippingTime,
+                  'now'
+                )} form__shipping-time-now`}
+                onClick={() => shippingTimeHandler('now')}
+              >
+                На сейчас
+              </div>
+              <div
+                className={`order__form__item form__toggle__item form__toggle__item${activeClassHandler(
+                  shippingTime,
+                  'later'
+                )} form__shipping-time-later`}
+                onClick={() => shippingTimeHandler('later')}
+              >
+                На время
+              </div>
+            </div>
+            <Input
+              className="order__form__item order__form_border-radius order__form_width form__input form__email"
+              placeholder="E-mail"
+              type="e-mail"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              onChange={(e) =>
+                setFormData({ ...formData, ...formData.unnecessaryFields, eMail: e.target.value })
+              }
+            />
+          </div>
+          <Button className="order__form__container_">Оформить заказ</Button>
+          <p className="order__form__container__item">
+            Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на обработку
+            персональных данных в соответствии с{' '}
+            <a className="order__form__container__item__offer" href="/">
+              Публичной оффертой
+            </a>
+          </p>
         </div>
 
         <div className="cart__container">
@@ -157,9 +155,9 @@ function Order() {
   }
 
   return (
-    <div className="order ">
+    <div className="order">
       <h2 className="form__title">Ваши данные</h2>
-      <div className="order__form">
+      <div className="form">
         <UserData formData={formData} setFormData={setFormData} />
         <AddressInfo
           formData={formData}
@@ -175,9 +173,18 @@ function Order() {
           paymentType={paymentType}
           paymentTypeHandler={paymentTypeHandler}
         />
-        <div className="form_email-comment">
+        <div className="form__email-comment">
           <Input
-            className="order__form__item order__form_border-radius order__form_width order__input form__comment"
+            className="form__email form__item form__input "
+            placeholder="E-mail"
+            type="e-mail"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            onChange={(e) =>
+              setFormData({ ...formData, ...formData.unnecessaryFields, eMail: e.target.value })
+            }
+          />
+          <Input
+            className="form__comment form__item form__input"
             placeholder="Комменатрий к заказу"
             pattern="^[А-Яа-яЁёA-Za-z\s]+$"
             onChange={(e) =>
@@ -185,9 +192,9 @@ function Order() {
             }
           />
         </div>
-        <div className="form__shipping-time form__toggle order__form_border-radius order__form_width ">
+        <div className="form__shipping-time form__toggle">
           <div
-            className={`order__form__item form__toggle__item form__toggle__item${activeClassHandler(
+            className={`form__item form__toggle-item ${activeClassHandler(
               shippingTime,
               'now'
             )} form__shipping-time-now`}
@@ -196,7 +203,7 @@ function Order() {
             На сейчас
           </div>
           <div
-            className={`order__form__item form__toggle__item form__toggle__item${activeClassHandler(
+            className={`form__item form__toggle-item ${activeClassHandler(
               shippingTime,
               'later'
             )} form__shipping-time-later`}
@@ -206,12 +213,13 @@ function Order() {
           </div>
         </div>
       </div>
+
       <div className="form__additives-list">
         <AdditivesItem />
         <AdditivesItem />
       </div>
       <Input
-        className="order__form__item order__input form__promo-code order__form_border-radius order__form_width"
+        className="form__promo-code form__item form__input"
         placeholder="Введите промокод"
         onChange={(e) =>
           setFormData({ ...formData, ...formData.unnecessaryFields, promoCode: e.target.value })
@@ -219,8 +227,8 @@ function Order() {
       />
       <TotalList ids={cartIds} totalPrice={totalPrice} />
       <div className="order__total-price">
-        <div className="order__total-price__item">Итого</div>
-        <div className="order__total-price__item">{totalPrice} COM</div>
+        <div className="total-price__item">Итого</div>
+        <div className="total-price__item">{totalPrice} COM</div>
       </div>
       <Button
         className="form_"

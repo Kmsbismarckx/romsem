@@ -58,5 +58,11 @@
     font-size: 14px;
   }
 }
+@media screen and (min-width: 768px) {
+  .small-product__img {
+    width: 132px;
+    height: 132px;
+  }
+}
 
 /*# sourceMappingURL=smallProduct.css.map */

@@ -1,27 +1,25 @@
 @import '../../style/variables.scss';
 
 .total__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 
-  &__item {
+  &-item {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+  }
+  &-name,
+  &-value {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 
-    &__name,
-    &__value {
-      text-align: center;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 22px;
-
-      padding: 10px 0;
-      border-bottom: 0.5px solid rgba(164, 172, 173, 1);
-    }
-    &__value {
-      font-weight: 500;
-    }
+    padding: 10px 0;
+    border-bottom: 0.5px solid rgba(164, 172, 173, 1);
+  }
+  &-value {
+    font-weight: 500;
   }
 }

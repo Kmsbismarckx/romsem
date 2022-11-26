@@ -40,3 +40,12 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .small-product {
+    &__img {
+      width: 132px;
+      height: 132px;
+    }
+  }
+}

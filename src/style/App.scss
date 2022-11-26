@@ -28,6 +28,7 @@ a {
 .App {
   background-color: #f2f2f2;
   padding-bottom: 82px;
+  min-height: 100vh;
 }
 .swiper {
   .swiper-wrapper {
@@ -85,13 +86,22 @@ a {
     padding-bottom: 0;
   }
   .App {
-    padding-bottom: 72px;
+    padding-bottom: 92px;
   }
 
   .tablet__container {
     display: flex;
     justify-content: center;
     padding-top: 86.5px;
+  }
+  .swiper.good__swiper {
+    margin-right: 60px;
+    margin-left: 60px;
+    position: initial;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 

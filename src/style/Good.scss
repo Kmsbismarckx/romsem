@@ -182,14 +182,15 @@
 
 @media screen and (min-width: 768px) {
   .good {
-    width: 950px;
+    max-width: 798px;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 86.5px;
+    padding: $container_mobile_padding;
     &__buttons {
       width: 100%;
     }
     &__main {
-      width: 950px;
+      width: 100%;
       .header {
         margin-bottom: 53px;
       }
@@ -213,6 +214,7 @@
       &-name {
         font-weight: 500;
         line-height: 60px;
+        text-align: left;
       }
       &-weight {
         font-style: normal;

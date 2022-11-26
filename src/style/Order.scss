@@ -1,9 +1,12 @@
 @import '../style/variables.scss';
 
 .order {
-  padding-top: calc($mobile_header_height + 10.5px);
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  max-width: 360px;
+
+  padding: $container_mobile_padding;
+  margin: 0 auto;
+
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -12,151 +15,167 @@
     text-align: center;
     margin-bottom: 10px;
   }
-  &__form_border-radius {
-    border-radius: 5px;
-  }
-  &__form_width {
+  .form {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-  }
-  &__input {
-    font-style: inherit;
-    font-weight: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    padding-left: 8px;
-    border: none;
-  }
-  &__input:focus {
-    outline-color: #ff9846;
-  }
-  .form__toggle .form__toggle__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .form__toggle .form__toggle__item:first-child {
-    border-top-left-radius: inherit;
-    border-bottom-left-radius: inherit;
-  }
-  .form__toggle .form__toggle__item:last-child {
-    border-top-right-radius: inherit;
-    border-bottom-right-radius: inherit;
-  }
-  .form__toggle .form__toggle__item_active {
-    background: $orange;
-    color: white;
-  }
-  .form__change {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .form__change__checkbox-area {
-    display: flex;
-    flex-grow: 1;
-  }
-  .form__change__checkbox-area input {
-    appearance: none;
-    position: relative;
-  }
-  .form__change__checkbox-area input::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1px solid $orange;
-    background: white;
-  }
-  .form__change__checkbox-area input:checked::after {
-    background: url('/public/media/UI/check-mark.svg') no-repeat center $orange;
-  }
-  .form__change__checkbox-area label {
-    margin-left: 33px;
-  }
-  .form__change .form__change_input {
-    margin-left: 10px;
-    width: 36%;
-  }
-  .form__additives-list {
-    display: grid;
     gap: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    &__item {
+      border-radius: 5px;
+      width: 100%;
+      height: 40px;
+    }
+    &__input {
+      font-style: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      padding-left: 8px;
+      border: none;
+    }
+    &__input:focus {
+      outline-color: #ff9846;
+    }
+    &__input:invalid {
+      color: red;
+      outline-color: red;
+    }
+    &__input::placeholder {
+      color: #a4acad;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__toggle {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      width: 100%;
+      height: 40px;
+      &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 11px;
+        cursor: pointer;
+      }
+      &-item:first-child {
+        border-top-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+      }
+      &-item:last-child {
+        border-top-right-radius: inherit;
+        border-bottom-right-radius: inherit;
+      }
+      &-item_active {
+        background: $orange;
+        color: white;
+        fill: white;
+      }
+    }
+
+    &__user-data {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      column-gap: 10px;
+    }
+    &__type-of-shipping,
+    &__type-of-payment,
+    &__email-comment {
+      display: grid;
+      width: 100%;
+      gap: 10px;
+    }
+    &__address-info {
+      display: grid;
+      gap: 10px;
+      .address-info__item {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 10px;
+      }
+    }
+    &__change {
+      display: flex;
+      &-sum {
+        width: 122px;
+      }
+    }
+
+    &__checkbox {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      margin-right: 11px;
+
+      appearance: none;
+    }
+    &__checkbox::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      border: 1px solid $orange;
+      background: white;
+    }
+    &__checkbox:checked::after {
+      background: url('/public/media/UI/check-mark.svg') no-repeat center $orange;
+    }
+
+    &__checkbox-area {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__cash,
+    &__card {
+      display: flex;
+    }
+    &__additives-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
-  .form__additives-list__item {
+  .additives-list__item {
     display: flex;
     justify-content: space-between;
   }
+
   .form__promo-code {
     margin-bottom: 20px;
   }
+
   .form__button {
     width: 100%;
     padding: 13px 0;
   }
-  .order__svg_active {
-    fill: white;
-  }
-  .form__type-of-shipping,
-  .form__type-of-payment,
-  .form__shipping-time {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    background: white;
-  }
-}
-.order__form__item {
-  height: 40px;
-  p {
-    margin-left: 10px;
-  }
-}
-.order .order__input:invalid {
-  color: red;
-  outline-color: red;
-}
-.order__input::placeholder {
-  color: #a4acad;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-}
-.order__form {
-  display: grid;
-  gap: 10px;
-  .form_email-comment,
-  .form__address-info,
-  .form__shipping-time,
-  .form__user-data,
-  .form__address_house_item {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-  }
 }
 
 .order__total-price {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   align-items: center;
+
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
   color: #ff9846;
+
   border-bottom: 1px solid #a4acad;
   margin-bottom: 30px;
-}
-.order__total-price__item {
-  display: flex;
-  justify-content: center;
-  flex-grow: 2;
-  width: 50%;
-  padding: 10px 0;
+  .total-price__item {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -164,7 +183,7 @@
     padding: 0;
     height: 100%;
     min-height: 100vh;
-    .order__header {
+    &__header {
       position: relative;
       display: flex;
       height: 94.5px;
@@ -172,13 +191,13 @@
       border-bottom: 0.5px solid $gray;
       z-index: 3;
       margin-bottom: 55px;
-      .order__header__button_back {
+      &-button_back {
         position: relative;
         padding-left: 30px;
         margin-top: 38px;
         margin-left: 100px;
       }
-      .order__header__button_back::before {
+      &-button_back::before {
         content: '';
         position: absolute;
         top: 0;
@@ -189,7 +208,7 @@
         background-size: 20px 20px;
         pointer-events: none;
       }
-      .order__header__content {
+      &-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -198,23 +217,6 @@
 
         font-style: normal;
         font-weight: 500;
-        .header__item_phone__name {
-          text-align: center;
-          font-size: 18px;
-          line-height: 22px;
-        }
-        .header__item_phone_number {
-          font-size: 18px;
-          line-height: 100%;
-        }
-        .header__item__schedule {
-          display: flex;
-          font-size: 14px;
-          line-height: 17px;
-          &__img {
-            margin-right: 5px;
-          }
-        }
       }
     }
 

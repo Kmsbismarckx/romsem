@@ -24,9 +24,10 @@
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
 .order {
-  padding-top: 67px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  max-width: 360px;
+  padding: 67px 15px 0 15px;
+  margin: 0 auto;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -36,13 +37,18 @@
   text-align: center;
   margin-bottom: 10px;
 }
-.order__form_border-radius {
-  border-radius: 5px;
-}
-.order__form_width {
+.order .form {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  gap: 10px;
 }
-.order__input {
+.order .form__item {
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+}
+.order .form__input {
   font-style: inherit;
   font-weight: inherit;
   font-size: inherit;
@@ -50,59 +56,100 @@
   padding-left: 8px;
   border: none;
 }
-.order__input:focus {
+.order .form__input:focus {
   outline-color: #ff9846;
 }
-.order .form__toggle .form__toggle__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.order .form__input:invalid {
+  color: red;
+  outline-color: red;
 }
-.order .form__toggle .form__toggle__item:first-child {
+.order .form__input::placeholder {
+  color: #a4acad;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.order .form__toggle {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  width: 100%;
+  height: 40px;
+}
+.order .form__toggle-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 11px;
+  cursor: pointer;
+}
+.order .form__toggle-item:first-child {
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
 }
-.order .form__toggle .form__toggle__item:last-child {
+.order .form__toggle-item:last-child {
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
 }
-.order .form__toggle .form__toggle__item_active {
+.order .form__toggle-item_active {
   background: #ff9846;
   color: white;
+  fill: white;
+}
+.order .form__user-data {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 10px;
+}
+.order .form__type-of-shipping, .order .form__type-of-payment, .order .form__email-comment {
+  display: grid;
+  width: 100%;
+  gap: 10px;
+}
+.order .form__address-info {
+  display: grid;
+  gap: 10px;
+}
+.order .form__address-info .address-info__item {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 10px;
 }
 .order .form__change {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.order .form__change__checkbox-area {
-  display: flex;
-  flex-grow: 1;
+.order .form__change-sum {
+  width: 122px;
 }
-.order .form__change__checkbox-area input {
-  appearance: none;
+.order .form__checkbox {
   position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 11px;
+  appearance: none;
 }
-.order .form__change__checkbox-area input::after {
+.order .form__checkbox::after {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 20px;
   height: 20px;
+  box-sizing: border-box;
   border-radius: 50%;
   border: 1px solid #ff9846;
   background: white;
 }
-.order .form__change__checkbox-area input:checked::after {
+.order .form__checkbox:checked::after {
   background: url("/public/media/UI/check-mark.svg") no-repeat center #ff9846;
 }
-.order .form__change__checkbox-area label {
-  margin-left: 33px;
+.order .form__checkbox-area {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
-.order .form__change .form__change_input {
-  margin-left: 10px;
-  width: 36%;
+.order .form__cash, .order .form__card {
+  display: flex;
 }
 .order .form__additives-list {
   display: grid;
@@ -110,7 +157,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.order .form__additives-list__item {
+.order .additives-list__item {
   display: flex;
   justify-content: space-between;
 }
@@ -121,54 +168,10 @@
   width: 100%;
   padding: 13px 0;
 }
-.order .order__svg_active {
-  fill: white;
-}
-.order .form__type-of-shipping,
-.order .form__type-of-payment,
-.order .form__shipping-time {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  background: white;
-}
-
-.order__form__item {
-  height: 40px;
-}
-.order__form__item p {
-  margin-left: 10px;
-}
-
-.order .order__input:invalid {
-  color: red;
-  outline-color: red;
-}
-
-.order__input::placeholder {
-  color: #a4acad;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.order__form {
-  display: grid;
-  gap: 10px;
-}
-.order__form .form_email-comment,
-.order__form .form__address-info,
-.order__form .form__shipping-time,
-.order__form .form__user-data,
-.order__form .form__address_house_item {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 10px;
-}
 
 .order__total-price {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   align-items: center;
   font-style: normal;
   font-weight: 500;
@@ -178,12 +181,9 @@
   border-bottom: 1px solid #a4acad;
   margin-bottom: 30px;
 }
-
-.order__total-price__item {
-  display: flex;
-  justify-content: center;
-  flex-grow: 2;
-  width: 50%;
+.order__total-price .total-price__item {
+  width: 100%;
+  text-align: center;
   padding: 10px 0;
 }
 
@@ -193,7 +193,7 @@
     height: 100%;
     min-height: 100vh;
   }
-  .order .order__header {
+  .order__header {
     position: relative;
     display: flex;
     height: 94.5px;
@@ -202,13 +202,13 @@
     z-index: 3;
     margin-bottom: 55px;
   }
-  .order .order__header .order__header__button_back {
+  .order__header-button_back {
     position: relative;
     padding-left: 30px;
     margin-top: 38px;
     margin-left: 100px;
   }
-  .order .order__header .order__header__button_back::before {
+  .order__header-button_back::before {
     content: "";
     position: absolute;
     top: 0;
@@ -219,7 +219,7 @@
     background-size: 20px 20px;
     pointer-events: none;
   }
-  .order .order__header .order__header__content {
+  .order__header-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,23 +227,6 @@
     margin-left: 363px;
     font-style: normal;
     font-weight: 500;
-  }
-  .order .order__header .order__header__content .header__item_phone__name {
-    text-align: center;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .order .order__header .order__header__content .header__item_phone_number {
-    font-size: 18px;
-    line-height: 100%;
-  }
-  .order .order__header .order__header__content .header__item__schedule {
-    display: flex;
-    font-size: 14px;
-    line-height: 17px;
-  }
-  .order .order__header .order__header__content .header__item__schedule__img {
-    margin-right: 5px;
   }
   .order .pc__main {
     width: 1490px;

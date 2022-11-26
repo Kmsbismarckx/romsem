@@ -10,31 +10,31 @@ function AddressInfo({
   setFormData,
 }) {
   return (
-    <div className="form__type-of-shipping__container">
-      <div className="form__type-of-shipping form__toggle order__form_border-radius order__form_width">
+    <div className="form__type-of-shipping">
+      <div className="form__toggle">
         <div
-          className={`order__form__item form__courier form__toggle__item form__toggle__item${activeClassHandler(
+          className={`form__courier form__toggle-item ${activeClassHandler(
             shippingType,
             'courier'
-          )} `}
+          )}`}
           onClick={() => shippingTypeHandler('courier')}
         >
           Курьером
         </div>
         <div
-          className={`order__form__item form__toggle__item form__self-pickup form__toggle__item${activeClassHandler(
+          className={`form__self-pickup form__toggle-item ${activeClassHandler(
             shippingType,
             'selfPickup'
-          )}  `}
+          )}`}
           onClick={() => shippingTypeHandler('selfPickup')}
         >
           Самовывоз
         </div>
       </div>
       {shippingType === 'courier' && (
-        <div className="form__address-info">
+        <div className="form__address-info type-of-shipping__item">
           <Input
-            className="order__form__item order__form_border-radius order__form_width order__input form__address_street"
+            className="form__street form__item form__input "
             placeholder="Улица"
             pattern="^[А-Яа-яЁёA-Za-z\s]+$"
             onChange={(e) =>
@@ -42,16 +42,16 @@ function AddressInfo({
             }
           />
           <Input
-            className="order__form__item order__form_border-radius order__form_width order__input form__address_house"
+            className="form__house form__item form__input"
             placeholder="Дом"
             type="number"
             onChange={(e) =>
               setFormData({ ...formData, ...formData.addressData, house: e.target.value })
             }
           />
-          <div className="form__address_house_item">
+          <div className="address-info__item">
             <Input
-              className="order__form__item order__form_border-radius order__form_width order__input form__address_house_flat"
+              className="form__flat form__item form__input "
               placeholder="Квартира"
               type="number"
               onChange={(e) =>
@@ -59,7 +59,7 @@ function AddressInfo({
               }
             />
             <Input
-              className="order__form__item order__form_border-radius order__form_width order__input form__address_house_entrance"
+              className="form__entrance form__item form__input"
               placeholder="Подъезд"
               type="number"
               onChange={(e) =>
@@ -67,9 +67,9 @@ function AddressInfo({
               }
             />
           </div>
-          <div className="form__address_house_item">
+          <div className="address-info__item">
             <Input
-              className="order__form__item order__form_border-radius order__form_width order__input form__address_house_floor"
+              className="form__floor form__item form__input"
               placeholder="Этаж"
               type="number"
               onChange={(e) =>
@@ -77,7 +77,7 @@ function AddressInfo({
               }
             />
             <Input
-              className="order__form__item order__form_border-radius order__form_width order__input form__address_house_code"
+              className="form__code form__item form__input"
               placeholder="Код"
               type="number"
               pattern="[0-9]{6}"

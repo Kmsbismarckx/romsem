@@ -22,7 +22,12 @@
 @media screen and (min-width: 768px) {
   .goods {
     padding: $container_mobile_padding;
-    max-width: 798px;
+    max-width: 648px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
     &__header-container {
       width: 100%;
       align-self: center;
@@ -32,21 +37,10 @@
     }
     &__header {
       margin-bottom: 0;
-
-      font-style: normal;
-      font-weight: 400;
-      font-size: 36px;
-      line-height: 45px;
     }
     &__img {
       width: 40px;
       height: 43px;
-    }
-    &__name {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 36px;
-      line-height: 45px;
     }
     &__list {
       display: grid;

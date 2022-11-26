@@ -20,6 +20,7 @@ import Quantity from '../components/quantity/Quantity';
 import Button from '../components/UI/Button/Button';
 import { setCartItem } from '../store/reducers/cartSlice';
 import MainFooter from '../components/mainFooter/MainFooter';
+import AboutContacts from '../components/About/aboutContacts/aboutContacts';
 
 function Good() {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ function Good() {
   const AboutMemo = React.memo(About);
   if (isTablet || isDesktop) {
     return (
-      <div className="good pc__container tablet__container">
+      <div className="good">
         {isDesktop && <SideMenu />}
         <div className="good__main">
           {isDesktop && <Header />}
@@ -71,7 +72,7 @@ function Good() {
               effect
               speed={800}
               slidesPerView={3}
-              spaceBetween={130}
+              spaceBetween={30}
               grabCursor
               navigation={composition.length > 3}
             >
@@ -94,7 +95,8 @@ function Good() {
               ))}
             </Swiper>
           </div>
-          <MainFooter />
+          <About />
+          {isDesktop && <MainFooter />}
         </div>
         {isDesktop && (
           <div className="cart__container">

@@ -24,15 +24,14 @@
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
 .total__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }
-.total__list__item {
+.total__list-item {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
-.total__list__item__name, .total__list__item__value {
+.total__list-name, .total__list-value {
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -41,7 +40,7 @@
   padding: 10px 0;
   border-bottom: 0.5px solid rgb(164, 172, 173);
 }
-.total__list__item__value {
+.total__list-value {
   font-weight: 500;
 }
 

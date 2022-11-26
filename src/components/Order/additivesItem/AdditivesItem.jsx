@@ -3,8 +3,8 @@ import Quantity from '../../quantity/Quantity';
 
 function AdditivesItem() {
   return (
-    <div className="form__additives-list__item">
-      <p className="form__additives-list__name">Палочки + соусник обычные</p>
+    <div className="additives-list__item">
+      <p className="additives-list__name">Палочки + соусник обычные</p>
       <Quantity />
     </div>
   );

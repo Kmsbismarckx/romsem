@@ -52,7 +52,7 @@ function Goods() {
 
         <GoodsList sortedAndSearchedGoods={sortedAndSearchedGoods} id={id} />
         <About className="about" />
-        <MainFooter />
+        {isDesktop && <MainFooter />}
         {isDesktop && (
           <div className="cart__container">
             <Cart />

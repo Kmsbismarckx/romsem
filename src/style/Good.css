@@ -190,15 +190,16 @@
 }
 @media screen and (min-width: 768px) {
   .good {
-    width: 950px;
+    max-width: 798px;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 86.5px;
+    padding: 67px 15px 0 15px;
   }
   .good__buttons {
     width: 100%;
   }
   .good__main {
-    width: 950px;
+    width: 100%;
   }
   .good__main .header {
     margin-bottom: 53px;
@@ -221,6 +222,7 @@
   .good__item-name {
     font-weight: 500;
     line-height: 60px;
+    text-align: left;
   }
   .good__item-weight {
     font-style: normal;
