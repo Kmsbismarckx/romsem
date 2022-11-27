@@ -25,7 +25,7 @@ function CartItem({ id }) {
     <div className="cart__item">
       <img
         className="cart__item-img"
-        src={`/media/goods/${cartItem.name}.png`}
+        src={`media/goods/${cartItem.name}.png`}
         alt={cartItem.name}
       />
       <div className="cart__item-content">

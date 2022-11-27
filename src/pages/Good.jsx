@@ -83,11 +83,11 @@ function Good() {
                     className="good__addition-item"
                     name={item.russianName}
                     price={item.price}
-                    imgURL="/media/good/philadelphia_circle.png"
+                    imgURL="media/good/philadelphia_circle.png"
                   >
                     <img
                       className="good__addition-item-button"
-                      src="/media/good/add_button.svg"
+                      src="media/good/add_button.svg"
                       alt="Добавить"
                     />
                   </SmallProduct>
@@ -132,7 +132,7 @@ function Good() {
                     className=""
                     name={item.russianName}
                     price={item.price}
-                    imgURL="/media/good/philadelphia_circle.png"
+                    imgURL="media/good/philadelphia_circle.png"
                   />
                 </SwiperSlide>
               ))}
@@ -160,11 +160,11 @@ function Good() {
                   className="good__addition-item"
                   name={item.russianName}
                   price={item.price}
-                  imgURL="/media/good/philadelphia_circle.png"
+                  imgURL="media/good/philadelphia_circle.png"
                 >
                   <img
                     className="good__addition-button"
-                    src="/media/good/add_button.svg"
+                    src="media/good/add_button.svg"
                     alt="Добавить"
                   />
                 </SmallProduct>

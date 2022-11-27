@@ -11,9 +11,9 @@ function AboutContacts() {
         Выберите удобный <br /> мессенджер для общения
       </p>
       <div className="contacts__imgs">
-        <img className="contacts__img" src="/media/about/whatsapp.svg" alt="Whatsapp" />
-        <img className="contacts__img" src="/media/about/telegram.svg" alt="Telegram" />
-        <img className="contacts__img" src="/media/about/instagram.svg" alt="Instagram" />
+        <img className="contacts__img" src="media/about/whatsapp.svg" alt="Whatsapp" />
+        <img className="contacts__img" src="media/about/telegram.svg" alt="Telegram" />
+        <img className="contacts__img" src="media/about/instagram.svg" alt="Instagram" />
       </div>
       {!isTablet && !isDesktop && <ContactsInfo />}
     </div>

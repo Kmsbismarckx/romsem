@@ -1,6 +1,6 @@
 import './style/App.css';
 import React, { useMemo, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import Header from './components/Header/Header';
 import urlContext from './context';
@@ -40,21 +40,19 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
-        <urlContext.Provider value={contextData}>
-          {!isDesktop && <Header />}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/home/:id" element={<Goods />} />
-            <Route path="/home/:categoryId/:goodId" element={<Good />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/order" element={<Order />} />
-            <Route path="/reviews" element={<Reviews />} />
-          </Routes>
-          {!isDesktop && <Menu />}
-        </urlContext.Provider>
-      </Router>
+      <urlContext.Provider value={contextData}>
+        {!isDesktop && <Header />}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/home/:id" element={<Goods />} />
+          <Route path="/home/:categoryId/:goodId" element={<Good />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/reviews" element={<Reviews />} />
+        </Routes>
+        {!isDesktop && <Menu />}
+      </urlContext.Provider>
     </div>
   );
 }

@@ -32,7 +32,7 @@ function Goods() {
         {isDesktop && <Header />}
         <div className="goods__header-container">
           <div className="goods__header">
-            <img className="goods__img" src="/media/goods/goods__logo.svg" alt="" />
+            <img className="goods__img" src="media/goods/goods__logo.svg" alt="" />
             <p className="goods__name">{category.russianName}</p>
           </div>
           <Select
@@ -65,7 +65,7 @@ function Goods() {
   return (
     <div className="goods">
       <div className="goods__header">
-        <img className="goods__img" src="/media/goods/goods__logo.svg" alt="" />
+        <img className="goods__img" src="media/goods/goods__logo.svg" alt="" />
         <p className="goods__name">{category.russianName}</p>
       </div>
       <Select

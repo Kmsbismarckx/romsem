@@ -27,7 +27,7 @@ function EmptyCart() {
             <div className="check-shipping__item">
               <img
                 className="check-shipping__clock"
-                src="/media/cart/cart-clock.svg"
+                src="media/cart/cart-clock.svg"
                 alt="Время доставки"
               />
               <div>
@@ -41,7 +41,7 @@ function EmptyCart() {
             <div className="location__map">
               <img
                 className="location__img"
-                src="/media/cart/cart-empty_location.png"
+                src="media/cart/cart-empty_location.png"
                 alt="Location"
               />
               <div className="location__pin" onClick={locationPinHandler} />
@@ -56,11 +56,7 @@ function EmptyCart() {
       {address ? (
         <div>
           <div className="empty-cart__shipping-API">
-            <img
-              className="shipping-API__img"
-              src="/media/cart/cart-empty_locationAPI.png"
-              alt=""
-            />
+            <img className="shipping-API__img" src="media/cart/cart-empty_locationAPI.png" alt="" />
           </div>
           {!isDesktop && (
             <Link to="/">

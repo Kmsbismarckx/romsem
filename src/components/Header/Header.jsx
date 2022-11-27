@@ -36,9 +36,10 @@ function Header() {
             </Link>
           </div>
           <div className="header__query">
+            123
             <img
               className="header__query-img"
-              src="/media/header/query.svg"
+              src="media/header/query.svg"
               alt="query"
               onClick={() => setModal(true)}
             />
@@ -52,14 +53,14 @@ function Header() {
   return (
     <div className="header">
       <Link to="/" className="header__logo">
-        <img src="/media/header/header_logo.svg" alt="Romsem" />
+        <img src="media/header/header_logo.svg" alt="Romsem" />
       </Link>
       <HeaderPhone />
       <HeaderSchedule />
       <div className="header__query">
         <img
           className="header__query-img"
-          src="/media/header/query.svg"
+          src="media/header/query.svg"
           alt="query"
           onClick={() => setModal(true)}
         />

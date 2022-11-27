@@ -60,10 +60,10 @@ function Slider({ children, pageWidth, pageHeight, pageMargin }) {
           {pages}
         </div>
         <ArrowButton className="arrow" onClick={handleLeftArrowClick}>
-          <img src="/media/UI/arrow_button.svg" alt="Влево" />
+          <img src="media/UI/arrow_button.svg" alt="Влево" />
         </ArrowButton>
         <ArrowButton className="arrow" onClick={handleRightArrowClick}>
-          <img src="/media/UI/arrow_button.svg" alt="Вправо" />
+          <img src="media/UI/arrow_button.svg" alt="Вправо" />
         </ArrowButton>
       </div>
     </div>

@@ -6,7 +6,7 @@ function HeaderSchedule() {
 
   return (
     <div className="header__schedule">
-      <img className="header__schedule-img" src="/media/header/clock.svg" alt="clock" />
+      <img className="header__schedule-img" src="media/header/clock.svg" alt="clock" />
       <div className="header__schedule-info">
         работаем
         {!isDesktop && <br />}c 10:00 до 00:00

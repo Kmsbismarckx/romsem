@@ -37,7 +37,7 @@ function Category({ id }) {
           <img
             className="category__img"
             src={
-              isTablet ? `https://via.placeholder.com/950x397` : `/media/main/${category.name}.png`
+              isTablet ? `https://via.placeholder.com/950x397` : `media/main/${category.name}.png`
             }
             alt={category.russianName}
           />
@@ -55,7 +55,7 @@ function Category({ id }) {
       <Link className="category__link" to={`/home/${category.id}`}>
         <img
           className="category__img"
-          src={`/media/main/${category.name}.png`}
+          src={`media/main/${category.name}.png`}
           alt={category.russianName}
         />
       </Link>
