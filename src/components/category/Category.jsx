@@ -7,7 +7,7 @@ import appContext from '../../context';
 
 function Category({ id }) {
   const category = useSelector((state) => selectCategoryById(state, id));
-  const { isDesktop, isTablet } = useContext(appContext);
+  const { isDesktop, isTablet, publicUrl } = useContext(appContext);
 
   let largeClass;
   let isVisible = '';
@@ -37,7 +37,9 @@ function Category({ id }) {
           <img
             className="category__img"
             src={
-              isTablet ? `https://via.placeholder.com/950x397` : `media/main/${category.name}.png`
+              isTablet
+                ? `https://via.placeholder.com/950x397`
+                : `${publicUrl}/media/main/${category.name}.png`
             }
             alt={category.russianName}
           />
@@ -55,7 +57,7 @@ function Category({ id }) {
       <Link className="category__link" to={`/home/${category.id}`}>
         <img
           className="category__img"
-          src={`media/main/${category.name}.png`}
+          src={`${publicUrl}/media/main/${category.name}.png`}
           alt={category.russianName}
         />
       </Link>

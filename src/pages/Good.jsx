@@ -24,7 +24,7 @@ import AboutContacts from '../components/About/aboutContacts/aboutContacts';
 
 function Good() {
   const dispatch = useDispatch();
-  const { isDesktop, isTablet } = useContext(appContext);
+  const { isDesktop, isTablet, publicUrl } = useContext(appContext);
   const { categoryId, goodId } = useParams();
 
   const good = useSelector((state) => selectGoodById(state, Number(goodId)));
@@ -87,7 +87,7 @@ function Good() {
                   >
                     <img
                       className="good__addition-item-button"
-                      src="media/good/add_button.svg"
+                      src={`${publicUrl}/media/good/add_button.svg`}
                       alt="Добавить"
                     />
                   </SmallProduct>
@@ -164,7 +164,7 @@ function Good() {
                 >
                   <img
                     className="good__addition-button"
-                    src="media/good/add_button.svg"
+                    src={`${publicUrl}/media/good/add_button.svg`}
                     alt="Добавить"
                   />
                 </SmallProduct>

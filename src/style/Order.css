@@ -82,6 +82,7 @@
   align-items: center;
   column-gap: 11px;
   cursor: pointer;
+  background-color: white;
 }
 .order .form__toggle-item:first-child {
   border-top-left-radius: inherit;
@@ -92,7 +93,7 @@
   border-bottom-right-radius: inherit;
 }
 .order .form__toggle-item_active {
-  background: #ff9846;
+  background-color: #ff9846;
   color: white;
   fill: white;
 }

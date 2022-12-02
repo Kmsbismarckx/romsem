@@ -18,6 +18,7 @@ function App() {
     sort: '',
     query: '',
   });
+  const publicUrl = process.env.PUBLIC_URL;
 
   const isDesktop = useMediaQuery({
     query: '(min-width: 1920px)',
@@ -34,8 +35,9 @@ function App() {
       setFilter,
       isDesktop,
       isTablet,
+      publicUrl,
     }),
-    [modal, setModal, filter, setFilter, isDesktop, isTablet]
+    [modal, setModal, filter, setFilter, isDesktop, isTablet, publicUrl]
   );
 
   return (

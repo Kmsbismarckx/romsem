@@ -7,7 +7,7 @@ import HeaderSchedule from './headerSchedule/HeaderSchedule';
 import appContext from '../../context';
 
 function Header() {
-  const { modal, setModal, filter, setFilter, isDesktop } = useContext(appContext);
+  const { modal, setModal, filter, setFilter, isDesktop, publicUrl } = useContext(appContext);
 
   if (isDesktop) {
     return (
@@ -36,10 +36,9 @@ function Header() {
             </Link>
           </div>
           <div className="header__query">
-            123
             <img
               className="header__query-img"
-              src="media/header/query.svg"
+              src={`${publicUrl}/media/header/query.svg`}
               alt="query"
               onClick={() => setModal(true)}
             />
@@ -53,14 +52,14 @@ function Header() {
   return (
     <div className="header">
       <Link to="/" className="header__logo">
-        <img src="media/header/header_logo.svg" alt="Romsem" />
+        <img src={`${process.env.PUBLIC_URL}/media/header/header_logo.png`} alt="Romsem" />
       </Link>
       <HeaderPhone />
       <HeaderSchedule />
       <div className="header__query">
         <img
           className="header__query-img"
-          src="media/header/query.svg"
+          src={`${process.env.PUBLIC_URL}/media/header/query.svg`}
           alt="query"
           onClick={() => setModal(true)}
         />

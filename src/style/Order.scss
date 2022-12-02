@@ -58,6 +58,7 @@
         align-items: center;
         column-gap: 11px;
         cursor: pointer;
+        background-color: white;
       }
       &-item:first-child {
         border-top-left-radius: inherit;
@@ -68,7 +69,7 @@
         border-bottom-right-radius: inherit;
       }
       &-item_active {
-        background: $orange;
+        background-color: $orange;
         color: white;
         fill: white;
       }

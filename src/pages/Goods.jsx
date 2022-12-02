@@ -22,7 +22,7 @@ function Goods() {
   const category = useSelector((state) => selectCategoryById(state, id));
   const goods = useSelector(selectAllGoods);
 
-  const { filter, setFilter, isDesktop, isTablet } = useContext(appContext);
+  const { filter, setFilter, isDesktop, isTablet, publicUrl } = useContext(appContext);
   const sortedAndSearchedGoods = useFilter(goods, filter.sort, filter.query);
 
   if (isTablet || isDesktop) {
@@ -32,7 +32,7 @@ function Goods() {
         {isDesktop && <Header />}
         <div className="goods__header-container">
           <div className="goods__header">
-            <img className="goods__img" src="media/goods/goods__logo.svg" alt="" />
+            <img className="goods__img" src={`${publicUrl}/media/goods/goods__logo.svg`} alt="" />
             <p className="goods__name">{category.russianName}</p>
           </div>
           <Select
@@ -65,7 +65,7 @@ function Goods() {
   return (
     <div className="goods">
       <div className="goods__header">
-        <img className="goods__img" src="media/goods/goods__logo.svg" alt="" />
+        <img className="goods__img" src={`${publicUrl}/media/goods/goods__logo.svg`} alt="" />
         <p className="goods__name">{category.russianName}</p>
       </div>
       <Select

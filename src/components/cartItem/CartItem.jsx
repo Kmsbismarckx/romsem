@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './cartItem.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectGoodById } from '../../store/reducers/goodsSlice';
@@ -8,9 +8,11 @@ import {
   selectCartItemQuantity,
 } from '../../store/reducers/cartSlice';
 import Quantity from '../quantity/Quantity';
+import appContext from '../../context';
 
 function CartItem({ id }) {
   const dispatch = useDispatch();
+  const { publicUrl } = useContext(appContext);
 
   const cartItem = useSelector((state) => selectGoodById(state, id));
   const quantity = useSelector((state) => selectCartItemQuantity(state, id));
@@ -25,7 +27,7 @@ function CartItem({ id }) {
     <div className="cart__item">
       <img
         className="cart__item-img"
-        src={`media/goods/${cartItem.name}.png`}
+        src={`${publicUrl}/media/goods/${cartItem.name}.png`}
         alt={cartItem.name}
       />
       <div className="cart__item-content">
