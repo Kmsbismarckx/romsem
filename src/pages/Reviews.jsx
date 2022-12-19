@@ -13,7 +13,7 @@ import Cart from './Cart';
 import Header from '../components/Header/Header';
 
 function Reviews() {
-  const { isDesktop } = useContext(appContext);
+  const { isLaptop } = useContext(appContext);
   const dispatch = useDispatch();
   const reviewsIds = useSelector(selectUserIds);
 
@@ -30,9 +30,9 @@ function Reviews() {
     }
   };
 
-  if (isDesktop) {
+  if (isLaptop) {
     return (
-      <div className="reviews pc__container tablet__container">
+      <div className="reviews">
         <SideMenu />
         <div className="reviews__main">
           <Header />
@@ -58,9 +58,7 @@ function Reviews() {
             </div>
           </div>
         </div>
-        <div className="cart__container">
-          <Cart />
-        </div>
+        <Cart />
       </div>
     );
   }

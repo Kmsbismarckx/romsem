@@ -26,19 +26,33 @@
     line-height: 14.89px;
     color: $gray;
   }
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+  &__query,
+  &__cart {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__query {
+    @media screen and (min-width: $laptop) {
+      margin-right: 10px;
+    }
+  }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: $laptop) {
   .header {
     position: initial;
-    height: 94.5px;
+    min-height: 94.5px;
     background-color: $light_gray;
     justify-content: start;
 
     font-style: normal;
     font-weight: 500;
-
-    margin-bottom: 30px;
     &__main {
       display: flex;
       flex-grow: 2;
@@ -59,6 +73,9 @@
       height: 100%;
     }
     &__phone-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 5px;
     }
     &__phone-name {
@@ -79,12 +96,6 @@
         font-size: 14px;
         line-height: 17px;
       }
-    }
-
-    &__query {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
     }
 
     &__location {

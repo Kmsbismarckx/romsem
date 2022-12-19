@@ -24,19 +24,19 @@ import AboutContacts from '../components/About/aboutContacts/aboutContacts';
 
 function Good() {
   const dispatch = useDispatch();
-  const { isDesktop, isTablet, publicUrl } = useContext(appContext);
+  const { isLaptop, isTablet, publicUrl } = useContext(appContext);
   const { categoryId, goodId } = useParams();
 
   const good = useSelector((state) => selectGoodById(state, Number(goodId)));
   const { composition } = good;
 
   const AboutMemo = React.memo(About);
-  if (isTablet || isDesktop) {
+  if (isTablet || isLaptop) {
     return (
       <div className="good">
-        {isDesktop && <SideMenu />}
+        {isLaptop && <SideMenu />}
         <div className="good__main">
-          {isDesktop && <Header />}
+          {isLaptop && <Header />}
           <GoodButtons categoryId={categoryId} goodId={goodId} />
           <div className="good__item">
             <img className="good__item-img" src="https://via.placeholder.com/620x435" alt="" />
@@ -96,13 +96,9 @@ function Good() {
             </Swiper>
           </div>
           <About />
-          {isDesktop && <MainFooter />}
+          {isLaptop && <MainFooter />}
         </div>
-        {isDesktop && (
-          <div className="cart__container">
-            <Cart />
-          </div>
-        )}
+        {isLaptop && <Cart />}
       </div>
     );
   }

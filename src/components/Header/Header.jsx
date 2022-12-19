@@ -7,9 +7,10 @@ import HeaderSchedule from './headerSchedule/HeaderSchedule';
 import appContext from '../../context';
 
 function Header() {
-  const { modal, setModal, filter, setFilter, isDesktop, publicUrl } = useContext(appContext);
+  const { modal, setModal, setCartModal, filter, setFilter, isLaptop, publicUrl } =
+    useContext(appContext);
 
-  if (isDesktop) {
+  if (isLaptop) {
     return (
       <div className="header">
         <div className="header__info">
@@ -35,15 +36,21 @@ function Header() {
               <p className="header__link-description">Доставка и оплата</p>
             </Link>
           </div>
-          <div className="header__query">
+          <div className="header__buttons">
             <img
-              className="header__query-img"
+              className="header__query"
               src={`${publicUrl}/media/header/query.svg`}
-              alt="query"
+              alt="Поиск"
               onClick={() => setModal(true)}
             />
+            <img
+              className="header__cart"
+              src={`${publicUrl}/media/cart/cart.svg`}
+              alt="Корзина"
+              onClick={() => setCartModal(true)}
+            />
           </div>
-          <QueryModal visible={modal} setVisible={setModal} filter={filter} setFilter={setFilter} />
+          <QueryModal />
         </div>
       </div>
     );
@@ -56,9 +63,9 @@ function Header() {
       </Link>
       <HeaderPhone />
       <HeaderSchedule />
-      <div className="header__query">
+      <div className="header__buttons">
         <img
-          className="header__query-img"
+          className="header__query"
           src={`${process.env.PUBLIC_URL}/media/header/query.svg`}
           alt="query"
           onClick={() => setModal(true)}

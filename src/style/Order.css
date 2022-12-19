@@ -188,11 +188,22 @@
   padding: 10px 0;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .order {
+    display: flex;
+    margin: 0;
     padding: 0;
+    max-width: unset;
     height: 100%;
     min-height: 100vh;
+  }
+  .order__main {
+    max-width: 1490px;
+    width: 100%;
+  }
+  .order__content {
+    max-width: 760px;
+    margin: 0 auto;
   }
   .order__header {
     position: relative;
@@ -208,6 +219,7 @@
     padding-left: 30px;
     margin-top: 38px;
     margin-left: 100px;
+    cursor: pointer;
   }
   .order__header-button_back::before {
     content: "";
@@ -229,17 +241,13 @@
     font-style: normal;
     font-weight: 500;
   }
-  .order .pc__main {
-    width: 1490px;
-    padding-bottom: 30px;
-  }
-  .order .pc__main .form__title {
+  .order .form__title {
     width: 760px;
     align-self: center;
     margin-bottom: 30px;
     text-align: left;
   }
-  .order .pc__main .order__form__container {
+  .order .form {
     display: grid;
     grid-template-columns: 360px 354px;
     justify-content: space-between;
@@ -247,66 +255,56 @@
     width: 760px;
     margin: 0 auto;
   }
-  .order .pc__main .order__form__container__item {
+  .order .form__column {
+    display: grid;
+    gap: 10px;
+  }
+  .order .form__item {
     display: grid;
     gap: 20px;
   }
-  .order .pc__main .order__form__container__item .form__user-data {
+  .order .form .form__user-data {
     display: grid;
     grid-template-columns: repeat(2, auto);
     column-gap: 20px;
     height: 40px;
   }
-  .order .pc__main .order__form__container__item .form__address-info {
+  .order .form__address-info {
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 20px;
   }
-  .order .pc__main .order__form__container__item .form__address-info .form__address_street {
+  .order .form__address-street {
     grid-column-start: 1;
     grid-column-end: 4;
   }
-  .order .pc__main .order__form__container__item .form__address_house_item {
+  .order .form__address-house {
     display: grid;
     gap: 14px;
     grid-template-columns: repeat(2, auto);
   }
-  .order .pc__main .order__form__container__item .form__address_house_item:first-of-type {
+  .order .form__street {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
     margin-right: 14px;
   }
-  .order .pc__main .order__form__container__item .form__address_house_item:last-of-type {
-    grid-column-start: 3;
+  .order .form__house {
+    grid-column-start: 4;
     grid-column-end: 5;
   }
-  .order .pc__main .order__form__container__item .form__type-of-payment__container {
-    gap: 20px;
-  }
-  .order .pc__main .order__form__container .order__form__container__button {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding: 11px 0;
-  }
-  .order .pc__main .order__form__container .order__form__container__item:last-child {
-    display: block;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    margin-top: 12px;
-  }
-  .order .pc__main .order__form__container .order__form__container__item:last-child .order__form__container__item__offer {
+  .order .form__offer-link {
     display: inline;
     border-bottom: 0.5px solid black;
   }
-  .order .pc__main .order__form__container .order__form__container__item:last-child .order__form__container__item__offer:hover {
+  .order .form__offer-link:hover {
     display: inline;
     color: #ff9846;
     border-bottom: 0.5px solid #ff9846;
+  }
+  .order .form__offer {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
   }
 }
 

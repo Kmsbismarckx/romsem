@@ -18,3 +18,19 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+
+    padding: 0;
+
+    max-width: unset;
+    background-color: white;
+
+    height: 100vh;
+  }
+}

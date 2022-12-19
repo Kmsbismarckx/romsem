@@ -7,7 +7,7 @@ import appContext from '../../context';
 
 function Category({ id }) {
   const category = useSelector((state) => selectCategoryById(state, id));
-  const { isDesktop, isTablet, publicUrl } = useContext(appContext);
+  const { isLaptop, isTablet, publicUrl } = useContext(appContext);
 
   let largeClass;
   let isVisible = '';
@@ -27,7 +27,7 @@ function Category({ id }) {
     isBottomLeft = 'category__name_bottom';
   }
 
-  if (isTablet || isDesktop) {
+  if (isTablet || isLaptop) {
     return (
       <li className="category">
         <p className="category__name">{category.russianName}</p>

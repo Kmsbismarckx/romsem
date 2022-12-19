@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import appContext from '../../../context';
 
 function HeaderSchedule() {
-  const { isDesktop, publicUrl } = useContext(appContext);
+  const { isLaptop, publicUrl } = useContext(appContext);
 
   return (
     <div className="header__schedule">
@@ -13,7 +13,7 @@ function HeaderSchedule() {
       />
       <div className="header__schedule-info">
         работаем
-        {!isDesktop && <br />}c 10:00 до 00:00
+        {!isLaptop && <br />}c 10:00 до 00:00
       </div>
     </div>
   );

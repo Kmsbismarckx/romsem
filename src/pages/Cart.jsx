@@ -13,28 +13,28 @@ import appContext from '../context';
 function Cart() {
   const cartIds = useSelector(selectCartItemIds);
   const totalPrice = useSelector(selectTotalPrice);
-  const { isDesktop } = useContext(appContext);
+  const { isLaptop } = useContext(appContext);
 
   if (cartIds.length === 0) {
     return <EmptyCart />;
   }
 
   return (
-    <div className="cart">
+    <div className="cart" onClick={(event) => event.stopPropagation()}>
       <h2 className="cart__name">Корзина</h2>
       <div className="cart__list">
         {cartIds.map((id) => (
           <CartItem key={id} id={id} />
         ))}
       </div>
-      {!isDesktop && (
+      {!isLaptop && (
         <div className="cart__total">
           <h2 className="cart__total-name">Итого</h2>
           <TotalList ids={cartIds} totalPrice={totalPrice} />
         </div>
       )}
 
-      {isDesktop ? (
+      {isLaptop ? (
         <div className="total-pc">
           <p className="total-pc__price">{totalPrice} COM</p>
           <Link to="/order">
@@ -42,12 +42,12 @@ function Cart() {
           </Link>
         </div>
       ) : (
-        <Link to="/order">
+        <Link className="cart__link" to="/order">
           <Button className="cart_">Оформить заказ</Button>
         </Link>
       )}
 
-      {!isDesktop && <Menu />}
+      {!isLaptop && <Menu />}
     </div>
   );
 }

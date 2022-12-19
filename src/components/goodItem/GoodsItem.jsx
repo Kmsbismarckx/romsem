@@ -10,7 +10,7 @@ import appContext from '../../context';
 
 function GoodsItem({ id, linkParams }) {
   const good = useSelector((state) => selectGoodById(state, id));
-  const { isDesktop } = useContext(appContext);
+  const { isLaptop } = useContext(appContext);
 
   const dispatch = useDispatch();
   const pieces = good.pieces ? good.pieces : ' ';
@@ -31,7 +31,7 @@ function GoodsItem({ id, linkParams }) {
             {good.weight} грамм, {plural(pieces, '%d кусочек', '%d кусочка', '%d кусочков')}
           </p>
         </div>
-        {isDesktop && <hr className="goods__item-hr" />}
+        {/* {isLaptop && <hr className="goods__item-hr" />} */}
         <div className="goods__item-footer">
           <p className="goods__item-price">{good.price} COM</p>
           <Link to={linkParams}>

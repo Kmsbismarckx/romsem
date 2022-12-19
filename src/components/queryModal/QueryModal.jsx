@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './queryModal.css';
 import Input from '../UI/Input/Input';
+import appContext from '../../context';
 
-function QueryModal({ visible, setVisible, filter, setFilter }) {
+function QueryModal() {
+  const { modal, setModal, filter, setFilter } = useContext(appContext);
   const rootClasses = ['query-modal'];
 
-  if (visible) {
+  if (modal) {
     rootClasses.push('query-modal_active');
   }
   return (
     <div
       className={rootClasses.join(' ')}
       onClick={() => {
-        setVisible(false);
+        setModal(false);
       }}
     >
       <div className="query-modal__content" onClick={(event) => event.stopPropagation()}>
@@ -22,7 +24,7 @@ function QueryModal({ visible, setVisible, filter, setFilter }) {
           onChange={(e) => setFilter({ ...filter, query: e.target.value })}
           onKeyDown={(e) => {
             if (e.keyCode === 13 || e.keyCode === 27) {
-              setVisible(false);
+              setModal(false);
               setFilter({ ...filter, query: '' });
             }
           }}

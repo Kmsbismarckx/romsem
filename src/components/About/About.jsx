@@ -4,13 +4,13 @@ import AboutContacts from './aboutContacts/aboutContacts';
 import appContext from '../../context';
 
 function About() {
-  const { isDesktop } = useContext(appContext);
+  const { isLaptop } = useContext(appContext);
   const [isOpened, setIsOpened] = useState(false);
   const aboutButtonHandler = () => {
     setIsOpened(!isOpened);
   };
 
-  if (isDesktop) {
+  if (isLaptop) {
     return (
       <div className="about">
         <div className={`about__info ${isOpened ? 'about__info_opened' : ''}`}>

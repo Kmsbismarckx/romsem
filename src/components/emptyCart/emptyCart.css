@@ -24,10 +24,15 @@
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
 .empty-cart {
-  padding: 77px 15px 0 15px;
-  max-width: 360px;
+  padding: 67px 15px 0 15px;
   width: 100%;
+  max-width: 400px;
   margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .empty-cart {
+    margin: 0;
+  }
 }
 .empty-cart__content {
   padding: 0 20px;
@@ -163,7 +168,10 @@
   padding: 13px;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
+  .empty-cart {
+    background-color: white;
+  }
   .empty-cart__shipping {
     padding: 0;
   }

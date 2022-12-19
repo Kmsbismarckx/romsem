@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import '../style/Goods.css';
-import Filter from '../components/filter/Filter';
 import GoodsList from '../components/goodsList/GoodsList';
 import About from '../components/About/About';
 import useFilter from '../hooks/useFilter';
@@ -15,6 +14,7 @@ import Cart from './Cart';
 import Header from '../components/Header/Header';
 import MainFooter from '../components/mainFooter/MainFooter';
 import Select from '../components/UI/Select/Select';
+import CartModal from '../components/CartModal/CartModal';
 
 function Goods() {
   const { id } = useParams();
@@ -22,42 +22,46 @@ function Goods() {
   const category = useSelector((state) => selectCategoryById(state, id));
   const goods = useSelector(selectAllGoods);
 
-  const { filter, setFilter, isDesktop, isTablet, publicUrl } = useContext(appContext);
+  const { filter, setFilter, isLaptop, isTablet, publicUrl } = useContext(appContext);
   const sortedAndSearchedGoods = useFilter(goods, filter.sort, filter.query);
 
-  if (isTablet || isDesktop) {
+  if (isTablet || isLaptop) {
     return (
       <div className="goods">
-        {isDesktop && <SideMenu />}
-        {isDesktop && <Header />}
-        <div className="goods__header-container">
-          <div className="goods__header">
-            <img className="goods__img" src={`${publicUrl}/media/goods/goods__logo.svg`} alt="" />
-            <p className="goods__name">{category.russianName}</p>
-          </div>
-          <Select
-            onChange={(selectedSort) => {
-              setFilter({ ...filter, sort: selectedSort });
-            }}
-            options={[
-              { value: 'default', name: 'По умолчанию' },
-              { value: 'name', name: 'По названию' },
-              { value: 'weight', name: 'По весу' },
-              { value: 'pieces', name: 'По количеству' },
-              { value: 'price', name: 'По цене' },
-            ]}
-            value={filter.sort}
-          />
-        </div>
+        {isLaptop && <SideMenu />}
+        <div className="goods__container">
+          {isLaptop && <Header />}
+          <div className="goods__content">
+            <div className="goods__header-container">
+              <div className="goods__header">
+                <img
+                  className="goods__img"
+                  src={`${publicUrl}/media/goods/goods__logo.svg`}
+                  alt=""
+                />
+                <p className="goods__name">{category.russianName}</p>
+              </div>
+              <Select
+                onChange={(selectedSort) => {
+                  setFilter({ ...filter, sort: selectedSort });
+                }}
+                options={[
+                  { value: 'default', name: 'По умолчанию' },
+                  { value: 'name', name: 'По названию' },
+                  { value: 'weight', name: 'По весу' },
+                  { value: 'pieces', name: 'По количеству' },
+                  { value: 'price', name: 'По цене' },
+                ]}
+                value={filter.sort}
+              />
+            </div>
 
-        <GoodsList sortedAndSearchedGoods={sortedAndSearchedGoods} id={id} />
-        <About className="about" />
-        {isDesktop && <MainFooter />}
-        {isDesktop && (
-          <div className="cart__container">
-            <Cart />
+            <GoodsList sortedAndSearchedGoods={sortedAndSearchedGoods} id={id} />
+            <About className="about" />
+            {isLaptop && <MainFooter />}
           </div>
-        )}
+        </div>
+        {isLaptop && <CartModal />}
       </div>
     );
   }

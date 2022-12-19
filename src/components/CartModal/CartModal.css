@@ -23,22 +23,33 @@
   font-weight: 300;
   src: url(/src/fonts/Nexa-Trial-Light.otf);
 }
-.form__type-of-shipping__container {
-  display: grid;
-  gap: 20px;
+.cart__modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 5;
+  background-color: rgba(100, 100, 100, 0.5);
 }
 
-@media screen and (min-width: 1024px) {
-  .address-info__item:first-of-type {
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 3;
+.cart__modal_active {
+  display: flex;
+  justify-content: end;
+}
+.cart__modal_active .cart {
+  animation: cartAppear 0.3s ease-out forwards;
+}
+
+@keyframes cartAppear {
+  0% {
+    transform: translateX(100%);
   }
-  .address-info__item:last-of-type {
-    width: 100%;
-    grid-column-start: 3;
-    grid-column-end: 5;
+  100% {
+    transform: translateX(0);
   }
 }
 
-/*# sourceMappingURL=AddressInfo.css.map */
+/*# sourceMappingURL=CartModal.css.map */

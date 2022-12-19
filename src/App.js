@@ -14,36 +14,54 @@ import Menu from './components/menu/Menu';
 
 function App() {
   const [modal, setModal] = useState(false);
+  const [cartModal, setCartModal] = useState(false);
   const [filter, setFilter] = useState({
     sort: '',
     query: '',
   });
   const publicUrl = process.env.PUBLIC_URL;
 
-  const isDesktop = useMediaQuery({
-    query: '(min-width: 1920px)',
-  });
   const isTablet = useMediaQuery({
     query: '(min-width: 768px)',
+  });
+  const isLaptop = useMediaQuery({
+    query: '(min-width: 1024px)',
+  });
+  const isLaptopL = useMediaQuery({
+    query: '(min-width: 1440px)',
   });
 
   const contextData = useMemo(
     () => ({
+      publicUrl,
       modal,
       setModal,
+      cartModal,
+      setCartModal,
       filter,
       setFilter,
-      isDesktop,
       isTablet,
-      publicUrl,
+      isLaptop,
+      isLaptopL,
     }),
-    [modal, setModal, filter, setFilter, isDesktop, isTablet, publicUrl]
+    [
+      modal,
+      setModal,
+      cartModal,
+      setCartModal,
+      filter,
+      setFilter,
+      isTablet,
+      isLaptop,
+      isLaptopL,
+      publicUrl,
+    ]
   );
 
   return (
     <div className="App">
       <urlContext.Provider value={contextData}>
-        {!isDesktop && <Header />}
+        {!isLaptop && <Header />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -53,7 +71,7 @@ function App() {
           <Route path="/order" element={<Order />} />
           <Route path="/reviews" element={<Reviews />} />
         </Routes>
-        {!isDesktop && <Menu />}
+        {!isLaptop && <Menu />}
       </urlContext.Provider>
     </div>
   );

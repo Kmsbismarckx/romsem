@@ -19,15 +19,16 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .goods {
     padding: $container_mobile_padding;
     max-width: 648px;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 45px;
+    &__content {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 45px;
+    }
     &__header-container {
       width: 100%;
       align-self: center;
@@ -58,8 +59,33 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: $laptop) {
   .goods {
-    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    padding: 0;
+    max-width: unset;
+    background-color: white;
+    height: 100vh;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      max-width: 1170px;
+      width: 61%;
+      flex: 1 1 auto;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+    &__content {
+      overflow-y: scroll;
+      padding: 22px 111px 0;
+    }
+    &__list {
+      justify-content: space-between;
+    }
   }
 }

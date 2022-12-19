@@ -19,7 +19,7 @@ function Order() {
   const navigate = useNavigate();
   const cartIds = useSelector(selectCartItemIds);
   const totalPrice = useSelector(selectTotalPrice);
-  const { isDesktop } = useContext(appContext);
+  const { isLaptop } = useContext(appContext);
 
   const [shippingType, setShippingType] = useState('courier');
   const [paymentType, setPaymentType] = useState('cash');
@@ -48,108 +48,115 @@ function Order() {
     setShippingTime(newShippingTime);
   };
 
-  if (isDesktop) {
+  if (isLaptop) {
     return (
       <div className="order">
-        <div className="order__header">
-          <div className="order__header-button_back" onClick={() => navigate(-1)}>
-            Продолжить выбор
-          </div>
-          <div className="order__header-content">
-            <HeaderPhone />
-            <HeaderSchedule />
-          </div>
-        </div>
-        <h2 className="form__title">Ваши данные</h2>
-        <div className="form__container">
-          <div className="form__item">
-            <UserData formData={formData} setFormData={setFormData} />
-            <Payment
-              formData={formData}
-              setFormData={setFormData}
-              activeClassHandler={activeClassHandler}
-              paymentType={paymentType}
-              paymentTypeHandler={paymentTypeHandler}
-            />
-            <Input
-              className="order__form__item order__form_border-radius order__form_width form__input form__comment"
-              placeholder="Комменатрий к заказу"
-              pattern="^[А-Яа-яЁёA-Za-z\s]+$"
-              onChange={(e) =>
-                setFormData({
-                  ...formData,
-                  ...formData.unnecessaryFields,
-                  comment: e.target.value,
-                })
-              }
-            />
-            <div className="form__additives-list">
-              <AdditivesItem />
-              <AdditivesItem />
+        <div className="order__main">
+          <div className="order__header">
+            <div className="order__header-button_back" onClick={() => navigate(-1)}>
+              Продолжить выбор
             </div>
-            <Input
-              className="order__form__item form__input form__promo-code order__form_border-radius order__form_width"
-              placeholder="Введите промокод"
-              onChange={(e) =>
-                setFormData({
-                  ...formData,
-                  ...formData.unnecessaryFields,
-                  promoCode: e.target.value,
-                })
-              }
-            />
-          </div>
-          <div className="order__form__container__item">
-            <AddressInfo
-              formData={formData}
-              setFormData={setFormData}
-              activeClassHandler={activeClassHandler}
-              shippingTypeHandler={shippingTypeHandler}
-              shippingType={shippingType}
-            />
-            <div className="form__shipping-time form__toggle order__form_border-radius order__form_width ">
-              <div
-                className={`order__form__item form__toggle__item form__toggle__item${activeClassHandler(
-                  shippingTime,
-                  'now'
-                )} form__shipping-time-now`}
-                onClick={() => shippingTimeHandler('now')}
-              >
-                На сейчас
-              </div>
-              <div
-                className={`order__form__item form__toggle__item form__toggle__item${activeClassHandler(
-                  shippingTime,
-                  'later'
-                )} form__shipping-time-later`}
-                onClick={() => shippingTimeHandler('later')}
-              >
-                На время
-              </div>
+            <div className="order__header-content">
+              <HeaderPhone />
+              <HeaderSchedule />
             </div>
-            <Input
-              className="order__form__item order__form_border-radius order__form_width form__input form__email"
-              placeholder="E-mail"
-              type="e-mail"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              onChange={(e) =>
-                setFormData({ ...formData, ...formData.unnecessaryFields, eMail: e.target.value })
-              }
-            />
           </div>
-          <Button className="order__form__container_">Оформить заказ</Button>
-          <p className="order__form__container__item">
-            Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на обработку
-            персональных данных в соответствии с{' '}
-            <a className="order__form__container__item__offer" href="/">
-              Публичной оффертой
-            </a>
-          </p>
+          <div className="order__content">
+            {' '}
+            <h2 className="form__title">Ваши данные</h2>
+            <div className="form">
+              <div className="form__column">
+                <UserData formData={formData} setFormData={setFormData} />
+                <Payment
+                  formData={formData}
+                  setFormData={setFormData}
+                  activeClassHandler={activeClassHandler}
+                  paymentType={paymentType}
+                  paymentTypeHandler={paymentTypeHandler}
+                />
+                <Input
+                  className="form__item form__input form__comment"
+                  placeholder="Комменатрий к заказу"
+                  pattern="^[А-Яа-яЁёA-Za-z\s]+$"
+                  onChange={(e) =>
+                    setFormData({
+                      ...formData,
+                      ...formData.unnecessaryFields,
+                      comment: e.target.value,
+                    })
+                  }
+                />
+                <div className="form__additives-list">
+                  <AdditivesItem />
+                  <AdditivesItem />
+                </div>
+                <Input
+                  className="form__item form__input form__promo-code"
+                  placeholder="Введите промокод"
+                  onChange={(e) =>
+                    setFormData({
+                      ...formData,
+                      ...formData.unnecessaryFields,
+                      promoCode: e.target.value,
+                    })
+                  }
+                />
+              </div>
+              <div className="form__column">
+                <AddressInfo
+                  formData={formData}
+                  setFormData={setFormData}
+                  activeClassHandler={activeClassHandler}
+                  shippingTypeHandler={shippingTypeHandler}
+                  shippingType={shippingType}
+                />
+                <div className="form__shipping-time form__toggle">
+                  <div
+                    className={`form__item form__toggle-item ${activeClassHandler(
+                      shippingTime,
+                      'now'
+                    )} form__shipping-time-now`}
+                    onClick={() => shippingTimeHandler('now')}
+                  >
+                    На сейчас
+                  </div>
+                  <div
+                    className={`form__item form__toggle-item ${activeClassHandler(
+                      shippingTime,
+                      'later'
+                    )} form__shipping-time-later`}
+                    onClick={() => shippingTimeHandler('later')}
+                  >
+                    На время
+                  </div>
+                </div>
+                <Input
+                  className="form__item form__input form__email"
+                  placeholder="E-mail"
+                  type="e-mail"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  onChange={(e) =>
+                    setFormData({
+                      ...formData,
+                      ...formData.unnecessaryFields,
+                      eMail: e.target.value,
+                    })
+                  }
+                />
+              </div>
+            </div>{' '}
+            <Button className="form_">Оформить заказ</Button>
+            <p className="form__item form__offer">
+              Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на обработку
+              персональных данных в соответствии с{' '}
+              <a className="form__offer-link" href="/">
+                Публичной оффертой
+              </a>
+            </p>
+          </div>
         </div>
 
-        <div className="cart__container">
-          <Cart />
-        </div>
+        <Cart />
       </div>
     );
   }

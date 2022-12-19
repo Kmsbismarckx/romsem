@@ -5,21 +5,17 @@ import Menu from '../components/menu/Menu';
 import SideMenu from '../components/sideMenu/SideMenu';
 import appContext from '../context';
 import '../style/Home.css';
-import Cart from './Cart';
+import CartModal from '../components/CartModal/CartModal';
 
 function Home() {
-  const { isDesktop, isTablet } = useContext(appContext);
+  const { isLaptop, isTablet } = useContext(appContext);
 
   if (isTablet) {
     return (
       <div className="home">
-        {isDesktop && <SideMenu />}
+        {isLaptop && <SideMenu />}
         <Main />
-        {isDesktop && (
-          <div className="cart__container">
-            <Cart />
-          </div>
-        )}
+        {isLaptop && <CartModal />}
       </div>
     );
   }

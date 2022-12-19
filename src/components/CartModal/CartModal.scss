@@ -1,0 +1,29 @@
+@import '../../style/variables';
+
+.cart__modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 5;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+.cart__modal_active {
+  display: flex;
+  justify-content: end;
+  .cart {
+    animation: cartAppear 0.3s ease-out forwards;
+  }
+}
+
+@keyframes cartAppear {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

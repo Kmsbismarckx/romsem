@@ -179,11 +179,25 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .order {
+    display: flex;
+    margin: 0;
     padding: 0;
+    max-width: unset;
     height: 100%;
     min-height: 100vh;
+
+    &__main {
+      max-width: 1490px;
+      width: 100%;
+    }
+
+    &__content {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
     &__header {
       position: relative;
       display: flex;
@@ -192,12 +206,16 @@
       border-bottom: 0.5px solid $gray;
       z-index: 3;
       margin-bottom: 55px;
+
       &-button_back {
         position: relative;
         padding-left: 30px;
         margin-top: 38px;
         margin-left: 100px;
+
+        cursor: pointer;
       }
+
       &-button_back::before {
         content: '';
         position: absolute;
@@ -209,6 +227,7 @@
         background-size: 20px 20px;
         pointer-events: none;
       }
+
       &-content {
         display: flex;
         flex-direction: column;
@@ -221,84 +240,79 @@
       }
     }
 
-    .pc__main {
-      width: 1490px;
-      padding-bottom: 30px;
-      .form__title {
-        width: 760px;
-        align-self: center;
-        margin-bottom: 30px;
-        text-align: left;
-      }
-      .order__form__container {
-        display: grid;
-        grid-template-columns: 360px 354px;
-        justify-content: space-between;
-        align-items: start;
-        width: 760px;
-        margin: 0 auto;
-        &__item {
-          display: grid;
-          gap: 20px;
-          .form__user-data {
-            display: grid;
-            grid-template-columns: repeat(2, auto);
-            column-gap: 20px;
-            height: 40px;
-          }
-          .form__address-info {
-            display: grid;
-            grid-template-columns: repeat(4, auto);
-            gap: 20px;
-            .form__address_street {
-              grid-column-start: 1;
-              grid-column-end: 4;
-            }
-          }
-          .form__address_house_item {
-            display: grid;
-            gap: 14px;
-            grid-template-columns: repeat(2, auto);
-          }
-          .form__address_house_item:first-of-type {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            margin-right: 14px;
-          }
-          .form__address_house_item:last-of-type {
-            grid-column-start: 3;
-            grid-column-end: 5;
-          }
-          .form__type-of-payment__container {
-            gap: 20px;
-          }
-        }
-        .order__form__container__button {
-          grid-column-start: 1;
-          grid-column-end: 3;
-          padding: 11px 0;
-        }
-        .order__form__container__item:last-child {
-          display: block;
-          grid-column-start: 1;
-          grid-column-end: 3;
+    .form__title {
+      width: 760px;
+      align-self: center;
+      margin-bottom: 30px;
+      text-align: left;
+    }
 
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 17px;
-          text-align: center;
-          margin-top: 12px;
-          .order__form__container__item__offer {
-            display: inline;
-            border-bottom: 0.5px solid black;
-          }
-          .order__form__container__item__offer:hover {
-            display: inline;
-            color: $orange;
-            border-bottom: 0.5px solid $orange;
-          }
-        }
+    .form {
+      display: grid;
+      grid-template-columns: 360px 354px;
+      justify-content: space-between;
+      align-items: start;
+      width: 760px;
+      margin: 0 auto;
+
+      &__column {
+        display: grid;
+        gap: 10px;
+      }
+
+      &__item {
+        display: grid;
+        gap: 20px;
+      }
+
+      .form__user-data {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 20px;
+        height: 40px;
+      }
+
+      &__address-info {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 20px;
+      }
+      &__address-street {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      &__address-house {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(2, auto);
+      }
+
+      &__street {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-right: 14px;
+      }
+
+      &__house {
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+      &__offer-link {
+        display: inline;
+        border-bottom: 0.5px solid black;
+      }
+
+      &__offer-link:hover {
+        display: inline;
+        color: $orange;
+        border-bottom: 0.5px solid $orange;
+      }
+
+      &__offer {
+        display: block;
+        text-align: center;
+        margin-top: 12px;
       }
     }
   }

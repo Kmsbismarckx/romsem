@@ -8,10 +8,10 @@ import appContext from '../../context';
 function EmptyCart() {
   const [address, setAddress] = useState(false);
   const locationPinHandler = () => setAddress(true);
-  const { isDesktop, publicUrl } = useContext(appContext);
+  const { isLaptop, publicUrl } = useContext(appContext);
 
   return (
-    <div className="empty-cart">
+    <div className="empty-cart" onClick={(event) => event.stopPropagation()}>
       <div className="empty-cart__content">
         <div className="empty-cart__annotation">
           <h1 className="annotation__name">Ваша корзина пуста.</h1>
@@ -62,14 +62,14 @@ function EmptyCart() {
               alt="Location"
             />
           </div>
-          {!isDesktop && (
+          {!isLaptop && (
             <Link to="/">
               <Button className="empty-cart_">Смотреть меню</Button>
             </Link>
           )}
         </div>
       ) : (
-        !isDesktop && <Button className="empty-cart_">Оформить заказ</Button>
+        !isLaptop && <Button className="empty-cart_">Оформить заказ</Button>
       )}
     </div>
   );

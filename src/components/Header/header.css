@@ -48,16 +48,29 @@
   line-height: 14.89px;
   color: #a4acad;
 }
+.header__buttons {
+  display: flex;
+  align-items: center;
+}
+.header__query, .header__cart {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .header__query {
+    margin-right: 10px;
+  }
+}
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .header {
     position: initial;
-    height: 94.5px;
+    min-height: 94.5px;
     background-color: #f2f2f2;
     justify-content: start;
     font-style: normal;
     font-weight: 500;
-    margin-bottom: 30px;
   }
   .header__main {
     display: flex;
@@ -75,6 +88,9 @@
     height: 100%;
   }
   .header__phone-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 5px;
   }
   .header__phone-name {
@@ -95,11 +111,6 @@
   .header__schedule-info {
     font-size: 14px;
     line-height: 17px;
-  }
-  .header__query {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
   }
   .header__location {
     text-align: start;

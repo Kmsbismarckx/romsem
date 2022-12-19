@@ -292,10 +292,20 @@
     }
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .good {
     width: unset;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: start;
+
+    padding: 0;
+    margin: 0;
+
+    max-width: unset;
+    background-color: white;
     &__main {
       width: $pc__main_width;
       background: $light_gray;

@@ -4,7 +4,7 @@ import appContext from '../../../context';
 import ContactsInfo from '../contactsInfo/ContactsInfo';
 
 function AboutContacts() {
-  const { isTablet, isDesktop, publicUrl } = useContext(appContext);
+  const { isTablet, isLaptop, publicUrl } = useContext(appContext);
   return (
     <div className="about__contacts">
       <p className="contacts__name">
@@ -27,7 +27,7 @@ function AboutContacts() {
           alt="Instagram"
         />
       </div>
-      {!isTablet && !isDesktop && <ContactsInfo />}
+      {!isTablet && !isLaptop && <ContactsInfo />}
     </div>
   );
 }
