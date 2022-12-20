@@ -27,7 +27,8 @@
   display: flex;
   align-self: center;
   justify-content: space-between;
-  width: 950px;
+  width: 100%;
+  max-width: 950px;
   border-top: 0.5px solid #a4acad;
   padding-top: 22px;
 }
@@ -43,6 +44,7 @@
 }
 .main__footer-item:not(:last-of-type) {
   border-right: 0.5px solid #a4acad;
+  padding-right: 40px;
 }
 .main__footer-item:not(:first-of-type) {
   padding-left: 40px;
@@ -76,9 +78,6 @@
 @media screen and (min-width: 768px) {
   .main__footer {
     width: 100%;
-  }
-  .main__footer-item:nth-of-type(2) {
-    display: none;
   }
 }
 

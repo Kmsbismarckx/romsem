@@ -11,9 +11,10 @@ import appContext from '../context';
 import SideMenu from '../components/sideMenu/SideMenu';
 import Cart from './Cart';
 import Header from '../components/Header/Header';
+import CartModal from '../components/CartModal/CartModal';
 
 function Reviews() {
-  const { isLaptop } = useContext(appContext);
+  const { isLaptop, isDesktop } = useContext(appContext);
   const dispatch = useDispatch();
   const reviewsIds = useSelector(selectUserIds);
 
@@ -58,7 +59,8 @@ function Reviews() {
             </div>
           </div>
         </div>
-        <Cart />
+        {isLaptop && <CartModal />}
+        {isDesktop && <Cart />}
       </div>
     );
   }

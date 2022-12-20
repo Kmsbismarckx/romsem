@@ -6,9 +6,10 @@ import SideMenu from '../components/sideMenu/SideMenu';
 import appContext from '../context';
 import '../style/Home.css';
 import CartModal from '../components/CartModal/CartModal';
+import Cart from './Cart';
 
 function Home() {
-  const { isLaptop, isTablet } = useContext(appContext);
+  const { isLaptop, isTablet, isDesktop } = useContext(appContext);
 
   if (isTablet) {
     return (
@@ -16,6 +17,7 @@ function Home() {
         {isLaptop && <SideMenu />}
         <Main />
         {isLaptop && <CartModal />}
+        {isDesktop && <Cart />}
       </div>
     );
   }

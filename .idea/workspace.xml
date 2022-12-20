@@ -1,69 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="setting react router">
-      <change afterPath="$PROJECT_DIR$/public/media/cart/cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CartModal/CartModal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CartModal/CartModal.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CartModal/CartModal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CartModal/CartModal.scss" afterDir="false" />
+    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="laptop adaptation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/header/query.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/header/query.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/aboutContacts/aboutContacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/aboutContacts/aboutContacts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/headerSchedule/HeaderSchedule.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/headerSchedule/HeaderSchedule.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Order/addressInfo/AddressInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/addressInfo/AddressInfo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Order/addressInfo/AddressInfo.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/addressInfo/AddressInfo.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Order/addressInfo/AddressInfo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/addressInfo/AddressInfo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category/Category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category/Category.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/emptyCart/EmptyCart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emptyCart/EmptyCart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emptyCart/emptyCart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/goodItem/GoodsItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/GoodsItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/queryModal/QueryModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/QueryModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/SideMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/SideMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sideMenu/sideMenu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/goodItemOnclick.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/goodItemOnclick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Good.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Good.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Goods.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Order.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Reviews.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Cart.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Cart.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Cart.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Good.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Good.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Goods.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Goods.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Home.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Home.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Order.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Order.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Order.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Order.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Order.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Order.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Reviews.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Reviews.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Reviews.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Reviews.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/Reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +155,7 @@
       <workItem from="1670976479623" duration="164000" />
       <workItem from="1670977023406" duration="3000" />
       <workItem from="1671025660675" duration="2015000" />
-      <workItem from="1671448116983" duration="11557000" />
+      <workItem from="1671448116983" duration="19795000" />
     </task>
     <task id="LOCAL-00001" summary="finish main page and good page">
       <created>1663193306010</created>
@@ -354,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669991810008</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="laptop adaptation">
+      <created>1671461663823</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1671461663823</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,6 +351,7 @@
     <MESSAGE value="add review page" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="setting react router" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting react router" />
+    <MESSAGE value="laptop adaptation" />
+    <option name="LAST_COMMIT_MESSAGE" value="laptop adaptation" />
   </component>
 </project>

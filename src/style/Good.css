@@ -88,6 +88,19 @@
   transform: rotate(180deg);
   pointer-events: none;
 }
+.good__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .good__content {
+    padding: 53px 0 0;
+    max-width: 950px;
+    margin: 0 auto;
+    overflow-y: scroll;
+  }
+}
 .good__item {
   width: 100%;
   border-radius: 15px;
@@ -97,6 +110,17 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 29.78px;
+}
+@media screen and (min-width: 1024px) {
+  .good__item {
+    flex-direction: column;
+  }
+  .good__item-content {
+    padding-bottom: 0;
+  }
+  .good__item-button {
+    align-self: start;
+  }
 }
 .good__item-name {
   text-align: center;
@@ -181,7 +205,7 @@
 }
 
 @media screen and (max-width: 359px) {
-  .good .goods__item__button {
+  .good__item__button {
     width: auto;
     font-size: 24px;
     padding-left: 45px;
@@ -200,9 +224,6 @@
   }
   .good__main {
     width: 100%;
-  }
-  .good__main .header {
-    margin-bottom: 53px;
   }
   .good__item {
     display: flex;
@@ -286,53 +307,40 @@
   }
   .good__swiper-wrapper {
     display: flex;
+    width: 100%;
     justify-content: center;
     position: relative;
-    overflow: hidden;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1024px) {
   .good {
-    width: unset;
-    padding: 0;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: start;
-    padding: 0;
-    margin: 0;
+    width: 100%;
     max-width: unset;
+    height: 100vh;
+    padding: 0;
+    margin: 0 auto;
     background-color: white;
   }
   .good__main {
-    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+    width: 61%;
+    flex: 1 1 auto;
     background: #f2f2f2;
-  }
-  .good__item {
-    flex-direction: row;
-    height: 435px;
-  }
-  .good__item-content {
-    padding-bottom: 0;
-  }
-  .good__item-button {
-    align-self: start;
-  }
-  .good__buttons {
-    width: auto;
-    margin: 0 40px 53px 40px;
+    height: 100%;
   }
   .good__swiper {
     position: initial;
-    width: 860px;
+    width: 100%;
   }
   .good__swiper-slide {
     width: 200px;
-  }
-  .good .main__footer {
-    width: 950px;
-    margin: 0 auto;
   }
 }
 

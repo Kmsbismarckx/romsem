@@ -30,6 +30,9 @@ function App() {
   const isLaptopL = useMediaQuery({
     query: '(min-width: 1440px)',
   });
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1920px)',
+  });
 
   const contextData = useMemo(
     () => ({
@@ -43,8 +46,10 @@ function App() {
       isTablet,
       isLaptop,
       isLaptopL,
+      isDesktop,
     }),
     [
+      publicUrl,
       modal,
       setModal,
       cartModal,
@@ -54,7 +59,7 @@ function App() {
       isTablet,
       isLaptop,
       isLaptopL,
-      publicUrl,
+      isDesktop,
     ]
   );
 

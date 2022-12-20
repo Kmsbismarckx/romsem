@@ -22,7 +22,7 @@ function Goods() {
   const category = useSelector((state) => selectCategoryById(state, id));
   const goods = useSelector(selectAllGoods);
 
-  const { filter, setFilter, isLaptop, isTablet, publicUrl } = useContext(appContext);
+  const { filter, setFilter, isLaptop, isTablet, isDesktop, publicUrl } = useContext(appContext);
   const sortedAndSearchedGoods = useFilter(goods, filter.sort, filter.query);
 
   if (isTablet || isLaptop) {
@@ -62,6 +62,7 @@ function Goods() {
           </div>
         </div>
         {isLaptop && <CartModal />}
+        {isDesktop && <Cart />}
       </div>
     );
   }

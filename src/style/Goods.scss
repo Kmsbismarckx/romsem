@@ -45,9 +45,9 @@
     }
     &__list {
       display: grid;
-      grid-template-columns: repeat(2, 288px);
+      grid-template-columns: repeat(auto-fill, 288px);
       grid-template-rows: 400px;
-      column-gap: 42px;
+      column-gap: 20px;
       row-gap: 31px;
       justify-content: center;
 
@@ -81,8 +81,12 @@
       background-color: #f2f2f2;
     }
     &__content {
+      width: 100%;
       overflow-y: scroll;
-      padding: 22px 111px 0;
+      padding: 22px 5% 0;
+      @media screen and (min-width: $laptopL) {
+        padding: 22px 111px 0;
+      }
     }
     &__list {
       justify-content: space-between;

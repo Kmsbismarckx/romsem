@@ -13,18 +13,18 @@ import { selectGoodById } from '../store/reducers/goodsSlice';
 import Menu from '../components/menu/Menu';
 import appContext from '../context';
 import SideMenu from '../components/sideMenu/SideMenu';
-import Cart from './Cart';
 import GoodButtons from '../components/goodButtons/GoodButtons';
 import Header from '../components/Header/Header';
 import Quantity from '../components/quantity/Quantity';
 import Button from '../components/UI/Button/Button';
 import { setCartItem } from '../store/reducers/cartSlice';
 import MainFooter from '../components/mainFooter/MainFooter';
-import AboutContacts from '../components/About/aboutContacts/aboutContacts';
+import CartModal from '../components/CartModal/CartModal';
+import Cart from './Cart';
 
 function Good() {
   const dispatch = useDispatch();
-  const { isLaptop, isTablet, publicUrl } = useContext(appContext);
+  const { isLaptop, isTablet, isDesktop, publicUrl } = useContext(appContext);
   const { categoryId, goodId } = useParams();
 
   const good = useSelector((state) => selectGoodById(state, Number(goodId)));
@@ -37,68 +37,71 @@ function Good() {
         {isLaptop && <SideMenu />}
         <div className="good__main">
           {isLaptop && <Header />}
-          <GoodButtons categoryId={categoryId} goodId={goodId} />
-          <div className="good__item">
-            <img className="good__item-img" src="https://via.placeholder.com/620x435" alt="" />
-            <div className="good__item-content">
-              <h1 className="good__item-name">{good.russianName}</h1>
-              <p className="good__item-weight">
-                {plural(good.weight, '%d грамм', '%d грамма', '%d грамм')}
-              </p>
-              <div className="good__item-pieces-container">
-                <p className="good__item-pieces">XXX</p>
-                <Quantity
-                  quantity={null}
-                  decreaseQuantityHandler={null}
-                  increaseQuantityHandler={null}
-                />
+          <div className="good__content">
+            <GoodButtons categoryId={categoryId} goodId={goodId} />
+            <div className="good__item">
+              <img className="good__item-img" src="https://via.placeholder.com/620x435" alt="" />
+              <div className="good__item-content">
+                <h1 className="good__item-name">{good.russianName}</h1>
+                <p className="good__item-weight">
+                  {plural(good.weight, '%d грамм', '%d грамма', '%d грамм')}
+                </p>
+                <div className="good__item-pieces-container">
+                  <p className="good__item-pieces">XXX</p>
+                  <Quantity
+                    quantity={null}
+                    decreaseQuantityHandler={null}
+                    increaseQuantityHandler={null}
+                  />
+                </div>
+                <div className="good__item-composition-container">
+                  <p className="good__item-composition">Состав</p>
+                  <p className="good__item-description">XXX</p>
+                </div>
+                <Button
+                  className="good__item-button "
+                  onClick={() => dispatch(setCartItem({ id: Number(goodId) }))}
+                >
+                  Хочу
+                </Button>
               </div>
-              <div className="good__item-composition-container">
-                <p className="good__item-composition">Состав</p>
-                <p className="good__item-description">XXX</p>
-              </div>
-              <Button
-                className="good__item-button "
-                onClick={() => dispatch(setCartItem({ id: Number(goodId) }))}
-              >
-                Хочу
-              </Button>
             </div>
+            <div className="good__swiper-wrapper">
+              <Swiper
+                className="good__swiper"
+                modules={[Navigation, Pagination, Autoplay]}
+                effect
+                speed={800}
+                slidesPerView={3}
+                spaceBetween={30}
+                grabCursor
+                navigation={composition.length > 3}
+              >
+                {composition.map((item) => (
+                  <SwiperSlide className="good__swiper-slide" key={item.id}>
+                    <SmallProduct
+                      key={item.id}
+                      className="good__addition-item"
+                      name={item.russianName}
+                      price={item.price}
+                      imgURL="media/good/philadelphia_circle.png"
+                    >
+                      <img
+                        className="good__addition-item-button"
+                        src={`${publicUrl}/media/good/add_button.svg`}
+                        alt="Добавить"
+                      />
+                    </SmallProduct>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+            <About />
+            {isLaptop && <MainFooter />}
           </div>
-          <div className="good__swiper-wrapper">
-            <Swiper
-              className="good__swiper"
-              modules={[Navigation, Pagination, Autoplay]}
-              effect
-              speed={800}
-              slidesPerView={3}
-              spaceBetween={30}
-              grabCursor
-              navigation={composition.length > 3}
-            >
-              {composition.map((item) => (
-                <SwiperSlide className="good__swiper-slide" key={item.id}>
-                  <SmallProduct
-                    key={item.id}
-                    className="good__addition-item"
-                    name={item.russianName}
-                    price={item.price}
-                    imgURL="media/good/philadelphia_circle.png"
-                  >
-                    <img
-                      className="good__addition-item-button"
-                      src={`${publicUrl}/media/good/add_button.svg`}
-                      alt="Добавить"
-                    />
-                  </SmallProduct>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-          <About />
-          {isLaptop && <MainFooter />}
         </div>
-        {isLaptop && <Cart />}
+        {isLaptop && <CartModal />}
+        {isDesktop && <Cart />}
       </div>
     );
   }

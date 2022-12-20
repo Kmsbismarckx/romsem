@@ -77,9 +77,12 @@
 @media screen and (min-width: 1024px) {
   .reviews {
     display: flex;
+    justify-content: center;
     padding: 0;
+    margin: 0 auto;
     background-color: white;
     min-height: 100vh;
+    width: 100%;
   }
   .reviews__header {
     display: flex;
@@ -89,13 +92,15 @@
   .reviews__main {
     width: 1170px;
     display: flex;
+    background-color: #f2f2f2;
     flex-direction: column;
     align-items: center;
   }
   .reviews__content {
+    max-width: 950px;
+    margin: 0 auto;
     height: 100%;
     padding-top: 60px;
-    background-color: #f2f2f2;
   }
   .reviews__button {
     width: 180px;

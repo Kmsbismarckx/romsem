@@ -7,7 +7,7 @@ import HeaderSchedule from './headerSchedule/HeaderSchedule';
 import appContext from '../../context';
 
 function Header() {
-  const { modal, setModal, setCartModal, filter, setFilter, isLaptop, publicUrl } =
+  const { modal, setModal, setCartModal, filter, setFilter, isLaptop, isDesktop, publicUrl } =
     useContext(appContext);
 
   if (isLaptop) {
@@ -43,12 +43,14 @@ function Header() {
               alt="Поиск"
               onClick={() => setModal(true)}
             />
-            <img
-              className="header__cart"
-              src={`${publicUrl}/media/cart/cart.svg`}
-              alt="Корзина"
-              onClick={() => setCartModal(true)}
-            />
+            {!isDesktop && (
+              <img
+                className="header__cart"
+                src={`${publicUrl}/media/cart/cart.svg`}
+                alt="Корзина"
+                onClick={() => setCartModal(true)}
+              />
+            )}
           </div>
           <QueryModal />
         </div>

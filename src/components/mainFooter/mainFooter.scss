@@ -4,7 +4,8 @@
   display: flex;
   align-self: center;
   justify-content: space-between;
-  width: 950px;
+  width: 100%;
+  max-width: 950px;
 
   border-top: 0.5px solid $gray;
   padding-top: 22px;
@@ -22,6 +23,7 @@
   }
   &-item:not(:last-of-type) {
     border-right: 0.5px solid $gray;
+    padding-right: 40px;
   }
   &-item:not(:first-of-type) {
     padding-left: 40px;
@@ -54,11 +56,8 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .main__footer {
     width: 100%;
-    &-item:nth-of-type(2) {
-      display: none;
-    }
   }
 }
