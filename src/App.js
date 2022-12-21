@@ -2,8 +2,8 @@ import './style/App.css';
 import React, { useMemo, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
-import Header from './components/Header/Header';
 import urlContext from './context';
+import Header from './components/Header/Header';
 import Home from './pages/Home';
 import Goods from './pages/Goods';
 import Good from './pages/Good';
@@ -70,7 +70,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/home/:id" element={<Goods />} />
+          <Route path="/home/:categoryId" element={<Goods />} />
           <Route path="/home/:categoryId/:goodId" element={<Good />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<Order />} />

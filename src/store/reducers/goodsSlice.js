@@ -32,3 +32,5 @@ export const selectNewGoods = createSelector([selectAllGoods], (goods) =>
 export const selectPopularGoods = createSelector([selectAllGoods], (goods) =>
   goods.filter((good) => good.isPopular)
 );
+
+export const selectGoodPrice = createSelector([selectGoodById], (good) => good.price * good.pieces);

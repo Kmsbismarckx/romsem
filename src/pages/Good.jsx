@@ -9,7 +9,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper';
 import GoodsItem from '../components/goodItem/GoodsItem';
 import SmallProduct from '../components/smallProduct/SmallProduct';
 import About from '../components/About/About';
-import { selectGoodById } from '../store/reducers/goodsSlice';
+import { selectGoodById, selectGoodPrice } from '../store/reducers/goodsSlice';
 import Menu from '../components/menu/Menu';
 import appContext from '../context';
 import SideMenu from '../components/sideMenu/SideMenu';
@@ -28,6 +28,8 @@ function Good() {
   const { categoryId, goodId } = useParams();
 
   const good = useSelector((state) => selectGoodById(state, Number(goodId)));
+  const goodPrice = useSelector((state) => selectGoodPrice(state, Number(goodId)));
+  console.log(goodPrice);
   const { composition } = good;
 
   const AboutMemo = React.memo(About);
@@ -35,9 +37,9 @@ function Good() {
     return (
       <div className="good">
         {isLaptop && <SideMenu />}
-        <div className="good__main">
+        <div className="good__main container">
           {isLaptop && <Header />}
-          <div className="good__content">
+          <div className="good__content content__container">
             <GoodButtons categoryId={categoryId} goodId={goodId} />
             <div className="good__item">
               <img className="good__item-img" src="https://via.placeholder.com/620x435" alt="" />
@@ -46,8 +48,8 @@ function Good() {
                 <p className="good__item-weight">
                   {plural(good.weight, '%d грамм', '%d грамма', '%d грамм')}
                 </p>
-                <div className="good__item-pieces-container">
-                  <p className="good__item-pieces">XXX</p>
+                <div className="good__item-price-container">
+                  <p className="good__item-price">{goodPrice} COM</p>
                   <Quantity
                     quantity={null}
                     decreaseQuantityHandler={null}

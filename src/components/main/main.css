@@ -244,7 +244,7 @@
   }
   .main__content {
     overflow-y: scroll;
-    padding: 30px 20px 0;
+    padding-top: 30px;
   }
   .main .categories__swiper,
   .main .goods__swiper {

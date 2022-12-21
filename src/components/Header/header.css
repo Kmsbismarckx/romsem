@@ -150,6 +150,9 @@
     font-size: 18px;
     line-height: 22px;
   }
+  .header__link-description_active {
+    color: #ff9846;
+  }
   .header__link-description:hover {
     color: #ff9846;
   }

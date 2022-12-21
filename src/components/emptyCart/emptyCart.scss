@@ -3,13 +3,25 @@
 .empty-cart {
   padding: $container_mobile_padding;
   width: 100%;
-  max-width: 400px;
   margin: 0 auto;
   @media screen and (min-width: $laptop) {
+    max-width: 430px;
+    min-width: 290px;
+    min-height: 100vh;
     margin: 0;
+    padding-bottom: 5%;
+    padding-left: 50px;
+    overflow-y: scroll;
+  }
+  @media screen and (min-width: $laptopL) {
+    overflow-y: hidden;
+    flex: 1 1 auto;
   }
   &__content {
     padding: 0 20px;
+    @media screen and (min-width: $laptop) {
+      padding: 0;
+    }
   }
 
   &__annotation {

@@ -83,7 +83,7 @@
     &__content {
       width: 100%;
       overflow-y: scroll;
-      padding: 22px 5% 0;
+      padding-top: 22px;
       @media screen and (min-width: $laptopL) {
         padding: 22px 111px 0;
       }

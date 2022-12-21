@@ -142,11 +142,40 @@ a {
   .App {
     padding-bottom: 0;
   }
+}
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 61%;
+    max-width: 1170px;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content__container {
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+    padding-top: 53px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
+  .content__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
   .swiper {
     margin: 0;
   }
   .swiper .swiper-button-next,
-.swiper .swiper-button-prev {
+  .swiper .swiper-button-prev {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,11 +185,13 @@ a {
     border-radius: 50%;
   }
   .swiper .swiper-button-next:after,
-.swiper .swiper-button-prev:after {
+  .swiper .swiper-button-prev:after {
     font-size: 27px !important;
     color: white;
     font-weight: 400;
   }
+}
+@media screen and (min-width: 1024px) {
   .pc__container .side-menu__container {
     width: 320px;
     flex-grow: 2;

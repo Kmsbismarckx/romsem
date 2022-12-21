@@ -35,9 +35,9 @@ function Reviews() {
     return (
       <div className="reviews">
         <SideMenu />
-        <div className="reviews__main">
+        <div className="reviews__main container">
           <Header />
-          <div className="reviews__content">
+          <div className="reviews__content content__container">
             <div className="reviews__header">
               <h2 className="reviews__title">Отзывы</h2>
               <Button className="reviews_" onClick={addNewReviewHandler}>

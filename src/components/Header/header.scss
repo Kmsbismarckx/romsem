@@ -139,6 +139,9 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
+        &_active {
+          color: $orange;
+        }
       }
       &-description:hover {
         color: $orange;

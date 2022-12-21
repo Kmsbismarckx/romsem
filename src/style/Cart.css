@@ -26,7 +26,6 @@
 .cart {
   width: 100%;
   margin: 0 auto;
-  max-width: 400px;
   padding: 67px 15px 0 15px;
   display: flex;
   flex-direction: column;
@@ -34,11 +33,19 @@
 }
 @media screen and (min-width: 1024px) {
   .cart {
-    max-width: 500px;
+    max-width: 430px;
+    min-width: 290px;
     min-height: 100vh;
     background-color: white;
     margin: 0;
     padding: 55px 35px 0;
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
+  .cart {
+    overflow-y: hidden;
+    flex: 1 1 auto;
   }
 }
 .cart__list {

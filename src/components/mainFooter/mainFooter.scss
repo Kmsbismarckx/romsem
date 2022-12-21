@@ -28,6 +28,9 @@
   &-item:not(:first-of-type) {
     padding-left: 40px;
     width: 330px;
+    @media screen and (min-width: $laptop) and (max-width: $laptopL) {
+      padding-left: 30px;
+    }
   }
   &-name {
     font-weight: 500;

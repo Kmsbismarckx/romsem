@@ -105,4 +105,8 @@
   display: none;
 }
 
+.category_active {
+  color: #ff9846;
+}
+
 /*# sourceMappingURL=sideMenu.css.map */

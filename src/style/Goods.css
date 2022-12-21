@@ -104,7 +104,7 @@
   .goods__content {
     width: 100%;
     overflow-y: scroll;
-    padding: 22px 5% 0;
+    padding-top: 22px;
   }
 }
 @media screen and (min-width: 1024px) and (min-width: 1440px) {

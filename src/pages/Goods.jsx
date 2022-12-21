@@ -17,9 +17,9 @@ import Select from '../components/UI/Select/Select';
 import CartModal from '../components/CartModal/CartModal';
 
 function Goods() {
-  const { id } = useParams();
+  const { categoryId } = useParams();
 
-  const category = useSelector((state) => selectCategoryById(state, id));
+  const category = useSelector((state) => selectCategoryById(state, categoryId));
   const goods = useSelector(selectAllGoods);
 
   const { filter, setFilter, isLaptop, isTablet, isDesktop, publicUrl } = useContext(appContext);
@@ -29,9 +29,9 @@ function Goods() {
     return (
       <div className="goods">
         {isLaptop && <SideMenu />}
-        <div className="goods__container">
+        <div className="goods__container container">
           {isLaptop && <Header />}
-          <div className="goods__content">
+          <div className="goods__content content__container">
             <div className="goods__header-container">
               <div className="goods__header">
                 <img
@@ -56,7 +56,7 @@ function Goods() {
               />
             </div>
 
-            <GoodsList sortedAndSearchedGoods={sortedAndSearchedGoods} id={id} />
+            <GoodsList sortedAndSearchedGoods={sortedAndSearchedGoods} id={categoryId} />
             <About className="about" />
             {isLaptop && <MainFooter />}
           </div>
@@ -86,7 +86,11 @@ function Goods() {
         ]}
         value={filter.sort}
       />
-      <GoodsList className="goods__list" sortedAndSearchedGoods={sortedAndSearchedGoods} id={id} />
+      <GoodsList
+        className="goods__list"
+        sortedAndSearchedGoods={sortedAndSearchedGoods}
+        id={categoryId}
+      />
       <About className="about" />
       <Menu />
     </div>

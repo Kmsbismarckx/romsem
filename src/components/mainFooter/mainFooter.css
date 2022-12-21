@@ -50,6 +50,11 @@
   padding-left: 40px;
   width: 330px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .main__footer-item:not(:first-of-type) {
+    padding-left: 30px;
+  }
+}
 .main__footer-name {
   font-weight: 500;
   margin-bottom: 10px;

@@ -69,7 +69,9 @@
       margin-bottom: 28px;
     }
     &__main {
-      width: 1170px;
+      max-width: 1170px;
+      width: 61%;
+      flex: 1 1 auto;
       display: flex;
       background-color: $light_gray;
       flex-direction: column;

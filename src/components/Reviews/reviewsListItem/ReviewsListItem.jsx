@@ -4,6 +4,7 @@ import { selectUserById } from '../../../store/reducers/usersSlice';
 
 function ReviewsListItem({ id }) {
   const review = useSelector((state) => selectUserById(state, id));
+  console.log(review);
 
   return (
     <div className="reviews__list__item">

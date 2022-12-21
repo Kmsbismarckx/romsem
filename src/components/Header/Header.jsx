@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useEffect } from 'react';
+import { Link, matchRoutes, useLocation } from 'react-router-dom';
 import './header.css';
 import QueryModal from '../queryModal/QueryModal';
 import HeaderPhone from './headerPhone/HeaderPhone';
@@ -9,7 +9,7 @@ import appContext from '../../context';
 function Header() {
   const { modal, setModal, setCartModal, filter, setFilter, isLaptop, isDesktop, publicUrl } =
     useContext(appContext);
-
+  const location = useLocation();
   if (isLaptop) {
     return (
       <div className="header">
@@ -30,10 +30,22 @@ function Header() {
 
           <div className="header__links">
             <Link className="header__link" to="/reviews">
-              <p className="header__link-description">Отзывы</p>
+              <p
+                className={`header__link-description ${
+                  location.pathname === '/reviews' ? 'header__link-description_active' : ''
+                }`}
+              >
+                Отзывы
+              </p>
             </Link>
             <Link className="header__link" to="/order">
-              <p className="header__link-description">Доставка и оплата</p>
+              <p
+                className={`header__link-description ${
+                  location.pathname === '/order' ? 'header__link-description_active' : ''
+                }`}
+              >
+                Доставка и оплата
+              </p>
             </Link>
           </div>
           <div className="header__buttons">

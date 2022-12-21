@@ -95,7 +95,8 @@
 }
 @media screen and (min-width: 1024px) {
   .good__content {
-    padding: 53px 0 0;
+    padding-top: 53px;
+    width: 100%;
     max-width: 950px;
     margin: 0 auto;
     overflow-y: scroll;
@@ -253,11 +254,11 @@
     color: #ff9846;
     margin-bottom: 40px;
   }
-  .good__item-pieces-container {
+  .good__item-price-container {
     display: flex;
     margin-bottom: 25px;
   }
-  .good__item-pieces {
+  .good__item-price {
     margin-right: 30px;
   }
   .good__item-composition-container {

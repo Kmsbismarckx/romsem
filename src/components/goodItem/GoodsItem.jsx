@@ -33,7 +33,7 @@ function GoodsItem({ id, linkParams }) {
         </div>
         {/* {isLaptop && <hr className="goods__item-hr" />} */}
         <div className="goods__item-footer">
-          <p className="goods__item-price">{good.price} COM</p>
+          <p className="goods__item-price">{good.price * good.pieces} COM</p>
           <Link to={linkParams}>
             <Button className="goods__item_" onClick={setCartItemHandler}>
               Хочу!

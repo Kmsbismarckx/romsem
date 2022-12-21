@@ -51,7 +51,7 @@ function Order() {
   if (isLaptop) {
     return (
       <div className="order">
-        <div className="order__main">
+        <div className="order__main container">
           <div className="order__header">
             <div className="order__header-button_back" onClick={() => navigate(-1)}>
               Продолжить выбор
@@ -61,7 +61,7 @@ function Order() {
               <HeaderSchedule />
             </div>
           </div>
-          <div className="order__content">
+          <div className="order__content content__container">
             {' '}
             <h2 className="form__title">Ваши данные</h2>
             <div className="form">

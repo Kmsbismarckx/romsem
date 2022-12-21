@@ -26,16 +26,32 @@
 .empty-cart {
   padding: 67px 15px 0 15px;
   width: 100%;
-  max-width: 400px;
   margin: 0 auto;
 }
 @media screen and (min-width: 1024px) {
   .empty-cart {
+    max-width: 430px;
+    min-width: 290px;
+    min-height: 100vh;
     margin: 0;
+    padding-bottom: 5%;
+    padding-left: 50px;
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .empty-cart {
+    overflow-y: hidden;
+    flex: 1 1 auto;
   }
 }
 .empty-cart__content {
   padding: 0 20px;
+}
+@media screen and (min-width: 1024px) {
+  .empty-cart__content {
+    padding: 0;
+  }
 }
 .empty-cart__annotation {
   padding-top: 12px;

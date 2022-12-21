@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectSideMenuCategories } from '../../store/reducers/categoriesSlice';
 import './sideMenu.css';
 import appContext from '../../context';
 
 function SideMenu() {
+  const { categoryId } = useParams();
   const categories = useSelector(selectSideMenuCategories);
   const { publicUrl } = useContext(appContext);
 
@@ -19,7 +20,15 @@ function SideMenu() {
       </div>
       <div className="side-menu__list">
         {categories.map((category) => (
-          <Link key={category.id} to={`/home/${category.id}`}>
+          <Link
+            key={category.id}
+            to={category.isAvailable ? '/' : `/home/${category.id}`}
+            onClick={(e) => {
+              if (category.isAvailable) {
+                e.preventDefault();
+              }
+            }}
+          >
             <div className={`side-menu__item ${category.isAvailable ? 'side-menu__soon' : ''}`}>
               <div className="side-menu__item-logo">
                 <img
@@ -27,7 +36,9 @@ function SideMenu() {
                   alt={`${category.name}`}
                 />
               </div>
-              <p>{category.russianName}</p>
+              <p className={`${Number(categoryId) === category.id ? 'category_active' : ''}`}>
+                {category.russianName}
+              </p>
             </div>
           </Link>
         ))}

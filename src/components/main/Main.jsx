@@ -47,9 +47,9 @@ function Main() {
 
   if (isTablet || isLaptop) {
     return (
-      <div className="main">
+      <div className="main container">
         {isLaptop && <Header />}
-        <div className="main__content">
+        <div className="main__content content__container">
           <div className="main__goods">
             {!isLaptop && (
               <Swiper
@@ -88,6 +88,7 @@ function Main() {
                     className="goods__swiper-item"
                     style={{
                       backgroundImage: `url("https://via.placeholder.com/800x470")`,
+                      backgroundSize: 'cover',
                     }}
                   >
                     <div className="goods__swiper-item-content">
