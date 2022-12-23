@@ -14,6 +14,7 @@ import {
   removePieces,
   selectGoodById,
   selectGoodPrice,
+  selectGoodWeight,
 } from '../store/reducers/goodsSlice';
 import Menu from '../components/menu/Menu';
 import appContext from '../context';
@@ -36,8 +37,8 @@ function Good() {
 
   const good = useSelector((state) => selectGoodById(state, Number(goodId)));
   const goodPrice = useSelector((state) => selectGoodPrice(state, goodId));
-  console.log(goodPrice);
   const additional = useSelector(selectAllAdditional);
+  const weight = useSelector((state) => selectGoodWeight(state, goodId));
 
   const increaseQuantityHandler = () => {
     dispatch(addPieces({ id: Number(goodId) }));
@@ -61,7 +62,7 @@ function Good() {
               <div className="good__item-content">
                 <h1 className="good__item-name">{good.russianName}</h1>
                 <p className="good__item-weight">
-                  {plural(good.weight, '%d грамм', '%d грамма', '%d грамм')}
+                  {plural(weight, '%d грамм', '%d грамма', '%d грамм')}
                 </p>
                 <div className="good__item-price-container">
                   <p className="good__item-price">{goodPrice} COM</p>

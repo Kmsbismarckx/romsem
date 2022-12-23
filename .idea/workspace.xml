@@ -1,39 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="add increment and decrement handlers to Good.jsx">
-      <change afterPath="$PROJECT_DIR$/public/media/additional/arigato.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/additional/banzai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/additional/philadelphia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/arigato.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/banzai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/kamikaze_set.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/philadelphia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/philadelphia_love_set.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/philadelphia_salmon_set.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/salomon_set.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/set_4_philadelphias.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/set_5_philadelphias.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/set_6_philadelphias.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/top_set.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/cart/yakuza_set.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/additional.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/additionalSlice.js" afterDir="false" />
+    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="add ne slice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/goodItem/GoodsItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goodItem/GoodsItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/smallProduct/SmallProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smallProduct/SmallProduct.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goods.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/goods.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Good.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Good.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/cartSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/cartSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/additionalSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/additionalSlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/goodsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/goodsSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +147,7 @@
       <workItem from="1671550108674" duration="2365000" />
       <workItem from="1671623961905" duration="17538000" />
       <workItem from="1671707207046" duration="2139000" />
-      <workItem from="1671792364091" duration="17608000" />
+      <workItem from="1671792364091" duration="18284000" />
     </task>
     <task id="LOCAL-00001" summary="finish main page and good page">
       <created>1663193306010</created>
@@ -357,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671794820708</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add ne slice">
+      <created>1671813878613</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1671813878613</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +373,7 @@
     <MESSAGE value="setting react router" />
     <MESSAGE value="laptop adaptation" />
     <MESSAGE value="add increment and decrement handlers to Good.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add increment and decrement handlers to Good.jsx" />
+    <MESSAGE value="add ne slice" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ne slice" />
   </component>
 </project>

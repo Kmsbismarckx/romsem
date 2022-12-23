@@ -55,3 +55,9 @@ export const selectGoodPrice = (state, id) => {
     return state.goods.entities[id].price * state.goods.entities[id].pieces;
   return 0;
 };
+
+export const selectGoodWeight = (state, id) => {
+  if (state.goods.entities[id])
+    return state.goods.entities[id].weight * state.goods.entities[id].pieces;
+  return 0;
+};

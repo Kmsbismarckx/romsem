@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '../UI/Button/Button';
 import './goodsItem.css';
-import { selectGoodById } from '../../store/reducers/goodsSlice';
+import { selectGoodById, selectGoodWeight } from '../../store/reducers/goodsSlice';
 import { setCartItem } from '../../store/reducers/cartSlice';
 
 function GoodsItem({ id, linkParams }) {
   const good = useSelector((state) => selectGoodById(state, id));
+  const weight = useSelector((state) => selectGoodWeight(state, id));
 
   const dispatch = useDispatch();
   const pieces = good.pieces ? good.pieces : ' ';
@@ -26,7 +27,7 @@ function GoodsItem({ id, linkParams }) {
         <div className="goods__item-header">
           <p className="goods__item-name">{good.russianName}</p>
           <p className="goods__item-weight goods__item-pieces">
-            {good.weight} грамм, {plural(pieces, '%d кусочек', '%d кусочка', '%d кусочков')}
+            {weight} грамм, {plural(pieces, '%d кусочек', '%d кусочка', '%d кусочков')}
           </p>
         </div>
         <div className="goods__item-footer">

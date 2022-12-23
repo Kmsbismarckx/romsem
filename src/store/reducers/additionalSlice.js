@@ -1,4 +1,4 @@
-import { createEntityAdapter, createSelector, createSlice, nanoid } from '@reduxjs/toolkit';
+import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
 import additionalData from '../../additional.json';
 
 const additionalValue = additionalData.additional;
