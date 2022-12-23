@@ -1,5 +1,6 @@
 import { createEntityAdapter, createSelector, createSlice } from '@reduxjs/toolkit';
 import { selectAllGoods, selectGoodPrice } from './goodsSlice';
+import { selectAdditionalPrice, selectAllAdditional } from './additionalSlice';
 
 const cart = JSON.parse(localStorage.getItem('cart'));
 
@@ -11,13 +12,12 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     setCartItem(state, action) {
-      const { id } = action.payload;
+      const { id, type } = action.payload;
       const existingBasketItem = state.entities[id];
-
       if (existingBasketItem) {
         cartAdapter.upsertOne(state, { id, quantity: existingBasketItem.quantity + 1 });
       } else {
-        cartAdapter.addOne(state, { id, quantity: 1 });
+        cartAdapter.addOne(state, { id, quantity: 1, type });
       }
       localStorage.setItem('cart', JSON.stringify(state));
     },
@@ -37,7 +37,7 @@ const cartSlice = createSlice({
 
       const existingBasketItem = state.entities[id];
 
-      if (existingBasketItem.quantity > 1) {
+      if (existingBasketItem.quantity && existingBasketItem.quantity > 1) {
         cartAdapter.upsertOne(state, { id, quantity: existingBasketItem.quantity - 1 });
       } else {
         cartAdapter.removeOne(state, id);
@@ -58,21 +58,29 @@ export const {
   selectIds: selectCartItemIds,
 } = cartAdapter.getSelectors((state) => state.cart);
 export const selectCartItemQuantity = (state, id) => state.cart.entities[id].quantity;
+
 export const selectTotalPrice = createSelector(
-  [selectCartItemIds, selectAllCartItems, selectAllGoods],
-  (cartIds, cartEntities, goods) => {
+  [selectCartItemIds, selectAllCartItems, selectAllGoods, selectAllAdditional],
+  (cartIds, cartEntities, goods, additional) => {
     const goodsPriceInCart = cartIds.map((id) => {
       const goodInCart = Object.values(goods).find((good) => good.id === id);
+      const goodInCartPrice = goodInCart ? goodInCart.price * goodInCart.pieces : 0;
+
+      const additionalInCart = Object.values(additional).find((item) => item.id === id);
+      const additionalInCartPrice = additionalInCart ? additionalInCart.price : 0;
       const quantityInCart = Object.values(cartEntities).find((quantity) => quantity.id === id);
-      if (goodInCart) {
-        return goodInCart.price * goodInCart.pieces * quantityInCart.quantity;
-      }
-      return 0;
+
+      return (goodInCartPrice + additionalInCartPrice) * quantityInCart.quantity;
     });
     return goodsPriceInCart.reduce((prev, curr) => prev + curr, 0);
   }
 );
 export const selectCartItemTotalPrice = createSelector(
-  [selectCartItemById, selectGoodPrice],
-  (cartItem, cartItemPrice) => cartItem.quantity * cartItemPrice
+  [selectCartItemById, selectGoodPrice, selectAdditionalPrice],
+  (cartItem, cartGoodPrice, cartAdditionalPrice) =>
+    cartItem.type === 'additional'
+      ? cartAdditionalPrice * cartItem.quantity
+      : cartGoodPrice * cartItem.quantity
 );
+
+export const selectCartItemType = (state, id) => state.cart.entities[id].type;

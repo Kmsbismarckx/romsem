@@ -58,6 +58,9 @@ a {
   min-height: 100vh;
 }
 
+.swiper {
+  user-select: none;
+}
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
   z-index: 2 !important;

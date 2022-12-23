@@ -34,6 +34,7 @@ a {
   min-height: 100vh;
 }
 .swiper {
+  user-select: none;
   .swiper-wrapper {
   }
   .swiper-button-next,

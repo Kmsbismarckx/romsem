@@ -105,7 +105,7 @@ function Main() {
                       </div>
                       <Button
                         className="goods__swiper-item-content_"
-                        onClick={() => dispatch(setCartItem({ id: good.id }))}
+                        onClick={() => dispatch(setCartItem({ id: good.id, type: 'good' }))}
                       >
                         Хочу
                       </Button>

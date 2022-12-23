@@ -26,22 +26,27 @@ import { setCartItem } from '../store/reducers/cartSlice';
 import MainFooter from '../components/mainFooter/MainFooter';
 import CartModal from '../components/CartModal/CartModal';
 import Cart from './Cart';
+import { selectAllAdditional } from '../store/reducers/additionalSlice';
 
 function Good() {
+  const AboutMemo = React.memo(About);
   const dispatch = useDispatch();
-  const { isLaptop, isTablet, isDesktop, publicUrl } = useContext(appContext);
   const { categoryId, goodId } = useParams();
+  const { isLaptop, isTablet, isDesktop, publicUrl } = useContext(appContext);
 
   const good = useSelector((state) => selectGoodById(state, Number(goodId)));
-  const goodPrice = useSelector((state) => selectGoodPrice(state, Number(goodId)));
-  const AboutMemo = React.memo(About);
+  const goodPrice = useSelector((state) => selectGoodPrice(state, goodId));
+  console.log(goodPrice);
+  const additional = useSelector(selectAllAdditional);
 
   const increaseQuantityHandler = () => {
-    dispatch(addPieces({ id: goodId }));
+    dispatch(addPieces({ id: Number(goodId) }));
   };
   const decreaseQuantityHandler = () => {
-    dispatch(removePieces({ id: goodId }));
+    dispatch(removePieces({ id: Number(goodId) }));
   };
+
+  const setCartItemHandler = (id, type) => dispatch(setCartItem({ id, type }));
 
   if (isTablet || isLaptop) {
     return (
@@ -50,7 +55,7 @@ function Good() {
         <div className="good__main container">
           {isLaptop && <Header />}
           <div className="good__content content__container">
-            <GoodButtons categoryId={categoryId} goodId={goodId} />
+            <GoodButtons categoryId={categoryId} goodId={Number(goodId)} />
             <div className="good__item">
               <img className="good__item-img" src="https://via.placeholder.com/620x435" alt="" />
               <div className="good__item-content">
@@ -72,7 +77,7 @@ function Good() {
                 </div>
                 <Button
                   className="good__item-button "
-                  onClick={() => dispatch(setCartItem({ id: Number(goodId) }))}
+                  onClick={() => setCartItemHandler(Number(goodId), 'good')}
                 >
                   Хочу
                 </Button>
@@ -89,19 +94,20 @@ function Good() {
                 grabCursor
                 navigation={good.composition.length > 3}
               >
-                {good.composition.map((item) => (
+                {additional.map((item) => (
                   <SwiperSlide className="good__swiper-slide" key={item.id}>
                     <SmallProduct
                       key={item.id}
                       className="good__addition-item"
                       name={item.russianName}
                       price={item.price}
-                      imgURL="media/good/philadelphia_circle.png"
+                      imgUrl={`media/additional/${item.name}.png`}
                     >
                       <img
                         className="good__addition-item-button"
                         src={`${publicUrl}/media/good/add_button.svg`}
                         alt="Добавить"
+                        onClick={() => setCartItemHandler(item.id, 'additional')}
                       />
                     </SmallProduct>
                   </SwiperSlide>
@@ -164,7 +170,7 @@ function Good() {
             navigation
             className="good__item-swiper"
           >
-            {good.composition.map((item) => (
+            {additional.map((item) => (
               <SwiperSlide>
                 <SmallProduct
                   key={item.id}
@@ -177,6 +183,7 @@ function Good() {
                     className="good__addition-button"
                     src={`${publicUrl}/media/good/add_button.svg`}
                     alt="Добавить"
+                    onClick={() => setCartItemHandler(item.id, 'additional')}
                   />
                 </SmallProduct>
               </SwiperSlide>

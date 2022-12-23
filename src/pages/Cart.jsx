@@ -14,7 +14,7 @@ function Cart() {
   const cartIds = useSelector(selectCartItemIds);
   const totalPrice = useSelector((state) => selectTotalPrice(state));
   const { isLaptop } = useContext(appContext);
-  console.log(totalPrice);
+
   if (cartIds.length === 0) {
     return <EmptyCart />;
   }

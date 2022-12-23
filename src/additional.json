@@ -1,0 +1,40 @@
+{
+  "additional": [
+    {
+      "id": 1,
+      "russianName": "Филадельфия",
+      "name": "philadelphia",
+      "price": 140
+    },
+    {
+      "id": 2,
+      "russianName": "Банзай",
+      "name": "banzai",
+      "price": 170
+    },
+    {
+      "id": 3,
+      "russianName": "Аригато",
+      "name": "arigato",
+      "price": 180
+    },
+    {
+      "id": 4,
+      "russianName": "Филадельфия",
+      "name": "philadelphia",
+      "price": 140
+    },
+    {
+      "id": 5,
+      "russianName": "Банзай",
+      "name": "banzai",
+      "price": 170
+    },
+    {
+      "id": 6,
+      "russianName": "Аригато",
+      "name": "arigato",
+      "price": 180
+    }
+  ]
+}

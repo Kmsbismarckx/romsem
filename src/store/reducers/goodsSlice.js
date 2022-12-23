@@ -50,4 +50,8 @@ export const selectPopularGoods = createSelector([selectAllGoods], (goods) =>
   goods.filter((good) => good.isPopular)
 );
 
-export const selectGoodPrice = createSelector([selectGoodById], (good) => good.price * good.pieces);
+export const selectGoodPrice = (state, id) => {
+  if (state.goods.entities[id])
+    return state.goods.entities[id].price * state.goods.entities[id].pieces;
+  return 0;
+};
