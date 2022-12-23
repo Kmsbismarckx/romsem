@@ -9,7 +9,12 @@ import { Autoplay, Navigation, Pagination } from 'swiper';
 import GoodsItem from '../components/goodItem/GoodsItem';
 import SmallProduct from '../components/smallProduct/SmallProduct';
 import About from '../components/About/About';
-import { selectGoodById, selectGoodPrice } from '../store/reducers/goodsSlice';
+import {
+  addPieces,
+  removePieces,
+  selectGoodById,
+  selectGoodPrice,
+} from '../store/reducers/goodsSlice';
 import Menu from '../components/menu/Menu';
 import appContext from '../context';
 import SideMenu from '../components/sideMenu/SideMenu';
@@ -29,10 +34,15 @@ function Good() {
 
   const good = useSelector((state) => selectGoodById(state, Number(goodId)));
   const goodPrice = useSelector((state) => selectGoodPrice(state, Number(goodId)));
-  console.log(goodPrice);
-  const { composition } = good;
-
   const AboutMemo = React.memo(About);
+
+  const increaseQuantityHandler = () => {
+    dispatch(addPieces({ id: goodId }));
+  };
+  const decreaseQuantityHandler = () => {
+    dispatch(removePieces({ id: goodId }));
+  };
+
   if (isTablet || isLaptop) {
     return (
       <div className="good">
@@ -51,9 +61,9 @@ function Good() {
                 <div className="good__item-price-container">
                   <p className="good__item-price">{goodPrice} COM</p>
                   <Quantity
-                    quantity={null}
-                    decreaseQuantityHandler={null}
-                    increaseQuantityHandler={null}
+                    quantity={good.pieces}
+                    decreaseQuantityHandler={decreaseQuantityHandler}
+                    increaseQuantityHandler={increaseQuantityHandler}
                   />
                 </div>
                 <div className="good__item-composition-container">
@@ -77,9 +87,9 @@ function Good() {
                 slidesPerView={3}
                 spaceBetween={30}
                 grabCursor
-                navigation={composition.length > 3}
+                navigation={good.composition.length > 3}
               >
-                {composition.map((item) => (
+                {good.composition.map((item) => (
                   <SwiperSlide className="good__swiper-slide" key={item.id}>
                     <SmallProduct
                       key={item.id}
@@ -126,7 +136,7 @@ function Good() {
               navigation
               className="composition-swiper"
             >
-              {composition.map((item) => (
+              {good.composition.map((item) => (
                 <SwiperSlide>
                   <SmallProduct
                     key={item.id}
@@ -154,7 +164,7 @@ function Good() {
             navigation
             className="good__item-swiper"
           >
-            {composition.map((item) => (
+            {good.composition.map((item) => (
               <SwiperSlide>
                 <SmallProduct
                   key={item.id}

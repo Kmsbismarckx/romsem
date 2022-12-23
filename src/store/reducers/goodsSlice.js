@@ -14,10 +14,27 @@ goodsValue.forEach((good) => {
 const goodsSlice = createSlice({
   name: 'goods',
   initialState,
-  reducers: {},
+  reducers: {
+    addPieces(state, action) {
+      const { id } = action.payload;
+      const existingGood = state.entities[id];
+      if (existingGood) {
+        goodsAdapter.upsertOne(state, { id, pieces: existingGood.pieces + 1 });
+      }
+    },
+    removePieces(state, action) {
+      const { id } = action.payload;
+      const existingGood = state.entities[id];
+      if (existingGood && existingGood.pieces > 1) {
+        goodsAdapter.upsertOne(state, { id, pieces: existingGood.pieces - 1 });
+      }
+    },
+  },
 });
 
 export default goodsSlice.reducer;
+
+export const { addPieces, removePieces } = goodsSlice.actions;
 
 export const {
   selectAll: selectAllGoods,

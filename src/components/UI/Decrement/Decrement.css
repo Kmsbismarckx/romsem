@@ -29,6 +29,7 @@
   align-items: center;
   width: 16px;
   height: 100%;
+  cursor: pointer;
 }
 .decrement img {
   pointer-events: none;
