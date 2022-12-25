@@ -2,14 +2,22 @@ import { useMemo } from 'react';
 
 const useSortedItems = (items, sort) => {
   const itemsCopy = [...items];
-
-  if (sort === 'weight' || sort === 'price' || sort === 'pieces') {
-    itemsCopy.sort((a, b) => a[sort] - b[sort]);
+  switch (sort) {
+    case 'weight':
+      itemsCopy.sort((a, b) => a.weight * a.pieces - b.weight * b.pieces);
+      break;
+    case 'price':
+      itemsCopy.sort((a, b) => a.price * a.pieces - b.price * b.pieces);
+      break;
+    case 'pieces':
+      itemsCopy.sort((a, b) => a[sort] - b[sort]);
+      break;
+    case 'name':
+      itemsCopy.sort((a, b) => a.russianName.localeCompare(b.russianName));
+      break;
+    default:
+      return itemsCopy;
   }
-  if (sort === 'name') {
-    itemsCopy.sort((a, b) => a.russianName.localeCompare(b.russianName));
-  }
-
   return itemsCopy;
 };
 

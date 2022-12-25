@@ -45,15 +45,13 @@
     }
     &__list {
       display: grid;
+      justify-content: space-between;
+      align-self: center;
       grid-template-columns: repeat(auto-fill, 288px);
       grid-template-rows: 400px;
-      column-gap: 20px;
-      row-gap: 31px;
-      justify-content: center;
+      gap: 31px 20px;
 
       width: 100%;
-      align-self: center;
-
       margin-bottom: 174px;
     }
   }

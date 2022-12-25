@@ -16,14 +16,12 @@ import { selectAdditionalById } from '../../store/reducers/additionalSlice';
 function CartItem({ id }) {
   const dispatch = useDispatch();
   const { publicUrl } = useContext(appContext);
-  const test = useSelector((state) => selectAdditionalById(state, id));
   const cartItemType = useSelector((state) => selectCartItemType(state, id));
 
   const cartItem =
     cartItemType === 'additional'
       ? useSelector((state) => selectAdditionalById(state, id))
       : useSelector((state) => selectGoodById(state, id));
-  console.log(test);
 
   const quantity = useSelector((state) => selectCartItemQuantity(state, id));
   const cartItemTotalPrice = useSelector((state) => selectCartItemTotalPrice(state, id));
