@@ -23,7 +23,7 @@ function Select({ className, options, filter, setFilter }) {
           isOpen ? `${className}-select__header_opened select__header_opened` : ''
         }`}
       >
-        {selectedOption || 'По умолчанию'}
+        <span>{selectedOption || 'По умолчанию'}</span>
       </div>
       {isOpen && (
         <div className={`${className}-select__list select__list`}>

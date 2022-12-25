@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="add ne slice">
+    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="Create custom Select component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/about/arrow_down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/UI/arrow_down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/Select.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/filter/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/Filter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Goods.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Goods.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Goods.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +61,11 @@
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\UI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\UI" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\additional" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\components\header" />
-      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\fonts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -155,7 +151,7 @@
       <workItem from="1671707207046" duration="2139000" />
       <workItem from="1671792364091" duration="18446000" />
       <workItem from="1671884637198" duration="599000" />
-      <workItem from="1671959423507" duration="11581000" />
+      <workItem from="1671959423507" duration="14892000" />
     </task>
     <task id="LOCAL-00001" summary="finish main page and good page">
       <created>1663193306010</created>
@@ -353,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671814518468</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Create custom Select component">
+      <created>1671999878145</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1671999878146</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,6 +392,7 @@
     <MESSAGE value="laptop adaptation" />
     <MESSAGE value="add increment and decrement handlers to Good.jsx" />
     <MESSAGE value="add ne slice" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ne slice" />
+    <MESSAGE value="Create custom Select component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create custom Select component" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 @import '../../../style/variables';
 
-$select_height: auto;
+$select_height: 100%;
 
 .select {
   position: relative;
@@ -9,10 +9,12 @@ $select_height: auto;
   background-color: white;
   cursor: pointer;
   user-select: none;
+  z-index: 1;
 
   &__header {
     height: 100%;
     background-color: inherit;
+    position: relative;
   }
   &__list {
     position: absolute;
@@ -30,20 +32,36 @@ $select_height: auto;
 .goods-select {
   width: 200px;
   border-radius: 15px;
-  padding: 26px 9px 0;
-
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+
+  box-shadow: 0 0 18px 6px rgba(0, 0, 0, 0.09);
+  &::after {
+    content: url('/public/media/UI/arrow_down.svg');
+    position: absolute;
+    bottom: 13px;
+    right: 10px;
+    line-height: 9px;
+    transform: rotateX(180deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
+    box-sizing: border-box;
+    z-index: 2;
+  }
   &__header {
-    padding-bottom: 10px;
+    padding: 26px 9px 10px;
+    border-radius: inherit;
+    z-index: 1;
+    span {
+      padding-bottom: 9px;
+    }
     &::before {
       content: 'Сортировка';
       position: absolute;
       top: 4px;
-      left: 14px;
-
+      left: 9px;
       font-weight: 300;
       font-size: 14px;
       line-height: 17px;
@@ -52,6 +70,7 @@ $select_height: auto;
   }
   &__list {
     padding: 0 9px;
+    box-shadow: inherit;
   }
   .option {
     padding: 10px 0;
@@ -65,8 +84,15 @@ $select_height: auto;
 }
 .goods-select_opened {
   border-radius: 15px 15px 0 0;
+  &::after {
+    transform: rotateX(0deg);
+  }
 }
 .goods-select__header_opened {
-  border-bottom: 0.5px solid $gray;
-  padding-bottom: 9px;
+  padding-bottom: 0;
+  span {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 0.5px solid $gray;
+  }
 }
