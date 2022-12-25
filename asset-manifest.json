@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/romsem/static/css/main.ecda6edf.css",
-    "main.js": "/romsem/static/js/main.61a95cbb.js",
+    "main.css": "/romsem/static/css/main.d865141d.css",
+    "main.js": "/romsem/static/js/main.05621ce4.js",
     "static/media/dinpro_bold.otf": "/romsem/static/media/dinpro_bold.e18c1d1189457aa1a301.otf",
     "static/media/dinpro_medium.otf": "/romsem/static/media/dinpro_medium.16a72c6a374a9c9a2572.otf",
     "static/media/dinpro.otf": "/romsem/static/media/dinpro.6ef85ba7df7db1508c63.otf",
@@ -13,13 +13,13 @@
     "index.html": "/romsem/index.html",
     "static/media/cart_increment.svg": "/romsem/static/media/cart_increment.83e57bd0272d68756db7.svg",
     "static/media/arrow_button.svg": "/romsem/static/media/arrow_button.aca8cd754747328b1dad.svg",
-    "static/media/arrow_down.svg": "/romsem/static/media/arrow_down.85177ee21586f68e17dc.svg",
+    "static/media/arrow_down.svg": "/romsem/static/media/arrow_down.764590611119d42d1df9.svg",
     "static/media/check-mark.svg": "/romsem/static/media/check-mark.b68f753ca9b5ee9372bb.svg",
-    "main.ecda6edf.css.map": "/romsem/static/css/main.ecda6edf.css.map",
-    "main.61a95cbb.js.map": "/romsem/static/js/main.61a95cbb.js.map"
+    "main.d865141d.css.map": "/romsem/static/css/main.d865141d.css.map",
+    "main.05621ce4.js.map": "/romsem/static/js/main.05621ce4.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecda6edf.css",
-    "static/js/main.61a95cbb.js"
+    "static/css/main.d865141d.css",
+    "static/js/main.05621ce4.js"
   ]
 }
