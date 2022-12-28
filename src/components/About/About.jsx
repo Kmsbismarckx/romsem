@@ -14,20 +14,20 @@ function About() {
     return (
       <div className="about">
         <div className={`about__info ${isOpened ? 'about__info_opened' : ''}`}>
-          <h2 className="about__info__name">Заказать суши в Бишкеке</h2>
-          <p className="about__info__description">
+          <h2 className="about__info-name">Заказать суши в Бишкеке</h2>
+          <p className="about__info-description">
             Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом,
             приготовленные по классическим и адаптированным к европейской аудитории рецептам, а
             также собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы
             можете заказать суши в Харькове с доставкой на дом или в офис.
           </p>
-          <p className="about__info__description"> В нашем меню более 20 видов суши:</p>
-          <ul className="about__info__description about__info__description__list">
+          <p className="about__info-description"> В нашем меню более 20 видов суши:</p>
+          <ul className="about__info-description about__info-description-list">
             <li>Классические с сырым лососем, тунцом, окунем.</li>
             <li>Экзотические с тигровой креветкой, морским гребешком.</li>
             <li>Пикантные с копченым лососем, угрем.</li>
           </ul>
-          <p className="about__info__description">
+          <p className="about__info-description">
             В меню также представлены гунканы: с начинкой из красной икры и тобико, а также феликсы,
             где японский майонез сочетается с рыбой, морепродуктами, угрем. Любители острых блюд
             могут купить суши с соусом спайси. Популярные начинки — копченая курица, снежный краб,
@@ -35,7 +35,7 @@ function About() {
           </p>
         </div>
         <div
-          className={`about__info__button ${isOpened ? 'about__info__button_opened' : ''}`}
+          className={`about__info-button ${isOpened ? 'about__info-button_opened' : ''}`}
           onClick={aboutButtonHandler}
         >
           Подробнее
@@ -47,26 +47,26 @@ function About() {
   return (
     <div className="about">
       <div className={`about__info ${isOpened ? 'about__info_opened' : ''}`}>
-        <h2 className="about__info__name">Заказать суши в Бишкеке</h2>
-        <p className="about__info__description">
+        <h2 className="about__info-name">Заказать суши в Бишкеке</h2>
+        <p className="about__info-description">
           Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом,
           приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также
           собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете
           заказать суши в Харькове с доставкой на дом или в офис.
         </p>
-        <p className="about__info__description">
+        <p className="about__info-description">
           Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом,
           приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также
           собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете
           заказать суши в Харькове с доставкой на дом или в офис.
         </p>
-        <p className="about__info__description">
+        <p className="about__info-description">
           Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом,
           приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также
           собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете
           заказать суши в Харькове с доставкой на дом или в офис.
         </p>
-        <p className="about__info__description">
+        <p className="about__info-description">
           Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом,
           приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также
           собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете
@@ -74,7 +74,7 @@ function About() {
         </p>
       </div>
       <div
-        className={`about__info__button ${isOpened ? 'about__info__button_opened' : ''}`}
+        className={`about__info-button ${isOpened ? 'about__info-button_opened' : ''}`}
         onClick={aboutButtonHandler}
       >
         Подробнее

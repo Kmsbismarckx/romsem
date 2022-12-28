@@ -68,9 +68,11 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
+  cursor: pointer;
 }
 .main__footer-input:focus {
   outline-color: #ff9846;
+  background-color: white;
 }
 .main__footer-input:invalid {
   outline-color: red;

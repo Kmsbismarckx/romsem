@@ -46,9 +46,12 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
+
+    cursor: pointer;
   }
   &-input:focus {
     outline-color: $orange;
+    background-color: white;
   }
   &-input:invalid {
     outline-color: red;

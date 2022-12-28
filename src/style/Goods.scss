@@ -87,7 +87,10 @@
       }
     }
     &__list {
-      justify-content: space-between;
+      justify-content: space-evenly;
+      @media screen and (min-width: $laptopL) {
+        justify-content: space-between;
+      }
     }
   }
 }
