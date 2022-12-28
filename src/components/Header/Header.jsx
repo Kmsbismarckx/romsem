@@ -1,14 +1,21 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, matchRoutes, useLocation } from 'react-router-dom';
 import './header.css';
 import QueryModal from '../queryModal/QueryModal';
 import HeaderPhone from './headerPhone/HeaderPhone';
 import HeaderSchedule from './headerSchedule/HeaderSchedule';
 import appContext from '../../context';
+import Select from '../UI/Select/Select';
 
 function Header() {
   const { modal, setModal, setCartModal, filter, setFilter, isLaptop, isDesktop, publicUrl } =
     useContext(appContext);
+  const [selectOptions] = useState([
+    { value: 'spb', name: 'Санкт-Петербург' },
+    { value: 'nino', name: 'Нижний Новгород' },
+    { value: 'msc', name: 'Москва' },
+    { value: 'tashkent', name: 'Ташкент' },
+  ]);
   const location = useLocation();
   if (isLaptop) {
     return (
@@ -19,13 +26,7 @@ function Header() {
         </div>
         <div className="header__main">
           <div className="header__location">
-            <p className="header__location-name">Город:</p>
-            <select className="header__location-choose">
-              <option value="Bishkek">Бишкек</option>
-              <option value="Moscow">Москва</option>
-              <option value="Saint-Petersburg">Санкт-Петербург</option>
-              <option value="Nizhny-Novgorod">Нижний Новгород</option>
-            </select>
+            <Select className="header" options={selectOptions} />
           </div>
 
           <div className="header__links">

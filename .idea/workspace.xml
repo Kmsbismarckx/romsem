@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="Create custom Select component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/Select.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.scss" afterDir="false" />
@@ -148,6 +150,9 @@
       <workItem from="1671792364091" duration="18446000" />
       <workItem from="1671884637198" duration="599000" />
       <workItem from="1671959423507" duration="15364000" />
+      <workItem from="1672050763979" duration="7000" />
+      <workItem from="1672060524171" duration="28000" />
+      <workItem from="1672237109916" duration="2199000" />
     </task>
     <task id="LOCAL-00001" summary="finish main page and good page">
       <created>1663193306010</created>

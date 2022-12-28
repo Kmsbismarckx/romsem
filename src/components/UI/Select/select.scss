@@ -100,3 +100,58 @@ $select_height: 100%;
     border-bottom: 0.5px solid $gray;
   }
 }
+
+.header-select {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+
+  //height: 43px;
+  padding: 0 9px 10px;
+  &__header {
+    padding-top: 21px;
+    &::before {
+      content: 'Город:';
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #a4acad;
+    }
+    span {
+      padding: 0 0 9px;
+    }
+  }
+  &__list {
+    padding: inherit;
+  }
+  .option {
+    padding: 10px 0;
+    &:hover {
+      color: $orange;
+    }
+    &:active {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.header-select_opened {
+  background-color: white;
+  padding-bottom: 0;
+  .header-select__list {
+    background-color: inherit;
+  }
+}
+.header-select__header_opened {
+  padding-bottom: 0;
+  span {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 0.5px solid $gray;
+  }
+}

@@ -4,9 +4,11 @@ import './select.css';
 function Select({ className, options, filter, setFilter }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
-  console.log(filter);
+
   const onOptionClicked = (option) => () => {
-    setFilter({ ...filter, sort: option.value });
+    if (filter) {
+      setFilter({ ...filter, sort: option.value });
+    }
     setSelectedOption(option.name);
     setIsOpen(false);
   };
@@ -23,7 +25,7 @@ function Select({ className, options, filter, setFilter }) {
           isOpen ? `${className}-select__header_opened select__header_opened` : ''
         }`}
       >
-        <span>{selectedOption || 'По умолчанию'}</span>
+        <span>{selectedOption || options[0].name}</span>
       </div>
       {isOpen && (
         <div className={`${className}-select__list select__list`}>
