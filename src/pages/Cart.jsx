@@ -2,13 +2,13 @@ import React, { useContext } from 'react';
 import '../style/Cart.css';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { selectCartItemIds, selectTotalPrice } from '../store/reducers/cartSlice';
+import appContext from '../context';
 import CartItem from '../components/cartItem/CartItem';
 import Button from '../components/UI/Button/Button';
-import { selectCartItemIds, selectTotalPrice } from '../store/reducers/cartSlice';
 import EmptyCart from '../components/emptyCart/EmptyCart';
 import TotalList from '../components/totalList/TotalList';
 import Menu from '../components/menu/Menu';
-import appContext from '../context';
 
 function Cart() {
   const cartIds = useSelector(selectCartItemIds);

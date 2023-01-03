@@ -3,16 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="add styles for header select">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/about.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainFooter/mainFooter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Goods.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/Goods.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/Select.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Goods.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +159,8 @@
       <workItem from="1671959423507" duration="15364000" />
       <workItem from="1672050763979" duration="7000" />
       <workItem from="1672060524171" duration="28000" />
-      <workItem from="1672237109916" duration="3852000" />
+      <workItem from="1672237109916" duration="8433000" />
+      <workItem from="1672754423665" duration="234000" />
     </task>
     <task id="LOCAL-00001" summary="finish main page and good page">
       <created>1663193306010</created>
@@ -376,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672239438049</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add styles for header select">
+      <created>1672241141728</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1672241141728</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

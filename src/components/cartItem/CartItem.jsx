@@ -25,6 +25,7 @@ function CartItem({ id }) {
 
   const quantity = useSelector((state) => selectCartItemQuantity(state, id));
   const cartItemTotalPrice = useSelector((state) => selectCartItemTotalPrice(state, id));
+
   const decreaseQuantityHandler = () => dispatch(decreaseQuantity({ id, cartItemTotalPrice }));
   const increaseQuantityHandler = () => dispatch(increaseQuantity({ id, cartItemTotalPrice }));
 

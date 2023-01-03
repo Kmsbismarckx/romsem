@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { Link, matchRoutes, useLocation } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './header.css';
 import QueryModal from '../queryModal/QueryModal';
 import HeaderPhone from './headerPhone/HeaderPhone';
@@ -10,6 +10,7 @@ import Select from '../UI/Select/Select';
 function Header() {
   const { modal, setModal, setCartModal, filter, setFilter, isLaptop, isDesktop, publicUrl } =
     useContext(appContext);
+
   const [selectOptions] = useState([
     { value: 'spb', name: 'Санкт-Петербург' },
     { value: 'nino', name: 'Нижний Новгород' },
@@ -17,6 +18,7 @@ function Header() {
     { value: 'tashkent', name: 'Ташкент' },
   ]);
   const location = useLocation();
+
   if (isLaptop) {
     return (
       <div className="header">

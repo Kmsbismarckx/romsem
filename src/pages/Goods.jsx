@@ -73,9 +73,7 @@ function Goods() {
         <p className="goods__name">{category.russianName}</p>
       </div>
       <Select
-        onChange={(selectedSort) => {
-          setFilter({ ...filter, sort: selectedSort });
-        }}
+        className="goods"
         options={[
           { value: 'default', name: 'По умолчанию' },
           { value: 'name', name: 'По названию' },
@@ -83,7 +81,8 @@ function Goods() {
           { value: 'pieces', name: 'По количеству' },
           { value: 'price', name: 'По цене' },
         ]}
-        value={filter.sort}
+        filter={filter}
+        setFilter={setFilter}
       />
       <GoodsList
         className="goods__list"

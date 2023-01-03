@@ -10,7 +10,6 @@ $select_height: 100%;
   cursor: pointer;
   user-select: none;
   z-index: 1;
-
   &__header {
     height: 100%;
     background-color: inherit;
@@ -37,6 +36,10 @@ $select_height: 100%;
   font-size: 18px;
   line-height: 22px;
 
+  @media screen and (min-width: $mobileS) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
   //box-shadow: 0 0 18px 6px rgba(0, 0, 0, 0.09);
   &::after {
     content: url('/public/media/UI/arrow_down.svg');

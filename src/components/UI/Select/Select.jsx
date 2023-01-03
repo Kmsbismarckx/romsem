@@ -12,7 +12,9 @@ function Select({ className, options, filter, setFilter }) {
     setSelectedOption(option.name);
     setIsOpen(false);
   };
-  const isOpenHandler = () => setIsOpen(!isOpen);
+  const isOpenHandler = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div
       className={`${className}-select select ${

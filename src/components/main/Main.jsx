@@ -95,12 +95,14 @@ function Main() {
                       <div className="goods__swiper-item-title">
                         <h1 className="goods__swiper-item-name">&quot;{good.russianName}&quot;</h1>
                         <p className="goods__swiper-item-pieces">
-                          {good.weight} грамм{' '}
+                          {good.weight * good.pieces} грамм{' '}
                           {plural(good.pieces, '%d кусочек', '%d кусочка', '%d кусочков')}
                         </p>
                       </div>
                       <div className="goods__swiper-item-price">
-                        <p className="goods__swiper-item-initial-price">{good.price} COM</p>
+                        <p className="goods__swiper-item-initial-price">
+                          {good.price * good.pieces} COM
+                        </p>
                         <p className="goods__swiper-item-sale-price">Скидка COM</p>
                       </div>
                       <Button
