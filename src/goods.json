@@ -8,12 +8,6 @@
       "pieces": 30,
       "price": 150,
       "quantity": 0,
-      "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 4, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ],
       "isNew": true
     },
     {
@@ -24,11 +18,6 @@
       "pieces": 40,
       "price": 148,
       "quantity": 0,
-      "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ],
       "isPopular": true
     },
     {
@@ -39,11 +28,6 @@
       "pieces": 40,
       "price": 150,
       "quantity": 0,
-      "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ],
       "isPopular": true
     },
     {
@@ -54,11 +38,6 @@
       "pieces": 36,
       "price": 160,
       "quantity": 0,
-      "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ],
       "isPopular": true
     },
     {
@@ -69,11 +48,6 @@
       "pieces": 30,
       "price": 150,
       "quantity": 0,
-      "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ],
       "isPopular": true
     },
     {
@@ -84,11 +58,6 @@
       "pieces": 46,
       "price": 156,
       "quantity": 0,
-      "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ],
       "isPopular": true
     },
     {
@@ -99,11 +68,6 @@
       "pieces": 45,
       "price": 149,
       "quantity": 0,
-      "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ],
       "isPopular": true
     },
     {
@@ -114,11 +78,6 @@
       "pieces": 40,
       "price": 147,
       "quantity": 0,
-      "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ],
       "isNew": true
     },
     {
@@ -129,11 +88,6 @@
       "pieces": 52,
       "price": 156,
       "quantity": 0,
-      "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ],
       "isPopular": true
     },
     {
@@ -144,11 +98,6 @@
       "pieces": 32,
       "price": 156,
       "quantity": 0,
-      "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ],
       "isNew": true
     },
     {
@@ -159,11 +108,6 @@
       "pieces": 40,
       "price": 150,
       "quantity": 0,
-      "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
-      ],
       "isNew": true
     }
   ]

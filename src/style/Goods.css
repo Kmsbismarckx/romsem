@@ -111,11 +111,6 @@
     padding: 22px 111px 0;
   }
 }
-@media screen and (min-width: 1024px) {
-  .goods__list {
-    justify-content: space-evenly;
-  }
-}
 @media screen and (min-width: 1024px) and (min-width: 1440px) {
   .goods__list {
     justify-content: space-between;

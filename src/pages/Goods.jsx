@@ -23,7 +23,7 @@ function Goods() {
   const goods = useSelector(selectAllGoods);
 
   const { filter, setFilter, isLaptop, isTablet, isDesktop, publicUrl } = useContext(appContext);
-  const sortedAndSearchedGoods = useFilter(goods, filter.sort, filter.query);
+  const sortedAndSearchedGoods = useFilter(goods, filter.sort);
 
   if (isTablet || isLaptop) {
     return (
@@ -37,7 +37,7 @@ function Goods() {
                 <img
                   className="goods__img"
                   src={`${publicUrl}/media/goods/goods__logo.svg`}
-                  alt=""
+                  alt="Товары"
                 />
                 <p className="goods__name">{category.russianName}</p>
               </div>

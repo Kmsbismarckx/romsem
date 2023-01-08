@@ -49,17 +49,18 @@
 }
 
 .goods-select {
-  width: 200px;
+  width: 100%;
+  margin-bottom: 20px;
   border-radius: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 768px) {
   .goods-select {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 200px;
+    margin-bottom: 0;
   }
 }
 .goods-select::after {

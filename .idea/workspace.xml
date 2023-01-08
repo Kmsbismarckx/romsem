@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="add styles for header select">
+    <list default="true" id="5a99281c-349f-4cec-afda-ebc48d400c0f" name="Changes" comment="Select adaptation">
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/WOK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/acne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/chicken.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/combo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/corndog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/drinks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/kamikaze_set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/philadelphia_love_set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/philadelphia_salmon_set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/pizza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/rolls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/salad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/salomon_set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/set_4_philadelphias.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/set_5_philadelphias.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/set_6_philadelphias.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/sets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/soup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/stock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/sushi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/top_set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/searchData/yakuza_set.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Select/Select.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/Select.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Select/select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Select/select.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartItem/CartItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/queryModal/QueryModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/QueryModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/queryModal/queryModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/queryModal/queryModal.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/queryModal/queryModal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queryModal/queryModal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goods.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/goods.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Goods.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Goods.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/Goods.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/Goods.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,39 +60,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;NewWatcherDialog.advanced.open&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/eldor/Desktop/Портфолио/romsem/public/media/cart&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\eldor\\Desktop\\Портфолио\\romsem\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "NewWatcherDialog.advanced.open": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/eldor/Desktop/Портфолио/romsem/public/media/searchData",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\eldor\\Desktop\\Портфолио\\romsem\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\searchData" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\cart" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\header" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public" />
-      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\UI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\searchData" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\UI" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media\additional" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public" />
       <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\public\media" />
-      <recent name="C:\Users\eldor\Desktop\Портфолио\romsem\src\components\header" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -160,7 +182,9 @@
       <workItem from="1672050763979" duration="7000" />
       <workItem from="1672060524171" duration="28000" />
       <workItem from="1672237109916" duration="8433000" />
-      <workItem from="1672754423665" duration="234000" />
+      <workItem from="1672754423665" duration="1771000" />
+      <workItem from="1673117436590" duration="11000" />
+      <workItem from="1673203712202" duration="7077000" />
     </task>
     <task id="LOCAL-00001" summary="finish main page and good page">
       <created>1663193306010</created>
@@ -386,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672241141728</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Select adaptation">
+      <created>1672754795036</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1672754795036</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,6 +455,7 @@
     <MESSAGE value="add ne slice" />
     <MESSAGE value="Create custom Select component" />
     <MESSAGE value="add styles for header select" />
-    <option name="LAST_COMMIT_MESSAGE" value="add styles for header select" />
+    <MESSAGE value="Select adaptation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Select adaptation" />
   </component>
 </project>
