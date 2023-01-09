@@ -23,7 +23,7 @@ function Goods() {
   const goods = useSelector(selectAllGoods);
 
   const { filter, setFilter, isLaptop, isTablet, isDesktop, publicUrl } = useContext(appContext);
-  const sortedAndSearchedGoods = useFilter(goods, filter.sort);
+  const sortedAndSearchedGoods = useFilter(goods, filter.sort, filter.query);
 
   if (isTablet || isLaptop) {
     return (

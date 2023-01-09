@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import './queryModal.css';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Input from '../UI/Input/Input';
 import appContext from '../../context';
 import useFilter from '../../hooks/useFilter';
@@ -55,14 +56,25 @@ function QueryModal() {
         />
         <div className="search-modal__result">
           {sortedAndSearchedData.map((item) => (
-            <div className="search-modal__item" key={item.name + item.id}>
+            <Link
+              to={
+                categories
+                  .filter((category) => category.isAvailable === false)
+                  .map((availableCategory) => availableCategory.name)
+                  .includes(item.name)
+                  ? `/home/${item.id}`
+                  : `/${item.id}`
+              }
+              className="search-modal__item"
+              key={item.name + item.id}
+            >
               <img
                 className="search-modal__img"
                 src={`${publicUrl}/media/searchData/${item.name}.png`}
                 alt=""
               />
               <div className="search-modal__name">{item.russianName}</div>
-            </div>
+            </Link>
           ))}
           {sortedAndSearchedData.length === 0 && (
             <div className="search-modal__not-found">Ничего не найдено!</div>
