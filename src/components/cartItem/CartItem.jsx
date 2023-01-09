@@ -33,8 +33,8 @@ function CartItem({ id }) {
     <div className="cart__item">
       <img
         className="cart__item-img"
-        src={`${publicUrl}/media/cart/${cartItem.name}.png`}
-        alt={cartItem.name}
+        src={`${publicUrl}/media/cart/${cartItem.img}.png`}
+        alt={cartItem.img}
       />
       <div className="cart__item-content">
         <p className="cart__item-name">{cartItem.russianName}</p>
