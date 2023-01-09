@@ -67,6 +67,7 @@ function QueryModal() {
               }
               className="search-modal__item"
               key={item.name + item.id}
+              onClick={() => setModal(false)}
             >
               <img
                 className="search-modal__img"
