@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/romsem/static/css/main.8584fd79.css",
-    "main.js": "/romsem/static/js/main.ed43c898.js",
+    "main.js": "/romsem/static/js/main.fc6953ff.js",
     "static/media/dinpro_bold.otf": "/romsem/static/media/dinpro_bold.e18c1d1189457aa1a301.otf",
     "static/media/dinpro_medium.otf": "/romsem/static/media/dinpro_medium.16a72c6a374a9c9a2572.otf",
     "static/media/dinpro.otf": "/romsem/static/media/dinpro.6ef85ba7df7db1508c63.otf",
@@ -16,10 +16,10 @@
     "static/media/arrow_down.svg": "/romsem/static/media/arrow_down.764590611119d42d1df9.svg",
     "static/media/check-mark.svg": "/romsem/static/media/check-mark.b68f753ca9b5ee9372bb.svg",
     "main.8584fd79.css.map": "/romsem/static/css/main.8584fd79.css.map",
-    "main.ed43c898.js.map": "/romsem/static/js/main.ed43c898.js.map"
+    "main.fc6953ff.js.map": "/romsem/static/js/main.fc6953ff.js.map"
   },
   "entrypoints": [
     "static/css/main.8584fd79.css",
-    "static/js/main.ed43c898.js"
+    "static/js/main.fc6953ff.js"
   ]
 }
