@@ -2,169 +2,180 @@
   "goods": [
     {
       "id": 1,
-      "name": "salomon_set",
+      "img": "salomon_set",
       "russianName": "Саломон сет",
       "weight": 35,
       "pieces": 30,
       "price": 150,
       "quantity": 0,
       "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 4, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 4, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ],
-      "isNew": true
+      "isNew": true,
+      "category": 1
     },
     {
       "id": 2,
-      "name": "philadelphia_love_set",
+      "img": "philadelphia_love_set",
       "russianName": "Филадельфия LOVE сет",
       "weight": 25,
       "pieces": 40,
       "price": 148,
       "quantity": 0,
       "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ],
-      "isPopular": true
+      "isPopular": true,
+      "category": 1
     },
     {
       "id": 3,
-      "name": "set_5_philadelphias",
+      "img": "set_5_philadelphias",
       "russianName": "Сет '5 Филадельфий'",
       "weight": 28,
       "pieces": 40,
       "price": 150,
       "quantity": 0,
       "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ],
-      "isPopular": true
+      "isPopular": true,
+      "category": 1
     },
     {
       "id": 4,
-      "name": "philadelphia_salmon_set",
+      "img": "philadelphia_salmon_set",
       "russianName": "Филадельфия и лосось сет",
       "weight": 35,
       "pieces": 36,
       "price": 160,
       "quantity": 0,
       "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ],
-      "isPopular": true
+      "isPopular": true,
+      "category": 1
     },
     {
       "id": 5,
-      "name": "salomon_set",
+      "img": "salomon_set",
       "russianName": "Саломон сет",
       "weight": 35,
       "pieces": 30,
       "price": 150,
       "quantity": 0,
       "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ],
-      "isPopular": true
+      "isPopular": true,
+      "category": 1
     },
     {
       "id": 6,
-      "name": "set_6_philadelphias",
+      "img": "set_6_philadelphias",
       "russianName": "Сет '6 Филадельфий'",
       "weight": 29,
       "pieces": 46,
       "price": 156,
       "quantity": 0,
       "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ],
-      "isPopular": true
+      "isPopular": true,
+      "category": 1
     },
     {
       "id": 7,
-      "name": "top_set",
+      "img": "top_set",
       "russianName": "Топовый сет",
       "weight": 27,
       "pieces": 45,
       "price": 149,
       "quantity": 0,
       "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ],
-      "isPopular": true
+      "isPopular": true,
+      "category": 1
     },
     {
       "id": 8,
-      "name": "kamikaze_set",
+      "img": "kamikaze_set",
       "russianName": "Камикадзе сет",
       "weight": 26,
       "pieces": 40,
       "price": 147,
       "quantity": 0,
       "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ],
-      "isNew": true
+      "isNew": true,
+      "category": 1
     },
     {
       "id": 9,
-      "name": "set_4_philadelphias",
+      "img": "set_4_philadelphias",
       "russianName": "Сет '4 Филадельфии'",
       "weight": 23,
       "pieces": 52,
       "price": 156,
       "quantity": 0,
       "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ],
-      "isPopular": true
+      "isPopular": true,
+      "category": 1
     },
     {
       "id": 10,
-      "name": "philadelphia_love_set",
+      "img": "philadelphia_love_set",
       "russianName": "Филадельфия LOVE сет",
       "weight": 34,
       "pieces": 32,
       "price": 156,
       "quantity": 0,
       "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ],
-      "isNew": true
+      "isNew": true,
+      "category": 1
     },
     {
       "id": 11,
-      "name": "yakuza_set",
+      "img": "yakuza_set",
       "russianName": "Якудза сет",
       "weight": 32,
       "pieces": 40,
       "price": 150,
       "quantity": 0,
       "composition": [
-        { "id": 1, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 2, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 },
-        { "id": 3, "name": "philadelphia", "russianName": "Филадельфия", "price": 150 }
+        { "id": 1, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 2, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 },
+        { "id": 3, "img": "philadelphia", "russianName": "Филадельфия", "price": 150 }
       ],
-      "isNew": true
+      "isNew": true,
+      "category": 1
     }
   ]
 }

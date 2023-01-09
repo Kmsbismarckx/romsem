@@ -4,9 +4,7 @@ import { useSelector } from 'react-redux';
 import '../style/Goods.css';
 import GoodsList from '../components/goodsList/GoodsList';
 import About from '../components/About/About';
-import useFilter from '../hooks/useFilter';
 import { selectCategoryById } from '../store/reducers/categoriesSlice';
-import { selectAllGoods } from '../store/reducers/goodsSlice';
 import Menu from '../components/menu/Menu';
 import appContext from '../context';
 import SideMenu from '../components/sideMenu/SideMenu';
@@ -20,10 +18,8 @@ function Goods() {
   const { categoryId } = useParams();
 
   const category = useSelector((state) => selectCategoryById(state, categoryId));
-  const goods = useSelector(selectAllGoods);
 
   const { filter, setFilter, isLaptop, isTablet, isDesktop, publicUrl } = useContext(appContext);
-  const sortedAndSearchedGoods = useFilter(goods, filter.sort, filter.query);
 
   if (isTablet || isLaptop) {
     return (
@@ -55,7 +51,7 @@ function Goods() {
               />
             </div>
 
-            <GoodsList sortedAndSearchedGoods={sortedAndSearchedGoods} id={categoryId} />
+            <GoodsList id={categoryId} />
             <About className="about" />
             {isLaptop && <MainFooter />}
           </div>
@@ -84,11 +80,7 @@ function Goods() {
         filter={filter}
         setFilter={setFilter}
       />
-      <GoodsList
-        className="goods__list"
-        sortedAndSearchedGoods={sortedAndSearchedGoods}
-        id={categoryId}
-      />
+      <GoodsList className="goods__list" id={categoryId} />
       <About className="about" />
       <Menu />
     </div>

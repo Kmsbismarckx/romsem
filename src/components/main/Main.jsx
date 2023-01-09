@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import useFilter from '../../hooks/useFilter';
+import { useFilter } from '../../hooks/useFilter';
 import {
   selectAllCategories,
   selectPopularCategoriesIds,

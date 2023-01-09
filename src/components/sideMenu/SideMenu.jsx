@@ -7,7 +7,9 @@ import appContext from '../../context';
 
 function SideMenu() {
   const { categoryId } = useParams();
-  const categories = useSelector(selectSideMenuCategories);
+  const categories = useSelector(selectSideMenuCategories).filter(
+    (category) => category.id !== 9 && category.id !== 10 && category.id !== 12
+  );
   const { publicUrl } = useContext(appContext);
 
   return (
@@ -32,8 +34,8 @@ function SideMenu() {
             <div className={`side-menu__item ${category.isAvailable ? 'side-menu__soon' : ''}`}>
               <div className="side-menu__item-logo">
                 <img
-                  src={`${publicUrl}/media/categories/${category.name}.svg`}
-                  alt={`${category.name}`}
+                  src={`${publicUrl}/media/categories/${category.img}.svg`}
+                  alt={`${category.img}`}
                 />
               </div>
               <p className={`${Number(categoryId) === category.id ? 'category_active' : ''}`}>

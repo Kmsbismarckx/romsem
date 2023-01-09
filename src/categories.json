@@ -2,7 +2,7 @@
   "categories": [
     {
       "id": 1,
-      "name": "pizza",
+      "img": "pizza",
       "russianName": "Пицца",
       "isAvailable": false,
       "isLarge": false,
@@ -10,56 +10,56 @@
     },
     {
       "id": 2,
-      "name": "sets",
+      "img": "sets",
       "russianName": "Сеты",
       "isAvailable": false,
       "isLarge": false
     },
     {
       "id": 3,
-      "name": "WOK",
+      "img": "WOK",
       "russianName": "WOK",
       "isAvailable": false,
       "isLarge": false
     },
     {
       "id": 4,
-      "name": "rolls",
+      "img": "rolls",
       "russianName": "Роллы",
       "isAvailable": false,
       "isLarge": false
     },
     {
       "id": 5,
-      "name": "sushi",
+      "img": "sushi",
       "russianName": "Суши",
       "isAvailable": false,
       "isLarge": false
     },
     {
       "id": 6,
-      "name": "soup",
+      "img": "soup",
       "russianName": "Супы",
       "isAvailable": true,
       "isLarge": false
     },
     {
       "id": 7,
-      "name": "salad",
+      "img": "salad",
       "russianName": "Салаты",
       "isAvailable": true,
       "isLarge": false
     },
     {
       "id": 8,
-      "name": "drinks",
+      "img": "drinks",
       "russianName": "Напитки",
       "isAvailable": false,
       "isLarge": false
     },
     {
       "id": 9,
-      "name": "combo",
+      "img": "combo",
       "russianName": "Комбо",
       "isAvailable": false,
       "isLarge": true,
@@ -67,7 +67,7 @@
     },
     {
       "id": 10,
-      "name": "acne",
+      "img": "acne",
       "russianName": "С Угрем",
       "isAvailable": false,
       "isLarge": false,
@@ -76,7 +76,7 @@
     },
     {
       "id": 11,
-      "name": "corndog",
+      "img": "corndog",
       "russianName": "Корн Дог",
       "isAvailable": false,
       "isLarge": false,
@@ -85,7 +85,7 @@
     },
     {
       "id": 12,
-      "name": "chicken",
+      "img": "chicken",
       "russianName": "Чикен",
       "isAvailable": false,
       "isLarge": true,
@@ -94,7 +94,7 @@
     },
     {
       "id": 13,
-      "name": "stock",
+      "img": "stock",
       "russianName": "Акции",
       "isAvailable": false,
       "isLarge": true,

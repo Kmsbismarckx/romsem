@@ -67,10 +67,12 @@ export const selectTotalPrice = createSelector(
       const goodInCartPrice = goodInCart ? goodInCart.price * goodInCart.pieces : 0;
 
       const additionalInCart = Object.values(additional).find((item) => item.id === id);
-      const additionalInCartPrice = additionalInCart ? additionalInCart.price : 0;
-      const quantityInCart = Object.values(cartEntities).find((quantity) => quantity.id === id);
+      const additionalInCartPrice = additionalInCart?.price || 0;
 
-      return (goodInCartPrice + additionalInCartPrice) * quantityInCart.quantity;
+      const quantityInCart = Object.values(cartEntities).find((quantity) => quantity.id === id);
+      const quantityInCartQuantity = quantityInCart?.quantity || 0;
+
+      return (goodInCartPrice + additionalInCartPrice) * quantityInCartQuantity;
     });
     return goodsPriceInCart.reduce((prev, curr) => prev + curr, 0);
   }

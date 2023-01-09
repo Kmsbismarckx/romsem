@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-const useSortedItems = (items, sort) => {
+export const useSortedItems = (items, sort) => {
   const itemsCopy = [...items];
   switch (sort) {
     case 'weight':
@@ -21,8 +21,8 @@ const useSortedItems = (items, sort) => {
   return itemsCopy;
 };
 
-const useFilter = (items, sort, query) => {
-  const sortedItems = useSortedItems(items, sort);
+export const useFilter = (items, sort, query) => {
+  const sortedItems = items;
 
   return useMemo(
     () =>
@@ -30,5 +30,3 @@ const useFilter = (items, sort, query) => {
     [sort, query]
   );
 };
-
-export default useFilter;

@@ -21,7 +21,7 @@ function GoodsItem({ id, linkParams }) {
       <img
         className="goods__item-img"
         src="http://via.placeholder.com/250x203.svg"
-        alt={good.name}
+        alt={good.russianName}
       />
       <div className="goods__item-description">
         <div className="goods__item-header">
