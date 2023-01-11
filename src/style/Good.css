@@ -327,6 +327,20 @@
     margin: 0 auto;
     background-color: white;
   }
+  .good__content {
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
+  .good__content {
+    padding-left: 111px;
+    padding-right: 111px;
+  }
+}
+@media screen and (min-width: 1024px) {
   .good__main {
     display: flex;
     flex-direction: column;
@@ -336,10 +350,14 @@
     background: #f2f2f2;
     height: 100%;
   }
+}
+@media screen and (min-width: 1024px) {
   .good__swiper {
     position: initial;
     width: 100%;
   }
+}
+@media screen and (min-width: 1024px) {
   .good__swiper-slide {
     width: 200px;
   }

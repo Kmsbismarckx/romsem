@@ -2,23 +2,22 @@
 
 .search-modal {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
-  bottom: 0;
   right: 0;
-  left: 0;
-
-  height: 100%;
-
-  background: rgba(0, 0, 0, 0.5);
+  //bottom: 0;
+  //left: 0;
+  width: 100%;
   z-index: 2;
+  @media screen and (min-width: $laptop) {
+    width: 500px;
+  }
   &__input {
     min-height: 40px;
     width: 100%;
     font-size: 24px;
     padding-left: 15px;
     @media screen and (min-width: 1024px) {
-      width: 60%;
     }
   }
   &__content {
@@ -26,13 +25,14 @@
     flex-direction: column;
     align-items: center;
 
-    width: 100%;
-    height: 100%;
-    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-    row-gap: 50px;
+    height: 50vh;
+    width: 100%;
+
     @media screen and (min-width: 1024px) {
-      padding-top: 25px;
     }
   }
   &__result {
@@ -41,12 +41,9 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 10px 0;
+    padding-top: 20px;
     background-color: white;
     overflow-y: scroll;
-    @media screen and (min-width: 1024px) {
-      width: 60%;
-    }
   }
   &__not-found {
     font-size: 32px;
@@ -63,7 +60,7 @@
     display: flex;
     align-items: center;
     font-size: 18px;
-    text-align: end;
+    text-align: start;
     @media screen and (min-width: 768px) {
       font-size: 32px;
     }
@@ -77,9 +74,6 @@
 
 @media screen and (min-width: 1920px) {
   .search-modal {
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100vh;
     &__content {
     }
     &__search:focus {

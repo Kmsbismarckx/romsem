@@ -324,6 +324,16 @@
     margin: 0 auto;
 
     background-color: white;
+    &__content {
+      margin: 0;
+      padding-left: 5%;
+      padding-right: 5%;
+      max-width: 100%;
+      @media screen and (min-width: $laptopL) {
+        padding-left: 111px;
+        padding-right: 111px;
+      }
+    }
     &__main {
       display: flex;
       flex-direction: column;

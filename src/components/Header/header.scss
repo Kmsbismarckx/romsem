@@ -28,7 +28,11 @@
   }
   &__buttons {
     display: flex;
+    position: relative;
     align-items: center;
+  }
+  &__query-container {
+    position: relative;
   }
   &__query,
   &__cart {

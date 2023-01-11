@@ -82,6 +82,16 @@
       margin: 0 auto;
       height: 100%;
       padding-top: 60px;
+      overflow-y: scroll;
+      @media screen and (min-width: $laptop) {
+        padding-left: 5%;
+        padding-right: 5%;
+        min-width: 100%;
+      }
+      @media screen and (min-width: $laptopL) {
+        padding-left: 111px;
+        padding-right: 111px;
+      }
     }
     &__button {
       width: 180px;

@@ -50,7 +50,11 @@
 }
 .header__buttons {
   display: flex;
+  position: relative;
   align-items: center;
+}
+.header__query-container {
+  position: relative;
 }
 .header__query, .header__cart {
   cursor: pointer;

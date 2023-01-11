@@ -38,6 +38,7 @@ function Good() {
   const good = useSelector((state) => selectGoodById(state, Number(goodId)));
   const goodPrice = useSelector((state) => selectGoodPrice(state, goodId));
   const additional = useSelector(selectAllAdditional);
+  console.log(additional);
   const weight = useSelector((state) => selectGoodWeight(state, goodId));
 
   const increaseQuantityHandler = () => {
@@ -102,7 +103,7 @@ function Good() {
                       className="good__addition-item"
                       name={item.russianName}
                       price={item.price}
-                      imgUrl={`media/additional/${item.name}.png`}
+                      imgUrl={`media/additional/${item.img}.png`}
                     >
                       <img
                         className="good__addition-item-button"

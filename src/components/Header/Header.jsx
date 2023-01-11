@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './header.css';
-import QueryModal from '../queryModal/QueryModal';
+import SearchModal from '../queryModal/SearchModal';
 import HeaderPhone from './headerPhone/HeaderPhone';
 import HeaderSchedule from './headerSchedule/HeaderSchedule';
 import appContext from '../../context';
@@ -52,12 +52,16 @@ function Header() {
             </Link>
           </div>
           <div className="header__buttons">
-            <img
-              className="header__query"
-              src={`${publicUrl}/media/header/query.svg`}
-              alt="Поиск"
-              onClick={() => setModal(true)}
-            />
+            <div className="header__query-container">
+              <SearchModal />
+              <img
+                className="header__query"
+                src={`${publicUrl}/media/header/query.svg`}
+                alt="Поиск"
+                onClick={() => setModal(true)}
+              />
+            </div>
+
             {!isDesktop && (
               <img
                 className="header__cart"
@@ -67,7 +71,6 @@ function Header() {
               />
             )}
           </div>
-          <QueryModal />
         </div>
       </div>
     );
@@ -88,7 +91,7 @@ function Header() {
           onClick={() => setModal(true)}
         />
       </div>
-      <QueryModal visible={modal} setVisible={setModal} filter={filter} setFilter={setFilter} />
+      <SearchModal visible={modal} setVisible={setModal} filter={filter} setFilter={setFilter} />
     </div>
   );
 }

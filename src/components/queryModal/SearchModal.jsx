@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from 'react';
-import './queryModal.css';
+import React, { useContext, useEffect, useRef } from 'react';
+import './SearchModal.css';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Input from '../UI/Input/Input';
@@ -8,13 +8,15 @@ import { useFilter } from '../../hooks/useFilter';
 import { selectAllGoods } from '../../store/reducers/goodsSlice';
 import { selectAllCategories } from '../../store/reducers/categoriesSlice';
 
-function QueryModal() {
+function SearchModal() {
   const goods = useSelector(selectAllGoods);
   const categories = useSelector(selectAllCategories);
-  const { modal, setModal, filter, setFilter, publicUrl } = useContext(appContext);
+  const { modal, setModal, filter, setFilter } = useContext(appContext);
   const searchedCategories = [...useFilter(categories, filter.sort, filter.query)].filter(
     (category) => !category.isAvailable
   );
+  const modalRef = useRef(null);
+
   const searchedGoods = [...useFilter(goods, filter.sort, filter.query)];
 
   const rootClasses = ['search-modal'];
@@ -23,23 +25,35 @@ function QueryModal() {
     rootClasses.push('search-modal_active');
   }
 
-  const closeModal = (event) => {
-    if (event.keyCode === 27) {
-      setModal(false);
-      setFilter({ ...filter, query: '' });
-    }
-  };
+  useEffect(() => {
+    const closeModal = (event) => {
+      console.log(event);
+      if (event.keyCode === 27) {
+        setModal(false);
+        setFilter({ ...filter, query: '' });
+      }
+    };
+    document.addEventListener('keydown', (e) => closeModal(e));
+    return document.removeEventListener('keydown', (e) => closeModal(e));
+  }, [modal]);
 
   useEffect(() => {
-    window.addEventListener('keydown', (e) => closeModal(e));
-    return window.removeEventListener('keydown', (e) => closeModal(e));
-  }, []);
+    const onClickOutside = (e) => {
+      if (!modalRef.current.contains(e.target)) {
+        setModal(false);
+      }
+    };
+    document.addEventListener('mousedown', (e) => onClickOutside(e));
+    return document.removeEventListener('mousedown', (e) => onClickOutside(e));
+  });
+
   return (
     <div
       className={rootClasses.join(' ')}
       onClick={() => {
         setModal(false);
       }}
+      ref={modalRef}
     >
       <div className="search-modal__content" onClick={(event) => event.stopPropagation()}>
         <Input
@@ -60,7 +74,7 @@ function QueryModal() {
             <Link
               to={`/home/${item.id}`}
               className="search-modal__item"
-              key={item.name + item.id}
+              key={item.id}
               onClick={() => setModal(false)}
             >
               <div className="search-modal__name">{item.russianName}</div>
@@ -71,7 +85,7 @@ function QueryModal() {
             <Link
               to={`/home/${item.category}/${item.id}`}
               className="search-modal__item"
-              key={item.name + item.id}
+              key={item.id}
               onClick={() => setModal(false)}
             >
               <div className="search-modal__name">{item.russianName}</div>
@@ -86,4 +100,4 @@ function QueryModal() {
   );
 }
 
-export default QueryModal;
+export default SearchModal;

@@ -249,11 +249,25 @@
     &__content {
       overflow-y: scroll;
       padding-top: 30px;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin: 0;
+      width: 100%;
+      min-width: 100%;
     }
     .categories__swiper,
     .goods__swiper {
       max-width: 100%;
-      height: 470px;
+      height: 370px;
     }
+  }
+}
+@media screen and (min-width: $laptopL) {
+  .goods__swiper {
+    height: 470px;
+  }
+  .main__content {
+    padding-left: 111px;
+    padding-right: 111px;
   }
 }

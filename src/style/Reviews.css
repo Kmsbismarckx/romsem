@@ -103,7 +103,23 @@
     margin: 0 auto;
     height: 100%;
     padding-top: 60px;
+    overflow-y: scroll;
   }
+}
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
+  .reviews__content {
+    padding-left: 5%;
+    padding-right: 5%;
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
+  .reviews__content {
+    padding-left: 111px;
+    padding-right: 111px;
+  }
+}
+@media screen and (min-width: 1024px) {
   .reviews__button {
     width: 180px;
     font-style: normal;
